@@ -1,0 +1,53 @@
+[
+  {
+    "className": "GRENADE",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "plasma_grenade",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "plasma_grenade",
+        "name": "ID"
+      }
+    ],
+    "name": "plasma_grenade",
+    "parents": []
+  },
+  {
+    "className": "GRENADE",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "frag_grenade",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "frag_grenade",
+        "name": "ID"
+      }
+    ],
+    "name": "frag_grenade",
+    "parents": []
+  },
+  {
+    "className": "GRENADE",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "spike_grenade",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "spike_grenade",
+        "name": "ID"
+      }
+    ],
+    "name": "spike_grenade",
+    "parents": []
+  }
+]

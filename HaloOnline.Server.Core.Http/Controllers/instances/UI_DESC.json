@@ -1,0 +1,6349 @@
+[
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "ad1",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "ad1",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "ad1",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "ad1",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "ad1",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "ad1 uidesc",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "ad2",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "ad2",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "ad2",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "ad2",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "ad2",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "ad2 uidesc",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "ad3",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "ad3",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "ad3",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "ad3",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "ad3",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "ad3 uidesc",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "ad4",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "ad4",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "ad4",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "ad4",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "ad4",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "ad4 uidesc",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "ad5",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "ad5",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "ad5",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "ad5",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "ad5",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "ad5 uidesc",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "playlist_slayer_name",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "gm_slayer_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "gm_slayer_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "pl_team_slayer_small",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "playlist_slayer",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "playlist_team_slayer_name",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "gm_playlist_team_slayer_big",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "gm_team_slayer_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "pl_team_slayer_big",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "team_slayer_name",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "news1",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "main_news_head",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "iconNewsImage9",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "iconNewsImage9",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "iconNewsImage9",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "news1",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "Ranger",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "class_ranger_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "class_ranger_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "iconRangerClass",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "iconRangerClass",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "iconRangerClass",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "Ranger",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "assault_rifle_cat",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "carousel_weapon_assault_rifle",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_assault_rifle_cat_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "no_icon100x100",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "assault_rifle_cat",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "air_assault",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_air_assault_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_air_assault_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_air_assault_desc_short",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "helmet_standardSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "helmet_standardMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "helmet_standard",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "air_assault",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "scanner",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_scanner_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_scanner_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_scanner_desc_short",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "helmet_standardSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "helmet_standardMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "helmet_standard",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "scanner",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "chameleon",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_chameleon_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_chameleon_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_chameleon_desc_short",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "helmet_standardSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "helmet_standardMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "helmet_standard",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "chameleon",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "carousel_modifiers_screen",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "carousel_modifiers_screen",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "carousel_modifiers_screen",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "armor_explorer",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_explorer_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_explorer_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_explorer_desc_short",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "helmet_standardSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "helmet_standardMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "helmet_standard",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "explorer",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "Guardian",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "map_guardian_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "map_guardian_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "map_guardian_desc",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "Guardian_300x200",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "guardianBg",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "MapBig_guardian",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "Guardian",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "armor_oracle",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_oracle_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_oracle_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_oracle_desc_short",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "helmet_standardSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "helmet_standardMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "helmet_standard",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "oracle",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "armor_prophet",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_prophet_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_prophet_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_prophet_desc_short",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "helmet_standardSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "helmet_standardMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "helmet_standard",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "prophet",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "armor_juggernaut",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_juggernaut_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_juggernaut_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_juggernaut_desc_short",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "helmet_premiumSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "helmet_premiumMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "helmet_premium",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "juggernaut",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "armor_spectrum",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_spectrum_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_spectrum_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_spectrum_desc_short",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "helmet_premiumSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "helmet_premiumMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "helmet_premium",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "spectrum",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "armor_orbital",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_orbital_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_orbital_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_orbital_desc_short",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "helmet_premiumSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "helmet_premiumMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "helmet_premium",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "orbital",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "armor_gungnir",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_gungnir_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_gungnir_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_gungnir_desc_short",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "helmet_premiumSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "helmet_premiumMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "helmet_premium",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "gungnir",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "armor_hammerhead",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_hammerhead_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_hammerhead_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_hammerhead_desc_short",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "helmet_premiumSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "helmet_premiumMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "helmet_premium",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "hammerhead",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "armor_demo",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_demo_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_demo_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_demo_desc_short",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "helmet_platinum_3Small",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "helmet_platinum_3Med",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "helmet_platinum_3",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "demo",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "armor_strider",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_strider_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_strider_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_strider_desc_short",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "helmet_platinum_3Small",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "helmet_platinum_3Med",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "helmet_platinum_3",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "strider",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "armor_nihard",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_cyclops_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_cyclops_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_cyclops_desc_short",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "helmet_platinum_3Small",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "helmet_platinum_3Med",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "helmet_platinum_3",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "armor_nihard",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "battle_rifle_cat",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "carousel_weapon_battle_rifle",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_battle_rifle_cat_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "no_icon100x101",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "battle_rifle_cat",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "carbine_cat",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "carousel_weapon_covenant_carbine",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_covenant_carbine_cat_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "no_icon100x101",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "battle_rifle_cat",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "covenant_carbine",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_covenant_carbine_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_covenant_carbine_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "carbineSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "carbineMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "carbineBig",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "covenant_carbine",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "covenant_carbine_v1",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_rof_covenant_carbine_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_rof_covenant_carbine_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "carbine_m1Small",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "carbine_m1Med",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "carbine_m1Big",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "covenant_carbine_v1",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "covenant_carbine_v2",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_hot_covenant_carbine_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_hot_covenant_carbine_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "carbine_m2Small",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "carbine_m2Med",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "carbine_m2Big",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "covenant_carbine_v2",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "covenant_carbine_v3",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_spr_covenant_carbine_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_spr_covenant_carbine_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "carbine_m3Small",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "carbine_m3Med",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "carbine_m3Big",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "covenant_carbine_v3",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "covenant_carbine_v4",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_dmg_covenant_carbine_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_dmg_covenant_carbine_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "carbine_m4Small",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "carbine_m4Med",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "carbine_m4Big",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "covenant_carbine_v4",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "covenant_carbine_v5",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_acc_covenant_carbine_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_acc_covenant_carbine_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "carbine_m5Small",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "carbine_m5Med",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "carbine_m5Big",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "covenant_carbine_v5",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "covenant_carbine_v6",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_adv_covenant_carbine_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_adv_covenant_carbine_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "carbine_m6Small",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "carbine_m6Med",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "carbine_m6Big",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "covenant_carbine_v6",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "dmr_cat",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "carousel_weapon_dmr",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_battle_rifle_cat_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "no_icon100x101",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "dmr_cat",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "smg_cat",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "carousel_weapon_smg",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_battle_rifle_cat_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "no_icon100x101",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "smg_cat",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "magnum_cat",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "carousel_weapon_magnum",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_battle_rifle_cat_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "no_icon100x101",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "magnum_cat",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "grenade_cat",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "carousel_grenades",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_battle_rifle_cat_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "no_icon100x101",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "grenade_cat",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "frag_grenade",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_frag_grenade_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_frag_grenade_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_frag_grenade_desc",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "frag_grenadeSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "frag_grenadeSmall",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "frag_grenadeSmall",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "frag_grenade",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "fire_grenade",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_fire_grenade_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_fire_grenade_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_fire_grenade_desc",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "fire_grenadeSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "fire_grenadeSmall",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "fire_grenadeSmall",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "fire_grenade",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "plasma_grenade",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_plasma_grenade_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_plasma_grenade_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_plasma_grenade_desc",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "plasma_grenadeSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "plasma_grenadeSmall",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "plasma_grenadeSmall",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "plasma_grenade",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "spike_grenade",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_spike_grenade_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_spike_grenade_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_spike_grenade_desc",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "spike_grenadeSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "spike_grenadeSmall",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "spike_grenadeSmall",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "spike_grenade",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "fire_grenade",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_fire_grenade_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_fire_grenade_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_fire_grenade_desc",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "fire_grenade",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "magnum",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_magnum_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_magnum_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_magnum_desc",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "magnumSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "magnumSmall",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "magnumSmall",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "magnum",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "magnum_v1",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_rof_magnum_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_rof_magnum_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_rof_magnum_desc",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "magnum_m1Small",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "magnum_m1Small",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "magnum_m1Small",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "magnum_v1",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "magnum_v2",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_dmg_magnum_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_dmg_magnum_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_dmg_magnum_desc",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "magnum_m2Small",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "magnum_m2Small",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "magnum_m2Small",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "magnum_v2",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "magnum_v3",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_adv_magnum_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_adv_magnum_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_adv_magnum_desc",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "magnum_m3Small",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "magnum_m3Small",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "magnum_m3Small",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "magnum_v3",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "assault_rifle_v2",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_dmg_assault_rifle_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_dmg_assault_rifle_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_dmg_assault_rifle_desc",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "unscma5b_m2Small",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "unscma5b_m2Small",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "unscma5b_m2Small",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "assault_rifle_v2",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "assault_rifle_v6",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_adv_assault_rifle_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_adv_assault_rifle_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_adv_assault_rifle_desc",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "unscma5b_m6Small",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "unscma5b_m6Small",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "unscma5b_m6Small",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "assault_rifle_v6",
+    "parents": []
+  },
+
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "plasma_rifle_cat",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "carousel_weapon_plasma_rifle",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "plasma_rifle",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "plasma_rifle",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_plasma_rifle_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_plasma_rifle_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "plasmarifleSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "plasmarifleMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "plasmarifleBig",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "plasma_rifle",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "plasma_rifle_v1",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_dmg_plasma_rifle_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_dmg_plasma_rifle_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "plasmarifle_m1Small",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "plasmarifle_m1Med",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "plasmarifle_m1Big",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "plasma_rifle_v1",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "plasma_rifle_v2",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_rof_plasma_rifle_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_rof_plasma_rifle_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "plasmarifle_m2Small",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "plasmarifle_m2Med",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "plasmarifle_m2Big",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "plasma_rifle_v2",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "plasma_rifle_v3",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_acc_plasma_rifle_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_acc_plasma_rifle_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "plasmarifle_m3Small",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "plasmarifle_m3Med",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "plasmarifle_m3Big",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "plasma_rifle_v3",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "plasma_rifle_v4",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_hot_plasma_rifle_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_hot_plasma_rifle_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "plasmarifle_m1Small",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "plasmarifle_m1Med",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "plasmarifle_m1Big",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "plasma_rifle_v4",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "plasma_rifle_v5",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_adv_plasma_rifle_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_adv_plasma_rifle_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "plasmarifle_m5Small",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "plasmarifle_m5Med",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "plasmarifle_m5Big",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "plasma_rifle_v5",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "plasma_rifle_v6",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_spr_plasma_rifle_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_spr_plasma_rifle_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "plasmarifle_m6Small",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "plasmarifle_m6Med",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "plasmarifle_m6Big",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "plasma_rifle_v6",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "dmr",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_dmr_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_dmr_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_dmr_desc",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "dmrSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "dmrSmall",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "dmrSmall",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "dmr",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "smg",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_smg_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_smg_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_smg_desc",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "smgSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "smgSmall",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "smgSmall",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "smg",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "smg_v4",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_dmg_smg_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_dmg_smg_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_dmg_smg_desc",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "smg_m4Small",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "smg_m4Small",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "smg_m4Small",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "smg_v4",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "smg_v1",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_rof_smg_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_rof_smg_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_rof_smg_desc",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "smg_m1Small",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "smg_m1Small",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "smg_m1Small",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "smg_v1",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "smg_v6",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_adv_smg_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_adv_smg_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_adv_smg_desc",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "smg_m6Small",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "smg_m6Small",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "smg_m6Small",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "smg_v6",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "smg_v2",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_acc_smg_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_acc_smg_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_acc_smg_desc",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "smg_m2Small",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "smg_m2Small",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "smg_m2Small",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "smg_v2",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "smg_v3",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_spr_smg_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_spr_smg_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_spr_smg_desc",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "smg_m3Small",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "smg_m3Small",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "smg_m3Small",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "smg_v3",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "dmr_v3",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_rof_dmr_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_rof_dmr_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_rof_dmr_desc",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "dmr_m3Small",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "dmr_m3Small",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "dmr_m3Small",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "dmr_v3",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "consumables_offensive",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "carousel_consumables_offensive",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "consumables_offensive",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "consumables_defensive",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "carousel_consumables_defensive",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "consumables_defensive",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "consumables_support",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "carousel_consumables_support",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "consumables_support",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "adrenaline",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_adrenaline_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_adrenaline_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "tpAdrenalineSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "tpAdrenalineMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "tpAdrenalineBig",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_adrenaline",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "adrenaline",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "carousel_most_popular",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "carousel_most_popular",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "carousel_most_popular",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "carousel_specail_offers",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "carousel_specail_offers",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "most_popular",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "visor",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_visor_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_visor_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "tpVisorSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "tpVisorMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "tpVisorBig",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "visor",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "bombrun",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_bomb_run_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_bomb_run_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "tpBombrunSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "tpBombrunMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "tpBombrunBig",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_bomb_run",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "bombrun",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "tripmine",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_trip_mine_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_trip_mine_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "tpTripMineSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "tpTripMineMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "tpTripMineBig",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_tripmine",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "tripmine",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "active_camo",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_active_camo_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_active_camo_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "tpActivecamoSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "tpActivecamoMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "tpActivecamoBig",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_active_camo",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_active_camo",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "tripmine",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "power_drain",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_power_drain_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_power_drain_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "tpPowerDrainSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "tpPowerDrainMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "tpPowerDrainBig",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "tpPowerDrainBig",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "power_drain",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "deployable_cover",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_deployable_cover_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_deployable_cover_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "tpDeployableCoverSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "tpDeployableCoverMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "tpDeployableCoverBig",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_deployable_cover",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "deployable_cover",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "tankmode",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_tank_mode_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_tank_mode_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "tankmode",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "concussive_blast",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_concussive_blast_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_concussive_blast_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "tpConcussiveBlastSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "tpConcussiveBlastMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "tpConcussiveBlastBig",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_concussive_blast",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "concussive_blast",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "auto_turret",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_auto_turret_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_auto_turret_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "auto_turret",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "power_drain",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_power_drain_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_power_drain_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "tpPowerDrainSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "tpPowerDrainMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "power_drain",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "lightning_strike",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_lightning_strike_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_lightning_strike_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "lightning_strike",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mag_pulse",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_mag_pulse_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_mag_pulse_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "mag_pulse",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "reactive_armor",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_reactive_armor_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_reactive_armor_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "reactive_armor",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "armor_lock",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_armor_lock_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_armor_lock_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "armor_lock",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "hologram",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_hologram_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_hologram_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "tpHologramSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "tpHologramMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "tpHologramBig",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_hologram",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "hologram",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "regenerator",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_regenerator_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_regenerator_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "tpRegeneratorSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "tpRegeneratorMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "tpRegeneratorBig",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_regenerator",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "regenerator",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "bubble_shield",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_bubble_shield_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_bubble_shield_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "tpBubbleshieldSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "tpBubbleshieldMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "tpBubbleshieldBig",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_bubble_shield",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "bubble_shield",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "perk_duration",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "carousel_perk_duration_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "carousel_perk_duration_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "perk_duration",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "perk_cost",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "carousel_perk_cost_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "carousel_perk_cost_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "perk_cost",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "perk_cooldown",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "carousel_perk_cooldown",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "carousel_perk_cooldown",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "perk_cooldown",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "radar_jammer",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_radar_jammer_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_radar_jammer_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "tpRadarJammerSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "tpRadarJammerMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "tpRadarJammerBig",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_radar_jammer",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "radar_jammer",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "revenge_shield",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_revenge_shield_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_revenge_shield_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "iconSPRevengeShieldSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "iconSPRevengeShieldMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "iconSPRevengeShieldBig",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "revenge_shield",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "respawn_speed",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_respawn_speed_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_respawn_speed_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "iconSPRespawnSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "iconSPRespawnMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "iconSPRespawnBig",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "respawn_speed",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "grenade_reserve",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_grenade_reserve_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_grenade_reserve_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "tpMaxGrenadesSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "tpMaxGrenadesMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "tpMaxGrenadesBig",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "grenade_reserve",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "extra_battery",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_extra_battery_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_extra_battery_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "tpExtraBatterySmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "tpExtraBatteryMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "tpExtraBatteryBig",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "extra_battery",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "vehicle_shield",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_vehicle_shield_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_vehicle_shield_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "tpVehicleShieldSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "tpVehicleShieldMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "tpVehicleShieldBig",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "vehicle_shield",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "runner",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_runner_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_runner_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "tpRunnerSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "tpRunnerMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "tpRunnerBig",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "runner",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "reflex",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_reflex_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_reflex_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "tpReflexSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "tpReflexMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "tpReflexBig",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "reflex",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "vision",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_vision_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_vision_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "tpVisionSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "tpVisionMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "tpVisionBig",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_vision",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "vision",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "zoom_radar",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_zoom_radar_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_zoom_radar_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "zoom_radar",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "charger",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_charger_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_charger_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "tpChargerSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "tpChargerMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "tpChargerBig",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "charger",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "power_plant",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_power_plant_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "cons_power_plant_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "tpPowerPlantSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "tpPowerPlantMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "tpPowerPlantBig",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "power_plant",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "dmr_v2",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_acc_dmr_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_acc_dmr_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_acc_dmr_desc",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "dmr_m2Small",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "dmr_m2Small",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "dmr_m2Small",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "dmr_v2",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "dmr_v5",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_spr_dmr_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_spr_dmr_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_spr_dmr_desc",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "dmr_m5Small",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "dmr_m5Small",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "dmr_m5Small",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "dmr_v5",
+    "parents": []
+  },
+
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "dmr_v6",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_adv_dmr_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_adv_dmr_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_adv_dmr_desc",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "dmr_m6Small",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "dmr_m6Small",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "dmr_m6Small",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "dmr_v6",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "dmr_v4",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_dmg_dmr_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_dmg_dmr_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_dmg_dmr_desc",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "dmr_m4Small",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "dmr_m4Small",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "dmr_m4Small",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "dmr_v4",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "dmr_v1",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_mag_dmr_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_mag_dmr_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_mag_dmr_desc",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "dmr_m1Small",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "dmr_m1Small",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "dmr_m1Small",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "dmr_v1",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "battle_rifle_v1",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_rof_battle_rifle_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_rof_battle_rifle_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_rof_battle_rifle_desc",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "battlerifle_m1Small",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "battlerifle_m1Small",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "battlerifle_m1Small",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "battle_rifle_v1",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "battle_rifle",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_battle_rifle_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_battle_rifle_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_battle_rifle_desc",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "battlerifleSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "battlerifleSmall",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "battlerifleSmall",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "battle_rifle",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "battle_rifle_v3",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_mag_battle_rifle_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_mag_battle_rifle_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_mag_battle_rifle_desc",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "battlerifle_m3Small",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "battlerifle_m3Small",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "battlerifle_m3Small",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "battle_rifle_v3",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "battle_rifle_v1_type_3",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_rof_battle_rifle_type_3_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_rof_battle_rifle_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_rof_battle_rifle_desc",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "battlerifle_m1Small",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "battlerifle_m1Small",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "battlerifle_m1Small",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "battle_rifle_v1_type_3",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "battle_rifle_v4",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_dmg_battle_rifle_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_dmg_battle_rifle_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_dmg_battle_rifle_desc",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "battlerifle_m4Small",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "battlerifle_m4Small",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "battlerifle_m4Small",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "battle_rifle_v4",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "battle_rifle_v5",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_spr_battle_rifle_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_spr_battle_rifle_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_spr_battle_rifle_desc",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "battlerifle_m5Small",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "battlerifle_m5Small",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "battlerifle_m5Small",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "battle_rifle_v5",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "battle_rifle_v2",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_acc_battle_rifle_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_acc_battle_rifle_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_acc_battle_rifle_desc",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "battlerifle_m2Small",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "battlerifle_m2Small",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "battlerifle_m2Small",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "battle_rifle_v2",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "battle_rifle_v6",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_adv_battle_rifle_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_adv_battle_rifle_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_adv_battle_rifle_desc",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "battlerifle_m6Small",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "battlerifle_m6Small",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "battlerifle_m6Small",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "battle_rifle_v6",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "battle_rifle_v7",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_battle_rifle_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_battle_rifle_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_battle_rifle_desc",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "battlerifleSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "battlerifleSmall",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "battlerifleSmall",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "battle_rifle_v7",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "assault_rifle_v2x",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_dmg_assault_rifle_type_2_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_dmg_assault_rifle_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_dmg_assault_rifle_desc",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "tutorialMenu",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "tutorialMenu",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "assault_rifle_v2x",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "assault_rifle",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_assault_rifle_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_assault_rifle_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_assault_rifle_desc",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "unscma5bSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "unscma5bSmall",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "unscma5bSmall",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "assault_rifle",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "assault_rifle_v1",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_mag_assault_rifle_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_mag_assault_rifle_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_mag_assault_rifle_desc",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "unscma5b_m1Small",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "unscma5b_m1Small",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "unscma5b_m1Small",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "assault_rifle_v1",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "assault_rifle_v3",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_rof_assault_rifle_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_rof_assault_rifle_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "wpn_rof_assault_rifle_desc",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "unscma5b_m3Small",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "unscma5b_m3Small",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "unscma5b_m3Small",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "assault_rifle_v3",
+    "parents": []
+  }
+
+]

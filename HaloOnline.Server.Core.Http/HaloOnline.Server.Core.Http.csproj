@@ -19,6 +19,8 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -152,6 +154,14 @@
     <Content Include="packages.config">
       <SubType>Designer</SubType>
     </Content>
+    <Content Include="Controllers\instances\ADVERTISMENT.json" />
+    <Content Include="Controllers\instances\ASSIGN_KIT.JSON" />
+    <Content Include="Controllers\instances\CONSUMABLE.json" />
+    <Content Include="Controllers\instances\CONS_UI_STATS.json" />
+    <Content Include="Controllers\instances\GRENADE.json" />
+    <Content Include="Controllers\instances\NEWS.json" />
+    <Content Include="Controllers\instances\UI_DESC.json" />
+    <Content Include="Controllers\instances\WEAPON.JSON" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -168,6 +178,7 @@
     <Compile Include="App_Start\AuthConfig.cs" />
     <Compile Include="App_Start\AutofacConfig.cs" />
     <Compile Include="App_Start\HandlerConfig.cs" />
+    <Compile Include="Controllers\GetTitleTagsPatchConfigurationController.cs" />
     <Compile Include="Formatters\HydraBinaryFormatter.cs" />
     <Compile Include="Auth\HaloTokenFormat.cs" />
     <Compile Include="Auth\HaloUserManager.cs" />

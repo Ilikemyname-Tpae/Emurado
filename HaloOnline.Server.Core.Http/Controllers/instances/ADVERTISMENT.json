@@ -1,0 +1,137 @@
+[
+	{
+		"className": "ADVERTISMENT",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "ad1",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 0,
+				"name": "SORT_INDEX"
+			},
+			{
+				"type": 3,
+				"strVal": "http://www.google.com/?q=ad1",
+				"name": "ADVERTISMENT_URL"
+			},
+			{
+				"type": 2,
+				"floatVal": 2,
+				"name": "ADVERTISMENT_TIMER"
+			}
+		],
+		"name": "ad1",
+		"parents": []
+	},
+	{
+		"className": "ADVERTISMENT",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "ad2",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 1,
+				"name": "SORT_INDEX"
+			},
+			{
+				"type": 3,
+				"strVal": "http://www.google.com/?q=ad2",
+				"name": "ADVERTISMENT_URL"
+			},
+			{
+				"type": 2,
+				"floatVal": 2,
+				"name": "ADVERTISMENT_TIMER"
+			}
+		],
+		"name": "ad2",
+		"parents": []
+	},
+	{
+		"className": "ADVERTISMENT",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "ad3",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 2,
+				"name": "SORT_INDEX"
+			},
+			{
+				"type": 3,
+				"strVal": "http://www.google.com/?q=ad3",
+				"name": "ADVERTISMENT_URL"
+			},
+			{
+				"type": 2,
+				"floatVal": 2,
+				"name": "ADVERTISMENT_TIMER"
+			}
+		],
+		"name": "ad3",
+		"parents": []
+	},
+	{
+		"className": "ADVERTISMENT",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "ad4",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 3,
+				"name": "SORT_INDEX"
+			},
+			{
+				"type": 3,
+				"strVal": "http://www.google.com/?q=ad4",
+				"name": "ADVERTISMENT_URL"
+			},
+			{
+				"type": 2,
+				"floatVal": 2,
+				"name": "ADVERTISMENT_TIMER"
+			}
+		],
+		"name": "ad4",
+		"parents": []
+	},
+	{
+		"className": "ADVERTISMENT",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "ad5",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 4,
+				"name": "SORT_INDEX"
+			},
+			{
+				"type": 3,
+				"strVal": "http://www.google.com/?q=ad5",
+				"name": "ADVERTISMENT_URL"
+			},
+			{
+				"type": 2,
+				"floatVal": 2,
+				"name": "ADVERTISMENT_TIMER"
+			}
+		],
+		"name": "ad5",
+		"parents": []
+	}
+]

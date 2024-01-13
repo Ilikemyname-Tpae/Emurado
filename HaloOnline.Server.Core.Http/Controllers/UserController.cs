@@ -153,7 +153,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                             new UserState // Class select tokens
                             {
                                 OwnType = 0,
-                                Value = 2,
+                                Value = 0,
                                 StateName = "class_select_token",
                                 StateType = 12
                             },
