@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Web.Http;
+using System.Web.Http.Results;
 using HaloOnline.Server.Core.Http.Interface.Services;
 using HaloOnline.Server.Core.Http.Model;
 using HaloOnline.Server.Core.Http.Model.UserStorage;
@@ -10,7 +12,7 @@ using HaloOnline.Server.Model.UserStorage;
 
 namespace HaloOnline.Server.Core.Http.Controllers
 {
-    public class UserStorageController : ApiController, IUserStorageService
+    public class UserStorageController : ApiController
     {
         [HttpPost]
         public SetPrivateDataResult SetPrivateData(SetPrivateDataRequest request)
@@ -38,7 +40,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
             AbstractData data;
             switch (request.ContainerName)
             {
-                case  DataContainerTypes.Preferences:
+                case DataContainerTypes.Preferences:
                     var preference = new Preferences
                     {
                         LastReadNewsUnknownValue = 1,
@@ -88,6 +90,9 @@ namespace HaloOnline.Server.Core.Http.Controllers
         [HttpPost]
         public GetPublicDataResult GetPublicData(GetPublicDataRequest request)
         {
+            var userIdClaim = (User?.Identity as ClaimsIdentity)?.FindFirst("Id");
+            int userId = userIdClaim != null ? int.Parse(userIdClaim.Value) : 0;
+
             AbstractData data;
             switch (request.ContainerName)
             {
@@ -97,7 +102,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                         ActiveLoadoutSlotIndex = 0,
                         LoadoutSlots = Enumerable.Repeat(new WeaponLoadoutSlot
                         {
-                            PrimaryWeapon = "assault_rifle",
+                            PrimaryWeapon = "assault_rifle_v2",
                             SecondaryWeapon = "magnum",
                             Grenades = "frag_grenade",
                             Booster = "",
@@ -142,7 +147,6 @@ namespace HaloOnline.Server.Core.Http.Controllers
                     throw new ArgumentException("ContainerName");
             }
 
-
             return new GetPublicDataResult
             {
                 Result = new ServiceResult<List<PerUser>>
@@ -153,7 +157,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                         {
                             User = new UserId
                             {
-                                Id = 1
+                                Id = userId
                             },
                             PerUserData = data
                         }

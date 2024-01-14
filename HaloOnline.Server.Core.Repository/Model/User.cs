@@ -27,6 +27,10 @@ namespace HaloOnline.Server.Core.Repository.Model
 
         public int Level { get; set; }
 
+        public int Gold { get; set; } = 0;
+
+        public int Credits { get; set; } = 0;
+
         [InverseProperty("User")]
         public virtual ICollection<ChannelUser> ChannelUsers { get; set; }
 
@@ -53,6 +57,5 @@ namespace HaloOnline.Server.Core.Repository.Model
 
         [InverseProperty("Subscribee")]
         public virtual ICollection<UserSubscription> Subscribers { get; set; }
-        
     }
 }

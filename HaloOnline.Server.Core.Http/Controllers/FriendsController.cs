@@ -11,7 +11,7 @@ using HaloOnline.Server.Model.User;
 namespace HaloOnline.Server.Core.Http.Controllers
 {
     [Authorize]
-    public class FriendsController : ApiController, IFriendsService
+    public class FriendsController : ApiController
     {
         private readonly IUserSubscriptionRepository _userSubscriptionRepository;
         // HACK: Version should be stored in the repository. Increasing it is required by the client.
@@ -59,20 +59,6 @@ namespace HaloOnline.Server.Core.Http.Controllers
             var subscriptions = GetUserSubscriptions(new[] { new UserId(userId) });
 
             return new SubscriptionRemoveResult
-            {
-                Result = new ServiceResult<List<UserSubscriptions>>
-                {
-                    Data = subscriptions.ToList()
-                }
-            };
-        }
-
-        [HttpPost]
-        public GetSubscriptionsResult GetSubscriptions(GetSubscriptionsRequest request)
-        {
-            // TODO: Handle user subscription version
-            var subscriptions = GetUserSubscriptions(request.Users.Select(u => u.User));
-            return new GetSubscriptionsResult
             {
                 Result = new ServiceResult<List<UserSubscriptions>>
                 {

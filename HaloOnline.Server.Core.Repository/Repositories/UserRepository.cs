@@ -19,7 +19,9 @@ namespace HaloOnline.Server.Core.Repository.Repositories
             var newUser = new Model.User
             {
                 Name = user.UserName,
-                PasswordHash = user.UserPasswordHash
+                PasswordHash = user.UserPasswordHash,
+                Gold = 10150,
+                Credits = 1000
             };
             _context.Users.Add(newUser);
             _context.SaveChanges();
@@ -74,6 +76,16 @@ namespace HaloOnline.Server.Core.Repository.Repositories
                 UserPasswordHash = foundUser.PasswordHash
             };
             return Task.FromResult(result);
+        }
+
+        public Task<int?> GetUserIdByLoginAsync(string login)
+        {
+            var user = _context.Users
+                .Where(u => u.Name == login)
+                .Select(u => new { u.Id })
+                .FirstOrDefault();
+
+            return Task.FromResult(user?.Id);
         }
     }
 }
