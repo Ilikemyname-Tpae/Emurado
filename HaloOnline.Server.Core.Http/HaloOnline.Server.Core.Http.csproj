@@ -178,6 +178,7 @@
     <Compile Include="App_Start\AuthConfig.cs" />
     <Compile Include="App_Start\AutofacConfig.cs" />
     <Compile Include="App_Start\HandlerConfig.cs" />
+    <Compile Include="Controllers\GetShopController.cs" />
     <Compile Include="Controllers\GetTitleTagsPatchConfigurationController.cs" />
     <Compile Include="Formatters\HydraBinaryFormatter.cs" />
     <Compile Include="Auth\HaloTokenFormat.cs" />

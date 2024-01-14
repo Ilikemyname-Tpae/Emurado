@@ -4,14 +4,13 @@ using System.Linq;
 using System.Web.Http;
 using HaloOnline.Server.Common.Repositories;
 using HaloOnline.Server.Core.Http.Auth;
-using HaloOnline.Server.Core.Http.Interface.Services;
 using HaloOnline.Server.Core.Http.Model;
 using HaloOnline.Server.Core.Http.Model.User;
 using HaloOnline.Server.Model.User;
 
 namespace HaloOnline.Server.Core.Http.Controllers
 {
-    public class UserController : ApiController, IUserService
+    public class UserController : ApiController
     {
         private readonly IUserBaseDataRepository _userBaseDataRepository;
         private readonly IHaloUserManager _userManager;
@@ -476,48 +475,6 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                             {
                                                 Price = 1,
                                                 ExpireAt = 0
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            };
-        }
-
-        [HttpPost]
-        public GetShopResult GetShop(GetShopRequest request)
-        {
-            return new GetShopResult
-            {
-                Result = new ServiceResult<List<Shop>>
-                {
-                    ReturnCode = 0,
-                    Data = new List<Shop>
-                    {
-                        new Shop
-                        {
-                            Name = "shop",
-                            Type = "weapons",
-                            Race = 0,
-                            Sections = new List<ShopSection>
-                            {
-                                new ShopSection
-                                {
-                                    Name = ShopSectionTypes.Loadouts,
-                                    Shelves = new List<ShopSectionShelve>
-                                    {
-                                        new ShopSectionShelve
-                                        {
-                                            Name = ShopShelfTypes.WeaponLoadouts,
-                                            IsHot = true,
-                                            IsSale = true,
-                                            Items = new List<string>
-                                            {
-                                                ItemNames.AssaultRifleCat,
-                                                ItemNames.BattleRifleCat
                                             }
                                         }
                                     }
