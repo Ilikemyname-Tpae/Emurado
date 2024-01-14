@@ -190,10 +190,15 @@
     <Compile Include="App_Start\AuthConfig.cs" />
     <Compile Include="App_Start\AutofacConfig.cs" />
     <Compile Include="App_Start\HandlerConfig.cs" />
+    <Compile Include="Controllers\ApplyOfferListAndGetTransactionHistoryController.cs" />
+    <Compile Include="Controllers\GetItemOffersController.cs" />
     <Compile Include="Controllers\GetShopController.cs" />
     <Compile Include="Controllers\GetSubscriptionsController.cs" />
     <Compile Include="Controllers\GetTitleTagsPatchConfigurationController.cs" />
+    <Compile Include="Controllers\GetTransactionHistoryController.cs" />
     <Compile Include="Controllers\GetUsersBaseDataController.cs" />
+    <Compile Include="Controllers\GetUsersByNickname.cs" />
+    <Compile Include="Controllers\GetUsersPrimaryStatesController.cs" />
     <Compile Include="Controllers\GetUserStatesController.cs" />
     <Compile Include="Formatters\HydraBinaryFormatter.cs" />
     <Compile Include="Auth\HaloTokenFormat.cs" />
