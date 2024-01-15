@@ -1,0 +1,86 @@
+[
+  {
+    "className": "PLAYLIST",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "playlist1",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strList": [ "slayer" ],
+        "name": "GAME_MODE_COLLECTION"
+      },
+      {
+        "type": 3,
+        "strList": [ "guardian" ],
+        "name": "MAP_COLLECTION"
+      },
+      {
+        "type": 1,
+        "intVal": 4,
+        "name": "MIN_PLAYERS"
+      },
+      {
+        "type": 1,
+        "intVal": 8,
+        "name": "MAX_PLAYERS"
+      },
+      {
+        "type": 1,
+        "intVal": 2,
+        "name": "MAX_PARTY"
+      },
+      {
+        "type": 3,
+        "boolVal": true,
+        "name": "IS_TEAM_PLAYLIST"
+      }
+    ],
+    "name": "playlist1",
+    "parents": []
+  },
+  {
+    "className": "PLAYLIST",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "playlist2",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strList": [ "ctf" ],
+        "name": "GAME_MODE_COLLECTION"
+      },
+      {
+        "type": 3,
+        "strList": [ "s3d_edge" ],
+        "name": "MAP_COLLECTION"
+      },
+      {
+        "type": 1,
+        "intVal": 8,
+        "name": "MIN_PLAYERS"
+      },
+      {
+        "type": 1,
+        "intVal": 16,
+        "name": "MAX_PLAYERS"
+      },
+      {
+        "type": 1,
+        "intVal": 4,
+        "name": "MAX_PARTY"
+      },
+      {
+        "type": 3,
+        "boolVal": true,
+        "name": "IS_TEAM_PLAYLIST"
+      }
+    ],
+    "name": "playlist2",
+    "parents": []
+  }
+]

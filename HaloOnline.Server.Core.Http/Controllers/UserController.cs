@@ -33,20 +33,6 @@ namespace HaloOnline.Server.Core.Http.Controllers
             };
         }
 
-        [HttpPost]
-        public GetUsersByNicknameResult GetUsersByNickname(GetUsersByNicknameRequest request)
-        {
-            var foundUsers = _userBaseDataRepository.FindUserIdByNicknameAsync(request.NicknamePrefix);
-
-            return new GetUsersByNicknameResult
-            {
-                Result = new ServiceResult<List<UserId>>
-                {
-                    Data = foundUsers.Result.ToList()
-                }
-            };
-        }
-
 
         [HttpPost]
         public ApplyExternalOfferResult ApplyExternalOffer(ApplyExternalOfferRequest request)

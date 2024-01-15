@@ -14,8 +14,9 @@ namespace HaloOnline.Server.Core.Http.Controllers
         private const string Advertisement = "ADVERTISMENT.json";
         private const string UiDesc = "UI_DESC.json";
         private const string News = "NEWS.json";
+        private const string Playlist = "PLAYLIST.json";
         private const string Weapon = "WEAPON.json";
-        private const string ColorKit = "COLOR.json";
+        private const string Color = "COLOR.json";
         private const string Grenade = "GRENADE.json";
         private const string Consumable = "CONSUMABLE.json";
         private const string ConsUiStats = "CONS_UI_STATS.json";
@@ -32,6 +33,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                 string advertisementPath = Path.Combine(instancesFolder, Advertisement);
                 string uiDescPath = Path.Combine(instancesFolder, UiDesc);
                 string newsPath = Path.Combine(instancesFolder, News);
+                string playlistPath = Path.Combine(instancesFolder, Playlist);
                 string weaponPath = Path.Combine(instancesFolder, Weapon);
                 string ColorPath = Path.Combine(instancesFolder, Color);
                 string grenadePath = Path.Combine(instancesFolder, Grenade);
@@ -52,6 +54,9 @@ namespace HaloOnline.Server.Core.Http.Controllers
                 string weaponJsonContent = File.ReadAllText(weaponPath);
                 var weaponInstances = JsonConvert.DeserializeObject<List<dynamic>>(weaponJsonContent);
 
+                string playlistJsonContent = File.ReadAllText(playlistPath);
+                var playlistInstances = JsonConvert.DeserializeObject<List<dynamic>>(playlistJsonContent);
+
                 string colorJsonContent = File.ReadAllText(ColorPath);
                 var colorInstances = JsonConvert.DeserializeObject<List<dynamic>>(colorJsonContent);
 
@@ -69,6 +74,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                 combinedInstances.AddRange(uiDescInstances);
                 combinedInstances.AddRange(newsInstances);
                 combinedInstances.AddRange(weaponInstances);
+                combinedInstances.AddRange(playlistInstances);
                 combinedInstances.AddRange(colorInstances);
                 combinedInstances.AddRange(grenadeInstances);
                 combinedInstances.AddRange(consumableInstances);

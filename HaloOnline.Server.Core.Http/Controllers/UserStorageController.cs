@@ -60,32 +60,6 @@ namespace HaloOnline.Server.Core.Http.Controllers
             };
         }
 
-        [HttpPost]
-        public SetPublicDataResult SetPublicData(SetPublicDataRequest request)
-        {
-            switch (request.ContainerName)
-            {
-                case DataContainerTypes.WeaponLoadouts:
-                    var weaponLoadouts = WeaponLoadout.Deserialize(request.Data);
-                    break;
-                case DataContainerTypes.ArmorLoadouts:
-                    var armorLoadouts = ArmorLoadout.Deserialize(request.Data);
-                    break;
-                case DataContainerTypes.Customizations:
-                    var customizations = Customization.Deserialize(request.Data);
-                    break;
-                default:
-                    throw new ArgumentException("ContainerName");
-            }
-
-            return new SetPublicDataResult
-            {
-                Result = new ServiceResult<bool>
-                {
-                    Data = true
-                }
-            };
-        }
 
         [HttpPost]
         public GetPublicDataResult GetPublicData(GetPublicDataRequest request)
@@ -102,7 +76,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                         ActiveLoadoutSlotIndex = 0,
                         LoadoutSlots = Enumerable.Repeat(new WeaponLoadoutSlot
                         {
-                            PrimaryWeapon = "assault_rifle_v2",
+                            PrimaryWeapon = "assault_rifle",
                             SecondaryWeapon = "magnum",
                             Grenades = "frag_grenade",
                             Booster = "",
@@ -127,7 +101,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                         Slots = Enumerable.Repeat(new ArmorLoadoutSlot
                         {
                             Head = "helmet_air_assault",
-                            Shoulders = "shoulder_air_assault",
+                            Shoulders = "shoulders_air_assault",
                             Torso = "chest_air_assault",
                             Hands = "arms_air_assault",
                             Legs = "legs_air_assault",

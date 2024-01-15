@@ -155,6 +155,111 @@
     "name": "ad3 uidesc",
     "parents": []
   },
+
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "playlist1",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "ps_playtest_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "ps_playtest_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "pl_team_slayer_small",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "pl_team_slayer_small",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "pl_team_slayer_big_300x200",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "playlist1",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "playlist2",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "ps_capture_the_flag_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "ps_capture_the_flag_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "pl_capture_the_flag",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "pl_capture_the_flag",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "pl_ctf_300x200",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "playlist2",
+    "parents": []
+  },
   {
     "className": "UI_DESC",
     "props": [
@@ -388,17 +493,17 @@
       },
       {
         "type": 3,
-        "strVal": "iconNewsImage9",
+        "strVal": "iconNewsImage1",
         "name": "UI_ICON"
       },
       {
         "type": 3,
-        "strVal": "iconNewsImage9",
+        "strVal": "iconNewsImage1",
         "name": "UI_ICON_MED"
       },
       {
         "type": 3,
-        "strVal": "iconNewsImage9",
+        "strVal": "iconNewsImage1",
         "name": "UI_ICON_BIG"
       },
       {
@@ -524,7 +629,7 @@
     "props": [
       {
         "type": 3,
-        "strVal": "air_assault",
+        "strVal": "helmet_air_assault",
         "name": "NAME"
       },
       {
@@ -568,7 +673,7 @@
         "name": "ITEM_QUALITY"
       }
     ],
-    "name": "air_assault",
+    "name": "helmet_air_assault",
     "parents": []
   },
   {
@@ -576,7 +681,215 @@
     "props": [
       {
         "type": 3,
-        "strVal": "scanner",
+        "strVal": "chest_air_assault",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_air_assault_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_air_assault_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_air_assault_desc_short",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "chest_standardSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "chest_standardMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "chest_standard",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "chest_air_assault",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "shoulders_air_assault",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_air_assault_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_air_assault_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_air_assault_desc_short",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "shoulders_standardSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "shoulders_standardMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "shoulders_standard",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "shoulders_air_assault",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "arms_air_assault",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_air_assault_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_air_assault_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_air_assault_desc_short",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "arms_standardSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "arms_standardMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "arms_standard",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "arms_air_assault",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "legs_air_assault",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_air_assault_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_air_assault_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_air_assault_desc_short",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "legs_standardSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "legs_standardMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "legs_standard",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "legs_air_assault",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "helmet_scanner",
         "name": "NAME"
       },
       {
@@ -620,7 +933,7 @@
         "name": "ITEM_QUALITY"
       }
     ],
-    "name": "scanner",
+    "name": "helmet_scanner",
     "parents": []
   },
   {
@@ -628,7 +941,215 @@
     "props": [
       {
         "type": 3,
-        "strVal": "chameleon",
+        "strVal": "shoulders_scanner",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_scanner_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_scanner_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_scanner_desc_short",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "shoulders_standardSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "shoulders_standardMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "shoulders_standard",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "shoulders_scanner",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "chest_scanner",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_scanner_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_scanner_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_scanner_desc_short",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "chest_standardSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "chest_standardMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "chest_standard",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "chest_scanner",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "legs_scanner",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_scanner_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_scanner_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_scanner_desc_short",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "legs_standardSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "legs_standardMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "legs_standard",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "legs_scanner",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "arms_scanner",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_scanner_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_scanner_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_scanner_desc_short",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "arms_standardSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "arms_standardMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "arms_standard",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "arms_scanner",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "helmet_chameleon",
         "name": "NAME"
       },
       {
@@ -672,7 +1193,215 @@
         "name": "ITEM_QUALITY"
       }
     ],
-    "name": "chameleon",
+    "name": "helmet_chameleon",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "arms_chameleon",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_chameleon_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_chameleon_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_chameleon_desc_short",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "arms_standardSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "arms_standardMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "arms_standard",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "arms_chameleon",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "shoulders_chameleon",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_chameleon_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_chameleon_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_chameleon_desc_short",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "shoulders_standardSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "shoulders_standardMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "shoulders_standard",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "shoulders_chameleon",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "chest_chameleon",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_chameleon_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_chameleon_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_chameleon_desc_short",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "chest_standardSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "chest_standardMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "chest_standard",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "chest_chameleon",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "legs_chameleon",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_chameleon_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_chameleon_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_chameleon_desc_short",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "legs_standardSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "legs_standardMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "legs_standard",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "legs_chameleon",
     "parents": []
   },
   {
@@ -732,22 +1461,22 @@
     "props": [
       {
         "type": 3,
-        "strVal": "armor_explorer",
+        "strVal": "helmet_dutch",
         "name": "NAME"
       },
       {
         "type": 3,
-        "strVal": "armor_explorer_name",
+        "strVal": "armor_dutch_name",
         "name": "UI_NAME_ID"
       },
       {
         "type": 3,
-        "strVal": "armor_explorer_desc",
+        "strVal": "armor_dutch_desc",
         "name": "UI_DESC_ID"
       },
       {
         "type": 3,
-        "strVal": "armor_explorer_desc_short",
+        "strVal": "armor_dutch_desc_short",
         "name": "UI_DESC_SHORT_ID"
       },
       {
@@ -776,7 +1505,215 @@
         "name": "ITEM_QUALITY"
       }
     ],
-    "name": "explorer",
+    "name": "helmet_dutch",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "chest_dutch",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_dutch_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_dutch_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_dutch_desc_short",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "chest_standardSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "chest_standardMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "chest_standard",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "chest_dutch",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "shoulders_dutch",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_dutch_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_dutch_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_dutch_desc_short",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "shoulders_standardSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "shoulders_standardMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "shoulders_standard",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "shoulders_dutch",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "arms_dutch",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_dutch_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_dutch_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_dutch_desc_short",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "arms_standardSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "arms_standardMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "arms_standard",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "arms_dutch",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "legs_dutch",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_dutch_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_dutch_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_dutch_desc_short",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "legs_standardSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "legs_standardMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "legs_standard",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "legs_dutch",
     "parents": []
   },
   {
@@ -836,7 +1773,7 @@
     "props": [
       {
         "type": 3,
-        "strVal": "armor_oracle",
+        "strVal": "helmet_oracle",
         "name": "NAME"
       },
       {
@@ -880,7 +1817,215 @@
         "name": "ITEM_QUALITY"
       }
     ],
-    "name": "oracle",
+    "name": "helmet_oracle",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "chest_oracle",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_oracle_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_oracle_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_oracle_desc_short",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "chest_standardSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "chest_standardMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "chest_standard",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "chest_oracle",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "shoulders_oracle",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_oracle_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_oracle_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_oracle_desc_short",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "shoulders_standardSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "shoulders_standardMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "shoulders_standard",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "shoulders_oracle",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "arms_oracle",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_oracle_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_oracle_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_oracle_desc_short",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "arms_standardSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "arms_standardMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "arms_standard",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "arms_oracle",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "legs_oracle",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_oracle_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_oracle_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_oracle_desc_short",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "legs_standardSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "legs_standardMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "legs_standard",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "legs_oracle",
     "parents": []
   },
   {
@@ -940,7 +2085,7 @@
     "props": [
       {
         "type": 3,
-        "strVal": "armor_juggernaut",
+        "strVal": "helmet_juggernaut",
         "name": "NAME"
       },
       {
@@ -984,7 +2129,7 @@
         "name": "ITEM_QUALITY"
       }
     ],
-    "name": "juggernaut",
+    "name": "helmet_juggernaut",
     "parents": []
   },
   {
@@ -992,7 +2137,215 @@
     "props": [
       {
         "type": 3,
-        "strVal": "armor_spectrum",
+        "strVal": "chest_juggernaut",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_juggernaut_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_juggernaut_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_juggernaut_desc_short",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "chest_premiumSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "chest_premiumMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "chest_premium",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "chest_juggernaut",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "shoulders_juggernaut",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_juggernaut_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_juggernaut_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_juggernaut_desc_short",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "shoulders_premiumSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "shoulders_premiumMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "shoulders_premium",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "shoulders_juggernaut",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "arms_juggernaut",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_juggernaut_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_juggernaut_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_juggernaut_desc_short",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "arms_premiumSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "arms_premiumMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "arms_premium",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "arms_juggernaut",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "legs_juggernaut",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_juggernaut_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_juggernaut_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_juggernaut_desc_short",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "legs_premiumSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "legs_premiumMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "legs_premium",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "legs_juggernaut",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "helmet_spectrum",
         "name": "NAME"
       },
       {
@@ -1036,7 +2389,7 @@
         "name": "ITEM_QUALITY"
       }
     ],
-    "name": "spectrum",
+    "name": "helmet_spectrum",
     "parents": []
   },
   {
@@ -1044,7 +2397,215 @@
     "props": [
       {
         "type": 3,
-        "strVal": "armor_orbital",
+        "strVal": "chest_spectrum",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_spectrum_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_spectrum_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_spectrum_desc_short",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "chest_premiumSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "chest_premiumMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "chest_premium",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "chest_spectrum",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "shoulders_spectrum",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_spectrum_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_spectrum_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_spectrum_desc_short",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "shoulders_premiumSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "shoulders_premiumMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "shoulders_premium",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "shoulders_spectrum",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "arms_spectrum",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_spectrum_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_spectrum_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_spectrum_desc_short",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "arms_premiumSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "arms_premiumMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "arms_premium",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "arms_spectrum",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "legs_spectrum",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_spectrum_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_spectrum_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_spectrum_desc_short",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "legs_premiumSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "legs_premiumMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "legs_premium",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "legs_spectrum",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "helmet_orbital",
         "name": "NAME"
       },
       {
@@ -1088,7 +2649,7 @@
         "name": "ITEM_QUALITY"
       }
     ],
-    "name": "orbital",
+    "name": "helmet_orbital",
     "parents": []
   },
   {
@@ -1096,7 +2657,215 @@
     "props": [
       {
         "type": 3,
-        "strVal": "armor_gungnir",
+        "strVal": "chest_orbital",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_orbital_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_orbital_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_orbital_desc_short",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "chest_premiumSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "chest_premiumMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "chest_premium",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "chest_orbital",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "shoulders_orbital",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_orbital_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_orbital_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_orbital_desc_short",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "shoulders_premiumSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "shoulders_premiumMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "shoulders_premium",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "shoulders_orbital",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "arms_orbital",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_orbital_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_orbital_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_orbital_desc_short",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "arms_premiumSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "arms_premiumMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "arms_premium",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "arms_orbital",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "legs_orbital",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_orbital_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_orbital_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_orbital_desc_short",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "legs_premiumSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "legs_premiumMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "legs_premium",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "legs_orbital",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "helmet_gungnir",
         "name": "NAME"
       },
       {
@@ -1140,7 +2909,7 @@
         "name": "ITEM_QUALITY"
       }
     ],
-    "name": "gungnir",
+    "name": "helmet_gungnir",
     "parents": []
   },
   {
@@ -1148,7 +2917,215 @@
     "props": [
       {
         "type": 3,
-        "strVal": "armor_hammerhead",
+        "strVal": "chest_gungnir",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_gungnir_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_gungnir_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_gungnir_desc_short",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "chest_premiumSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "chest_premiumMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "chest_premium",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "chest_gungnir",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "shoulders_gungnir",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_gungnir_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_gungnir_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_gungnir_desc_short",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "shoulders_premiumSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "shoulders_premiumMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "shoulders_premium",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "shoulders_gungnir",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "arms_gungnir",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_gungnir_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_gungnir_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_gungnir_desc_short",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "arms_premiumSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "arms_premiumMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "arms_premium",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "arms_gungnir",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "legs_gungnir",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_gungnir_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_gungnir_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_gungnir_desc_short",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "legs_premiumSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "legs_premiumMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "legs_premium",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "legs_gungnir",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "helmet_hammerhead",
         "name": "NAME"
       },
       {
@@ -1192,7 +3169,7 @@
         "name": "ITEM_QUALITY"
       }
     ],
-    "name": "hammerhead",
+    "name": "helmet_hammerhead",
     "parents": []
   },
   {
@@ -1200,22 +3177,230 @@
     "props": [
       {
         "type": 3,
-        "strVal": "armor_demo",
+        "strVal": "chest_hammerhead",
         "name": "NAME"
       },
       {
         "type": 3,
-        "strVal": "armor_demo_name",
+        "strVal": "armor_hammerhead_name",
         "name": "UI_NAME_ID"
       },
       {
         "type": 3,
-        "strVal": "armor_demo_desc",
+        "strVal": "armor_hammerhead_desc",
         "name": "UI_DESC_ID"
       },
       {
         "type": 3,
-        "strVal": "armor_demo_desc_short",
+        "strVal": "armor_hammerhead_desc_short",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "chest_premiumSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "chest_premiumMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "chest_premium",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "chest_hammerhead",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "shoulders_hammerhead",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_hammerhead_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_hammerhead_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_hammerhead_desc_short",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "shoulders_premiumSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "shoulders_premiumMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "shoulders_premium",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "shoulders_hammerhead",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "arms_hammerhead",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_hammerhead_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_hammerhead_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_hammerhead_desc_short",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "arms_premiumSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "arms_premiumMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "arms_premium",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "arms_hammerhead",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "legs_hammerhead",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_hammerhead_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_hammerhead_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_hammerhead_desc_short",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "legs_premiumSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "legs_premiumMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "legs_premium",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "legs_hammerhead",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "helmet_stealth",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_stealth_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_stealth_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_stealth_desc_short",
         "name": "UI_DESC_SHORT_ID"
       },
       {
@@ -1244,7 +3429,7 @@
         "name": "ITEM_QUALITY"
       }
     ],
-    "name": "demo",
+    "name": "helmet_stealth",
     "parents": []
   },
   {
@@ -1252,7 +3437,215 @@
     "props": [
       {
         "type": 3,
-        "strVal": "armor_strider",
+        "strVal": "chest_stealth",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_stealth_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_stealth_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_stealth_desc_short",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "chest_platinum_3Small",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "chest_platinum_3Med",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "chest_platinum_3",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "chest_stealth",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "shoulders_stealth",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_stealth_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_stealth_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_stealth_desc_short",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "shoulders_platinum_3Small",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "shoulders_platinum_3Med",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "shoulders_platinum_3",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "shoulders_stealth",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "arms_stealth",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_stealth_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_stealth_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_stealth_desc_short",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "arms_platinum_3Small",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "arms_platinum_3Med",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "arms_platinum_3",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "arms_stealth",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "legs_stealth",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_stealth_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_stealth_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_stealth_desc_short",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "legs_platinum_3Small",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "legs_platinum_3Med",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "legs_platinum_3",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "legs_stealth",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "helmet_strider",
         "name": "NAME"
       },
       {
@@ -1296,7 +3689,215 @@
         "name": "ITEM_QUALITY"
       }
     ],
-    "name": "strider",
+    "name": "helmet_strider",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "chest_strider",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_strider_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_strider_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_strider_desc_short",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "chest_platinum_3Small",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "chest_platinum_3Med",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "chest_platinum_3",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "chest_strider",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "shoulders_strider",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_strider_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_strider_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_strider_desc_short",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "shoulders_platinum_3Small",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "shoulders_platinum_3Med",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "shoulders_platinum_3",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "shoulders_strider",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "arms_strider",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_strider_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_strider_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_strider_desc_short",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "arms_platinum_3Small",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "arms_platinum_3Med",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "arms_platinum_3",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "arms_strider",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "legs_strider",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_strider_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_strider_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_strider_desc_short",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "legs_platinum_3Small",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "legs_platinum_3Med",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "legs_platinum_3",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "legs_strider",
     "parents": []
   },
   {
@@ -1309,17 +3910,17 @@
       },
       {
         "type": 3,
-        "strVal": "armor_cyclops_name",
+        "strVal": "armor_ni_hard_name",
         "name": "UI_NAME_ID"
       },
       {
         "type": 3,
-        "strVal": "armor_cyclops_desc",
+        "strVal": "armor_ni_hard_desc",
         "name": "UI_DESC_ID"
       },
       {
         "type": 3,
-        "strVal": "armor_cyclops_desc_short",
+        "strVal": "armor_ni_hard_desc_short",
         "name": "UI_DESC_SHORT_ID"
       },
       {
@@ -6345,5 +8946,4 @@
     "name": "assault_rifle_v3",
     "parents": []
   }
-
 ]

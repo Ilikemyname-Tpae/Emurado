@@ -167,7 +167,7 @@
       <SubType>Designer</SubType>
     </Content>
     <Content Include="Controllers\instances\ADVERTISMENT.json" />
-    <Content Include="Controllers\instances\ASSIGN_KIT.JSON" />
+    <Content Include="Controllers\instances\PLAYLIST.JSON" />
     <Content Include="Controllers\instances\CONSUMABLE.json" />
     <Content Include="Controllers\instances\CONS_UI_STATS.json" />
     <Content Include="Controllers\instances\GRENADE.json" />
@@ -191,6 +191,7 @@
     <Compile Include="App_Start\AutofacConfig.cs" />
     <Compile Include="App_Start\HandlerConfig.cs" />
     <Compile Include="Controllers\ApplyOfferListAndGetTransactionHistoryController.cs" />
+    <Compile Include="Controllers\SetPublicDataController.cs" />
     <Compile Include="Controllers\GetItemOffersController.cs" />
     <Compile Include="Controllers\GetShopController.cs" />
     <Compile Include="Controllers\GetSubscriptionsController.cs" />

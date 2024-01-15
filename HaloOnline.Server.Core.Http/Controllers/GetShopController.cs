@@ -254,66 +254,244 @@ namespace HaloOnline.Server.Core.Http.Controllers
                         },
                         // Will have to add the rest of the armors according to the original list
                         // (i may add armors from newer versions of H:O.
-                        new ShopData
-                        {
-                            Name = "armors",
-                            Type = "armor",
-                            Race = 1,
-                            Sections = new List<ShopSection>
-                            {
-                                new ShopSection
-                                {
-                                    Name = "section_loadouts",
-                                    Shelves = new List<ShopShelf>
-                                    {
-                                        new ShopShelf
-                                        {
-                                            Name = "carousel_armor_standard",
-                                            IsHot = false,
-                                            IsSale = false,
-                                            Items = new List<string>
-                                            {
-                                                "air_assault",
-                                                "",
-                                                "",
-                                                "",
-                                                "",
-                                                ""
-                                            }
-                                        },
-                                        new ShopShelf
-                                        {
-                                            Name = "carousel_armor_premium",
-                                            IsHot = false,
-                                            IsSale = false,
-                                            Items = new List<string>
-                                            {
-                                                "",
-                                                "",
-                                                "",
-                                                "",
-                                                ""
-                                            }
-                                        },
-                                        new ShopShelf
-                                        {
-                                            Name = "carousel_armor_platinum",
-                                            IsHot = false,
-                                            IsSale = false,
-                                            Items = new List<string>
-                                            {
-                                                "",
-                                                "",
-                                                ""
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
+new ShopData
+{
+    Name = "armors",
+    Type = "armor",
+    Race = 1,
+    Sections = new List<ShopSection>
+    {
+        new ShopSection
+        {
+            Name = "carousel_armor_helmet",
+            Shelves = new List<ShopShelf>
+            {
+                new ShopShelf
+                {
+                    Name = "carousel_armor_standard",
+                    IsHot = false,
+                    IsSale = false,
+                    Items = new List<string>
+                    {
+                        "helmet_scanner",
+                        "helmet_chameleon",
+                        "helmet_dutch",
+                        "helmet_air_assault",
+                        "helmet_oracle"
+                    }
+                },
+                new ShopShelf
+                {
+                    Name = "carousel_armor_premium",
+                    IsHot = false,
+                    IsSale = false,
+                    Items = new List<string>
+                    {
+                        "helmet_juggernaut",
+                        "helmet_spectrum",
+                        "helmet_orbital",
+                        "helmet_gungnir",
+                        "helmet_hammerhead"
+                    }
+                },
+                new ShopShelf
+                {
+                    Name = "carousel_armor_platinum",
+                    IsHot = false,
+                    IsSale = false,
+                    Items = new List<string>
+                    {
+                        "helmet_strider",
                     }
                 }
-            };
+            }
+        },
+        new ShopSection
+        {
+            Name = "carousel_armor_chest",
+            Shelves = new List<ShopShelf>
+            {
+                new ShopShelf
+                {
+                    Name = "carousel_armor_standard",
+                    IsHot = false,
+                    IsSale = false,
+                    Items = new List<string>
+                    {
+                        "chest_scanner",
+                        "chest_chameleon",
+                        "chest_dutch",
+                        "chest_air_assault",
+                        "chest_oracle"
+                    }
+                },
+                new ShopShelf
+                {
+                    Name = "carousel_armor_premium",
+                    IsHot = false,
+                    IsSale = false,
+                    Items = new List<string>
+                    {
+                        "chest_juggernaut",
+                        "chest_spectrum",
+                        "chest_orbital",
+                        "chest_gungnir",
+                        "chest_hammerhead"
+                    }
+                },
+                new ShopShelf
+                {
+                    Name = "carousel_armor_platinum",
+                    IsHot = false,
+                    IsSale = false,
+                    Items = new List<string>
+                    {
+                        "chest_strider"
+                    }
+                }
+            }
+        },
+        new ShopSection
+        {
+            Name = "carousel_armor_shoulder",
+            Shelves = new List<ShopShelf>
+            {
+                new ShopShelf
+                {
+                    Name = "carousel_armor_standard",
+                    IsHot = false,
+                    IsSale = false,
+                    Items = new List<string>
+                    {
+                        "shoulders_scanner",
+                        "shoulders_chameleon",
+                        "shoulders_dutch",
+                        "shoulders_air_assault",
+                        "shoulders_oracle"
+                    }
+                },
+                new ShopShelf
+                {
+                    Name = "carousel_armor_premium",
+                    IsHot = false,
+                    IsSale = false,
+                    Items = new List<string>
+                    {
+                        "shoulders_juggernaut",
+                        "shoulders_spectrum",
+                        "shoulders_orbital",
+                        "shoulders_gungnir",
+                        "shoulders_hammerhead"
+                    }
+                },
+                new ShopShelf
+                {
+                    Name = "carousel_armor_platinum",
+                    IsHot = false,
+                    IsSale = false,
+                    Items = new List<string>
+                    {
+                        "shoulders_strider",
+                    }
+                }
+            }
+        },
+        new ShopSection
+        {
+            Name = "carousel_armor_arms",
+            Shelves = new List<ShopShelf>
+            {
+                new ShopShelf
+                {
+                    Name = "carousel_armor_standard",
+                    IsHot = false,
+                    IsSale = false,
+                    Items = new List<string>
+                    {
+                        "arms_scanner",
+                        "arms_chameleon",
+                        "arms_dutch",
+                        "arms_air_assault",
+                        "arms_oracle"
+                    }
+                },
+                new ShopShelf
+                {
+                    Name = "carousel_armor_premium",
+                    IsHot = false,
+                    IsSale = false,
+                    Items = new List<string>
+                    {
+                        "arms_juggernaut",
+                        "arms_spectrum",
+                        "arms_orbital",
+                        "arms_gungnir",
+                        "arms_hammerhead"
+                    }
+                },
+                new ShopShelf
+                {
+                    Name = "carousel_armor_platinum",
+                    IsHot = false,
+                    IsSale = false,
+                    Items = new List<string>
+                    {
+                        "arms_strider"
+                    }
+                }
+            }
+        },
+        new ShopSection
+        {
+            Name = "carousel_armor_legs",
+            Shelves = new List<ShopShelf>
+            {
+                new ShopShelf
+                {
+                    Name = "carousel_armor_standard",
+                    IsHot = false,
+                    IsSale = false,
+                    Items = new List<string>
+                    {
+                        "legs_scanner",
+                        "legs_chameleon",
+                        "legs_dutch",
+                        "legs_air_assault",
+                        "legs_oracle"
+                    }
+                },
+                new ShopShelf
+                {
+                    Name = "carousel_armor_premium",
+                    IsHot = false,
+                    IsSale = false,
+                    Items = new List<string>
+                    {
+                        "legs_juggernaut",
+                        "legs_spectrum",
+                        "legs_orbital",
+                        "legs_gungnir",
+                        "legs_hammerhead"
+                    }
+                },
+                new ShopShelf
+                {
+                    Name = "carousel_armor_platinum",
+                    IsHot = false,
+                    IsSale = false,
+                    Items = new List<string>
+                    {
+                        "legs_strider"
+                    }
+                }
+            }
+                    }
+                }
+            }
+        }
+    }
+};
+
 
             return Ok(result);
         }
