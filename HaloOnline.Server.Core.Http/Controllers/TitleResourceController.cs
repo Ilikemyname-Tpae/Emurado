@@ -15,6 +15,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
         private const string UiDesc = "UI_DESC.json";
         private const string News = "NEWS.json";
         private const string Weapon = "WEAPON.json";
+        private const string ColorKit = "COLOR.json";
         private const string Grenade = "GRENADE.json";
         private const string Consumable = "CONSUMABLE.json";
         private const string ConsUiStats = "CONS_UI_STATS.json";
@@ -32,6 +33,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                 string uiDescPath = Path.Combine(instancesFolder, UiDesc);
                 string newsPath = Path.Combine(instancesFolder, News);
                 string weaponPath = Path.Combine(instancesFolder, Weapon);
+                string ColorPath = Path.Combine(instancesFolder, Color);
                 string grenadePath = Path.Combine(instancesFolder, Grenade);
                 string consumablePath = Path.Combine(instancesFolder, Consumable);
                 string consuistatsPath = Path.Combine(instancesFolder, ConsUiStats);
@@ -49,10 +51,16 @@ namespace HaloOnline.Server.Core.Http.Controllers
 
                 string weaponJsonContent = File.ReadAllText(weaponPath);
                 var weaponInstances = JsonConvert.DeserializeObject<List<dynamic>>(weaponJsonContent);
+
+                string colorJsonContent = File.ReadAllText(ColorPath);
+                var colorInstances = JsonConvert.DeserializeObject<List<dynamic>>(colorJsonContent);
+
                 string grenadeJsonContent = File.ReadAllText(grenadePath);
                 var grenadeInstances = JsonConvert.DeserializeObject<List<dynamic>>(grenadeJsonContent);
+
                 string consumableJsonContent = File.ReadAllText(consumablePath);
                 var consumableInstances = JsonConvert.DeserializeObject<List<dynamic>>(consumableJsonContent);
+
                 string consuistatsJsonContent = File.ReadAllText(consuistatsPath);
                 var consuistatsInstances = JsonConvert.DeserializeObject<List<dynamic>>(consuistatsJsonContent);
 
@@ -61,6 +69,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                 combinedInstances.AddRange(uiDescInstances);
                 combinedInstances.AddRange(newsInstances);
                 combinedInstances.AddRange(weaponInstances);
+                combinedInstances.AddRange(colorInstances);
                 combinedInstances.AddRange(grenadeInstances);
                 combinedInstances.AddRange(consumableInstances);
                 combinedInstances.AddRange(consuistatsInstances);

@@ -1,0 +1,3115 @@
+[
+  // Primary
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_29",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "primary",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 204,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 85,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 0,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Dark Orange",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_30",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "primary",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 230,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 115,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 0,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Medium Dark Orange",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_31",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "primary",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 255,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 165,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 0,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Medium Light Orange",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_32",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "primary",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 255,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 200,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 0,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Light Orange",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_33",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "primary",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 204,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 204,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 0,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Dark Yellow",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_34",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "primary",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 230,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 230,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 0,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Medium Dark Yellow",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_35",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "primary",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 255,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 255,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 0,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Medium Light Yellow",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_36",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "primary",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 255,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 255,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 153,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Light Yellow",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_37",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "primary",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 0,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 102,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 0,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Dark Green",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_38",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "primary",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 0,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 128,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 0,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Medium Dark Green",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_39",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "primary",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 51,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 204,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 51,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Medium Light Green",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_40",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "primary",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 144,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 238,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 144,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Light Green",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_41",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "primary",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 0,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 102,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 102,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Dark Cyan Blue",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_42",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "primary",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 0,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 128,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 128,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Medium Dark Cyan Blue",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_43",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "primary",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 0,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 153,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 153,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Medium Light Cyan Blue",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_44",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "primary",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 0,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 204,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 204,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Light Cyan Blue",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_45",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "primary",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 102,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 0,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 102,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Dark Purple",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_46",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "primary",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 128,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 0,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 128,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Medium Dark Purple",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_47",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "primary",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 153,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 50,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 204,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Medium Light Purple",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_48",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "primary",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 204,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 153,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 255,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Light Purple",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_49",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "primary",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 204,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 0,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 102,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Dark Pink",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_50",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "primary",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 230,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 0,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 115,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Medium Dark Pink",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_51",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "primary",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 255,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 51,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 153,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Medium Light Pink",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_52",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "primary",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 255,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 153,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 204,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Light Pink",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_53",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "primary",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 139,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 0,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 0,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Dark Red",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_54",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "primary",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 178,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 34,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 34,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Medium Dark Red",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_55",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "primary",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 255,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 69,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 0,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Medium Light Red",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_56",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "primary",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 255,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 99,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 71,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Light Red",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_57",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "primary",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 255,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 255,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 255,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "White",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_58",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "primary",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 0,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 0,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 0,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Black",
+    "parents": []
+  },
+  // Secondary
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_59",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "secondary",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 204,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 85,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 0,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Dark Orange",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_60",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "secondary",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 230,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 115,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 0,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Medium Dark Orange",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_61",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "secondary",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 255,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 165,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 0,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Medium Light Orange",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_62",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "secondary",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 255,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 200,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 0,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Light Orange",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_63",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "secondary",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 204,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 204,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 0,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Dark Yellow",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_64",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "secondary",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 230,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 230,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 0,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Medium Dark Yellow",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_65",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "secondary",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 255,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 255,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 0,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Medium Light Yellow",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_66",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "secondary",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 255,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 255,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 153,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Light Yellow",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_67",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "secondary",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 0,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 102,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 0,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Dark Green",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_68",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "secondary",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 0,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 128,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 0,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Medium Dark Green",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_69",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "secondary",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 51,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 204,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 51,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Medium Light Green",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_70",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "secondary",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 144,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 238,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 144,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Light Green",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_71",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "secondary",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 0,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 102,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 102,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Dark Cyan Blue",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_72",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "secondary",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 0,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 128,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 128,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Medium Dark Cyan Blue",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_73",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "secondary",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 0,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 153,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 153,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Medium Light Cyan Blue",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_74",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "secondary",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 0,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 204,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 204,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Light Cyan Blue",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_75",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "secondary",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 102,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 0,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 102,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Dark Purple",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_76",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "secondary",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 128,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 0,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 128,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Medium Dark Purple",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_77",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "secondary",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 153,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 50,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 204,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Medium Light Purple",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_78",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "secondary",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 204,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 153,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 255,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Light Purple",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_79",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "secondary",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 204,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 0,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 102,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Dark Pink",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_80",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "secondary",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 230,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 0,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 115,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Medium Dark Pink",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_81",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "secondary",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 255,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 51,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 153,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Medium Light Pink",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_82",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "secondary",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 255,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 153,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 204,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Light Pink",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_83",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "secondary",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 139,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 0,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 0,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Dark Red",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_84",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "secondary",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 178,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 34,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 34,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Medium Dark Red",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_85",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "secondary",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 255,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 69,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 0,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Medium Light Red",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_86",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "secondary",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 255,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 99,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 71,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Light Red",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_87",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "secondary",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 255,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 255,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 255,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "White",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_88",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "secondary",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 0,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 0,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 0,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Black",
+    "parents": []
+  },
+  // Visor
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_89",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "visor",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 240,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 123,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 22,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Orange",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_90",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "visor",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 242,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 215,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 5,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Yellow",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_91",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "visor",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 14,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 107,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 2,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Green",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_92",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "visor",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 2,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 186,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 189,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Cyan",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_93",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "visor",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 0,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 9,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 184,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Blue",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_94",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "visor",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 121,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 0,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 191,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Purple",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_95",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "visor",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 191,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 0,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 182,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Pink",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_96",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "visor",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 186,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 0,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 22,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Red",
+    "parents": []
+  },
+  // Lights
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_21",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "lights",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 240,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 123,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 22,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Orange",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_22",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "lights",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 242,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 215,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 5,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Yellow",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_23",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "lights",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 14,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 107,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 2,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Green",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_24",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "lights",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 2,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 186,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 189,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Cyan",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_25",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "lights",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 0,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 9,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 184,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Blue",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_26",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "lights",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 121,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 0,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 191,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Purple",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_27",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "lights",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 191,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 0,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 182,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Pink",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_28",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "lights",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 186,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 0,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 22,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Red",
+    "parents": []
+  },
+  // Holo
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_13",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "holo",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 240,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 123,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 22,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Orange",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_14",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "holo",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 242,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 215,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 5,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Yellow",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_15",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "holo",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 14,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 107,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 2,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Green",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_16",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "holo",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 2,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 186,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 189,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Cyan",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_17",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "holo",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 0,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 9,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 184,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Blue",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_18",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "holo",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 121,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 0,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 191,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Purple",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_19",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "holo",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 191,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 0,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 182,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Pink",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_20",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "holo",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 186,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 0,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 22,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Red",
+    "parents": []
+  }
+]

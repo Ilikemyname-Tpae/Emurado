@@ -153,8 +153,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                             {
                                                 "frag_grenade",
                                                 "plasma_grenade",
-                                                "spike_grenade",
-                                                "fire_grenade"
+                                                "spike_grenade"
                                             }
                                         }
                                     }
