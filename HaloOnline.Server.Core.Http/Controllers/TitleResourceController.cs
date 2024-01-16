@@ -20,6 +20,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
         private const string Grenade = "GRENADE.json";
         private const string Consumable = "CONSUMABLE.json";
         private const string ConsUiStats = "CONS_UI_STATS.json";
+        private const string WpnUiStats = "WPN_UI_STATS.json";
 
         [HttpPost]
         [Route("GetTitleConfiguration")]
@@ -39,7 +40,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                 string grenadePath = Path.Combine(instancesFolder, Grenade);
                 string consumablePath = Path.Combine(instancesFolder, Consumable);
                 string consuistatsPath = Path.Combine(instancesFolder, ConsUiStats);
-
+                string wpnuistatsPath = Path.Combine(instancesFolder, WpnUiStats);
 
 
                 string advertisementJsonContent = File.ReadAllText(advertisementPath);
@@ -69,6 +70,9 @@ namespace HaloOnline.Server.Core.Http.Controllers
                 string consuistatsJsonContent = File.ReadAllText(consuistatsPath);
                 var consuistatsInstances = JsonConvert.DeserializeObject<List<dynamic>>(consuistatsJsonContent);
 
+                string wpnuistatsJsonContent = File.ReadAllText(wpnuistatsPath);
+                var wpnuistatsInstances = JsonConvert.DeserializeObject<List<dynamic>>(wpnuistatsJsonContent);
+
                 var combinedInstances = new List<dynamic>();
                 combinedInstances.AddRange(advertisementInstances);
                 combinedInstances.AddRange(uiDescInstances);
@@ -79,6 +83,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                 combinedInstances.AddRange(grenadeInstances);
                 combinedInstances.AddRange(consumableInstances);
                 combinedInstances.AddRange(consuistatsInstances);
+                combinedInstances.AddRange(wpnuistatsInstances);
 
                 var response = new
                 {

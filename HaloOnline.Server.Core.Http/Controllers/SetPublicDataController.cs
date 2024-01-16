@@ -19,7 +19,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                 byte[] data = requestData.Data;
 
                 var userIdClaim = (User?.Identity as ClaimsIdentity)?.FindFirst("Id");
-                int userId = userIdClaim != null ? int.Parse(userIdClaim.Value) : 0;
+                int userId = userIdClaim != null ? int.Parse(userIdClaim.Value) : -1;
 
                 string connectionString = "Data Source=halodb.sqlite;Version=3;";
 

@@ -12,7 +12,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
         public IHttpActionResult GetUsersPrimaryStates()
         {
             var userIdClaim = (User?.Identity as ClaimsIdentity)?.FindFirst("Id");
-            int userId = userIdClaim != null ? int.Parse(userIdClaim.Value) : 0;
+            int userId = userIdClaim != null ? int.Parse(userIdClaim.Value) : -1;
 
             var result = new
             {

@@ -1,0 +1,1640 @@
+[
+	{
+		"className": "WPN_UI_STATS",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "assault_rifle_v2",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 42,
+				"name": "UI_WPN_STATS_DMG"
+			},
+			{
+				"type": 1,
+				"intVal": 42,
+				"name": "UI_WPN_STATS_ROF"
+			},
+			{
+				"type": 1,
+				"intVal": 20,
+				"name": "UI_WPN_STATS_ACC"
+			},
+			{
+				"type": 1,
+				"intVal": 28,
+				"name": "UI_WPN_STATS_CLIP"
+			},
+			{
+				"type": 1,
+				"intVal": 32,
+				"name": "UI_WPN_STATS_RANGE"
+			},
+			{
+				"type": 3,
+				"strVal": "damage",
+				"name": "WPN_PRIMARY_ATTRIBUTE"
+			}
+		],
+		"name": "assault_rifle_v2",
+		"parents": []
+	},
+	{
+		"className": "WPN_UI_STATS",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "assault_rifle_v3",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 29,
+				"name": "UI_WPN_STATS_DMG"
+			},
+			{
+				"type": 1,
+				"intVal": 68,
+				"name": "UI_WPN_STATS_ROF"
+			},
+			{
+				"type": 1,
+				"intVal": 26,
+				"name": "UI_WPN_STATS_ACC"
+			},
+			{
+				"type": 1,
+				"intVal": 32,
+				"name": "UI_WPN_STATS_CLIP"
+			},
+			{
+				"type": 1,
+				"intVal": 32,
+				"name": "UI_WPN_STATS_RANGE"
+			},
+			{
+				"type": 3,
+				"strVal": "rate_of_fire",
+				"name": "WPN_PRIMARY_ATTRIBUTE"
+			}
+		],
+		"name": "assault_rifle_v3",
+		"parents": []
+	},
+	{
+		"className": "WPN_UI_STATS",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "assault_rifle_v6",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 31,
+				"name": "UI_WPN_STATS_DMG"
+			},
+			{
+				"type": 1,
+				"intVal": 53,
+				"name": "UI_WPN_STATS_ROF"
+			},
+			{
+				"type": 1,
+				"intVal": 35,
+				"name": "UI_WPN_STATS_ACC"
+			},
+			{
+				"type": 1,
+				"intVal": 32,
+				"name": "UI_WPN_STATS_CLIP"
+			},
+			{
+				"type": 1,
+				"intVal": 53,
+				"name": "UI_WPN_STATS_RANGE"
+			},
+			{
+				"type": 3,
+				"strVal": "reward_wp",
+				"name": "WPN_PRIMARY_ATTRIBUTE"
+			}
+		],
+		"name": "assault_rifle_v6",
+		"parents": []
+	},
+	{
+		"className": "WPN_UI_STATS",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "assault_rifle_v6",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 40,
+				"name": "UI_WPN_STATS_DMG"
+			},
+			{
+				"type": 1,
+				"intVal": 53,
+				"name": "UI_WPN_STATS_ROF"
+			},
+			{
+				"type": 1,
+				"intVal": 29,
+				"name": "UI_WPN_STATS_ACC"
+			},
+			{
+				"type": 1,
+				"intVal": 32,
+				"name": "UI_WPN_STATS_CLIP"
+			},
+			{
+				"type": 1,
+				"intVal": 57,
+				"name": "UI_WPN_STATS_RANGE"
+			},
+			{
+				"type": 3,
+				"strVal": "1",
+				"name": "WPN_PRIMARY_ATTRIBUTE"
+			}
+		],
+		"name": "assault_rifle_v6",
+		"parents": []
+	},
+	{
+		"className": "WPN_UI_STATS",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "assault_rifle",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 32,
+				"name": "UI_WPN_STATS_DMG"
+			},
+			{
+				"type": 1,
+				"intVal": 52,
+				"name": "UI_WPN_STATS_ROF"
+			},
+			{
+				"type": 1,
+				"intVal": 32,
+				"name": "UI_WPN_STATS_ACC"
+			},
+			{
+				"type": 1,
+				"intVal": 48,
+				"name": "UI_WPN_STATS_CLIP"
+			},
+			{
+				"type": 1,
+				"intVal": 32,
+				"name": "UI_WPN_STATS_RANGE"
+			},
+			{
+				"type": 3,
+				"strVal": "primary_attribute_id",
+				"name": "WPN_PRIMARY_ATTRIBUTE"
+			}
+		],
+		"name": "assault_rifle",
+		"parents": []
+	},
+	{
+		"className": "WPN_UI_STATS",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "plasma_rifle",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 32,
+				"name": "UI_WPN_STATS_DMG"
+			},
+			{
+				"type": 1,
+				"intVal": 52,
+				"name": "UI_WPN_STATS_ROF"
+			},
+			{
+				"type": 1,
+				"intVal": 32,
+				"name": "UI_WPN_STATS_ACC"
+			},
+			{
+				"type": 1,
+				"intVal": 100,
+				"name": "UI_WPN_STATS_CLIP"
+			},
+			{
+				"type": 1,
+				"intVal": 32,
+				"name": "UI_WPN_STATS_RANGE"
+			},
+			{
+				"type": 3,
+				"strVal": "primary_attribute_id",
+				"name": "WPN_PRIMARY_ATTRIBUTE"
+			}
+		],
+		"name": "plasma_rifle",
+		"parents": []
+	},
+	{
+		"className": "WPN_UI_STATS",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "plasma_rifle_v6",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 38,
+				"name": "UI_WPN_STATS_DMG"
+			},
+			{
+				"type": 1,
+				"intVal": 56,
+				"name": "UI_WPN_STATS_ROF"
+			},
+			{
+				"type": 1,
+				"intVal": 34,
+				"name": "UI_WPN_STATS_ACC"
+			},
+			{
+				"type": 1,
+				"intVal": 100,
+				"name": "UI_WPN_STATS_CLIP"
+			},
+			{
+				"type": 1,
+				"intVal": 34,
+				"name": "UI_WPN_STATS_RANGE"
+			},
+			{
+				"type": 3,
+				"strVal": "primary_attribute_id",
+				"name": "WPN_PRIMARY_ATTRIBUTE"
+			}
+		],
+		"name": "plasma_rifle_v6",
+		"parents": []
+	},
+	{
+		"className": "WPN_UI_STATS",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "magnum",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 40,
+				"name": "UI_WPN_STATS_DMG"
+			},
+			{
+				"type": 1,
+				"intVal": 30,
+				"name": "UI_WPN_STATS_ROF"
+			},
+			{
+				"type": 1,
+				"intVal": 53,
+				"name": "UI_WPN_STATS_ACC"
+			},
+			{
+				"type": 1,
+				"intVal": 8,
+				"name": "UI_WPN_STATS_CLIP"
+			},
+			{
+				"type": 1,
+				"intVal": 40,
+				"name": "UI_WPN_STATS_RANGE"
+			},
+			{
+				"type": 3,
+				"strVal": "1",
+				"name": "WPN_PRIMARY_ATTRIBUTE"
+			}
+		],
+		"name": "magnum",
+		"parents": []
+	},
+	{
+		"className": "WPN_UI_STATS",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "magnum_v1",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 33,
+				"name": "UI_WPN_STATS_DMG"
+			},
+			{
+				"type": 1,
+				"intVal": 42,
+				"name": "UI_WPN_STATS_ROF"
+			},
+			{
+				"type": 1,
+				"intVal": 53,
+				"name": "UI_WPN_STATS_ACC"
+			},
+			{
+				"type": 1,
+				"intVal": 12,
+				"name": "UI_WPN_STATS_CLIP"
+			},
+			{
+				"type": 1,
+				"intVal": 40,
+				"name": "UI_WPN_STATS_RANGE"
+			},
+			{
+				"type": 3,
+				"strVal": "1",
+				"name": "WPN_PRIMARY_ATTRIBUTE"
+			}
+		],
+		"name": "magnum_v1",
+		"parents": []
+	},
+	{
+		"className": "WPN_UI_STATS",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "magnum_v2",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 45,
+				"name": "UI_WPN_STATS_DMG"
+			},
+			{
+				"type": 1,
+				"intVal": 30,
+				"name": "UI_WPN_STATS_ROF"
+			},
+			{
+				"type": 1,
+				"intVal": 53,
+				"name": "UI_WPN_STATS_ACC"
+			},
+			{
+				"type": 1,
+				"intVal": 6,
+				"name": "UI_WPN_STATS_CLIP"
+			},
+			{
+				"type": 1,
+				"intVal": 40,
+				"name": "UI_WPN_STATS_RANGE"
+			},
+			{
+				"type": 3,
+				"strVal": "1",
+				"name": "WPN_PRIMARY_ATTRIBUTE"
+			}
+		],
+		"name": "magnum_v2",
+		"parents": []
+	},
+	{
+		"className": "WPN_UI_STATS",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "magnum_v3",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 55,
+				"name": "UI_WPN_STATS_DMG"
+			},
+			{
+				"type": 1,
+				"intVal": 35,
+				"name": "UI_WPN_STATS_ROF"
+			},
+			{
+				"type": 1,
+				"intVal": 58,
+				"name": "UI_WPN_STATS_ACC"
+			},
+			{
+				"type": 1,
+				"intVal": 8,
+				"name": "UI_WPN_STATS_CLIP"
+			},
+			{
+				"type": 1,
+				"intVal": 45,
+				"name": "UI_WPN_STATS_RANGE"
+			},
+			{
+				"type": 3,
+				"strVal": "1",
+				"name": "WPN_PRIMARY_ATTRIBUTE"
+			}
+		],
+		"name": "magnum_v3",
+		"parents": []
+	},
+	{
+		"className": "WPN_UI_STATS",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "smg",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 22,
+				"name": "UI_WPN_STATS_DMG"
+			},
+			{
+				"type": 1,
+				"intVal": 70,
+				"name": "UI_WPN_STATS_ROF"
+			},
+			{
+				"type": 1,
+				"intVal": 25,
+				"name": "UI_WPN_STATS_ACC"
+			},
+			{
+				"type": 1,
+				"intVal": 60,
+				"name": "UI_WPN_STATS_CLIP"
+			},
+			{
+				"type": 1,
+				"intVal": 10,
+				"name": "UI_WPN_STATS_RANGE"
+			},
+			{
+				"type": 3,
+				"strVal": "primary_attribute_id",
+				"name": "WPN_PRIMARY_ATTRIBUTE"
+			}
+		],
+		"name": "smg",
+		"parents": []
+	},
+	{
+		"className": "WPN_UI_STATS",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "smg_v6",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 25,
+				"name": "UI_WPN_STATS_DMG"
+			},
+			{
+				"type": 1,
+				"intVal": 75,
+				"name": "UI_WPN_STATS_ROF"
+			},
+			{
+				"type": 1,
+				"intVal": 29,
+				"name": "UI_WPN_STATS_ACC"
+			},
+			{
+				"type": 1,
+				"intVal": 60,
+				"name": "UI_WPN_STATS_CLIP"
+			},
+			{
+				"type": 1,
+				"intVal": 15,
+				"name": "UI_WPN_STATS_RANGE"
+			},
+			{
+				"type": 3,
+				"strVal": "primary_attribute_id",
+				"name": "WPN_PRIMARY_ATTRIBUTE"
+			}
+		],
+		"name": "smg_v6",
+		"parents": []
+	},
+	{
+		"className": "WPN_UI_STATS",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "smg_v4",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 35,
+				"name": "UI_WPN_STATS_DMG"
+			},
+			{
+				"type": 1,
+				"intVal": 70,
+				"name": "UI_WPN_STATS_ROF"
+			},
+			{
+				"type": 1,
+				"intVal": 25,
+				"name": "UI_WPN_STATS_ACC"
+			},
+			{
+				"type": 1,
+				"intVal": 60,
+				"name": "UI_WPN_STATS_CLIP"
+			},
+			{
+				"type": 1,
+				"intVal": 10,
+				"name": "UI_WPN_STATS_RANGE"
+			},
+			{
+				"type": 3,
+				"strVal": "damage",
+				"name": "WPN_PRIMARY_ATTRIBUTE"
+			}
+		],
+		"name": "smg_v4",
+		"parents": []
+	},
+	{
+		"className": "WPN_UI_STATS",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "smg_v2",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 22,
+				"name": "UI_WPN_STATS_DMG"
+			},
+			{
+				"type": 1,
+				"intVal": 70,
+				"name": "UI_WPN_STATS_ROF"
+			},
+			{
+				"type": 1,
+				"intVal": 42,
+				"name": "UI_WPN_STATS_ACC"
+			},
+			{
+				"type": 1,
+				"intVal": 60,
+				"name": "UI_WPN_STATS_CLIP"
+			},
+			{
+				"type": 1,
+				"intVal": 22,
+				"name": "UI_WPN_STATS_RANGE"
+			},
+			{
+				"type": 3,
+				"strVal": "accuracy",
+				"name": "WPN_PRIMARY_ATTRIBUTE"
+			}
+		],
+		"name": "smg_v2",
+		"parents": []
+	},
+	{
+		"className": "WPN_UI_STATS",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "smg_v3",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 22,
+				"name": "UI_WPN_STATS_DMG"
+			},
+			{
+				"type": 1,
+				"intVal": 70,
+				"name": "UI_WPN_STATS_ROF"
+			},
+			{
+				"type": 1,
+				"intVal": 35,
+				"name": "UI_WPN_STATS_ACC"
+			},
+			{
+				"type": 1,
+				"intVal": 42,
+				"name": "UI_WPN_STATS_CLIP"
+			},
+			{
+				"type": 1,
+				"intVal": 35,
+				"name": "UI_WPN_STATS_RANGE"
+			},
+			{
+				"type": 3,
+				"strVal": "range",
+				"name": "WPN_PRIMARY_ATTRIBUTE"
+			}
+		],
+		"name": "smg_v3",
+		"parents": []
+	},
+	{
+		"className": "WPN_UI_STATS",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "smg_v5",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 22,
+				"name": "UI_WPN_STATS_DMG"
+			},
+			{
+				"type": 1,
+				"intVal": 70,
+				"name": "UI_WPN_STATS_ROF"
+			},
+			{
+				"type": 1,
+				"intVal": 35,
+				"name": "UI_WPN_STATS_ACC"
+			},
+			{
+				"type": 1,
+				"intVal": 70,
+				"name": "UI_WPN_STATS_CLIP"
+			},
+			{
+				"type": 1,
+				"intVal": 10,
+				"name": "UI_WPN_STATS_RANGE"
+			},
+			{
+				"type": 3,
+				"strVal": "1",
+				"name": "WPN_PRIMARY_ATTRIBUTE"
+			}
+		],
+		"name": "smg_v5",
+		"parents": []
+	},
+	{
+		"className": "WPN_UI_STATS",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "dmr",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 60,
+				"name": "UI_WPN_STATS_DMG"
+			},
+			{
+				"type": 1,
+				"intVal": 25,
+				"name": "UI_WPN_STATS_ROF"
+			},
+			{
+				"type": 1,
+				"intVal": 70,
+				"name": "UI_WPN_STATS_ACC"
+			},
+			{
+				"type": 1,
+				"intVal": 15,
+				"name": "UI_WPN_STATS_CLIP"
+			},
+			{
+				"type": 1,
+				"intVal": 40,
+				"name": "UI_WPN_STATS_RANGE"
+			},
+			{
+				"type": 3,
+				"strVal": "primary_attribute_id",
+				"name": "WPN_PRIMARY_ATTRIBUTE"
+			}
+		],
+		"name": "dmr",
+		"parents": []
+	},
+	{
+		"className": "WPN_UI_STATS",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "dmr_v6",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 65,
+				"name": "UI_WPN_STATS_DMG"
+			},
+			{
+				"type": 1,
+				"intVal": 28,
+				"name": "UI_WPN_STATS_ROF"
+			},
+			{
+				"type": 1,
+				"intVal": 74,
+				"name": "UI_WPN_STATS_ACC"
+			},
+			{
+				"type": 1,
+				"intVal": 15,
+				"name": "UI_WPN_STATS_CLIP"
+			},
+			{
+				"type": 1,
+				"intVal": 45,
+				"name": "UI_WPN_STATS_RANGE"
+			},
+			{
+				"type": 3,
+				"strVal": "value",
+				"name": "WPN_PRIMARY_ATTRIBUTE"
+			}
+		],
+		"name": "dmr_v6",
+		"parents": []
+	},
+	{
+		"className": "WPN_UI_STATS",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "dmr_v5",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 60,
+				"name": "UI_WPN_STATS_DMG"
+			},
+			{
+				"type": 1,
+				"intVal": 25,
+				"name": "UI_WPN_STATS_ROF"
+			},
+			{
+				"type": 1,
+				"intVal": 70,
+				"name": "UI_WPN_STATS_ACC"
+			},
+			{
+				"type": 1,
+				"intVal": 15,
+				"name": "UI_WPN_STATS_CLIP"
+			},
+			{
+				"type": 1,
+				"intVal": 50,
+				"name": "UI_WPN_STATS_RANGE"
+			},
+			{
+				"type": 3,
+				"strVal": "range",
+				"name": "WPN_PRIMARY_ATTRIBUTE"
+			}
+		],
+		"name": "dmr_v5",
+		"parents": []
+	},
+	{
+		"className": "WPN_UI_STATS",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "dmr_v1",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 60,
+				"name": "UI_WPN_STATS_DMG"
+			},
+			{
+				"type": 1,
+				"intVal": 25,
+				"name": "UI_WPN_STATS_ROF"
+			},
+			{
+				"type": 1,
+				"intVal": 70,
+				"name": "UI_WPN_STATS_ACC"
+			},
+			{
+				"type": 1,
+				"intVal": 25,
+				"name": "UI_WPN_STATS_CLIP"
+			},
+			{
+				"type": 1,
+				"intVal": 40,
+				"name": "UI_WPN_STATS_RANGE"
+			},
+			{
+				"type": 3,
+				"strVal": "clip_size",
+				"name": "WPN_PRIMARY_ATTRIBUTE"
+			}
+		],
+		"name": "dmr_v1",
+		"parents": []
+	},
+	{
+		"className": "WPN_UI_STATS",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "dmr_v2",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 60,
+				"name": "UI_WPN_STATS_DMG"
+			},
+			{
+				"type": 1,
+				"intVal": 25,
+				"name": "UI_WPN_STATS_ROF"
+			},
+			{
+				"type": 1,
+				"intVal": 80,
+				"name": "UI_WPN_STATS_ACC"
+			},
+			{
+				"type": 1,
+				"intVal": 15,
+				"name": "UI_WPN_STATS_CLIP"
+			},
+			{
+				"type": 1,
+				"intVal": 40,
+				"name": "UI_WPN_STATS_RANGE"
+			},
+			{
+				"type": 3,
+				"strVal": "accuracy",
+				"name": "WPN_PRIMARY_ATTRIBUTE"
+			}
+		],
+		"name": "dmr_v2",
+		"parents": []
+	},
+	{
+		"className": "WPN_UI_STATS",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "dmr_v3",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 60,
+				"name": "UI_WPN_STATS_DMG"
+			},
+			{
+				"type": 1,
+				"intVal": 25,
+				"name": "UI_WPN_STATS_ROF"
+			},
+			{
+				"type": 1,
+				"intVal": 75,
+				"name": "UI_WPN_STATS_ACC"
+			},
+			{
+				"type": 1,
+				"intVal": 12,
+				"name": "UI_WPN_STATS_CLIP"
+			},
+			{
+				"type": 1,
+				"intVal": 40,
+				"name": "UI_WPN_STATS_RANGE"
+			},
+			{
+				"type": 3,
+				"strVal": "rate_of_fire",
+				"name": "WPN_PRIMARY_ATTRIBUTE"
+			}
+		],
+		"name": "dmr_v3",
+		"parents": []
+	},
+	{
+		"className": "WPN_UI_STATS",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "dmr_v4",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 80,
+				"name": "UI_WPN_STATS_DMG"
+			},
+			{
+				"type": 1,
+				"intVal": 20,
+				"name": "UI_WPN_STATS_ROF"
+			},
+			{
+				"type": 1,
+				"intVal": 60,
+				"name": "UI_WPN_STATS_ACC"
+			},
+			{
+				"type": 1,
+				"intVal": 8,
+				"name": "UI_WPN_STATS_CLIP"
+			},
+			{
+				"type": 1,
+				"intVal": 50,
+				"name": "UI_WPN_STATS_RANGE"
+			},
+			{
+				"type": 3,
+				"strVal": "damage",
+				"name": "WPN_PRIMARY_ATTRIBUTE"
+			}
+		],
+		"name": "dmr_v4",
+		"parents": []
+	},
+	{
+		"className": "WPN_UI_STATS",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "battle_rifle",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 42,
+				"name": "UI_WPN_STATS_DMG"
+			},
+			{
+				"type": 1,
+				"intVal": 35,
+				"name": "UI_WPN_STATS_ROF"
+			},
+			{
+				"type": 1,
+				"intVal": 68,
+				"name": "UI_WPN_STATS_ACC"
+			},
+			{
+				"type": 1,
+				"intVal": 36,
+				"name": "UI_WPN_STATS_CLIP"
+			},
+			{
+				"type": 1,
+				"intVal": 42,
+				"name": "UI_WPN_STATS_RANGE"
+			},
+			{
+				"type": 3,
+				"strVal": "primary_attribute_id",
+				"name": "WPN_PRIMARY_ATTRIBUTE"
+			}
+		],
+		"name": "battle_rifle",
+		"parents": []
+	},
+	{
+		"className": "WPN_UI_STATS",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "battle_rifle_v6",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 48,
+				"name": "UI_WPN_STATS_DMG"
+			},
+			{
+				"type": 1,
+				"intVal": 38,
+				"name": "UI_WPN_STATS_ROF"
+			},
+			{
+				"type": 1,
+				"intVal": 72,
+				"name": "UI_WPN_STATS_ACC"
+			},
+			{
+				"type": 1,
+				"intVal": 36,
+				"name": "UI_WPN_STATS_CLIP"
+			},
+			{
+				"type": 1,
+				"intVal": 47,
+				"name": "UI_WPN_STATS_RANGE"
+			},
+			{
+				"type": 3,
+				"strVal": "is_medal",
+				"name": "WPN_PRIMARY_ATTRIBUTE"
+			}
+		],
+		"name": "battle_rifle_v6",
+		"parents": []
+	},
+	{
+		"className": "WPN_UI_STATS",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "covenant_carbine",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 42,
+				"name": "UI_WPN_STATS_DMG"
+			},
+			{
+				"type": 1,
+				"intVal": 35,
+				"name": "UI_WPN_STATS_ROF"
+			},
+			{
+				"type": 1,
+				"intVal": 68,
+				"name": "UI_WPN_STATS_ACC"
+			},
+			{
+				"type": 1,
+				"intVal": 19,
+				"name": "UI_WPN_STATS_CLIP"
+			},
+			{
+				"type": 1,
+				"intVal": 42,
+				"name": "UI_WPN_STATS_RANGE"
+			},
+			{
+				"type": 3,
+				"strVal": "primary_attribute_id",
+				"name": "WPN_PRIMARY_ATTRIBUTE"
+			}
+		],
+		"name": "covenant_carbine",
+		"parents": []
+	},
+	{
+		"className": "WPN_UI_STATS",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "covenant_carbine_v6",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 47,
+				"name": "UI_WPN_STATS_DMG"
+			},
+			{
+				"type": 1,
+				"intVal": 38,
+				"name": "UI_WPN_STATS_ROF"
+			},
+			{
+				"type": 1,
+				"intVal": 72,
+				"name": "UI_WPN_STATS_ACC"
+			},
+			{
+				"type": 1,
+				"intVal": 19,
+				"name": "UI_WPN_STATS_CLIP"
+			},
+			{
+				"type": 1,
+				"intVal": 45,
+				"name": "UI_WPN_STATS_RANGE"
+			},
+			{
+				"type": 3,
+				"strVal": "primary_attribute_id",
+				"name": "WPN_PRIMARY_ATTRIBUTE"
+			}
+		],
+		"name": "covenant_carbine_v6",
+		"parents": []
+	},
+	{
+		"className": "WPN_UI_STATS",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "covenant_carbine_v1",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 42,
+				"name": "UI_WPN_STATS_DMG"
+			},
+			{
+				"type": 1,
+				"intVal": 43,
+				"name": "UI_WPN_STATS_ROF"
+			},
+			{
+				"type": 1,
+				"intVal": 68,
+				"name": "UI_WPN_STATS_ACC"
+			},
+			{
+				"type": 1,
+				"intVal": 19,
+				"name": "UI_WPN_STATS_CLIP"
+			},
+			{
+				"type": 1,
+				"intVal": 42,
+				"name": "UI_WPN_STATS_RANGE"
+			},
+			{
+				"type": 3,
+				"strVal": "rate_of_fire",
+				"name": "WPN_PRIMARY_ATTRIBUTE"
+			}
+		],
+		"name": "covenant_carbine_v1",
+		"parents": []
+	},
+	{
+		"className": "WPN_UI_STATS",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "covenant_carbine_v2",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 45,
+				"name": "UI_WPN_STATS_DMG"
+			},
+			{
+				"type": 1,
+				"intVal": 38,
+				"name": "UI_WPN_STATS_ROF"
+			},
+			{
+				"type": 1,
+				"intVal": 70,
+				"name": "UI_WPN_STATS_ACC"
+			},
+			{
+				"type": 1,
+				"intVal": 19,
+				"name": "UI_WPN_STATS_CLIP"
+			},
+			{
+				"type": 1,
+				"intVal": 45,
+				"name": "UI_WPN_STATS_RANGE"
+			},
+			{
+				"type": 3,
+				"strVal": "reward_wp",
+				"name": "WPN_PRIMARY_ATTRIBUTE"
+			}
+		],
+		"name": "covenant_carbine_v2",
+		"parents": []
+	},
+	{
+		"className": "WPN_UI_STATS",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "covenant_carbine_v3",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 42,
+				"name": "UI_WPN_STATS_DMG"
+			},
+			{
+				"type": 1,
+				"intVal": 35,
+				"name": "UI_WPN_STATS_ROF"
+			},
+			{
+				"type": 1,
+				"intVal": 68,
+				"name": "UI_WPN_STATS_ACC"
+			},
+			{
+				"type": 1,
+				"intVal": 19,
+				"name": "UI_WPN_STATS_CLIP"
+			},
+			{
+				"type": 1,
+				"intVal": 42,
+				"name": "UI_WPN_STATS_RANGE"
+			},
+			{
+				"type": 3,
+				"strVal": "1",
+				"name": "WPN_PRIMARY_ATTRIBUTE"
+			}
+		],
+		"name": "covenant_carbine_v3",
+		"parents": []
+	},
+	{
+		"className": "WPN_UI_STATS",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "covenant_carbine_v4",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 50,
+				"name": "UI_WPN_STATS_DMG"
+			},
+			{
+				"type": 1,
+				"intVal": 35,
+				"name": "UI_WPN_STATS_ROF"
+			},
+			{
+				"type": 1,
+				"intVal": 68,
+				"name": "UI_WPN_STATS_ACC"
+			},
+			{
+				"type": 1,
+				"intVal": 10,
+				"name": "UI_WPN_STATS_CLIP"
+			},
+			{
+				"type": 1,
+				"intVal": 42,
+				"name": "UI_WPN_STATS_RANGE"
+			},
+			{
+				"type": 3,
+				"strVal": "damage",
+				"name": "WPN_PRIMARY_ATTRIBUTE"
+			}
+		],
+		"name": "covenant_carbine_v4",
+		"parents": []
+	},
+	{
+		"className": "WPN_UI_STATS",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "covenant_carbine_v5",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 42,
+				"name": "UI_WPN_STATS_DMG"
+			},
+			{
+				"type": 1,
+				"intVal": 35,
+				"name": "UI_WPN_STATS_ROF"
+			},
+			{
+				"type": 1,
+				"intVal": 75,
+				"name": "UI_WPN_STATS_ACC"
+			},
+			{
+				"type": 1,
+				"intVal": 19,
+				"name": "UI_WPN_STATS_CLIP"
+			},
+			{
+				"type": 1,
+				"intVal": 42,
+				"name": "UI_WPN_STATS_RANGE"
+			},
+			{
+				"type": 3,
+				"strVal": "accuracy",
+				"name": "WPN_PRIMARY_ATTRIBUTE"
+			}
+		],
+		"name": "covenant_carbine_v5",
+		"parents": []
+	},
+	{
+		"className": "WPN_UI_STATS",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "battle_rifle_v1",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 42,
+				"name": "UI_WPN_STATS_DMG"
+			},
+			{
+				"type": 1,
+				"intVal": 68,
+				"name": "UI_WPN_STATS_ROF"
+			},
+			{
+				"type": 1,
+				"intVal": 68,
+				"name": "UI_WPN_STATS_ACC"
+			},
+			{
+				"type": 1,
+				"intVal": 36,
+				"name": "UI_WPN_STATS_CLIP"
+			},
+			{
+				"type": 1,
+				"intVal": 42,
+				"name": "UI_WPN_STATS_RANGE"
+			},
+			{
+				"type": 3,
+				"strVal": "rate_of_fire",
+				"name": "WPN_PRIMARY_ATTRIBUTE"
+			}
+		],
+		"name": "battle_rifle_v1",
+		"parents": []
+	},
+	{
+		"className": "WPN_UI_STATS",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "battle_rifle_v3",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 42,
+				"name": "UI_WPN_STATS_DMG"
+			},
+			{
+				"type": 1,
+				"intVal": 35,
+				"name": "UI_WPN_STATS_ROF"
+			},
+			{
+				"type": 1,
+				"intVal": 68,
+				"name": "UI_WPN_STATS_ACC"
+			},
+			{
+				"type": 1,
+				"intVal": 56,
+				"name": "UI_WPN_STATS_CLIP"
+			},
+			{
+				"type": 1,
+				"intVal": 42,
+				"name": "UI_WPN_STATS_RANGE"
+			},
+			{
+				"type": 3,
+				"strVal": "clip_size",
+				"name": "WPN_PRIMARY_ATTRIBUTE"
+			}
+		],
+		"name": "battle_rifle_v3",
+		"parents": []
+	},
+	{
+		"className": "WPN_UI_STATS",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "battle_rifle_v1_type_3",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 42,
+				"name": "UI_WPN_STATS_DMG"
+			},
+			{
+				"type": 1,
+				"intVal": 68,
+				"name": "UI_WPN_STATS_ROF"
+			},
+			{
+				"type": 1,
+				"intVal": 68,
+				"name": "UI_WPN_STATS_ACC"
+			},
+			{
+				"type": 1,
+				"intVal": 36,
+				"name": "UI_WPN_STATS_CLIP"
+			},
+			{
+				"type": 1,
+				"intVal": 42,
+				"name": "UI_WPN_STATS_RANGE"
+			},
+			{
+				"type": 3,
+				"strVal": "1",
+				"name": "WPN_PRIMARY_ATTRIBUTE"
+			}
+		],
+		"name": "battle_rifle_v1_type_3",
+		"parents": []
+	},
+	{
+		"className": "WPN_UI_STATS",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "battle_rifle_v2",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 42,
+				"name": "UI_WPN_STATS_DMG"
+			},
+			{
+				"type": 1,
+				"intVal": 35,
+				"name": "UI_WPN_STATS_ROF"
+			},
+			{
+				"type": 1,
+				"intVal": 72,
+				"name": "UI_WPN_STATS_ACC"
+			},
+			{
+				"type": 1,
+				"intVal": 36,
+				"name": "UI_WPN_STATS_CLIP"
+			},
+			{
+				"type": 1,
+				"intVal": 47,
+				"name": "UI_WPN_STATS_RANGE"
+			},
+			{
+				"type": 3,
+				"strVal": "accuracy",
+				"name": "WPN_PRIMARY_ATTRIBUTE"
+			}
+		],
+		"name": "battle_rifle_v2",
+		"parents": []
+	},
+	{
+		"className": "WPN_UI_STATS",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "battle_rifle_v4",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 55,
+				"name": "UI_WPN_STATS_DMG"
+			},
+			{
+				"type": 1,
+				"intVal": 25,
+				"name": "UI_WPN_STATS_ROF"
+			},
+			{
+				"type": 1,
+				"intVal": 52,
+				"name": "UI_WPN_STATS_ACC"
+			},
+			{
+				"type": 1,
+				"intVal": 30,
+				"name": "UI_WPN_STATS_CLIP"
+			},
+			{
+				"type": 1,
+				"intVal": 42,
+				"name": "UI_WPN_STATS_RANGE"
+			},
+			{
+				"type": 3,
+				"strVal": "damage",
+				"name": "WPN_PRIMARY_ATTRIBUTE"
+			}
+		],
+		"name": "battle_rifle_v4",
+		"parents": []
+	},
+	{
+		"className": "WPN_UI_STATS",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "battle_rifle_v5",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 42,
+				"name": "UI_WPN_STATS_DMG"
+			},
+			{
+				"type": 1,
+				"intVal": 35,
+				"name": "UI_WPN_STATS_ROF"
+			},
+			{
+				"type": 1,
+				"intVal": 75,
+				"name": "UI_WPN_STATS_ACC"
+			},
+			{
+				"type": 1,
+				"intVal": 36,
+				"name": "UI_WPN_STATS_CLIP"
+			},
+			{
+				"type": 1,
+				"intVal": 53,
+				"name": "UI_WPN_STATS_RANGE"
+			},
+			{
+				"type": 3,
+				"strVal": "range",
+				"name": "WPN_PRIMARY_ATTRIBUTE"
+			}
+		],
+		"name": "battle_rifle_v5",
+		"parents": []
+	}
+]

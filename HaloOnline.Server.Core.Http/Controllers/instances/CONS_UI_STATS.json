@@ -31,7 +31,7 @@
     "props": [
       {
         "type": 3,
-        "strVal": "consumable_vision",
+        "strVal": "vision",
         "name": "NAME"
       },
       {
@@ -50,7 +50,7 @@
         "name": "UI_CONS_STATS_COOLDOWN"
       }
     ],
-    "name": "consumable_vision",
+    "name": "vision",
     "parents": []
   },
   {
@@ -58,7 +58,7 @@
     "props": [
       {
         "type": 3,
-        "strVal": "consumable_bomb_run",
+        "strVal": "bombrun",
         "name": "NAME"
       },
       {
@@ -77,7 +77,7 @@
         "name": "UI_CONS_STATS_COOLDOWN"
       }
     ],
-    "name": "consumable_bomb_run",
+    "name": "bombrun",
     "parents": []
   },
   {
@@ -193,7 +193,7 @@
     "props": [
       {
         "type": 3,
-        "strVal": "consumable_cover",
+        "strVal": "deployable_cover",
         "name": "NAME"
       },
       {
@@ -212,7 +212,7 @@
         "name": "UI_CONS_STATS_COOLDOWN"
       }
     ],
-    "name": "consumable_cover",
+    "name": "deployable_cover",
     "parents": []
   },
   {

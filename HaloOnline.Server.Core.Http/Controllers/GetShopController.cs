@@ -85,8 +85,8 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                             Items = new List<string>
                                             {
                                                 "smg",
-                                                "smg_v1",
                                                 "smg_v2",
+                                                "smg_v3",
                                                 "smg_v4",
                                                 "smg_v6"
                                             }

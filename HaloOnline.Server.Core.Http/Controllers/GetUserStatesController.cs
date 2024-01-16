@@ -26,7 +26,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
         public IHttpActionResult GetUserStates()
         {
             var userIdClaim = (User?.Identity as ClaimsIdentity)?.FindFirst("Id");
-            int userId = userIdClaim != null ? int.Parse(userIdClaim.Value) : 5;
+            int userId = userIdClaim != null ? int.Parse(userIdClaim.Value) : -1;
 
             var userStateList = new List<UserState>();
 
