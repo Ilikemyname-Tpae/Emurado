@@ -530,17 +530,17 @@
       },
       {
         "type": 3,
-        "strVal": "class_ranger_name",
+        "strVal": "bn_ranger_start_kit_name",
         "name": "UI_NAME_ID"
       },
       {
         "type": 3,
-        "strVal": "class_ranger_desc",
+        "strVal": "bn_ranger_start_kit_desc",
         "name": "UI_DESC_ID"
       },
       {
         "type": 3,
-        "strVal": "",
+        "strVal": "bn_ranger_start_kit_desc_short",
         "name": "UI_DESC_SHORT_ID"
       },
       {

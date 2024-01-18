@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Data.SQLite;
 using System.Security.Claims;
+using System.Threading;
 using System.Web.Http;
 using HaloOnline.Server.Core.Http.Model;
 using HaloOnline.Server.Core.Http.Model.User;
@@ -13,16 +14,23 @@ namespace HaloOnline.Server.Core.Http.Controllers
     public class GetTransactionHistoryController : ApiController
     {
         private readonly string connectionString = "Data Source=halodb.sqlite";
+        private bool stopUpdateThread = false;
+
+        public GetTransactionHistoryController()
+        {
+            Thread updateThread = new Thread(AutoUpdateTransactionHistory);
+            updateThread.Start();
+        }
 
         [HttpPost]
         [Route("GetTransactionHistory")]
         public IHttpActionResult GetTransactionHistory()
         {
-            var userIdClaim = (User?.Identity as ClaimsIdentity)?.FindFirst("Id");
-            int userId = userIdClaim != null ? int.Parse(userIdClaim.Value) : -1;
-
             try
             {
+                var userIdClaim = (User?.Identity as ClaimsIdentity)?.FindFirst("Id");
+                int userId = userIdClaim != null ? int.Parse(userIdClaim.Value) : -1;
+
                 List<UserTransaction> userTransactions = new List<UserTransaction>();
 
                 using (var connection = new SQLiteConnection(connectionString))
@@ -93,6 +101,50 @@ namespace HaloOnline.Server.Core.Http.Controllers
             catch (Exception ex)
             {
                 return InternalServerError(ex);
+            }
+        }
+
+        // TODO: need to fix it so when it deletes the row,
+        // meaning you'd have to purchase again to use the weapon again.
+        private void AutoUpdateTransactionHistory()
+        {
+            while (!stopUpdateThread)
+            {
+                try
+                {
+                    using (var connection = new SQLiteConnection(connectionString))
+                    {
+                        connection.Open();
+
+                        using (var updateCommand = new SQLiteCommand("UPDATE TransactionHistory SET ResultingValue = ResultingValue - 5", connection))
+                        {
+                            updateCommand.ExecuteNonQuery();
+                        }
+
+                        using (var deleteCommand = new SQLiteCommand("DELETE FROM TransactionHistory WHERE ResultingValue <= 0", connection))
+                        {
+                            deleteCommand.ExecuteNonQuery();
+                        }
+
+                        using (var checkCommand = new SQLiteCommand("SELECT COUNT(*) FROM TransactionHistory", connection))
+                        {
+                            int rowCount = Convert.ToInt32(checkCommand.ExecuteScalar());
+
+                            if (rowCount == 0)
+                            {
+                                stopUpdateThread = true;
+                                Console.WriteLine("Auto-update stopped: No rows remaining in TransactionHistory.");
+                                return;
+                            }
+                        }
+                    }
+                    // for some reason for the first purchase it ticks down way too fast,
+                    // but then at the second purchase, all is normal and it updates perfectly fine?
+                    Thread.Sleep(5000);
+                }
+                catch (Exception ex)
+                {
+                }
             }
         }
     }

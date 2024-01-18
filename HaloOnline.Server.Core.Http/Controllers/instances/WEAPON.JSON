@@ -312,6 +312,50 @@
     "props": [
       {
         "type": 3,
+        "strVal": "covenant_carbine_v2",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "weapon_p",
+        "name": "TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 1,
+        "name": "ID"
+      }
+    ],
+    "name": "covenant_carbine_v2",
+    "parents": []
+  },
+  {
+    "className": "WEAPON",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "covenant_carbine_v1",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "weapon_p",
+        "name": "TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 1,
+        "name": "ID"
+      }
+    ],
+    "name": "covenant_carbine_v1",
+    "parents": []
+  },
+  {
+    "className": "WEAPON",
+    "props": [
+      {
+        "type": 3,
         "strVal": "covenant_carbine_v4",
         "name": "NAME"
       },
@@ -555,7 +599,7 @@
     "props": [
       {
         "type": 3,
-        "strVal": "battle_rifle_v1_type_3",
+        "strVal": "battle_rifle_v3",
         "name": "NAME"
       },
       {
@@ -569,7 +613,7 @@
         "name": "ID"
       }
     ],
-    "name": "battle_rifle_v1_type_3",
+    "name": "battle_rifle_v3",
     "parents": []
   },
   {
@@ -709,7 +753,7 @@
     "props": [
       {
         "type": 3,
-        "strVal": "smg_v5",
+        "strVal": "smg_v4",
         "name": "NAME"
       },
       {
@@ -723,7 +767,7 @@
         "name": "ID"
       }
     ],
-    "name": "smg_v5",
+    "name": "smg_v4",
     "parents": []
   },
   {
@@ -746,6 +790,28 @@
       }
     ],
     "name": "smg_v2",
+    "parents": []
+  },
+  {
+    "className": "WEAPON",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "smg_v6",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "weapon_p",
+        "name": "TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 1,
+        "name": "ID"
+      }
+    ],
+    "name": "smg_v6",
     "parents": []
   },
   {
@@ -834,6 +900,50 @@
       }
     ],
     "name": "dmr_v2",
+    "parents": []
+  },
+  {
+    "className": "WEAPON",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "dmr_v6",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "weapon_p",
+        "name": "TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 1,
+        "name": "ID"
+      }
+    ],
+    "name": "dmr_v6",
+    "parents": []
+  },
+  {
+    "className": "WEAPON",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "dmr_v5",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "weapon_p",
+        "name": "TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 1,
+        "name": "ID"
+      }
+    ],
+    "name": "dmr_v5",
     "parents": []
   },
   {

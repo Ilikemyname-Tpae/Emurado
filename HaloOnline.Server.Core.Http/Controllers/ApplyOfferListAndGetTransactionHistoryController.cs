@@ -42,10 +42,10 @@ namespace HaloOnline.Server.Core.Http.Controllers
                         new {
                             stateName = offerId,
                             stateType = 4,
-                            ownType = 1,
-                            operationType = 2,
-                            initialValue = 2,
-                            resultingValue = 2,
+                            ownType = 2,
+                            operationType = 0,
+                            initialValue = 3600,
+                            resultingValue = 3600,
                             deltaValue = 2,
                             descId = 2
                         },
@@ -185,10 +185,10 @@ namespace HaloOnline.Server.Core.Http.Controllers
                     commandHistory.Parameters.AddWithValue("@UserId", userId);
                     commandHistory.Parameters.AddWithValue("@StateName", offerId);
                     commandHistory.Parameters.AddWithValue("@StateType", 4);
-                    commandHistory.Parameters.AddWithValue("@OwnType", 1);
-                    commandHistory.Parameters.AddWithValue("@OperationType", 2);
-                    commandHistory.Parameters.AddWithValue("@InitialValue", 2);
-                    commandHistory.Parameters.AddWithValue("@ResultingValue", 2);
+                    commandHistory.Parameters.AddWithValue("@OwnType", 2);
+                    commandHistory.Parameters.AddWithValue("@OperationType", 0);
+                    commandHistory.Parameters.AddWithValue("@InitialValue", 3600);
+                    commandHistory.Parameters.AddWithValue("@ResultingValue", 3600);
                     commandHistory.Parameters.AddWithValue("@DeltaValue", 2);
                     commandHistory.Parameters.AddWithValue("@DescId", 2);
                     commandHistory.Parameters.AddWithValue("@SessionId", Guid.NewGuid().ToString());

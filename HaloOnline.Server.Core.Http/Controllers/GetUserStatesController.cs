@@ -51,6 +51,11 @@ namespace HaloOnline.Server.Core.Http.Controllers
                     new UserState { OwnType = 1, Value = 1, StateName = "dmr", StateType = 4 },
                     new UserState { OwnType = 1, Value = 1, StateName = "frag_grenade", StateType = 4 },
                     new UserState { OwnType = 1, Value = 1, StateName = "magnum", StateType = 4 },
+                    new UserState { OwnType = 1, Value = 1, StateName = "helmet_air_assault", StateType = 4 },
+                    new UserState { OwnType = 1, Value = 1, StateName = "chest_air_assault", StateType = 4 },
+                    new UserState { OwnType = 1, Value = 1, StateName = "shoulders_air_assault", StateType = 4 },
+                    new UserState { OwnType = 1, Value = 1, StateName = "arms_air_assault", StateType = 4 },
+                    new UserState { OwnType = 1, Value = 1, StateName = "legs_air_assault", StateType = 4 },
                  };
 
                 foreach (var stateToAdd in statesToAdd)
