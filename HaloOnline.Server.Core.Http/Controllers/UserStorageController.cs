@@ -1,14 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
+using System.Data.SQLite;
 using System.Security.Claims;
 using System.Web.Http;
-using System.Web.Http.Results;
-using HaloOnline.Server.Core.Http.Interface.Services;
 using HaloOnline.Server.Core.Http.Model;
 using HaloOnline.Server.Core.Http.Model.UserStorage;
 using HaloOnline.Server.Model.User;
 using HaloOnline.Server.Model.UserStorage;
+using Newtonsoft.Json;
 
 namespace HaloOnline.Server.Core.Http.Controllers
 {
@@ -60,68 +59,50 @@ namespace HaloOnline.Server.Core.Http.Controllers
             };
         }
 
-
         [HttpPost]
-        public GetPublicDataResult GetPublicData(GetPublicDataRequest request)
+        public IHttpActionResult GetPublicData(GetPublicDataRequest request)
         {
             var userIdClaim = (User?.Identity as ClaimsIdentity)?.FindFirst("Id");
             int userId = userIdClaim != null ? int.Parse(userIdClaim.Value) : -1;
 
-            AbstractData data;
-            switch (request.ContainerName)
+            string data;
+
+            using (SQLiteConnection connection = new SQLiteConnection("Data Source=halodb.sqlite;Version=3;"))
             {
-                case DataContainerTypes.WeaponLoadouts:
-                    var weaponLoadout = new WeaponLoadout
+                connection.Open();
+
+                using (SQLiteCommand command = connection.CreateCommand())
+                {
+                    command.CommandText = $"SELECT {request.ContainerName} FROM PublicData WHERE UserId = @userId";
+                    command.Parameters.AddWithValue("@userId", userId);
+
+                    using (SQLiteDataReader reader = command.ExecuteReader())
                     {
-                        ActiveLoadoutSlotIndex = 0,
-                        LoadoutSlots = Enumerable.Repeat(new WeaponLoadoutSlot
+                        if (reader.Read())
                         {
-                            PrimaryWeapon = "assault_rifle",
-                            SecondaryWeapon = "magnum",
-                            Grenades = "frag_grenade",
-                            Booster = "",
-                            ConsumableFirst = "",
-                            ConsumableSecond = "",
-                            ConsumableThird = "",
-                            ConsumableFourth = ""
+                            if (!reader.IsDBNull(0))
+                            {
+                                using (var textReader = reader.GetTextReader(0))
+                                {
+                                    data = textReader.ReadToEnd();
+                                }
+                                // will clean up after test
+                                data = data.Replace("\r\n", "").Replace("\\", "");
+                            }
+                            else
+                            {
+                                return NotFound();
+                            }
                         }
-                        , 5).ToList()
-                    };
-                    data = weaponLoadout.Serialize();
-                    break;
-                case DataContainerTypes.ArmorLoadouts:
-                    var armorLoadout = new ArmorLoadout
-                    {
-                        ActiveLoadoutSlotIndex = 0,
-                        PrimaryColor = "color_pri_13",
-                        SecondaryColor = "color_sec_13",
-                        VisorColor = "color_visor_5",
-                        LightsColor = "color_lights_3",
-                        HologramsColor = "color_holo_3",
-                        Slots = Enumerable.Repeat(new ArmorLoadoutSlot
+                        else
                         {
-                            Head = "helmet_air_assault",
-                            Shoulders = "shoulders_air_assault",
-                            Torso = "chest_air_assault",
-                            Hands = "arms_air_assault",
-                            Legs = "legs_air_assault",
-                            Accessory = ""
-                        }, 5).ToList()
-                    };
-                    data = armorLoadout.Serialize();
-                    break;
-                case DataContainerTypes.Customizations:
-                    var customization = new Customization
-                    {
-                        AccountLabel = "account_label"
-                    };
-                    data = customization.Serialize();
-                    break;
-                default:
-                    throw new ArgumentException("ContainerName");
+                            return NotFound();
+                        }
+                    }
+                }
             }
 
-            return new GetPublicDataResult
+            var result = new GetPublicDataResult
             {
                 Result = new ServiceResult<List<PerUser>>
                 {
@@ -133,11 +114,13 @@ namespace HaloOnline.Server.Core.Http.Controllers
                             {
                                 Id = userId
                             },
-                            PerUserData = data
+                            PerUserData = JsonConvert.DeserializeObject<Dictionary<string, object>>(data)
                         }
                     }
                 }
             };
+
+            return Json(result);
         }
     }
 }

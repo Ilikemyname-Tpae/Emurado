@@ -1,6 +1,7 @@
 ﻿using System;
+using System.Data;
 using System.Data.SQLite;
-using System.IO;
+using System.Reflection;
 using System.Security.Claims;
 using System.Web.Http;
 
@@ -15,9 +16,6 @@ namespace HaloOnline.Server.Core.Http.Controllers
         {
             try
             {
-                string containerName = requestData.ContainerName;
-                byte[] data = requestData.Data;
-
                 var userIdClaim = (User?.Identity as ClaimsIdentity)?.FindFirst("Id");
                 int userId = userIdClaim != null ? int.Parse(userIdClaim.Value) : -1;
 
@@ -29,7 +27,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                     {
                         connection.Open();
 
-                        UpsertData(connection, userId, containerName, data);
+                        UpsertData(connection, userId, requestData);
                     }
                     catch (Exception ex)
                     {
@@ -54,32 +52,53 @@ namespace HaloOnline.Server.Core.Http.Controllers
             }
         }
 
-        private void UpsertData(SQLiteConnection connection, int userId, string containerName, byte[] data)
+        private void UpsertData(SQLiteConnection connection, int userId, PublicDataRequest requestData)
         {
+            if (requestData == null)
+            {
+                throw new ArgumentNullException(nameof(requestData));
+            }
+
             using (SQLiteCommand command = new SQLiteCommand(connection))
             {
-                command.CommandText = "SELECT COUNT(*) FROM PublicData WHERE UserId = @UserId";
+                command.CommandText = $"SELECT COUNT(*) FROM PublicData WHERE UserId = @UserId";
                 command.Parameters.AddWithValue("@UserId", userId);
                 int count = Convert.ToInt32(command.ExecuteScalar());
 
                 if (count > 0)
                 {
-                    command.CommandText = $"UPDATE PublicData SET {containerName} = @Data WHERE UserId = @UserId";
+                    command.CommandText = $"UPDATE PublicData SET {requestData.ContainerName} = @Data WHERE UserId = @UserId";
                 }
                 else
                 {
-                    command.CommandText = $"INSERT INTO PublicData (UserId, {containerName}) VALUES (@UserId, @Data)";
+                    command.CommandText = $"INSERT INTO PublicData (UserId, {requestData.ContainerName}) VALUES (@UserId, @Data)";
                 }
 
-                command.Parameters.AddWithValue("@Data", data);
+                PropertyInfo property = typeof(PublicDataRequest).GetProperty(requestData.ContainerName);
+
+                command.Parameters.Add(new SQLiteParameter("@Data") { Value = requestData.Data });
                 command.ExecuteNonQuery();
             }
+        }
+
+        private DbType GetDbType(Type propertyType)
+        {
+            if (propertyType == typeof(int))
+                return DbType.Int32;
+            else if (propertyType == typeof(string))
+                return DbType.String;
+            else if (propertyType == typeof(byte[]))
+                return DbType.Binary;
+            else if (propertyType == typeof(double))
+                return DbType.Double;
+            else
+                return DbType.Object;
         }
     }
 
     public class PublicDataRequest
     {
         public string ContainerName { get; set; }
-        public byte[] Data { get; set; }
+        public object Data { get; set; }
     }
 }

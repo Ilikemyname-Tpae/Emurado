@@ -18,6 +18,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
 
         public GetTransactionHistoryController()
         {
+            Thread.Sleep(5000);
             Thread updateThread = new Thread(AutoUpdateTransactionHistory);
             updateThread.Start();
         }
@@ -104,8 +105,6 @@ namespace HaloOnline.Server.Core.Http.Controllers
             }
         }
 
-        // TODO: need to fix it so when it deletes the row,
-        // meaning you'd have to purchase again to use the weapon again.
         private void AutoUpdateTransactionHistory()
         {
             while (!stopUpdateThread)
@@ -138,8 +137,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                             }
                         }
                     }
-                    // for some reason for the first purchase it ticks down way too fast,
-                    // but then at the second purchase, all is normal and it updates perfectly fine?
+
                     Thread.Sleep(5000);
                 }
                 catch (Exception ex)
