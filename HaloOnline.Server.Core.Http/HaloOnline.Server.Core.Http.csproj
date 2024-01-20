@@ -192,6 +192,7 @@
     <Compile Include="App_Start\AutofacConfig.cs" />
     <Compile Include="App_Start\HandlerConfig.cs" />
     <Compile Include="Controllers\ApplyOfferListAndGetTransactionHistoryController.cs" />
+    <Compile Include="Controllers\PartyGetStatusController.cs" />
     <Compile Include="Controllers\NicknameChangeController.cs" />
     <Compile Include="Controllers\SetPublicDataController.cs" />
     <Compile Include="Controllers\GetItemOffersController.cs" />
@@ -263,6 +264,7 @@
     <Compile Include="Model\Presence\MatchmakeStartRequest.cs" />
     <Compile Include="Model\Presence\MatchmakeStartResult.cs" />
     <Compile Include="Model\Presence\MatchmakeStopRequest.cs" />
+    <Compile Include="Model\Presence\MatchmakeService.cs" />
     <Compile Include="Model\Presence\MatchmakeStopResult.cs" />
     <Compile Include="Model\Presence\PartyGetStatusRequest.cs" />
     <Compile Include="Model\Presence\PartyGetStatusResult.cs" />

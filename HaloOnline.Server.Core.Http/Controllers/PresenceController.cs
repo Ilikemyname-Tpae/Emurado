@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Web.Http;
 using HaloOnline.Server.Common.Repositories;
 using HaloOnline.Server.Core.Http.Interface.Services;
@@ -12,7 +13,7 @@ using HaloOnline.Server.Model.User;
 namespace HaloOnline.Server.Core.Http.Controllers
 {
     [Authorize]
-    public class PresenceController : ApiController, IPresenceService
+    public class PresenceController : ApiController
     {
         private readonly ISessionRepository _sessionRepository;
         private readonly IPartyRepository _partyRepository;
@@ -227,38 +228,6 @@ namespace HaloOnline.Server.Core.Http.Controllers
         }
 
         [HttpPost]
-        public PartyGetStatusResult PartyGetStatus(PartyGetStatusRequest request)
-        {
-            PartyMember partyMember;
-            Party party;
-            IEnumerable<PartyMember> partyMembers;
-            if (TryGetUserPartyMember(out partyMember) &&
-                TryGetParty(partyMember.PartyId, out party))
-            {
-                partyMembers = _partyMemberRepository.FindByPartyId(party.Id).Result;
-            }
-            else
-            {
-                party = new Party
-                {
-                    Id = "1",
-                    MatchmakeState = 0,
-                    GameData = new byte[0]
-                };
-                partyMembers = new PartyMember[0];
-            }
-            var partyStatus = GetPartyStatus(party, partyMembers);
-            
-            return new PartyGetStatusResult
-            {
-                Result = new ServiceResult<PartyStatus>
-                {
-                    Data = partyStatus
-                }
-            };
-        }
-
-        [HttpPost]
         public CustomGameStartResult CustomGameStart(CustomGameStartRequest request)
         {
             return new CustomGameStartResult
@@ -299,7 +268,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
         [HttpPost]
         public MatchmakeStopResult MatchmakeStop(MatchmakeStopRequest request)
         {
-            // TODO: Reset state to none or forming
+            MatchmakeService.SetMatchmakeState(0);
             return new MatchmakeStopResult
             {
                 Result = new ServiceResult<bool>
@@ -312,6 +281,11 @@ namespace HaloOnline.Server.Core.Http.Controllers
         [HttpPost]
         public MatchmakeGetStatusResult MatchmakeGetStatus(MatchmakeGetStatusRequest request)
         {
+            var userIdClaim = (User?.Identity as ClaimsIdentity)?.FindFirst("Id");
+            int userId = userIdClaim != null ? int.Parse(userIdClaim.Value) : -1;
+
+            MatchmakeService.UpdateMatchmakeState(1);
+
             return new MatchmakeGetStatusResult
             {
                 Result = new ServiceResult<MatchmakeStatus>
@@ -323,30 +297,19 @@ namespace HaloOnline.Server.Core.Http.Controllers
                             Id = "1"
                         },
                         Members = new List<MatchmakeMember>
+                {
+                    new MatchmakeMember
+                    {
+                        User = new UserId
                         {
-                            new MatchmakeMember
-                            {
-                                User = new UserId
-                                {
-                                    Id = 1
-                                },
-                                Party = new PartyId
-                                {
-                                    Id = "1"
-                                }
-                            },
-                            new MatchmakeMember
-                            {
-                                User = new UserId
-                                {
-                                    Id = 2
-                                },
-                                Party = new PartyId
-                                {
-                                    Id = "1"
-                                }
-                            }
+                            Id = userId
                         },
+                        Party = new PartyId
+                        {
+                            Id = "1"
+                        }
+                    },
+                },
                         MatchmakeTimer = 0
                     }
                 }

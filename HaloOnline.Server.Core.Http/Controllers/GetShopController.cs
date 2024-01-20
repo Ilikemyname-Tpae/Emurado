@@ -225,6 +225,64 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                 }
                             }
                         },
+                        new ShopData
+                        {
+                            Name = "career_shop",
+                            Type = "career",
+                            Race = 3,
+                            Sections = new List<ShopSection>
+                            {
+                                new ShopSection
+                                {
+                                    Name = "Ranger",
+                                    Shelves = new List<ShopShelf>
+                                    {
+                                        new ShopShelf
+                                        {
+                                            Name = "shelf_bundles_start_f_kits",
+                                            IsHot = false,
+                                            IsSale = false,
+                                            Items = new List<string>
+                                            {
+                                            }
+                                        }
+                                    }
+                                },
+                                new ShopSection
+                                {
+                                    Name = "Sniper",
+                                    Shelves = new List<ShopShelf>
+                                    {
+                                        new ShopShelf
+                                        {
+                                            Name = "shelf_bundles_start_f_kits",
+                                            IsHot = false,
+                                            IsSale = false,
+                                            Items = new List<string>
+                                            {
+                                            }
+                                        }
+                                    }
+                                },
+                                new ShopSection
+                                {
+                                    Name = "Tactician",
+                                    Shelves = new List<ShopShelf>
+                                    {
+                                        new ShopShelf
+                                        {
+                                            Name = "shelf_bundles_start_f_kits",
+                                            IsHot = false,
+                                            IsSale = false,
+                                            Items = new List<string>
+                                            {
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+
                         // Will have to add the rest of the armors according to the original list
                         // (i may add armors from newer versions of H:O.
 new ShopData

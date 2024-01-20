@@ -530,32 +530,32 @@
       },
       {
         "type": 3,
-        "strVal": "bn_ranger_start_kit_name",
+        "strVal": "career_ranger_name",
         "name": "UI_NAME_ID"
       },
       {
         "type": 3,
-        "strVal": "bn_ranger_start_kit_desc",
+        "strVal": "career_ranger_desc",
         "name": "UI_DESC_ID"
       },
       {
         "type": 3,
-        "strVal": "bn_ranger_start_kit_desc_short",
+        "strVal": "",
         "name": "UI_DESC_SHORT_ID"
       },
       {
         "type": 3,
-        "strVal": "iconRangerClass",
+        "strVal": "career_ranger_IconSmall",
         "name": "UI_ICON"
       },
       {
         "type": 3,
-        "strVal": "iconRangerClass",
+        "strVal": "career_ranger_IconMed",
         "name": "UI_ICON_MED"
       },
       {
         "type": 3,
-        "strVal": "iconRangerClass",
+        "strVal": "career_ranger_IconBig",
         "name": "UI_ICON_BIG"
       },
       {
@@ -570,6 +570,110 @@
       }
     ],
     "name": "Ranger",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "Sniper",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "career_sniper_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "career_sniper_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "career_sniper_IconSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "career_sniper_IconMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "career_sniper_IconBig",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "Sniper",
+    "parents": []
+  },
+  {
+    "className": "UI_DESC",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "Tactician",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "career_tactician_name",
+        "name": "UI_NAME_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "career_tactician_desc",
+        "name": "UI_DESC_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_DESC_SHORT_ID"
+      },
+      {
+        "type": 3,
+        "strVal": "career_tactician_IconSmall",
+        "name": "UI_ICON"
+      },
+      {
+        "type": 3,
+        "strVal": "career_tactician_IconMed",
+        "name": "UI_ICON_MED"
+      },
+      {
+        "type": 3,
+        "strVal": "career_tactician_IconBig",
+        "name": "UI_ICON_BIG"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_VIDEO"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "ITEM_QUALITY"
+      }
+    ],
+    "name": "Tactician",
     "parents": []
   },
   {
