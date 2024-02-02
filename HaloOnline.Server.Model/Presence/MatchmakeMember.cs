@@ -6,5 +6,6 @@ namespace HaloOnline.Server.Model.Presence
     {
         public UserId User { get; set; }
         public PartyId Party { get; set; }
+        public bool IsOwner { get; set; }
     }
 }

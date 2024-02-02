@@ -11,5 +11,11 @@ namespace HaloOnline.Server.Common.Repositories
         Task DeleteAsync(Party party);
         Task<Party> FindByPartyIdAsync(string partyId);
         Task<IEnumerable<Party>> FindByMatchmakeStateAsync(int matchmakeState);
+        void StorePartyData(string partyId, byte[] gameData);
+        PartyData RetrievePartyData(string partyId);
+    }
+    public class PartyData
+    {
+        public byte[] GameData { get; set; }
     }
 }

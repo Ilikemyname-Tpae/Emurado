@@ -1,56 +1,38 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Data.SQLite;
 using System.Security.Claims;
 using System.Web.Http;
+using HaloOnline.Server.Common.Repositories;
+using HaloOnline.Server.Core.Http.Model;
 using HaloOnline.Server.Core.Http.Model.Presence;
 using HaloOnline.Server.Model.Presence;
+using HaloOnline.Server.Model.User;
 
 namespace HaloOnline.Server.Core.Http.Controllers
 {
     [RoutePrefix("PresenceService.svc")]
-    public class PartyGetStatusController : ApiController
+    public class PartyJoinController : ApiController
     {
         private const string ConnectionString = "Data Source=halodb.sqlite;Version=3;";
 
         [HttpPost]
-        [Route("PartyGetStatus")]
+        [Route("PartyJoin")]
         [Authorize]
-        public IHttpActionResult PartyGetStatus()
+        public PartyJoinResult PartyJoin(PartyJoinRequest request)
         {
             var userIdClaim = (User?.Identity as ClaimsIdentity)?.FindFirst("Id");
             int userId = userIdClaim != null ? int.Parse(userIdClaim.Value) : -1;
 
             var partyStatus = GetPartyStatusFromDatabase(userId);
 
-            var result = new
+            return new PartyJoinResult
             {
-                PartyGetStatusResult = new
+                Result = new ServiceResult<PartyStatus>
                 {
-                    retCode = 0,
-                    data = new
-                    {
-                        Party = new
-                        {
-                            Id = partyStatus.Party?.Id ?? "",
-                        },
-                        SessionMembers = new[]
-                        {
-                            new
-                            {
-                                User = new
-                                {
-                                    Id = userId
-                                },
-                                IsOwner = true
-                            }
-                        },
-                        MatchmakeState = partyStatus.MatchmakeState,
-                        GameData = partyStatus.GameData
-                    }
+                    Data = partyStatus
                 }
             };
-
-            return Ok(result);
         }
 
         private PartyStatus GetPartyStatusFromDatabase(int userId)
@@ -67,14 +49,29 @@ namespace HaloOnline.Server.Core.Http.Controllers
                     {
                         if (reader.Read())
                         {
+                            string partyId = reader["Id"].ToString();
+                            int matchmakeState = Convert.ToInt32(reader["MatchmakeState"]);
+                            byte[] gameData = reader["GameData"] as byte[] ?? new byte[100];
+
                             return new PartyStatus
                             {
                                 Party = new PartyId
                                 {
-                                    Id = reader["Id"].ToString()
+                                    Id = partyId
                                 },
-                                MatchmakeState = Convert.ToInt32(reader["MatchmakeState"]),
-                                GameData = reader["GameData"] as byte[] ?? new byte[100]
+                                SessionMembers = new List<PartyMemberDto>
+                                {
+                                    new PartyMemberDto
+                                    {
+                                        User = new UserId
+                                        {
+                                            Id = userId
+                                        },
+                                        IsOwner = true
+                                    }
+                                },
+                                MatchmakeState = matchmakeState,
+                                GameData = gameData
                             };
                         }
                         else

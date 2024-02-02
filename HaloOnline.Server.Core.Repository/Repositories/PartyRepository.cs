@@ -6,7 +6,7 @@ using HaloOnline.Server.Model.Presence;
 
 namespace HaloOnline.Server.Core.Repository.Repositories
 {
-    public class PartyRepository : IPartyRepository
+    public class PartyRepository
     {
         private readonly IHaloDbContext _context;
 
