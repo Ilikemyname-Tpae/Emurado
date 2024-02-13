@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SQLite;
 using System.Linq;
 using System.Security.Claims;
 using System.Web.Http;
@@ -104,6 +105,29 @@ namespace HaloOnline.Server.Core.Http.Controllers
         [HttpPost]
         public MatchmakeStartResult MatchmakeStart(MatchmakeStartRequest request)
         {
+            bool isNewGuidCreated = false;
+            string sessionId;
+
+            using (var connection = new SQLiteConnection("Data Source=halodb.sqlite"))
+            {
+                connection.Open();
+                using (var command = connection.CreateCommand())
+                {
+                    command.CommandText = "SELECT COUNT(*) FROM Session";
+                    var count = (long)command.ExecuteScalar();
+                    if (count == 0)
+                    {
+                        sessionId = Guid.NewGuid().ToString();
+
+                        command.CommandText = "INSERT INTO Session (Id) VALUES (@Id)";
+                        command.Parameters.AddWithValue("@Id", sessionId);
+                        command.ExecuteNonQuery();
+
+                        isNewGuidCreated = true;
+                    }
+                }
+            }
+
             return new MatchmakeStartResult
             {
                 Result = new ServiceResult<bool>
@@ -123,11 +147,11 @@ namespace HaloOnline.Server.Core.Http.Controllers
                 {
                     Data = new OnlineStats
                     {
-                        UsersMainMenu = 51,
-                        UsersQueue = 50,
-                        UsersIngame = 50,
-                        UsersRematch = 50,
-                        MatchmakeSessions = 55
+                        UsersMainMenu = 0,
+                        UsersQueue = 0,
+                        UsersIngame = 0,
+                        UsersRematch = 0,
+                        MatchmakeSessions = 0
                     }
                 }
             };

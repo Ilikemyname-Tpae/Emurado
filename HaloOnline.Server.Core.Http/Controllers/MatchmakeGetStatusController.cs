@@ -40,93 +40,97 @@ namespace HaloOnline.Server.Core.Http.Controllers
 
         private MatchmakeStatus GetMatchmakeStatusFromDatabase(int userId)
         {
-            using (var connection = new SQLiteConnection(ConnectionString))
+            var matchmakeStatus = new MatchmakeStatus
             {
-                connection.Open();
-
-                using (var command = new SQLiteCommand("SELECT Id, MatchmakeState, GameData FROM Party", connection))
+                Id = new MatchmakeId
                 {
-                    command.Parameters.AddWithValue("@userId", userId);
-
-                    using (var reader = command.ExecuteReader())
-                    {
-                        if (reader.Read())
-                        {
-                            var partyId = reader["Id"].ToString();
-
-                            var members = GetPartyMembersFromDatabase(partyId);
-
-                            return new MatchmakeStatus
-                            {
-                                Id = new MatchmakeId
-                                {
-                                    Id = partyId
-                                },
-                                Members = members,
-                                MatchmakeTimer = 0
-                            };
-                        }
-                        else
-                        {
-                            return new MatchmakeStatus();
-                        }
-                    }
-                }
-            }
-        }
-
-        private List<MatchmakeMember> GetPartyMembersFromDatabase(string partyId)
-        {
-            List<MatchmakeMember> members = new List<MatchmakeMember>();
+                    Id = ""
+                },
+                Members = new List<MatchmakeMember>(),
+                MatchmakeTimer = 0,
+            };
 
             using (var connection = new SQLiteConnection(ConnectionString))
             {
                 connection.Open();
 
-                using (var command = new SQLiteCommand("SELECT UserId, IsOwner FROM PartyMember WHERE PartyId = @partyId", connection))
+                using (var command = new SQLiteCommand("SELECT UserId, PartyId, IsOwner FROM PartyMember", connection))
                 {
-                    command.Parameters.AddWithValue("@partyId", partyId);
-
                     using (var reader = command.ExecuteReader())
                     {
                         while (reader.Read())
                         {
-                            int userId = int.Parse(reader["UserId"].ToString());
-                            bool isOwner = Convert.ToBoolean(reader["IsOwner"]);
+                            var memberId = reader.GetInt32(0);
+                            var partyId = reader.GetString(1);
+                            var isOwner = reader.GetBoolean(2);
 
-                            members.Add(new MatchmakeMember
+                            if (PartyHasMatchmakeState(connection, partyId))
                             {
-                                User = new UserId
+                                matchmakeStatus.Members.Add(new MatchmakeMember
                                 {
-                                    Id = userId
-                                },
-                                Party = new PartyId
-                                {
-                                    Id = partyId
-                                },
-                                IsOwner = isOwner
-                            });
-                        }
-                    }
-                }
-            }
-
-            return members;
-        }
-
-        private void UpdateMatchmakeStateInDatabase(int userId)
-                    {
-                        using (var connection = new SQLiteConnection(ConnectionString))
-                        {
-                            connection.Open();
-
-                            using (var command = new SQLiteCommand("UPDATE Party SET MatchmakeState = 1", connection))
-                            {
-                                command.Parameters.AddWithValue("@userId", userId);
-
-                                command.ExecuteNonQuery();
+                                    User = new UserId
+                                    {
+                                        Id = memberId
+                                    },
+                                    Party = new PartyId
+                                    {
+                                        Id = partyId
+                                    },
+                                    IsOwner = isOwner
+                                });
                             }
                         }
                     }
                 }
             }
+
+            // just something to make it so it look like each userside looks like theyre first in the lobby
+            matchmakeStatus.Members.Sort((x, y) => x.User.Id == userId ? -1 : y.User.Id == userId ? 1 : 0);
+
+            return matchmakeStatus;
+        }
+
+
+        private bool PartyHasMatchmakeState(SQLiteConnection connection, string partyId)
+        {
+            using (var command = new SQLiteCommand("SELECT MatchmakeState FROM Party WHERE Id = @partyId", connection))
+            {
+                command.Parameters.AddWithValue("@partyId", partyId);
+                var matchmakeState = command.ExecuteScalar();
+
+                return matchmakeState != null && Convert.ToInt32(matchmakeState) == 1;
+            }
+        }
+
+        private void UpdateMatchmakeStateInDatabase(int userId)
+        {
+            string partyId;
+            using (var connection = new SQLiteConnection(ConnectionString))
+            {
+                connection.Open();
+
+                using (var command = new SQLiteCommand("SELECT PartyId FROM PartyMember WHERE UserId = @userId", connection))
+                {
+                    command.Parameters.AddWithValue("@userId", userId);
+
+                    partyId = command.ExecuteScalar()?.ToString();
+                }
+            }
+
+            if (partyId != null)
+            {
+                using (var connection = new SQLiteConnection(ConnectionString))
+                {
+                    connection.Open();
+
+                    using (var command = new SQLiteCommand("UPDATE Party SET MatchmakeState = 1 WHERE Id = @partyId", connection))
+                    {
+                        command.Parameters.AddWithValue("@partyId", partyId);
+
+                        command.ExecuteNonQuery();
+                    }
+                }
+            }
+        }
+    }
+}

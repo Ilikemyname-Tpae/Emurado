@@ -59,7 +59,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
             {
                 connection.Open();
 
-                using (var command = new SQLiteCommand("SELECT Id, MatchmakeState, GameData FROM Party", connection))
+                using (var command = new SQLiteCommand("SELECT PartyId FROM PartyMember WHERE UserId = @userId", connection))
                 {
                     command.Parameters.AddWithValue("@userId", userId);
 
@@ -67,14 +67,15 @@ namespace HaloOnline.Server.Core.Http.Controllers
                     {
                         if (reader.Read())
                         {
+                            var partyId = reader["PartyId"].ToString();
                             return new PartyStatus
                             {
                                 Party = new PartyId
                                 {
-                                    Id = reader["Id"].ToString()
+                                    Id = partyId
                                 },
-                                MatchmakeState = Convert.ToInt32(reader["MatchmakeState"]),
-                                GameData = reader["GameData"] as byte[] ?? new byte[100]
+                                MatchmakeState = GetMatchmakeStateForParty(partyId, connection),
+                                GameData = GetGameDataForParty(partyId, connection)
                             };
                         }
                         else
@@ -83,6 +84,26 @@ namespace HaloOnline.Server.Core.Http.Controllers
                         }
                     }
                 }
+            }
+        }
+
+        private int GetMatchmakeStateForParty(string partyId, SQLiteConnection connection)
+        {
+            using (var command = new SQLiteCommand("SELECT MatchmakeState FROM Party WHERE Id = @partyId", connection))
+            {
+                command.Parameters.AddWithValue("@partyId", partyId);
+                var result = command.ExecuteScalar();
+                return result != null ? Convert.ToInt32(result) : 0;
+            }
+        }
+
+        private byte[] GetGameDataForParty(string partyId, SQLiteConnection connection)
+        {
+            using (var command = new SQLiteCommand("SELECT GameData FROM Party WHERE Id = @partyId", connection))
+            {
+                command.Parameters.AddWithValue("@partyId", partyId);
+                var result = command.ExecuteScalar();
+                return result as byte[] ?? new byte[100];
             }
         }
     }

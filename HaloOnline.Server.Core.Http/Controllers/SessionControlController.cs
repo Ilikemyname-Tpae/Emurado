@@ -35,7 +35,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                         {
                             ServerId = "",
                             ServerAddress = "",
-                            Port = 0
+                            Port = 11774
                         }
                     }
                 }
