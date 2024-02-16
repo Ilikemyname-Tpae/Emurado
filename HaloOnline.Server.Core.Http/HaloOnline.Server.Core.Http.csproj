@@ -189,6 +189,9 @@
     <Compile Include="App_Start\AutofacConfig.cs" />
     <Compile Include="App_Start\HandlerConfig.cs" />
     <Compile Include="Controllers\ApplyOfferListAndGetTransactionHistoryController.cs" />
+    <Compile Include="Controllers\SendServiceMessageController.cs" />
+    <Compile Include="Controllers\ReceiveController.cs" />
+    <Compile Include="Controllers\JoinChannelsController.cs" />
     <Compile Include="Controllers\MatchmakeStopController.cs" />
     <Compile Include="Controllers\PresenceConnectController.cs" />
     <Compile Include="Controllers\MatchmakeGetStatusController.cs" />
@@ -208,6 +211,7 @@
     <Compile Include="Controllers\GetUsersPrimaryStatesController.cs" />
     <Compile Include="Controllers\GetUserStatesController.cs" />
     <Compile Include="Controllers\PresenceGetUsersPresenceController.cs" />
+    <Compile Include="Controllers\UserDto.cs" />
     <Compile Include="Formatters\HydraBinaryFormatter.cs" />
     <Compile Include="Auth\HaloTokenFormat.cs" />
     <Compile Include="Auth\HaloUserManager.cs" />

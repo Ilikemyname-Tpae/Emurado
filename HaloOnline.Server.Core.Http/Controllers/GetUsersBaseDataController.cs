@@ -1,4 +1,6 @@
 ﻿using HaloOnline.Server.Core.Repository;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System;
 using System.IO;
 using System.Linq;
@@ -24,8 +26,10 @@ namespace HaloOnline.Server.Core.Http.Controllers
         {
             try
             {
-                var userIdClaim = (User?.Identity as ClaimsIdentity)?.FindFirst("Id");
-                int userId = userIdClaim != null ? int.Parse(userIdClaim.Value) : -1;
+                var requestBody = await Request.Content.ReadAsStringAsync();
+
+                dynamic requestData = JsonConvert.DeserializeObject(requestBody);
+                int userId = requestData?.users?[0]?.Id ?? -1;
 
                 var userData = _dbContext.Users.FirstOrDefault(u => u.Id == userId);
 
@@ -38,22 +42,22 @@ namespace HaloOnline.Server.Core.Http.Controllers
                             retCode = 0,
                             data = new[]
                             {
-                                new
-                                {
-                                    User = new
-                                    {
-                                        Id = userId
-                                    },
-                                    Nickname = userData.Nickname,
-                                    BattleTag = userData.BattleTag,
-                                    Level = userData.Level,
-                                    Clan = new
-                                    {
-                                        Id = 0
-                                    },
-                                    ClanTag = ""
-                                }
-                            }
+                        new
+                        {
+                            User = new
+                            {
+                                Id = userId
+                            },
+                            Nickname = userData.Nickname,
+                            BattleTag = userData.BattleTag,
+                            Level = userData.Level,
+                            Clan = new
+                            {
+                                Id = 0
+                            },
+                            ClanTag = ""
+                        }
+                    }
                         }
                     };
 

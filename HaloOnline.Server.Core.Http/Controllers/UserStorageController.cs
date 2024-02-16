@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.SQLite;
+using System.Linq;
 using System.Security.Claims;
 using System.Web.Http;
 using HaloOnline.Server.Core.Http.Model;
@@ -62,65 +63,71 @@ namespace HaloOnline.Server.Core.Http.Controllers
         [HttpPost]
         public IHttpActionResult GetPublicData(GetPublicDataRequest request)
         {
-            var userIdClaim = (User?.Identity as ClaimsIdentity)?.FindFirst("Id");
-            int userId = userIdClaim != null ? int.Parse(userIdClaim.Value) : -1;
-
-            string data;
-
-            using (SQLiteConnection connection = new SQLiteConnection("Data Source=halodb.sqlite;Version=3;"))
+            try
             {
-                connection.Open();
+                int userId = request?.Users?.FirstOrDefault()?.Id ?? -1;
 
-                using (SQLiteCommand command = connection.CreateCommand())
+                string data;
+
+                using (SQLiteConnection connection = new SQLiteConnection("Data Source=halodb.sqlite;Version=3;"))
                 {
-                    command.CommandText = $"SELECT {request.ContainerName} FROM PublicData WHERE UserId = @userId";
-                    command.Parameters.AddWithValue("@userId", userId);
+                    connection.Open();
 
-                    using (SQLiteDataReader reader = command.ExecuteReader())
+                    using (SQLiteCommand command = connection.CreateCommand())
                     {
-                        if (reader.Read())
+                        command.CommandText = $"SELECT {request.ContainerName} FROM PublicData WHERE UserId = @userId";
+                        command.Parameters.AddWithValue("@userId", userId);
+
+                        using (SQLiteDataReader reader = command.ExecuteReader())
                         {
-                            if (!reader.IsDBNull(0))
+                            if (reader.Read())
                             {
-                                using (var textReader = reader.GetTextReader(0))
+                                if (!reader.IsDBNull(0))
                                 {
-                                    data = textReader.ReadToEnd();
+                                    using (var textReader = reader.GetTextReader(0))
+                                    {
+                                        data = textReader.ReadToEnd();
+                                    }
+                                    // will clean up after test
+                                    data = data.Replace("\r\n", "").Replace("\\", "");
                                 }
-                                // will clean up after test
-                                data = data.Replace("\r\n", "").Replace("\\", "");
+                                else
+                                {
+                                    return NotFound();
+                                }
                             }
                             else
                             {
                                 return NotFound();
                             }
                         }
-                        else
-                        {
-                            return NotFound();
-                        }
                     }
                 }
-            }
 
-            var result = new GetPublicDataResult
-            {
-                Result = new ServiceResult<List<PerUser>>
+                var result = new GetPublicDataResult
                 {
-                    Data = new List<PerUser>
+                    Result = new ServiceResult<List<PerUser>>
                     {
-                        new PerUser
+                        Data = new List<PerUser>
                         {
-                            User = new UserId
+                            new PerUser
                             {
-                                Id = userId
-                            },
-                            PerUserData = JsonConvert.DeserializeObject<Dictionary<string, object>>(data)
+                                User = new UserId
+                                {
+                                    Id = userId
+                                },
+                                PerUserData = JsonConvert.DeserializeObject<Dictionary<string, object>>(data)
+                            }
                         }
                     }
-                }
-            };
+                };
 
-            return Json(result);
+                return Json(result);
+            }
+            catch (Exception ex)
+            {
+                return InternalServerError(ex);
+            }
         }
     }
 }

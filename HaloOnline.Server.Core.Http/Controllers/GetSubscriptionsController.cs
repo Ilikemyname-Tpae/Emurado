@@ -1,9 +1,7 @@
 ﻿using System.Collections.Generic;
-using System.IO;
-using System.Linq;
+using System.Data.SQLite;
 using System.Web.Http;
 using System;
-using HaloOnline.Server.Core.Repository;
 using System.Security.Claims;
 
 namespace HaloOnline.Server.Core.Http.Controllers
@@ -11,12 +9,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
     [RoutePrefix("FriendsService.svc")]
     public class GetSubscriptionsController : ApiController
     {
-        private readonly IHaloDbContext _dbContext;
-
-        public GetSubscriptionsController(IHaloDbContext dbContext)
-        {
-            _dbContext = dbContext;
-        }
+        private readonly string _connectionString = "Data Source=halodb.sqlite;Version=3;";
 
         [HttpPost]
         [Route("GetSubscriptions")]
@@ -26,6 +19,28 @@ namespace HaloOnline.Server.Core.Http.Controllers
             {
                 var userIdClaim = (User?.Identity as ClaimsIdentity)?.FindFirst("Id");
                 int userId = userIdClaim != null ? int.Parse(userIdClaim.Value) : -1;
+
+                var subscriptions = new List<object>();
+
+                using (var connection = new SQLiteConnection(_connectionString))
+                {
+                    connection.Open();
+
+                    using (var command = new SQLiteCommand(connection))
+                    {
+                        command.CommandText = "SELECT SubscribeeId FROM UserSubscription WHERE SubscriberId = @userId";
+                        command.Parameters.AddWithValue("@userId", userId);
+
+                        using (var reader = command.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                int subscribeeId = reader.GetInt32(0);
+                                subscriptions.Add(new { Id = subscribeeId });
+                            }
+                        }
+                    }
+                }
 
                 var result = new
                 {
@@ -43,13 +58,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                 Version = 0,
                                 Subscriptions = new
                                 {
-                                    UserList = new List<object>
-                                    {
-                                        new
-                                        {
-                                            Id = 0
-                                        }
-                                    }
+                                    UserList = subscriptions
                                 }
                             }
                         }

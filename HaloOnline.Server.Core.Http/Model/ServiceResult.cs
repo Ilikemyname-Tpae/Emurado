@@ -4,6 +4,9 @@ namespace HaloOnline.Server.Core.Http.Model
 {
     public class ServiceResult<T>
     {
+        [JsonProperty(PropertyName = "retCode")]
+
+        internal int retCode;
 
         /// <summary>
         /// The error message.

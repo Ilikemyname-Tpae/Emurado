@@ -1,5 +1,7 @@
-﻿using System.Web.Http;
+﻿using Newtonsoft.Json;
+using System;
 using System.Security.Claims;
+using System.Web.Http;
 
 namespace HaloOnline.Server.Core.Http.Controllers
 {
@@ -11,39 +13,48 @@ namespace HaloOnline.Server.Core.Http.Controllers
         [Authorize]
         public IHttpActionResult GetUsersPrimaryStates()
         {
-            var userIdClaim = (User?.Identity as ClaimsIdentity)?.FindFirst("Id");
-            int userId = userIdClaim != null ? int.Parse(userIdClaim.Value) : -1;
-
-            var result = new
+            try
             {
-                GetUsersPrimaryStatesResult = new
+                var requestBody = Request.Content.ReadAsStringAsync().Result;
+
+                dynamic requestData = JsonConvert.DeserializeObject(requestBody);
+                int userId = requestData?.users?[0]?.Id ?? -1;
+
+                var result = new
                 {
-                    retCode = 0,
-                    data = new[]
+                    GetUsersPrimaryStatesResult = new
                     {
-                        new
+                        retCode = 0,
+                        data = new[]
                         {
-                            User = new
+                            new
                             {
-                                Id = userId
-                            },
-                            Xp = 0,
-                            Kills = 0,
-                            Deaths = 0,
-                            Assists = 0,
-                            Suicides = 0,
-                            TotalMatches = 0,
-                            Victories = 0,
-                            Defeats = 0,
-                            TotalWP = 0,
-                            TotalTimePlayed = 0,
-                            TotalTimeOnline = 0
+                                User = new
+                                {
+                                    Id = userId
+                                },
+                                Xp = 0,
+                                Kills = 0,
+                                Deaths = 0,
+                                Assists = 0,
+                                Suicides = 0,
+                                TotalMatches = 0,
+                                Victories = 0,
+                                Defeats = 0,
+                                TotalWP = 0,
+                                TotalTimePlayed = 0,
+                                TotalTimeOnline = 0
+                            }
                         }
                     }
-                }
-            };
+                };
 
-            return Ok(result);
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return InternalServerError(ex);
+            }
         }
     }
 }

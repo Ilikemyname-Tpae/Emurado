@@ -5,6 +5,8 @@ namespace HaloOnline.Server.Core.Http.Model.Presence
 {
     public class PartyJoinRequest
     {
+        internal object party;
+
         [JsonProperty("party")]
         public PartyId Party { get; set; }
 

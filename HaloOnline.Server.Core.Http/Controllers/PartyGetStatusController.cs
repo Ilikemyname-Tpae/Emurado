@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Data.SQLite;
 using System.Security.Claims;
 using System.Web.Http;
@@ -33,17 +34,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                         {
                             Id = partyStatus.Party?.Id ?? "",
                         },
-                        SessionMembers = new[]
-                        {
-                            new
-                            {
-                                User = new
-                                {
-                                    Id = userId
-                                },
-                                IsOwner = true
-                            }
-                        },
+                        SessionMembers = partyStatus.SessionMembers,
                         MatchmakeState = partyStatus.MatchmakeState,
                         GameData = partyStatus.GameData
                     }
@@ -68,12 +59,14 @@ namespace HaloOnline.Server.Core.Http.Controllers
                         if (reader.Read())
                         {
                             var partyId = reader["PartyId"].ToString();
+                            var sessionMembers = GetSessionMembersForParty(partyId, connection);
                             return new PartyStatus
                             {
                                 Party = new PartyId
                                 {
                                     Id = partyId
                                 },
+                                SessionMembers = sessionMembers,
                                 MatchmakeState = GetMatchmakeStateForParty(partyId, connection),
                                 GameData = GetGameDataForParty(partyId, connection)
                             };
@@ -85,6 +78,35 @@ namespace HaloOnline.Server.Core.Http.Controllers
                     }
                 }
             }
+        }
+
+        private List<PartyMemberDto> GetSessionMembersForParty(string partyId, SQLiteConnection connection)
+        {
+            var sessionMembers = new List<PartyMemberDto>();
+
+            using (var command = new SQLiteCommand("SELECT UserId, IsOwner FROM PartyMember WHERE PartyId = @partyId", connection))
+            {
+                command.Parameters.AddWithValue("@partyId", partyId);
+
+                using (var reader = command.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        var memberId = int.Parse(reader["UserId"].ToString());
+                        var isOwner = bool.Parse(reader["IsOwner"].ToString());
+
+                        var partyMember = new PartyMemberDto
+                        {
+                            User = new UserDto { Id = memberId },
+                            IsOwner = isOwner
+                        };
+
+                        sessionMembers.Add(partyMember);
+                    }
+                }
+            }
+
+            return sessionMembers;
         }
 
         private int GetMatchmakeStateForParty(string partyId, SQLiteConnection connection)
