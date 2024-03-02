@@ -2,7 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.Data.SQLite;
-using System.IO;
 using System.Linq;
 using System.Security.Claims;
 using System.Web.Http;
@@ -31,27 +30,30 @@ namespace HaloOnline.Server.Core.Http.Controllers
                 }
 
                 int offerPrice = GetOfferPrice(offerId);
+                int previousValue = -1;
+
+                if (offerId.Contains("_cr"))
+                {
+                    previousValue = GetLatestRemainingCreditsValue(userId);
+                }
+                else
+                {
+                    previousValue = GetLatestRemainingGoldValue(userId);
+                }
+
+                if (previousValue == -1)
+                {
+                    return InternalServerError(new Exception("Failed to retrieve previous value for the transaction."));
+                }
 
                 long unixTimestamp = (long)(DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1)).TotalSeconds);
-
-                int previousValue = GetLatestRemainingGoldValue(userId);
 
                 var transaction = new
                 {
                     transactionItems = new List<object> {
                         new {
                             stateName = offerId,
-                            stateType = 4,
-                            ownType = 2,
-                            operationType = 0,
-                            initialValue = 3600,
-                            resultingValue = 3600,
-                            deltaValue = 2,
-                            descId = 2
-                        },
-                        new {
-                            stateName = "gold",
-                            stateType = 3,
+                            stateType = offerId.Contains("_cr") ? 2 : 3,
                             ownType = 0,
                             operationType = 0,
                             initialValue = previousValue,
@@ -73,7 +75,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                     }
                 };
 
-                UpdateRemainingGoldFile(userId, previousValue - offerPrice);
+                UpdateRemainingValue(userId, offerId, previousValue, offerPrice);
 
                 InsertTransactionData(userId, offerId, previousValue, previousValue - offerPrice);
 
@@ -86,8 +88,8 @@ namespace HaloOnline.Server.Core.Http.Controllers
                         {
                             totalResults = 1,
                             transactions = new List<object> {
-                            transaction
-                        }
+                                transaction
+                            }
                         }
                     }
                 };
@@ -100,6 +102,17 @@ namespace HaloOnline.Server.Core.Http.Controllers
             }
         }
 
+        private void UpdateRemainingValue(int userId, string offerId, int previousValue, int offerPrice)
+        {
+            if (offerId.Contains("_cr"))
+            {
+                UpdateRemainingCreditsFile(userId, previousValue - offerPrice);
+            }
+            else
+            {
+                UpdateRemainingGoldFile(userId, previousValue - offerPrice);
+            }
+        }
 
         private int GetLatestRemainingGoldValue(int userId)
         {
@@ -111,6 +124,19 @@ namespace HaloOnline.Server.Core.Http.Controllers
                     command.Parameters.AddWithValue("@UserId", userId);
                     var result = command.ExecuteScalar();
                     return result != null ? Convert.ToInt32(result) : 10150;
+                }
+            }
+        }
+        private int GetLatestRemainingCreditsValue(int userId)
+        {
+            using (var connection = new SQLiteConnection(connectionString))
+            {
+                connection.Open();
+                using (var command = new SQLiteCommand("SELECT Credits FROM User WHERE Id = @UserId", connection))
+                {
+                    command.Parameters.AddWithValue("@UserId", userId);
+                    var result = command.ExecuteScalar();
+                    return result != null ? Convert.ToInt32(result) : 1000;
                 }
             }
         }
@@ -156,12 +182,44 @@ namespace HaloOnline.Server.Core.Http.Controllers
             {
             }
         }
+        private void UpdateRemainingCreditsFile(int userId, int newValue)
+        {
+            try
+            {
+                using (var connection = new SQLiteConnection(connectionString))
+                {
+                    connection.Open();
+
+                    using (var updateCommandUser = new SQLiteCommand("UPDATE User SET Credits = @Credits WHERE Id = @UserId", connection))
+                    {
+                        updateCommandUser.Parameters.AddWithValue("@UserId", userId);
+                        updateCommandUser.Parameters.AddWithValue("@Credits", newValue);
+                        updateCommandUser.ExecuteNonQuery();
+                    }
+
+                    using (var updateCommandUserStates = new SQLiteCommand("UPDATE UserStates SET Value = @Value WHERE UserId = @UserId AND StateName = 'Credits'", connection))
+                    {
+                        updateCommandUserStates.Parameters.AddWithValue("@UserId", userId);
+                        updateCommandUserStates.Parameters.AddWithValue("@Value", newValue);
+                        updateCommandUserStates.ExecuteNonQuery();
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+            }
+        }
+
 
         private void InsertTransactionData(int userId, string offerId, int initialValue, int resultingValue)
         {
+            string sanitizedOfferId = offerId.EndsWith("_cr") ? offerId.Substring(0, offerId.Length - 3) : offerId;
+
             using (var connection = new SQLiteConnection(connectionString))
             {
                 connection.Open();
+
+                long unixTimestamp = (long)(DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1)).TotalSeconds);
 
                 using (var command = new SQLiteCommand(
                     "INSERT INTO Transactions (UserId, OfferId, InitialValue, ResultingValue, DeltaValue, OperationType, SessionId, ReferenceId) " +
@@ -169,8 +227,8 @@ namespace HaloOnline.Server.Core.Http.Controllers
                 {
                     command.Parameters.AddWithValue("@UserId", userId);
                     command.Parameters.AddWithValue("@OfferId", offerId);
-                    command.Parameters.AddWithValue("@InitialValue", initialValue);
-                    command.Parameters.AddWithValue("@ResultingValue", resultingValue);
+                    command.Parameters.AddWithValue("@InitialValue", 3600);
+                    command.Parameters.AddWithValue("@ResultingValue", 3600);
                     command.Parameters.AddWithValue("@DeltaValue", initialValue - resultingValue);
                     command.Parameters.AddWithValue("@OperationType", 2);
                     command.Parameters.AddWithValue("@SessionId", Guid.NewGuid().ToString());
@@ -183,18 +241,18 @@ namespace HaloOnline.Server.Core.Http.Controllers
                     "VALUES (@UserId, @StateName, @StateType, @OwnType, @OperationType, @InitialValue, @ResultingValue, @DeltaValue, @DescId, @SessionId, @ReferenceId, @OfferId, @TimeStamp, @ExtendedInfoKey, @ExtendedInfoValue)", connection))
                 {
                     commandHistory.Parameters.AddWithValue("@UserId", userId);
-                    commandHistory.Parameters.AddWithValue("@StateName", offerId);
+                    commandHistory.Parameters.AddWithValue("@StateName", sanitizedOfferId);
                     commandHistory.Parameters.AddWithValue("@StateType", 4);
                     commandHistory.Parameters.AddWithValue("@OwnType", 2);
                     commandHistory.Parameters.AddWithValue("@OperationType", 0);
                     commandHistory.Parameters.AddWithValue("@InitialValue", 3600);
                     commandHistory.Parameters.AddWithValue("@ResultingValue", 3600);
-                    commandHistory.Parameters.AddWithValue("@DeltaValue", 2);
+                    commandHistory.Parameters.AddWithValue("@DeltaValue", initialValue - resultingValue);
                     commandHistory.Parameters.AddWithValue("@DescId", 2);
                     commandHistory.Parameters.AddWithValue("@SessionId", Guid.NewGuid().ToString());
                     commandHistory.Parameters.AddWithValue("@ReferenceId", Guid.NewGuid().ToString());
-                    commandHistory.Parameters.AddWithValue("@OfferId", offerId);
-                    commandHistory.Parameters.AddWithValue("@TimeStamp", (long)(DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1)).TotalSeconds));
+                    commandHistory.Parameters.AddWithValue("@OfferId", sanitizedOfferId);
+                    commandHistory.Parameters.AddWithValue("@TimeStamp", unixTimestamp);
                     commandHistory.Parameters.AddWithValue("@ExtendedInfoKey", "");
                     commandHistory.Parameters.AddWithValue("@ExtendedInfoValue", "");
                     commandHistory.ExecuteNonQuery();
@@ -202,4 +260,4 @@ namespace HaloOnline.Server.Core.Http.Controllers
             }
         }
     }
-}
+ }

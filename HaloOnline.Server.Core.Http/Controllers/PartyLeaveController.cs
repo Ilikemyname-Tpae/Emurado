@@ -65,6 +65,6 @@ namespace HaloOnline.Server.Core.Http.Controllers
                     command.ExecuteNonQuery();
                 }
             }
-        }      
+        }
     }
 }

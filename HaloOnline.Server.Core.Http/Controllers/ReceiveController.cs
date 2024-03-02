@@ -22,6 +22,8 @@ namespace HaloOnline.Server.Core.Http.Controllers
                 var userIdClaim = (User?.Identity as ClaimsIdentity)?.FindFirst("Id");
                 int userId = userIdClaim != null ? int.Parse(userIdClaim.Value) : -1;
 
+                UpdateUserColumns(userId);
+
                 var channelInfoList = GetChannelInfoFromDatabase(userId);
 
                 var result = new
@@ -38,6 +40,21 @@ namespace HaloOnline.Server.Core.Http.Controllers
             catch (Exception ex)
             {
                 return InternalServerError(ex);
+            }
+        }
+
+        private void UpdateUserColumns(int userId)
+        {
+            using (var connection = new SQLiteConnection(ConnectionString))
+            {
+                connection.Open();
+
+                using (var command = new SQLiteCommand(connection))
+                {
+                    command.CommandText = "UPDATE User SET State = 1, IsInvitable = 1 WHERE Id = @UserId";
+                    command.Parameters.AddWithValue("@UserId", userId);
+                    command.ExecuteNonQuery();
+                }
             }
         }
 

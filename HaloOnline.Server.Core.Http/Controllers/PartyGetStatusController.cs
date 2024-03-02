@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Data.SQLite;
 using System.Security.Claims;
 using System.Web.Http;
-using HaloOnline.Server.Core.Http.Model.Presence;
+using HaloOnline.Server.Core.Http.Model.User;
 using HaloOnline.Server.Model.Presence;
 
 namespace HaloOnline.Server.Core.Http.Controllers

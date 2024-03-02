@@ -44,7 +44,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
             {
                 Id = new MatchmakeId
                 {
-                    Id = ""
+                    Id = "7c6f4cf1-c80c-46ea-b724-51d6b892c5c1"
                 },
                 Members = new List<MatchmakeMember>(),
                 MatchmakeTimer = 0,

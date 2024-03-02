@@ -22,7 +22,9 @@ namespace HaloOnline.Server.Core.Repository.Repositories
                 Name = user.UserName,
                 PasswordHash = user.UserPasswordHash,
                 Gold = 10150,
-                Credits = 1000
+                Credits = 1000,
+                State = 0,
+                IsInvitable = 0
             };
 
             _context.Users.Add(newUser);

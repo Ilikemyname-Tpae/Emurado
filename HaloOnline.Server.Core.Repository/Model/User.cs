@@ -31,6 +31,9 @@ namespace HaloOnline.Server.Core.Repository.Model
 
         public int Credits { get; set; } = 0;
 
+        public int State { get; set; } = 0;
+
+        public int IsInvitable { get; set; } = 0;
         [InverseProperty("User")]
         public virtual ICollection<ChannelUser> ChannelUsers { get; set; }
 

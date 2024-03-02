@@ -2518,6 +2518,80 @@
     "name": "Red",
     "parents": []
   },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_87",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "visor",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 0,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 0,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 0,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Black",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_98",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "visor",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 255,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 255,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 255,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "White",
+    "parents": []
+  },
   // Lights
   {
     "className": "COLOR",
@@ -2813,6 +2887,80 @@
       }
     ],
     "name": "Red",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_29",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "lights",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 0,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 0,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 0,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "Black",
+    "parents": []
+  },
+  {
+    "className": "COLOR",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "color_pri_30",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "lights",
+        "name": "COLOR_TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 255,
+        "name": "COLOR_R"
+      },
+      {
+        "type": 1,
+        "intVal": 255,
+        "name": "COLOR_G"
+      },
+      {
+        "type": 1,
+        "intVal": 255,
+        "name": "COLOR_B"
+      },
+      {
+        "type": 3,
+        "strVal": "",
+        "name": "UI_LIST_ID"
+      }
+    ],
+    "name": "White",
     "parents": []
   },
   // Holo

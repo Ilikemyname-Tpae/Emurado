@@ -1,0 +1,121 @@
+[
+  {
+    "className": "MOTD",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "motd_monday",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "Monday, Monday message of the day",
+        "name": "UI_DESC_ID"
+      }
+    ],
+    "name": "motd_monday",
+    "parents": []
+  },
+  {
+    "className": "MOTD",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "motd_tuesday",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "Tuesday, Tuesday message of the day.",
+        "name": "UI_DESC_ID"
+      }
+    ],
+    "name": "motd_tuesday",
+    "parents": []
+  },
+  {
+    "className": "MOTD",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "motd_wednesday",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "Wednesday, Wednesday message of the day.",
+        "name": "UI_DESC_ID"
+      }
+    ],
+    "name": "motd_wednesday",
+    "parents": []
+  },
+  {
+    "className": "MOTD",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "motd_thursday",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "Thursday, Thursday message of the day.",
+        "name": "UI_DESC_ID"
+      }
+    ],
+    "name": "motd_thursday",
+    "parents": []
+  },
+  {
+    "className": "MOTD",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "motd_friday",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "Friday, Friday message of the day.",
+        "name": "UI_DESC_ID"
+      }
+    ],
+    "name": "motd_friday",
+    "parents": []
+  },
+  {
+    "className": "MOTD",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "motd_saturday",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "Saturday, Saturday message of the day.",
+        "name": "UI_DESC_ID"
+      }
+    ],
+    "name": "motd_saturday",
+    "parents": []
+  },
+  {
+    "className": "MOTD",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "motd_sunday",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "Sunday, Sunday message of the day.",
+        "name": "UI_DESC_ID"
+      }
+    ],
+    "name": "motd_sunday",
+    "parents": []
+  }
+]

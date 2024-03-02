@@ -54,7 +54,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "assault_rifle_v2",
+                                        OfferId = "assault_rifle_v2_cr",
                                         Currency = "cr",
                                         Price = 2000,
                                         ExpireAt = 0,
@@ -103,7 +103,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "assault_rifle_v3",
+                                        OfferId = "assault_rifle_v3_cr",
                                         Currency = "cr",
                                         Price = 2000,
                                         ExpireAt = 0,
@@ -152,7 +152,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "assault_rifle_v6",
+                                        OfferId = "assault_rifle_v6_cr",
                                         Currency = "cr",
                                         Price = 2000,
                                         ExpireAt = 0,
@@ -201,7 +201,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "battle_rifle_v1",
+                                        OfferId = "battle_rifle_v1_cr",
                                         Currency = "cr",
                                         Price = 1600,
                                         ExpireAt = 0,
@@ -250,7 +250,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "battle_rifle_v2",
+                                        OfferId = "battle_rifle_v2_cr",
                                         Currency = "cr",
                                         Price = 1600,
                                         ExpireAt = 0,
@@ -299,7 +299,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "battle_rifle_v3",
+                                        OfferId = "battle_rifle_v3_cr",
                                         Currency = "cr",
                                         Price = 1600,
                                         ExpireAt = 0,
@@ -348,7 +348,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "battle_rifle_v4",
+                                        OfferId = "battle_rifle_v4_cr",
                                         Currency = "cr",
                                         Price = 1600,
                                         ExpireAt = 0,
@@ -397,7 +397,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "battle_rifle_v5",
+                                        OfferId = "battle_rifle_v5_cr",
                                         Currency = "cr",
                                         Price = 1600,
                                         ExpireAt = 0,
@@ -446,7 +446,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "battle_rifle_v6",
+                                        OfferId = "battle_rifle_v6_cr",
                                         Currency = "cr",
                                         Price = 1600,
                                         ExpireAt = 0,
@@ -495,7 +495,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "dmr_v1",
+                                        OfferId = "dmr_v1_cr",
                                         Currency = "cr",
                                         Price = 1400,
                                         ExpireAt = 0,
@@ -544,7 +544,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "dmr_v1",
+                                        OfferId = "dmr_v2_cr",
                                         Currency = "cr",
                                         Price = 1400,
                                         ExpireAt = 0,
@@ -568,7 +568,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                             new
                             {
                                 Duration = 3600,
-                                ItemId = "dmr_v1"
+                                ItemId = "dmr_v3"
                             }
                         },
                         UnlockedLevel = 0,
@@ -581,7 +581,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                 {
                                     new
                                     {
-                                        OfferId = "dmr_v1",
+                                        OfferId = "dmr_v3",
                                         Currency = "gold",
                                         Price = 50,
                                         ExpireAt = 0,
@@ -593,7 +593,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "dmr_v1",
+                                        OfferId = "dmr_v3_cr",
                                         Currency = "cr",
                                         Price = 1400,
                                         ExpireAt = 0,
@@ -642,7 +642,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "dmr_v4",
+                                        OfferId = "dmr_v4_cr",
                                         Currency = "cr",
                                         Price = 1400,
                                         ExpireAt = 0,
@@ -691,7 +691,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "dmr_v5",
+                                        OfferId = "dmr_v5_cr",
                                         Currency = "cr",
                                         Price = 1400,
                                         ExpireAt = 0,
@@ -740,7 +740,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "dmr_v6",
+                                        OfferId = "dmr_v6_cr",
                                         Currency = "cr",
                                         Price = 1400,
                                         ExpireAt = 0,
@@ -789,7 +789,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "smg_v2",
+                                        OfferId = "smg_v2_cr",
                                         Currency = "cr",
                                         Price = 1750,
                                         ExpireAt = 0,
@@ -838,7 +838,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "smg_v3",
+                                        OfferId = "smg_v3_cr",
                                         Currency = "cr",
                                         Price = 1750,
                                         ExpireAt = 0,
@@ -887,7 +887,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "smg_v4",
+                                        OfferId = "smg_v4_cr",
                                         Currency = "cr",
                                         Price = 1750,
                                         ExpireAt = 0,
@@ -936,7 +936,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "smg_v6",
+                                        OfferId = "smg_v6_cr",
                                         Currency = "cr",
                                         Price = 1750,
                                         ExpireAt = 0,
@@ -985,7 +985,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "covenant_carbine",
+                                        OfferId = "covenant_carbine_cr",
                                         Currency = "cr",
                                         Price = 1400,
                                         ExpireAt = 0,
@@ -1034,7 +1034,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "covenant_carbine_v1",
+                                        OfferId = "covenant_carbine_v1_cr",
                                         Currency = "cr",
                                         Price = 1750,
                                         ExpireAt = 0,
@@ -1083,7 +1083,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "covenant_carbine_v2",
+                                        OfferId = "covenant_carbine_v2_cr",
                                         Currency = "cr",
                                         Price = 1750,
                                         ExpireAt = 0,
@@ -1132,7 +1132,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "covenant_carbine_v3",
+                                        OfferId = "covenant_carbine_v3_cr",
                                         Currency = "cr",
                                         Price = 1750,
                                         ExpireAt = 0,
@@ -1181,7 +1181,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "covenant_carbine_v4",
+                                        OfferId = "covenant_carbine_v4_cr",
                                         Currency = "cr",
                                         Price = 1750,
                                         ExpireAt = 0,
@@ -1230,7 +1230,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "covenant_carbine_v5",
+                                        OfferId = "covenant_carbine_v5_cr",
                                         Currency = "cr",
                                         Price = 1750,
                                         ExpireAt = 0,
@@ -1279,7 +1279,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "covenant_carbine_v6",
+                                        OfferId = "covenant_carbine_v6_cr",
                                         Currency = "cr",
                                         Price = 1750,
                                         ExpireAt = 0,
@@ -1328,7 +1328,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "plasma_rifle",
+                                        OfferId = "plasma_rifle_cr",
                                         Currency = "cr",
                                         Price = 1400,
                                         ExpireAt = 0,
@@ -1377,7 +1377,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "plasma_rifle_v6",
+                                        OfferId = "plasma_rifle_v6_cr",
                                         Currency = "cr",
                                         Price = 1750,
                                         ExpireAt = 0,
@@ -1426,7 +1426,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "magnum_v2",
+                                        OfferId = "magnum_v2_cr",
                                         Currency = "cr",
                                         Price = 370,
                                         ExpireAt = 0,
@@ -1475,7 +1475,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "magnum_v3",
+                                        OfferId = "magnum_v3_cr",
                                         Currency = "cr",
                                         Price = 370,
                                         ExpireAt = 0,
@@ -1524,7 +1524,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "spike_grenade",
+                                        OfferId = "spike_grenade_cr",
                                         Currency = "cr",
                                         Price = 370,
                                         ExpireAt = 0,
@@ -1573,7 +1573,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "plasma_grenade",
+                                        OfferId = "plasma_grenade_cr",
                                         Currency = "cr",
                                         Price = 370,
                                         ExpireAt = 0,
@@ -1622,7 +1622,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "vision",
+                                        OfferId = "vision_cr",
                                         Currency = "cr",
                                         Price = 900,
                                         ExpireAt = 0,
@@ -1671,7 +1671,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "bombrun",
+                                        OfferId = "bombrun_cr",
                                         Currency = "cr",
                                         Price = 900,
                                         ExpireAt = 0,
@@ -1720,7 +1720,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "tripmine",
+                                        OfferId = "tripmine_cr",
                                         Currency = "cr",
                                         Price = 900,
                                         ExpireAt = 0,
@@ -1769,7 +1769,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "active_camo",
+                                        OfferId = "active_camo_cr",
                                         Currency = "cr",
                                         Price = 900,
                                         ExpireAt = 0,
@@ -1818,7 +1818,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "power_drain",
+                                        OfferId = "power_drain_cr",
                                         Currency = "cr",
                                         Price = 900,
                                         ExpireAt = 0,
@@ -1867,7 +1867,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "hologram",
+                                        OfferId = "hologram_cr",
                                         Currency = "cr",
                                         Price = 900,
                                         ExpireAt = 0,
@@ -1916,7 +1916,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "adrenaline",
+                                        OfferId = "adrenaline_cr",
                                         Currency = "cr",
                                         Price = 750,
                                         ExpireAt = 0,
@@ -1965,7 +1965,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "deployable_cover",
+                                        OfferId = "deployable_cover_cr",
                                         Currency = "cr",
                                         Price = 750,
                                         ExpireAt = 0,
@@ -2014,7 +2014,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "concussive_blast",
+                                        OfferId = "concussive_blast_cr",
                                         Currency = "cr",
                                         Price = 750,
                                         ExpireAt = 0,
@@ -2063,7 +2063,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "regenerator",
+                                        OfferId = "regenerator_cr",
                                         Currency = "cr",
                                         Price = 750,
                                         ExpireAt = 0,
@@ -2112,7 +2112,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "bubble_shield",
+                                        OfferId = "bubble_shield_cr",
                                         Currency = "cr",
                                         Price = 750,
                                         ExpireAt = 0,
@@ -2161,7 +2161,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "radar_jammer",
+                                        OfferId = "radar_jammer_cr",
                                         Currency = "cr",
                                         Price = 750,
                                         ExpireAt = 0,
@@ -2210,7 +2210,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "revenge_shield",
+                                        OfferId = "revenge_shield_cr",
                                         Currency = "cr",
                                         Price = 900,
                                         ExpireAt = 0,
@@ -2259,7 +2259,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "respawn_speed",
+                                        OfferId = "respawn_speed_cr",
                                         Currency = "cr",
                                         Price = 900,
                                         ExpireAt = 0,
@@ -2308,7 +2308,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "grenade_reserve",
+                                        OfferId = "grenade_reserve_cr",
                                         Currency = "cr",
                                         Price = 900,
                                         ExpireAt = 0,
@@ -2357,7 +2357,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "extra_battery",
+                                        OfferId = "extra_battery_cr",
                                         Currency = "cr",
                                         Price = 900,
                                         ExpireAt = 0,
@@ -2406,7 +2406,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "vehicle_shield",
+                                        OfferId = "vehicle_shield_cr",
                                         Currency = "cr",
                                         Price = 600,
                                         ExpireAt = 0,
@@ -2455,7 +2455,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "runner",
+                                        OfferId = "runner_cr",
                                         Currency = "cr",
                                         Price = 600,
                                         ExpireAt = 0,
@@ -2504,7 +2504,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "reflex",
+                                        OfferId = "reflex_cr",
                                         Currency = "cr",
                                         Price = 600,
                                         ExpireAt = 0,
@@ -2553,7 +2553,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "visor",
+                                        OfferId = "visor_cr",
                                         Currency = "cr",
                                         Price = 600,
                                         ExpireAt = 0,
@@ -2602,7 +2602,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "charger",
+                                        OfferId = "charger_cr",
                                         Currency = "cr",
                                         Price = 600,
                                         ExpireAt = 0,
@@ -2651,7 +2651,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "power_plant",
+                                        OfferId = "power_plant_cr",
                                         Currency = "cr",
                                         Price = 600,
                                         ExpireAt = 0,
@@ -2700,7 +2700,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "helmet_scanner",
+                                        OfferId = "helmet_scanner_cr",
                                         Currency = "cr",
                                         Price = 600,
                                         ExpireAt = 0,
@@ -2749,7 +2749,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "helmet_chameleon",
+                                        OfferId = "helmet_chameleon_cr",
                                         Currency = "cr",
                                         Price = 600,
                                         ExpireAt = 0,
@@ -2798,7 +2798,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "helmet_dutch",
+                                        OfferId = "helmet_dutch_cr",
                                         Currency = "cr",
                                         Price = 600,
                                         ExpireAt = 0,
@@ -2847,7 +2847,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "helmet_air_assault",
+                                        OfferId = "helmet_air_assault_cr",
                                         Currency = "cr",
                                         Price = 600,
                                         ExpireAt = 0,
@@ -2896,7 +2896,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "helmet_oracle",
+                                        OfferId = "helmet_oracle_cr",
                                         Currency = "cr",
                                         Price = 600,
                                         ExpireAt = 0,
@@ -2945,7 +2945,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "helmet_juggernaut",
+                                        OfferId = "helmet_juggernaut_cr",
                                         Currency = "cr",
                                         Price = 1500,
                                         ExpireAt = 0,
@@ -2994,7 +2994,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "helmet_spectrum",
+                                        OfferId = "helmet_spectrum_cr",
                                         Currency = "cr",
                                         Price = 1500,
                                         ExpireAt = 0,
@@ -3043,7 +3043,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "helmet_orbital",
+                                        OfferId = "helmet_orbital_cr",
                                         Currency = "cr",
                                         Price = 1500,
                                         ExpireAt = 0,
@@ -3092,7 +3092,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "helmet_gungnir",
+                                        OfferId = "helmet_gungnir_cr",
                                         Currency = "cr",
                                         Price = 1500,
                                         ExpireAt = 0,
@@ -3141,7 +3141,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "helmet_hammerhead",
+                                        OfferId = "helmet_hammerhead_cr",
                                         Currency = "cr",
                                         Price = 1500,
                                         ExpireAt = 0,
@@ -3190,7 +3190,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "helmet_strider",
+                                        OfferId = "helmet_strider_cr",
                                         Currency = "cr",
                                         Price = 3000,
                                         ExpireAt = 0,
@@ -3239,7 +3239,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "chest_scanner",
+                                        OfferId = "chest_scanner_cr",
                                         Currency = "cr",
                                         Price = 600,
                                         ExpireAt = 0,
@@ -3288,7 +3288,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "chest_chameleon",
+                                        OfferId = "chest_chameleon_cr",
                                         Currency = "cr",
                                         Price = 600,
                                         ExpireAt = 0,
@@ -3337,7 +3337,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "chest_dutch",
+                                        OfferId = "chest_dutch_cr",
                                         Currency = "cr",
                                         Price = 600,
                                         ExpireAt = 0,
@@ -3386,7 +3386,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "chest_air_assault",
+                                        OfferId = "chest_air_assault_cr",
                                         Currency = "cr",
                                         Price = 600,
                                         ExpireAt = 0,
@@ -3435,7 +3435,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "chest_oracle",
+                                        OfferId = "chest_oracle_cr",
                                         Currency = "cr",
                                         Price = 600,
                                         ExpireAt = 0,
@@ -3484,7 +3484,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "chest_juggernaut",
+                                        OfferId = "chest_juggernaut_cr",
                                         Currency = "cr",
                                         Price = 1500,
                                         ExpireAt = 0,
@@ -3533,7 +3533,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "chest_spectrum",
+                                        OfferId = "chest_spectrum_cr",
                                         Currency = "cr",
                                         Price = 1500,
                                         ExpireAt = 0,
@@ -3582,7 +3582,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "chest_orbital",
+                                        OfferId = "chest_orbital_cr",
                                         Currency = "cr",
                                         Price = 1500,
                                         ExpireAt = 0,
@@ -3631,7 +3631,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "chest_gungnir",
+                                        OfferId = "chest_gungnir_cr",
                                         Currency = "cr",
                                         Price = 1500,
                                         ExpireAt = 0,
@@ -3680,7 +3680,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "chest_hammerhead",
+                                        OfferId = "chest_hammerhead_cr",
                                         Currency = "cr",
                                         Price = 1500,
                                         ExpireAt = 0,
@@ -3729,7 +3729,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "chest_strider",
+                                        OfferId = "chest_strider_cr",
                                         Currency = "cr",
                                         Price = 3000,
                                         ExpireAt = 0,
@@ -3778,7 +3778,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "shoulders_scanner",
+                                        OfferId = "shoulders_scanner_cr",
                                         Currency = "cr",
                                         Price = 600,
                                         ExpireAt = 0,
@@ -3827,7 +3827,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "shoulders_chameleon",
+                                        OfferId = "shoulders_chameleon_cr",
                                         Currency = "cr",
                                         Price = 600,
                                         ExpireAt = 0,
@@ -3876,7 +3876,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "shoulders_dutch",
+                                        OfferId = "shoulders_dutch_cr",
                                         Currency = "cr",
                                         Price = 600,
                                         ExpireAt = 0,
@@ -3925,7 +3925,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "shoulders_air_assault",
+                                        OfferId = "shoulders_air_assault_cr",
                                         Currency = "cr",
                                         Price = 600,
                                         ExpireAt = 0,
@@ -3974,7 +3974,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "shoulders_oracle",
+                                        OfferId = "shoulders_oracle_cr",
                                         Currency = "cr",
                                         Price = 600,
                                         ExpireAt = 0,
@@ -4023,7 +4023,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "shoulders_juggernaut",
+                                        OfferId = "shoulders_juggernaut_cr",
                                         Currency = "cr",
                                         Price = 1500,
                                         ExpireAt = 0,
@@ -4072,7 +4072,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "shoulders_spectrum",
+                                        OfferId = "shoulders_spectrum_cr",
                                         Currency = "cr",
                                         Price = 1500,
                                         ExpireAt = 0,
@@ -4121,7 +4121,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "shoulders_orbital",
+                                        OfferId = "shoulders_orbital_cr",
                                         Currency = "cr",
                                         Price = 1500,
                                         ExpireAt = 0,
@@ -4170,7 +4170,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "shoulders_gungnir",
+                                        OfferId = "shoulders_gungnir_cr",
                                         Currency = "cr",
                                         Price = 1500,
                                         ExpireAt = 0,
@@ -4219,7 +4219,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "shoulders_hammerhead",
+                                        OfferId = "shoulders_hammerhead_cr",
                                         Currency = "cr",
                                         Price = 1500,
                                         ExpireAt = 0,
@@ -4268,7 +4268,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "shoulders_strider",
+                                        OfferId = "shoulders_strider_cr",
                                         Currency = "cr",
                                         Price = 3000,
                                         ExpireAt = 0,
@@ -4317,7 +4317,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "arms_scanner",
+                                        OfferId = "arms_scanner_cr",
                                         Currency = "cr",
                                         Price = 600,
                                         ExpireAt = 0,
@@ -4366,7 +4366,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "arms_chameleon",
+                                        OfferId = "arms_chameleon_cr",
                                         Currency = "cr",
                                         Price = 600,
                                         ExpireAt = 0,
@@ -4415,7 +4415,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "arms_dutch",
+                                        OfferId = "arms_dutch_cr",
                                         Currency = "cr",
                                         Price = 600,
                                         ExpireAt = 0,
@@ -4464,7 +4464,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "arms_air_assault",
+                                        OfferId = "arms_air_assault_cr",
                                         Currency = "cr",
                                         Price = 600,
                                         ExpireAt = 0,
@@ -4513,7 +4513,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "arms_oracle",
+                                        OfferId = "arms_oracle_cr",
                                         Currency = "cr",
                                         Price = 600,
                                         ExpireAt = 0,
@@ -4562,7 +4562,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "arms_juggernaut",
+                                        OfferId = "arms_juggernaut_cr",
                                         Currency = "cr",
                                         Price = 1500,
                                         ExpireAt = 0,
@@ -4611,7 +4611,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "arms_spectrum",
+                                        OfferId = "arms_spectrum_cr",
                                         Currency = "cr",
                                         Price = 1500,
                                         ExpireAt = 0,
@@ -4660,7 +4660,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "arms_orbital",
+                                        OfferId = "arms_orbital_cr",
                                         Currency = "cr",
                                         Price = 1500,
                                         ExpireAt = 0,
@@ -4709,7 +4709,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "arms_gungnir",
+                                        OfferId = "arms_gungnir_cr",
                                         Currency = "cr",
                                         Price = 1500,
                                         ExpireAt = 0,
@@ -4758,7 +4758,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "arms_hammerhead",
+                                        OfferId = "arms_hammerhead_cr",
                                         Currency = "cr",
                                         Price = 1500,
                                         ExpireAt = 0,
@@ -4807,7 +4807,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "arms_strider",
+                                        OfferId = "arms_strider_cr",
                                         Currency = "cr",
                                         Price = 3000,
                                         ExpireAt = 0,
@@ -4856,7 +4856,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "legs_scanner",
+                                        OfferId = "legs_scanner_cr",
                                         Currency = "cr",
                                         Price = 600,
                                         ExpireAt = 0,
@@ -4905,7 +4905,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "legs_chameleon",
+                                        OfferId = "legs_chameleon_cr",
                                         Currency = "cr",
                                         Price = 600,
                                         ExpireAt = 0,
@@ -4955,7 +4955,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "legs_dutch",
+                                        OfferId = "legs_dutch_cr",
                                         Currency = "cr",
                                         Price = 600,
                                         ExpireAt = 0,
@@ -5004,7 +5004,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "legs_air_assault",
+                                        OfferId = "legs_air_assault_cr",
                                         Currency = "cr",
                                         Price = 600,
                                         ExpireAt = 0,
@@ -5053,7 +5053,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "legs_oracle",
+                                        OfferId = "legs_oracle_cr",
                                         Currency = "cr",
                                         Price = 600,
                                         ExpireAt = 0,
@@ -5102,7 +5102,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "legs_juggernaut",
+                                        OfferId = "legs_juggernaut_cr",
                                         Currency = "cr",
                                         Price = 1500,
                                         ExpireAt = 0,
@@ -5151,7 +5151,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "legs_spectrum",
+                                        OfferId = "legs_spectrum_cr",
                                         Currency = "cr",
                                         Price = 1500,
                                         ExpireAt = 0,
@@ -5200,7 +5200,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "legs_orbital",
+                                        OfferId = "legs_orbital_cr",
                                         Currency = "cr",
                                         Price = 1500,
                                         ExpireAt = 0,
@@ -5249,7 +5249,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "legs_gungnir",
+                                        OfferId = "legs_gungnir_cr",
                                         Currency = "cr",
                                         Price = 1500,
                                         ExpireAt = 0,
@@ -5298,7 +5298,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "legs_hammerhead",
+                                        OfferId = "legs_hammerhead_cr",
                                         Currency = "cr",
                                         Price = 1500,
                                         ExpireAt = 0,
@@ -5347,7 +5347,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     },
                                     new
                                     {
-                                        OfferId = "legs_strider",
+                                        OfferId = "legs_strider_cr",
                                         Currency = "cr",
                                         Price = 3000,
                                         ExpireAt = 0,
