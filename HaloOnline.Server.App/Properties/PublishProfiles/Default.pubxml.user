@@ -11,7 +11,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>03/02/2024 22:42:39</publishTime>
     </File>
     <File Include="app/partials/navigation.html">
-      <publishTime>05/18/2024 21:33:56</publishTime>
+      <publishTime>06/19/2024 12:47:05</publishTime>
     </File>
     <File Include="app/partials/userstatistics.html">
       <publishTime>03/02/2024 22:42:39</publishTime>
@@ -20,7 +20,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>05/18/2024 21:30:45</publishTime>
     </File>
     <File Include="app/scripts/app.controllers.js">
-      <publishTime>05/18/2024 21:29:42</publishTime>
+      <publishTime>06/19/2024 12:37:40</publishTime>
     </File>
     <File Include="app/scripts/app.directives.js">
       <publishTime>03/02/2024 22:42:39</publishTime>
@@ -32,7 +32,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>03/02/2024 22:42:39</publishTime>
     </File>
     <File Include="app/scripts/app.services.js">
-      <publishTime>05/18/2024 21:30:39</publishTime>
+      <publishTime>06/19/2024 12:38:21</publishTime>
     </File>
     <File Include="app/styles/styles.css">
       <publishTime>03/02/2024 22:42:39</publishTime>
@@ -53,22 +53,22 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>09/10/2013 17:29:20</publishTime>
     </File>
     <File Include="bin/HaloOnline.Server.App.dll">
-      <publishTime>06/19/2024 03:29:16</publishTime>
+      <publishTime>06/19/2024 12:47:18</publishTime>
     </File>
     <File Include="bin/HaloOnline.Server.App.pdb">
-      <publishTime>06/19/2024 03:29:16</publishTime>
+      <publishTime>06/19/2024 12:47:18</publishTime>
     </File>
     <File Include="bin/HaloOnline.Server.Common.dll">
-      <publishTime>06/19/2024 03:29:16</publishTime>
+      <publishTime>06/19/2024 11:53:43</publishTime>
     </File>
     <File Include="bin/HaloOnline.Server.Common.pdb">
-      <publishTime>06/19/2024 03:29:16</publishTime>
+      <publishTime>06/19/2024 11:53:43</publishTime>
     </File>
     <File Include="bin/HaloOnline.Server.Model.dll">
-      <publishTime>06/19/2024 03:19:37</publishTime>
+      <publishTime>06/19/2024 11:53:42</publishTime>
     </File>
     <File Include="bin/HaloOnline.Server.Model.pdb">
-      <publishTime>06/19/2024 03:19:37</publishTime>
+      <publishTime>06/19/2024 11:53:42</publishTime>
     </File>
     <File Include="bin/Microsoft.Owin.Diagnostics.dll">
       <publishTime>02/13/2015 13:16:32</publishTime>
@@ -2498,7 +2498,7 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
       <publishTime>03/02/2024 22:42:39</publishTime>
     </File>
     <File Include="Web.config">
-      <publishTime>06/19/2024 03:29:18</publishTime>
+      <publishTime>06/19/2024 11:53:45</publishTime>
     </File>
   </ItemGroup>
 </Project>

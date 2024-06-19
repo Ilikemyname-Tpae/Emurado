@@ -23,7 +23,6 @@
             user: {
                 authenticated: false,
                 username: '',
-                nickname: ''
             },
             loginuser: {
                 username: '',
@@ -33,7 +32,6 @@
             registeruser: {
                 username: '',
                 password: '',
-                nickname: '',
                 battletag: ''
             },
             registererror: ''
@@ -43,7 +41,6 @@
             data.user = {
                 authenticated: accountService.currentUser.authenticated,
                 username: accountService.currentUser.username,
-                nickname: accountService.currentUser.nickname
             }
         });
 
@@ -62,7 +59,6 @@
             data.registeruser = {
                 username: '',
                 password: '',
-                nickname: '',
                 battletag: ''
             };
         };

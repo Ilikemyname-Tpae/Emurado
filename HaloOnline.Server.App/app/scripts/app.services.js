@@ -15,7 +15,6 @@
 		accountService = {
 			currentUser: {
 				username: '',
-				nickname: '',
 				authorizationToken: '',
 				authenticated: false
 			},
@@ -25,7 +24,6 @@
 				console.log('logout');
 				accountService.currentUser = {
 					username: '',
-					nickname: '',
 					authorizationToken: '',
 					authenticated: false
 				};
@@ -70,7 +68,6 @@
 				var request = {
 					Username: user.username,
 					Password: user.password,
-					Nickname: user.nickname,
 					BattleTag: user.battletag
 				};
 

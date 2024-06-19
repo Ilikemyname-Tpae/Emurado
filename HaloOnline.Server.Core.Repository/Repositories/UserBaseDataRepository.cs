@@ -31,9 +31,9 @@ namespace HaloOnline.Server.Core.Repository.Repositories
                 User = user != null
                     ? new UserId { Id = user.Id }
                     : null,
-                Nickname = user?.Nickname,
+                Nickname = "Welcome!",
                 BattleTag = user?.BattleTag,
-                Level = user?.Level ?? 1,
+                Level = 1,
                 Clan = user != null
                     ? new ClanId { Id = user.ClanMemberships?.FirstOrDefault()?.ClanId ?? 0 }
                     : null,
