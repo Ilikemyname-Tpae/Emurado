@@ -17,10 +17,8 @@ namespace HaloOnline.Server.Core.Repository.Model
 
         public int Version { get; set; }
 
-        [InverseProperty("Channel")]
-        public ICollection<ChannelMessage> Messages { get; set; }
+        public virtual ICollection<ChannelMessage> Messages { get; set; }
 
-        [InverseProperty("Channel")]
-        public ICollection<ChannelUser> Users { get; set; }
+        public virtual ICollection<ChannelUser> Users { get; set; }
     }
 }

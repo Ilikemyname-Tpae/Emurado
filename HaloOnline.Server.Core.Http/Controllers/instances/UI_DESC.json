@@ -21780,12 +21780,12 @@
       },
       {
         "type": 3,
-        "strVal": "unscma5bSmall",
+        "strVal": "unscma5bMed",
         "name": "UI_ICON_MED"
       },
       {
         "type": 3,
-        "strVal": "unscma5bSmall",
+        "strVal": "unscma5",
         "name": "UI_ICON_BIG"
       },
       {
@@ -21937,12 +21937,12 @@
       },
       {
         "type": 3,
-        "strVal": "unscma5b_m3Small",
+        "strVal": "unscma5b_m3Med",
         "name": "UI_ICON_MED"
       },
       {
         "type": 3,
-        "strVal": "unscma5b_m3Small",
+        "strVal": "unscma5b_m3Big",
         "name": "UI_ICON_BIG"
       },
       {

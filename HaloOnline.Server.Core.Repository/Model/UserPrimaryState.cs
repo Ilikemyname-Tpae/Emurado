@@ -24,7 +24,7 @@ namespace HaloOnline.Server.Core.Repository.Model
 
         public int Victories { get; set; }
 
-        public int TotalWp { get; set; }
+        public int TotalWP { get; set; }
 
         public int TotalTimePlayed { get; set; }
 

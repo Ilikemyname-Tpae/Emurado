@@ -1,20 +1,26 @@
-﻿using Newtonsoft.Json;
-using System;
+﻿using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
-using System.Data.SQLite;
+using System.Data.Entity;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using System.Web.Http;
+using HaloOnline.Server.Core.Repository;
+using HaloOnline.Server.Core.Repository.Model;
 
 namespace HaloOnline.Server.Core.Http.Controllers
 {
     [RoutePrefix("MessagingService.svc")]
     public class ReceiveController : ApiController
     {
-        private const string ConnectionString = "Data Source=halodb.sqlite;Version=3;Pooling=True;Max Pool Size=100;";
-        private static readonly object databaseLock = new object();
+        private readonly HaloDbContext _dbContext;
+        private static readonly ConcurrentDictionary<int, ConcurrentDictionary<int, DateTime>> _userLastSeenMessages = new ConcurrentDictionary<int, ConcurrentDictionary<int, DateTime>>();
 
+        public ReceiveController()
+        {
+            _dbContext = new HaloDbContext();
+        }
 
         [HttpPost]
         [Route("Receive")]
@@ -23,11 +29,13 @@ namespace HaloOnline.Server.Core.Http.Controllers
             try
             {
                 var userIdClaim = (User?.Identity as ClaimsIdentity)?.FindFirst("Id");
-                int userId = userIdClaim != null ? int.Parse(userIdClaim.Value) : -1;
+                if (userIdClaim == null || !int.TryParse(userIdClaim.Value, out int userId))
+                {
+                    return Unauthorized();
+                }
 
-                await Task.Run(() => UpdateUserColumns(userId));
-
-                var channelInfoList = await Task.Run(() => GetChannelInfoFromDatabase(userId));
+                await UpdateUserState(userId);
+                var channelInfoList = await FetchChannelInfoAsync(userId);
 
                 var result = new
                 {
@@ -46,47 +54,57 @@ namespace HaloOnline.Server.Core.Http.Controllers
             }
         }
 
-        private async Task UpdateUserColumns(int userId)
+        private async Task UpdateUserState(int userId)
         {
-            using (var connection = await GetOpenConnectionAsync())
-            using (var command = connection.CreateCommand())
+            var user = await _dbContext.Users.FirstOrDefaultAsync(u => u.Id == userId);
+            if (user != null)
             {
-                command.CommandText = "UPDATE User SET State = 1, IsInvitable = 1 WHERE Id = @UserId";
-                command.Parameters.AddWithValue("@UserId", userId);
-                await command.ExecuteNonQueryAsync();
+                user.State = 1;
+                user.IsInvitable = 1;
+                await _dbContext.SaveChangesAsync();
             }
         }
 
-        private async Task<List<object>> GetChannelInfoFromDatabase(int userId)
+        private async Task<List<object>> FetchChannelInfoAsync(int userId)
         {
             var channelInfoList = new List<object>();
 
-            using (var connection = await GetOpenConnectionAsync())
-            using (var command = connection.CreateCommand())
+            var channels = await _dbContext.Channels
+                .Include(c => c.Messages)
+                .Include(c => c.Users)
+                .Where(c => c.Users.Any(u => u.UserId == userId))
+                .ToListAsync();
+
+            foreach (var channel in channels)
             {
-                command.CommandText = "SELECT Name, Version FROM Channel WHERE UserId = @UserId";
-                command.Parameters.AddWithValue("@UserId", userId);
-
-                using (var reader = await command.ExecuteReaderAsync())
+                if (!_userLastSeenMessages.TryGetValue(userId, out var userChannels))
                 {
-                    while (await reader.ReadAsync())
+                    userChannels = new ConcurrentDictionary<int, DateTime>();
+                    _userLastSeenMessages[userId] = userChannels;
+                }
+
+                userChannels.TryGetValue(channel.Id, out DateTime lastSeenTimestamp);
+
+                var messages = await FetchChannelMessagesAsync(channel.Id, lastSeenTimestamp);
+
+                var channelInfo = new
+                {
+                    Id = channel.Id,
+                    Name = channel.Name,
+                    Version = channel.Version,
+                    Messages = messages,
+                    Members = channel.Users.Select(u => new { Id = u.UserId }).ToList()
+                };
+
+                channelInfoList.Add(channelInfo);
+
+                if (messages.Any())
+                {
+                    var lastMessage = messages.Last() as dynamic;
+                    if (lastMessage?.Timestamp != null)
                     {
-                        var channelName = reader["Name"].ToString();
-                        var channelVersion = Convert.ToInt32(reader["Version"]);
-
-                        var messages = await GetChannelMessagesFromDatabase(channelName, userId);
-
-                        var channelInfo = new
-                        {
-                            Name = channelName,
-                            Version = channelVersion,
-                            Messages = messages,
-                            Members = new[]
-                            {
-                            new { Id = userId }
-                        }
-                        };
-                        channelInfoList.Add(channelInfo);
+                        lastSeenTimestamp = FromUnixTimestamp(lastMessage.Timestamp);
+                        userChannels[channel.Id] = lastSeenTimestamp;
                     }
                 }
             }
@@ -94,39 +112,30 @@ namespace HaloOnline.Server.Core.Http.Controllers
             return channelInfoList;
         }
 
-        private async Task<List<object>> GetChannelMessagesFromDatabase(string channelName, int userId)
+        private static long ToUnixTimestamp(DateTime dateTime)
         {
-            var messagesList = new List<object>();
-
-            using (var connection = await GetOpenConnectionAsync())
-            using (var command = connection.CreateCommand())
-            {
-                command.CommandText = "SELECT UserId, Text, Timestamp FROM ChannelMessage WHERE ChannelName = @ChannelName";
-                command.Parameters.AddWithValue("@ChannelName", channelName);
-
-                using (var reader = await command.ExecuteReaderAsync())
-                {
-                    while (await reader.ReadAsync())
-                    {
-                        var message = new
-                        {
-                            From = new { Id = Convert.ToInt32(reader["UserId"]) },
-                            Text = reader["Text"].ToString(),
-                            Timestamp = DateTimeOffset.Now.ToUnixTimeSeconds()
-                        };
-                        messagesList.Add(message);
-                    }
-                }
-            }
-
-            return messagesList;
+            var unixEpoch = new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc);
+            return (long)(dateTime.ToUniversalTime() - unixEpoch).TotalSeconds;
         }
 
-        private async Task<SQLiteConnection> GetOpenConnectionAsync()
+        private static DateTime FromUnixTimestamp(long timestamp)
         {
-            var connection = new SQLiteConnection(ConnectionString);
-            await connection.OpenAsync();
-            return connection;
+            var unixEpoch = new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc);
+            return unixEpoch.AddSeconds(timestamp).ToUniversalTime();
+        }
+
+        private async Task<List<object>> FetchChannelMessagesAsync(int channelId, DateTime lastSeenTimestamp)
+        {
+            var messages = await _dbContext.ChannelMessages
+                .Where(m => m.ChannelId == channelId && m.Timestamp > lastSeenTimestamp)
+                .ToListAsync();
+
+            return messages.Select(m => new
+            {
+                From = new { Id = m.UserId },
+                Text = m.Text,
+                Timestamp = ToUnixTimestamp(m.Timestamp)
+            }).ToList<object>();
         }
     }
 }

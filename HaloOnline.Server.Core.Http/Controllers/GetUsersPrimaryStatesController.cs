@@ -1,7 +1,11 @@
-﻿using Newtonsoft.Json;
+﻿using HaloOnline.Server.Core.Repository.Model;
+using HaloOnline.Server.Core.Repository;
+using Newtonsoft.Json;
 using System;
-using System.Data.SQLite;
+using System.Data.Entity;
+using System.Linq;
 using System.Security.Claims;
+using System.Threading.Tasks;
 using System.Web.Http;
 
 namespace HaloOnline.Server.Core.Http.Controllers
@@ -9,17 +13,21 @@ namespace HaloOnline.Server.Core.Http.Controllers
     [RoutePrefix("UserService.svc")]
     public class GetUsersPrimaryStatesController : ApiController
     {
-        private const string ConnectionString = "Data Source=halodb.sqlite;Version=3;";
+        private readonly HaloDbContext _context;
+
+        public GetUsersPrimaryStatesController()
+        {
+            _context = new HaloDbContext();
+        }
 
         [HttpPost]
         [Route("GetUsersPrimaryStates")]
         [Authorize]
-        // Will eventually remake this so it uses Entity to avoid database locks
-        public IHttpActionResult GetUsersPrimaryStates()
+        public async Task<IHttpActionResult> GetUsersPrimaryStates()
         {
             try
             {
-                var requestBody = Request.Content.ReadAsStringAsync().Result;
+                var requestBody = await Request.Content.ReadAsStringAsync();
                 dynamic requestData = JsonConvert.DeserializeObject(requestBody);
                 int userId = requestData?.users?[0]?.Id ?? -1;
 
@@ -28,7 +36,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                     return BadRequest("Invalid user ID.");
                 }
 
-                var userData = GetOrCreateUserPrimaryState(userId);
+                var userData = await GetOrCreateUserPrimaryState(userId);
 
                 var result = new
                 {
@@ -67,47 +75,13 @@ namespace HaloOnline.Server.Core.Http.Controllers
             }
         }
 
-        private dynamic GetOrCreateUserPrimaryState(int userId)
+        private async Task<UserPrimaryState> GetOrCreateUserPrimaryState(int userId)
         {
-            using (var connection = new SQLiteConnection(ConnectionString))
+            var userPrimaryState = await _context.UserPrimaryState.FirstOrDefaultAsync(u => u.UserId == userId);
+
+            if (userPrimaryState == null)
             {
-                connection.Open();
-
-                string selectQuery = "SELECT * FROM UserPrimaryState WHERE UserId = @UserId";
-                using (var selectCommand = new SQLiteCommand(selectQuery, connection))
-                {
-                    selectCommand.Parameters.AddWithValue("@UserId", userId);
-                    using (var reader = selectCommand.ExecuteReader())
-                    {
-                        if (reader.Read())
-                        {
-                            return new
-                            {
-                                UserId = reader.GetInt32(0),
-                                Xp = reader.GetInt32(1),
-                                Kills = reader.GetInt32(2),
-                                Deaths = reader.GetInt32(3),
-                                Assists = reader.GetInt32(4),
-                                Suicides = reader.GetInt32(5),
-                                TotalMatches = reader.GetInt32(6),
-                                Victories = reader.GetInt32(7),
-                                TotalWP = reader.GetInt32(8),
-                                TotalTimePlayed = reader.GetInt32(9),
-                                TotalTimeOnline = reader.GetInt32(10)
-                            };
-                        }
-                    }
-                }
-
-                string insertQuery = @"INSERT INTO UserPrimaryState (UserId, Xp, Kills, Deaths, Assists, Suicides, TotalMatches, Victories, TotalWP, TotalTimePlayed, TotalTimeOnline)
-                                       VALUES (@UserId, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)";
-                using (var insertCommand = new SQLiteCommand(insertQuery, connection))
-                {
-                    insertCommand.Parameters.AddWithValue("@UserId", userId);
-                    insertCommand.ExecuteNonQuery();
-                }
-
-                return new
+                userPrimaryState = new UserPrimaryState
                 {
                     UserId = userId,
                     Xp = 0,
@@ -121,7 +95,12 @@ namespace HaloOnline.Server.Core.Http.Controllers
                     TotalTimePlayed = 0,
                     TotalTimeOnline = 0
                 };
+
+                _context.UserPrimaryState.Add(userPrimaryState);
+                await _context.SaveChangesAsync();
             }
+
+            return userPrimaryState;
         }
     }
 }

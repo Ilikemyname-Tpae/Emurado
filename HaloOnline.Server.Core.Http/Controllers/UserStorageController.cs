@@ -66,7 +66,6 @@ namespace HaloOnline.Server.Core.Http.Controllers
                 }
             };
         }
-
         [HttpPost]
         public async Task<IHttpActionResult> GetPublicData(GetPublicDataRequest request)
         {
@@ -85,7 +84,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
 
                 using (var dbContext = new HaloDbContext())
                 {
-                    var publicData = await dbContext.PublicData.FirstOrDefaultAsync(pd => pd.UserId == userId);
+                    var publicData = await Task.Run(() => dbContext.PublicData.FirstOrDefault(pd => pd.UserId == userId));
 
                     if (publicData == null)
                     {
@@ -125,16 +124,16 @@ namespace HaloOnline.Server.Core.Http.Controllers
                     Result = new ServiceResult<List<PerUser>>
                     {
                         Data = new List<PerUser>
+                {
+                    new PerUser
+                    {
+                        User = new UserId
                         {
-                            new PerUser
-                            {
-                                User = new UserId
-                                {
-                                    Id = userId
-                                },
-                                PerUserData = parsedData
-                            }
-                        }
+                            Id = userId
+                        },
+                        PerUserData = parsedData
+                    }
+                }
                     }
                 };
 

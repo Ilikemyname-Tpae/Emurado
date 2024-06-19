@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.SQLite;
+using System.Data.Entity;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using System.Web.Http;
-using Dapper;
+using HaloOnline.Server.Core.Repository;
+using HaloOnline.Server.Core.Repository.Model;
 using Newtonsoft.Json;
 
 namespace HaloOnline.Server.Core.Http.Controllers
@@ -13,7 +14,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
     [RoutePrefix("MessagingService.svc")]
     public class JoinChannelsController : ApiController
     {
-        private const string ConnectionString = "Data Source=halodb.sqlite;Version=3;";
+        private readonly HaloDbContext dbContext = new HaloDbContext();
 
         [HttpPost]
         [Route("JoinChannels")]
@@ -62,83 +63,73 @@ namespace HaloOnline.Server.Core.Http.Controllers
 
         private async Task ReplaceChannelInDatabaseAsync(string channelName, int userId)
         {
-            var prefix = GetChannelPrefix(channelName);
-            if (prefix != null)
+            await Task.Run(async () =>
             {
-                using (var connection = await GetOpenConnectionAsync())
+                var channel = await dbContext.Channels
+                    .FirstOrDefaultAsync(c => c.Name == channelName && c.Users.Any(u => u.UserId == userId));
+
+                if (channel != null)
                 {
-                    await connection.ExecuteAsync(
-                        @"DELETE FROM Channel 
-                  WHERE Name LIKE @Prefix AND UserId = @UserId",
-                        new { Prefix = $"{prefix}%", UserId = userId });
-
-                    await connection.ExecuteAsync(
-                        @"DELETE FROM ChannelMembers 
-                  WHERE ChannelName = @ChannelName AND UserId = @UserId",
-                        new { ChannelName = channelName, UserId = userId });
-
-                    await connection.ExecuteAsync(
-                        @"INSERT INTO Channel (Name, Version, UserId)
-                  VALUES (@Name, @Version, @UserId)",
-                        new { Name = channelName, Version = 1, UserId = userId });
+                    dbContext.Channels.Remove(channel);
+                    await dbContext.SaveChangesAsync();
                 }
-            }
+
+                var newChannel = new Channel
+                {
+                    Name = channelName,
+                    Version = 1,
+                    Users = new List<ChannelUser> { new ChannelUser { UserId = userId } }
+                };
+
+                dbContext.Channels.Add(newChannel);
+                await dbContext.SaveChangesAsync();
+            });
         }
 
         private async Task AddMemberToChannelAsync(string channelName, int userId)
         {
-            using (var connection = await GetOpenConnectionAsync())
+            await Task.Run(async () =>
             {
-                await connection.ExecuteAsync(
-                    @"INSERT INTO ChannelMembers (ChannelName, UserId)
-                      VALUES (@ChannelName, @UserId)",
-                    new { ChannelName = channelName, UserId = userId });
-            }
+                var channel = await dbContext.Channels.FirstOrDefaultAsync(c => c.Name == channelName);
+                if (channel != null)
+                {
+                    var existingMember = await dbContext.ChannelsUsers
+                        .FirstOrDefaultAsync(cu => cu.ChannelId == channel.Id && cu.UserId == userId);
+
+                    if (existingMember == null)
+                    {
+                        var newMember = new ChannelUser
+                        {
+                            ChannelId = channel.Id,
+                            UserId = userId
+                        };
+
+                        dbContext.ChannelsUsers.Add(newMember);
+                        await dbContext.SaveChangesAsync();
+                    }
+                }
+            });
         }
 
-        private string GetChannelPrefix(string channelName)
-        {
-            if (channelName.StartsWith("#general"))
-                return "#general";
-            else if (channelName.StartsWith("#private"))
-                return "#private";
-            else if (channelName.StartsWith("#party"))
-                return "#party";
-            else if (channelName.StartsWith("#game"))
-                return "#game";
-            else
-                return null;
-        }
 
         private async Task<object> GetChannelInfoAsync(string channelName, int userId)
         {
-            using (var connection = await GetOpenConnectionAsync())
-            {
-                var result = await connection.QueryFirstOrDefaultAsync(
-                    @"SELECT Id, Name, Version FROM Channel
-                      WHERE Name = @Name AND UserId = @UserId",
-                    new { Name = channelName, UserId = userId });
+            var channel = await dbContext.Channels
+                .Include(c => c.Users)
+                .FirstOrDefaultAsync(c => c.Name == channelName && c.Users.Any(u => u.UserId == userId));
 
-                if (result != null)
+            if (channel != null)
+            {
+                return new
                 {
-                    return new
-                    {
-                        Name = result.Name,
-                        Version = result.Version,
-                        Messages = new List<object>(),
-                        Members = new[] { new { Id = userId } }
-                    };
-                }
+                    Name = channel.Name,
+                    Version = channel.Version,
+                    Messages = new List<object>(),
+                    Members = channel.Users.Select(u => new { Id = u.UserId }).ToList()
+                };
             }
 
             return null;
-        }
-
-        private async Task<SQLiteConnection> GetOpenConnectionAsync()
-        {
-            var connection = new SQLiteConnection(ConnectionString);
-            await connection.OpenAsync();
-            return connection;
         }
     }
 }

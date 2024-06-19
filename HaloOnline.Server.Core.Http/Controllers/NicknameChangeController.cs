@@ -1,25 +1,27 @@
-﻿using System;
+﻿using HaloOnline.Server.Core.Repository;
+using System;
 using System.Collections.Generic;
-using System.Data.SQLite;
+using System.Data.Entity;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using System.Web.Http;
-using HaloOnline.Server.Common.Repositories;
-using HaloOnline.Server.Core.Repository;
-using HaloOnline.Server.Model.User;
 
 namespace HaloOnline.Server.Core.Http.Controllers
 {
     [RoutePrefix("UserService.svc")]
     public class NicknameChangeController : ApiController
     {
-        private readonly string _connectionString = "Data Source=halodb.sqlite;Version=3;";
+        private readonly HaloDbContext _context;
+
+        public NicknameChangeController()
+        {
+            _context = new HaloDbContext();
+        }
 
         [HttpPost]
         [Route("NicknameChange")]
         [Authorize]
-		// Only made a temporary fix so it doesnt remove the BattleTag when changing name. Will go for a better approach eventually.
         public async Task<IHttpActionResult> NicknameChange([FromBody] Dictionary<string, string> requestBody)
         {
             try
@@ -29,49 +31,16 @@ namespace HaloOnline.Server.Core.Http.Controllers
 
                 if (userId != -1 && requestBody != null && requestBody.TryGetValue("nickname", out var newNickname))
                 {
-                    UserBaseData existingUserBaseData = null;
-                    using (var connection = new SQLiteConnection(_connectionString))
-                    {
-                        await connection.OpenAsync();
-                        using (var command = new SQLiteCommand("SELECT * FROM User WHERE Id = @Id", connection))
-                        {
-                            command.Parameters.AddWithValue("@Id", userId);
+                    var existingUser = await _context.Users.FirstOrDefaultAsync(u => u.Id == userId);
 
-                            using (var reader = await command.ExecuteReaderAsync())
-                            {
-                                if (await reader.ReadAsync())
-                                {
-                                    existingUserBaseData = new UserBaseData
-                                    {
-                                        User = new UserId
-                                        {
-                                            Id = reader.GetInt32(reader.GetOrdinal("Id"))
-                                        },
-                                        Nickname = reader.GetString(reader.GetOrdinal("Nickname")),
-                                        BattleTag = reader.GetString(reader.GetOrdinal("BattleTag"))
-                                    };
-                                }
-                            }
-                        }
-                    }
-
-                    if (existingUserBaseData == null)
+                    if (existingUser == null)
                     {
                         return NotFound();
                     }
 
-                    existingUserBaseData.Nickname = newNickname;
-
-                    using (var connection = new SQLiteConnection(_connectionString))
-                    {
-                        await connection.OpenAsync();
-                        using (var command = new SQLiteCommand("UPDATE User SET Nickname = @Nickname WHERE Id = @Id", connection))
-                        {
-                            command.Parameters.AddWithValue("@Nickname", newNickname);
-                            command.Parameters.AddWithValue("@Id", userId);
-                            await command.ExecuteNonQueryAsync();
-                        }
-                    }
+                    existingUser.Nickname = newNickname;
+                    _context.Entry(existingUser).State = EntityState.Modified;
+                    await _context.SaveChangesAsync();
 
                     var result = new
                     {

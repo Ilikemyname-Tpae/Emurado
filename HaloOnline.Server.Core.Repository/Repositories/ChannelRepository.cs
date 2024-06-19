@@ -76,7 +76,7 @@ namespace HaloOnline.Server.Core.Repository.Repositories
                     ChannelId = foundChannel.Id,
                     UserId = channelMessage.From.Id,
                     Text = channelMessage.Text,
-                    TimeStamp = channelMessage.Timestamp,
+                    Timestamp = channelMessage.Timestamp,
                     Version = foundChannel.Version
                 });
                 return _context.SaveChangesAsync();
@@ -103,7 +103,7 @@ namespace HaloOnline.Server.Core.Repository.Repositories
                 {
                     From = new UserId(m.UserId),
                     Text = m.Text,
-                    Timestamp = m.TimeStamp
+                    Timestamp = m.Timestamp
                 }).ToList()
             };
             return Task.FromResult(result);
@@ -128,7 +128,7 @@ namespace HaloOnline.Server.Core.Repository.Repositories
                 {
                     From = new UserId(m.UserId),
                     Text = m.Text,
-                    Timestamp = m.TimeStamp
+                    Timestamp = m.Timestamp
                 }).ToList()
             };
             return Task.FromResult(result);

@@ -8,12 +8,16 @@ using System.Web.Http;
 using Dapper;
 using HaloOnline.Server.Core.Http.Model.Messaging;
 using HaloOnline.Server.Core.Http.Model;
+using System.Data.Entity;
+using HaloOnline.Server.Core.Repository.Model;
+using HaloOnline.Server.Core.Repository;
 
 namespace HaloOnline.Server.Core.Http.Controllers
 {
     [Authorize]
     public class MessagingController : ApiController
     {
+        private readonly HaloDbContext dbContext = new HaloDbContext();
         private const string ConnectionString = "Data Source=halodb.sqlite;Version=3;";
 
         [HttpPost]
@@ -26,7 +30,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
 
                 await UpdateUserColumnsAsync(userId);
 
-                var channels = await GetChannelInfoFromDatabaseAsync(userId);
+                var channels = await GetChannelInfoFromDatabaseAsync();
 
                 foreach (var channelName in request.ChannelNames)
                 {
@@ -61,23 +65,25 @@ namespace HaloOnline.Server.Core.Http.Controllers
             }
         }
 
-        private async Task<List<ChannelInfo>> GetChannelInfoFromDatabaseAsync(int userId)
+        private async Task<List<ChannelInfo>> GetChannelInfoFromDatabaseAsync()
         {
             var channelInfoList = new List<ChannelInfo>();
 
             using (var connection = await GetOpenConnectionAsync())
             {
                 var channels = await connection.QueryAsync<dynamic>(
-                    "SELECT Name, Version FROM Channel WHERE UserId = @UserId",
-                    new { UserId = userId }
+                    "SELECT c.Name, c.Version, cu.UserId " +
+                    "FROM Channel c " +
+                    "JOIN ChannelUser cu ON UserId = cu.UserId"
                 );
 
                 foreach (var channel in channels)
                 {
                     var channelName = channel.Name.ToString();
                     var channelVersion = Convert.ToInt32(channel.Version);
+                    var userId = Convert.ToInt32(channel.UserId);
 
-                    var messages = await GetChannelMessagesFromDatabaseAsync(channelName, userId);
+                    var messages = await GetChannelMessagesFromDatabaseAsync(channelName);
 
                     var channelInfo = new ChannelInfo
                     {
@@ -101,35 +107,30 @@ namespace HaloOnline.Server.Core.Http.Controllers
             public List<object> Members { get; set; }
         }
 
-        private async Task<List<object>> GetChannelMessagesFromDatabaseAsync(string channelName, int userId)
+        private async Task<List<object>> GetChannelMessagesFromDatabaseAsync(string channelName)
         {
             var messagesList = new List<object>();
 
             using (var connection = await GetOpenConnectionAsync())
             {
-                var lastMessageIdShown = await GetLastMessageIdShownAsync(userId);
-
                 var messages = await connection.QueryAsync<dynamic>(
-                    "SELECT UniqueId, UserId, Text, Timestamp FROM ChannelMessage WHERE ChannelName = @ChannelName AND UniqueId > @LastMessageIdShown",
-                    new { ChannelName = channelName, LastMessageIdShown = lastMessageIdShown }
+                    "SELECT Id, ChannelId, UserId, Text, Timestamp, Version, ChannelName FROM ChannelMessage WHERE ChannelName = @ChannelName",
+                    new { ChannelName = channelName }
                 );
 
                 foreach (var message in messages)
                 {
                     var msg = new
                     {
-                        Id = message.UniqueId,
-                        From = new { Id = message.UserId },
+                        Id = message.Id,
+                        ChannelId = message.ChannelId,
+                        UserId = message.UserId,
                         Text = message.Text,
-                        Timestamp = message.Timestamp
+                        Timestamp = message.Timestamp,
+                        Version = message.Version,
+                        ChannelName = message.ChannelName
                     };
                     messagesList.Add(msg);
-                }
-
-                if (messages.Any())
-                {
-                    var latestMessageId = messages.Max(msg => msg.UniqueId);
-                    await UpdateLastMessageIdShownAsync(userId, latestMessageId);
                 }
             }
 
@@ -168,34 +169,51 @@ namespace HaloOnline.Server.Core.Http.Controllers
         [HttpPost]
         public async Task<SendResult> Send(SendRequest request)
         {
+
             int userId;
             this.TryGetUserId(out userId);
 
             bool sent = false;
             string uniqueId = Guid.NewGuid().ToString();
 
-            using (var connection = new SQLiteConnection(ConnectionString))
+            try
             {
-                await connection.OpenAsync();
+                var userExistsInChannel = await dbContext.ChannelsUsers
+                    .AnyAsync(cu => cu.UserId == userId && cu.Channel.Name == request.ChannelName);
 
-                var userExists = await connection.ExecuteScalarAsync<int>(
-                    "SELECT COUNT(*) FROM Channel WHERE UserId = @UserId", new { UserId = userId });
-
-                if (userExists > 0)
+                if (userExistsInChannel)
                 {
-                    var channelExists = await connection.ExecuteScalarAsync<int>(
-                        "SELECT COUNT(*) FROM Channel WHERE Name = @ChannelName", new { ChannelName = request.ChannelName });
+                    var channelExists = await dbContext.Channels
+                        .AnyAsync(c => c.Name == request.ChannelName);
 
-                    if (channelExists > 0)
+                    if (channelExists)
                     {
                         sent = true;
 
-                        var timestamp = DateTimeOffset.Now.ToUnixTimeSeconds();
-                        await connection.ExecuteAsync(
-                            "INSERT INTO ChannelMessage (ChannelName, UserId, Text, Timestamp, UniqueId) VALUES (@ChannelName, @UserId, @Text, @Timestamp, @UniqueId)",
-                            new { ChannelName = request.ChannelName, UserId = userId, Text = request.Message, Timestamp = timestamp, UniqueId = uniqueId });
+                        var timestamp = DateTime.UtcNow;
+                        var message = new ChannelMessage
+                        {
+                            ChannelId = dbContext.Channels.First(c => c.Name == request.ChannelName).Id,
+                            UserId = userId,
+                            Text = request.Message,
+                            Timestamp = timestamp,
+                            Version = 1 
+                        };
+
+                        dbContext.ChannelMessages.Add(message);
+                        await dbContext.SaveChangesAsync();
                     }
                 }
+            }
+            catch (Exception ex)
+            {
+                return new SendResult
+                {
+                    Result = new ServiceResult<bool>
+                    {
+                        Data = false
+                    }
+                };
             }
 
             return new SendResult

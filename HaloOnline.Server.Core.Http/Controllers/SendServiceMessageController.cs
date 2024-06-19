@@ -34,14 +34,34 @@ namespace HaloOnline.Server.Core.Http.Controllers
 
                 long timestamp = DateTimeOffset.UtcNow.ToUnixTimeSeconds();
 
+                int channelId;
                 using (var connection = new SQLiteConnection(ConnectionString))
                 {
                     connection.Open();
 
                     using (var command = new SQLiteCommand(connection))
                     {
-                        command.CommandText = "INSERT INTO ChannelMessage (ChannelName, UserId, Text, Timestamp) VALUES (@ChannelName, @UserId, @Text, @Timestamp)";
+                        command.CommandText = "SELECT Id FROM Channel WHERE Name = @ChannelName";
                         command.Parameters.AddWithValue("@ChannelName", request.ChannelName);
+                        var result = command.ExecuteScalar();
+                        if (result == null)
+                        {
+                            return new SendServiceMessageResult
+                            {
+                                Result = new ServiceResult<bool>
+                                {
+                                    ReturnCode = -1,
+                                    Message = "Channel not found."
+                                }
+                            };
+                        }
+                        channelId = Convert.ToInt32(result);
+                    }
+
+                    using (var command = new SQLiteCommand(connection))
+                    {
+                        command.CommandText = "INSERT INTO ChannelMessage (ChannelId, UserId, Text, Timestamp) VALUES (@ChannelId, @UserId, @Text, @Timestamp)";
+                        command.Parameters.AddWithValue("@ChannelId", channelId);
                         command.Parameters.AddWithValue("@UserId", userId);
                         command.Parameters.AddWithValue("@Text", request.Message);
                         command.Parameters.AddWithValue("@Timestamp", timestamp);
