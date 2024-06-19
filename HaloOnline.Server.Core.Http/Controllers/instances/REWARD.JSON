@@ -1,0 +1,24 @@
+[
+  {
+    "className": "REWARD",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "challenge_oracle_1",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "assault_rifle",
+        "name": "REWARD_ITEM"
+      },
+      {
+        "type": 1,
+        "intVal": 1,
+        "name": "REWARD_AMOUNT"
+      }
+    ],
+    "name": "challenge_oracle_1",
+    "parents": []
+  }
+]

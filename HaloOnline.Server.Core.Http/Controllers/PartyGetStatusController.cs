@@ -1,9 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.SQLite;
+using System.Data.Entity;
+using System.Linq;
 using System.Security.Claims;
+using System.Threading.Tasks;
 using System.Web.Http;
 using HaloOnline.Server.Core.Http.Model.User;
+using HaloOnline.Server.Core.Repository;
 using HaloOnline.Server.Model.Presence;
 
 namespace HaloOnline.Server.Core.Http.Controllers
@@ -11,122 +14,89 @@ namespace HaloOnline.Server.Core.Http.Controllers
     [RoutePrefix("PresenceService.svc")]
     public class PartyGetStatusController : ApiController
     {
-        private const string ConnectionString = "Data Source=halodb.sqlite;Version=3;";
+        private readonly HaloDbContext _context;
+
+        public PartyGetStatusController()
+        {
+            _context = new HaloDbContext();
+        }
 
         [HttpPost]
         [Route("PartyGetStatus")]
         [Authorize]
-        public IHttpActionResult PartyGetStatus()
+        public async Task<IHttpActionResult> PartyGetStatus()
         {
-            var userIdClaim = (User?.Identity as ClaimsIdentity)?.FindFirst("Id");
-            int userId = userIdClaim != null ? int.Parse(userIdClaim.Value) : -1;
-
-            var partyStatus = GetPartyStatusFromDatabase(userId);
-
-            var result = new
+            try
             {
-                PartyGetStatusResult = new
+                var userIdClaim = (User?.Identity as ClaimsIdentity)?.FindFirst("Id");
+                int userId = userIdClaim != null ? int.Parse(userIdClaim.Value) : -1;
+
+                PartyStatus partyStatus = await GetPartyStatusFromDatabaseAsync(userId);
+
+                var result = new
                 {
-                    retCode = 0,
-                    data = new
+                    PartyGetStatusResult = new
                     {
-                        Party = new
+                        retCode = 0,
+                        data = new
                         {
-                            Id = partyStatus.Party?.Id ?? "",
-                        },
-                        SessionMembers = partyStatus.SessionMembers,
-                        MatchmakeState = partyStatus.MatchmakeState,
-                        GameData = partyStatus.GameData
-                    }
-                }
-            };
-
-            return Ok(result);
-        }
-
-        private PartyStatus GetPartyStatusFromDatabase(int userId)
-        {
-            using (var connection = new SQLiteConnection(ConnectionString))
-            {
-                connection.Open();
-
-                using (var command = new SQLiteCommand("SELECT PartyId FROM PartyMember WHERE UserId = @userId", connection))
-                {
-                    command.Parameters.AddWithValue("@userId", userId);
-
-                    using (var reader = command.ExecuteReader())
-                    {
-                        if (reader.Read())
-                        {
-                            var partyId = reader["PartyId"].ToString();
-                            var sessionMembers = GetSessionMembersForParty(partyId, connection);
-                            return new PartyStatus
+                            Party = new
                             {
-                                Party = new PartyId
-                                {
-                                    Id = partyId
-                                },
-                                SessionMembers = sessionMembers,
-                                MatchmakeState = GetMatchmakeStateForParty(partyId, connection),
-                                GameData = GetGameDataForParty(partyId, connection)
-                            };
-                        }
-                        else
-                        {
-                            return new PartyStatus();
+                                Id = partyStatus.Party?.Id ?? "",
+                            },
+                            SessionMembers = partyStatus.SessionMembers,
+                            MatchmakeState = partyStatus.MatchmakeState,
+                            GameData = partyStatus.GameData
                         }
                     }
-                }
+                };
+
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+                return InternalServerError(ex);
             }
         }
 
-        private List<PartyMemberDto> GetSessionMembersForParty(string partyId, SQLiteConnection connection)
+        private async Task<PartyStatus> GetPartyStatusFromDatabaseAsync(int userId)
         {
-            var sessionMembers = new List<PartyMemberDto>();
+            var partyMember = await _context.PartyMembers
+                                             .Include(pm => pm.Party)
+                                             .FirstOrDefaultAsync(pm => pm.UserId == userId);
 
-            using (var command = new SQLiteCommand("SELECT UserId, IsOwner FROM PartyMember WHERE PartyId = @partyId", connection))
+            if (partyMember != null)
             {
-                command.Parameters.AddWithValue("@partyId", partyId);
+                var party = partyMember.Party;
+                var sessionMembers = await GetSessionMembersForPartyAsync(party.Id);
 
-                using (var reader = command.ExecuteReader())
+                return new PartyStatus
                 {
-                    while (reader.Read())
-                    {
-                        var memberId = int.Parse(reader["UserId"].ToString());
-                        var isOwner = bool.Parse(reader["IsOwner"].ToString());
-
-                        var partyMember = new PartyMemberDto
-                        {
-                            User = new UserDto { Id = memberId },
-                            IsOwner = isOwner
-                        };
-
-                        sessionMembers.Add(partyMember);
-                    }
-                }
+                    Party = new PartyId { Id = party.Id },
+                    SessionMembers = sessionMembers,
+                    MatchmakeState = party.MatchmakeState,
+                    GameData = party.GameData ?? new byte[100]
+                };
             }
+            else
+            {
+                return new PartyStatus();
+            }
+        }
+
+        private async Task<List<PartyMemberDto>> GetSessionMembersForPartyAsync(string partyId)
+        {
+            var sessionMembers = await _context.PartyMembers
+                                               .Where(pm => pm.PartyId == partyId)
+                                               .Select(pm => new PartyMemberDto
+                                               {
+                                                   Id = pm.UserId,
+                                                   IsOwner = pm.IsOwner,
+                                                   User = new UserDto { Id = pm.UserId }
+                                               })
+                                               .ToListAsync();
 
             return sessionMembers;
-        }
-
-        private int GetMatchmakeStateForParty(string partyId, SQLiteConnection connection)
-        {
-            using (var command = new SQLiteCommand("SELECT MatchmakeState FROM Party WHERE Id = @partyId", connection))
-            {
-                command.Parameters.AddWithValue("@partyId", partyId);
-                var result = command.ExecuteScalar();
-                return result != null ? Convert.ToInt32(result) : 0;
-            }
-        }
-
-        private byte[] GetGameDataForParty(string partyId, SQLiteConnection connection)
-        {
-            using (var command = new SQLiteCommand("SELECT GameData FROM Party WHERE Id = @partyId", connection))
-            {
-                command.Parameters.AddWithValue("@partyId", partyId);
-                var result = command.ExecuteScalar();
-                return result as byte[] ?? new byte[100];
-            }
         }
     }
 }

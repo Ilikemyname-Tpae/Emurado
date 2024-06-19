@@ -42,6 +42,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                                 "assault_rifle",
                                                 "assault_rifle_v2",
                                                 "assault_rifle_v3",
+                                                "assault_rifle_v5",
                                                 "assault_rifle_v6"
                                             }
                                         },
@@ -85,9 +86,10 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                             Items = new List<string>
                                             {
                                                 "smg",
+                                                "smg_v1",
                                                 "smg_v2",
-                                                "smg_v3",
                                                 "smg_v4",
+                                                "smg_v5",
                                                 "smg_v6"
                                             }
                                         },
@@ -227,6 +229,50 @@ namespace HaloOnline.Server.Core.Http.Controllers
                         },
                         new ShopData
                         {
+                            Name = "internal_shop",
+                            Type = "internal",
+                            Race = 3,
+                            Sections = new List<ShopSection>
+                            {
+                                new ShopSection
+                                {
+                                    Name = "section_career",
+                                    Shelves = new List<ShopShelf>
+                                    {
+                                        new ShopShelf
+                                        {
+                                            Name = "shelf_bundles_start_kits",
+                                            IsHot = false,
+                                            IsSale = false,
+                                            Items = new List<string>
+                                            {
+                                                "ranger_kit_offer",
+                                                "sniper_kit_offer",
+                                                "tactician_kit_offer"
+                                            }
+                                        }
+                                    }
+                                },
+                                new ShopSection
+                                {
+                                    Name = "section_account_modifiers",
+                                    Shelves = new List<ShopShelf>
+                                    {
+                                        new ShopShelf
+                                        {
+                                            Name = "shelf_account_modifiers",
+                                            IsHot = false,
+                                            IsSale = false,
+                                            Items = new List<string>
+                                            {
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        },
+                                                new ShopData
+                        {
                             Name = "career_shop",
                             Type = "career",
                             Race = 3,
@@ -239,7 +285,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     {
                                         new ShopShelf
                                         {
-                                            Name = "shelf_bundles_start_f_kits",
+                                            Name = "shelf_career_ranger",
                                             IsHot = false,
                                             IsSale = false,
                                             Items = new List<string>
@@ -255,7 +301,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     {
                                         new ShopShelf
                                         {
-                                            Name = "shelf_bundles_start_f_kits",
+                                            Name = "shelf_career_sniper",
                                             IsHot = false,
                                             IsSale = false,
                                             Items = new List<string>
@@ -271,7 +317,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     {
                                         new ShopShelf
                                         {
-                                            Name = "shelf_bundles_start_f_kits",
+                                            Name = "shelf_career_tactician",
                                             IsHot = false,
                                             IsSale = false,
                                             Items = new List<string>
@@ -283,8 +329,6 @@ namespace HaloOnline.Server.Core.Http.Controllers
                             }
                         },
 
-                        // Will have to add the rest of the armors according to the original list
-                        // (i may add armors from newer versions of H:O.
 new ShopData
 {
     Name = "armors",
@@ -322,7 +366,14 @@ new ShopData
                         "helmet_spectrum",
                         "helmet_orbital",
                         "helmet_gungnir",
-                        "helmet_hammerhead"
+                        "helmet_hammerhead",
+                        "helmet_mercenary",
+                        "helmet_hoplite",
+                        "helmet_ballista",
+                        "helmet_spectrum",
+                        "helmet_omni",
+                        "helmet_silverback",
+                        "helmet_widowmaker"
                     }
                 },
                 new ShopShelf
@@ -333,6 +384,15 @@ new ShopData
                     Items = new List<string>
                     {
                         "helmet_strider",
+                        "helmet_stealth",
+                        "helmet_renegade",
+                        "helmet_nihard",
+                        "helmet_gladiator",
+                        "helmet_mac",
+                        "helmet_shark",
+                        "helmet_halberd",
+                        "helmet_cyclops",
+                        "helmet_demo"
                     }
                 }
             }
@@ -342,7 +402,7 @@ new ShopData
             Name = "carousel_armor_chest",
             Shelves = new List<ShopShelf>
             {
-                new ShopShelf
+new ShopShelf
                 {
                     Name = "carousel_armor_standard",
                     IsHot = false,
@@ -367,7 +427,14 @@ new ShopData
                         "chest_spectrum",
                         "chest_orbital",
                         "chest_gungnir",
-                        "chest_hammerhead"
+                        "chest_hammerhead",
+                        "chest_mercenary",
+                        "chest_hoplite",
+                        "chest_ballista",
+                        "chest_spectrum",
+                        "chest_omni",
+                        "chest_silverback",
+                        "chest_widowmaker"
                     }
                 },
                 new ShopShelf
@@ -377,7 +444,16 @@ new ShopData
                     IsSale = false,
                     Items = new List<string>
                     {
-                        "chest_strider"
+                        "chest_strider",
+                        "chest_stealth",
+                        "chest_renegade",
+                        "chest_nihard",
+                        "chest_gladiator",
+                        "chest_mac",
+                        "chest_shark",
+                        "chest_halberd",
+                        "chest_cyclops",
+                        "chest_demo"
                     }
                 }
             }
@@ -387,7 +463,7 @@ new ShopData
             Name = "carousel_armor_shoulder",
             Shelves = new List<ShopShelf>
             {
-                new ShopShelf
+new ShopShelf
                 {
                     Name = "carousel_armor_standard",
                     IsHot = false,
@@ -412,7 +488,14 @@ new ShopData
                         "shoulders_spectrum",
                         "shoulders_orbital",
                         "shoulders_gungnir",
-                        "shoulders_hammerhead"
+                        "shoulders_hammerhead",
+                        "shoulders_mercenary",
+                        "shoulders_hoplite",
+                        "shoulders_ballista",
+                        "shoulders_spectrum",
+                        "shoulders_omni",
+                        "shoulders_silverback",
+                        "shoulders_widowmaker"
                     }
                 },
                 new ShopShelf
@@ -423,6 +506,15 @@ new ShopData
                     Items = new List<string>
                     {
                         "shoulders_strider",
+                        "shoulders_stealth",
+                        "shoulders_renegade",
+                        "shoulders_nihard",
+                        "shoulders_gladiator",
+                        "shoulders_mac",
+                        "shoulders_shark",
+                        "shoulders_halberd",
+                        "shoulders_cyclops",
+                        "shoulders_demo"
                     }
                 }
             }
@@ -432,7 +524,7 @@ new ShopData
             Name = "carousel_armor_arms",
             Shelves = new List<ShopShelf>
             {
-                new ShopShelf
+new ShopShelf
                 {
                     Name = "carousel_armor_standard",
                     IsHot = false,
@@ -457,7 +549,14 @@ new ShopData
                         "arms_spectrum",
                         "arms_orbital",
                         "arms_gungnir",
-                        "arms_hammerhead"
+                        "arms_hammerhead",
+                        "arms_mercenary",
+                        "arms_hoplite",
+                        "arms_ballista",
+                        "arms_spectrum",
+                        "arms_omni",
+                        "arms_silverback",
+                        "arms_widowmaker"
                     }
                 },
                 new ShopShelf
@@ -467,7 +566,16 @@ new ShopData
                     IsSale = false,
                     Items = new List<string>
                     {
-                        "arms_strider"
+                        "arms_strider",
+                        "arms_stealth",
+                        "arms_renegade",
+                        "arms_nihard",
+                        "arms_gladiator",
+                        "arms_mac",
+                        "arms_shark",
+                        "arms_halberd",
+                        "arms_cyclops",
+                        "arms_demo"
                     }
                 }
             }
@@ -477,7 +585,7 @@ new ShopData
             Name = "carousel_armor_legs",
             Shelves = new List<ShopShelf>
             {
-                new ShopShelf
+new ShopShelf
                 {
                     Name = "carousel_armor_standard",
                     IsHot = false,
@@ -502,7 +610,14 @@ new ShopData
                         "legs_spectrum",
                         "legs_orbital",
                         "legs_gungnir",
-                        "legs_hammerhead"
+                        "legs_hammerhead",
+                        "legs_mercenary",
+                        "legs_hoplite",
+                        "legs_ballista",
+                        "legs_spectrum",
+                        "legs_omni",
+                        "legs_silverback",
+                        "legs_widowmaker"
                     }
                 },
                 new ShopShelf
@@ -512,16 +627,26 @@ new ShopData
                     IsSale = false,
                     Items = new List<string>
                     {
-                        "legs_strider"
-                    }
-                }
-            }
+                        "legs_strider",
+                        "legs_stealth",
+                        "legs_renegade",
+                        "legs_nihard",
+                        "legs_gladiator",
+                        "legs_mac",
+                        "legs_shark",
+                        "legs_halberd",
+                        "legs_cyclops",
+                        "legs_demo"
                     }
                 }
             }
         }
-    }
-};
+        }
+                }
+            }
+
+                }
+            };
 
 
             return Ok(result);

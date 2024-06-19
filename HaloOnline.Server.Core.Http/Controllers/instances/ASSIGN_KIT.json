@@ -1,0 +1,113 @@
+[
+	{
+		"className": "ASSIGN_KIT",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "ranger_kit_offer",
+				"name": "OFFER_NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 0,
+				"name": "RACE_ID"
+			},
+			{
+				"type": 3,
+				"strVal": "assault_rifle",
+				"name": "WEAPON_TO_EQUIP"
+			},
+			{
+				"type": 3,
+				"strVal": "",
+				"name": "ARMOR_TO_EQUIP"
+			},
+			{
+				"type": 3,
+				"strVal": "color_pri_41",
+				"name": "COLORS_TO_EQUIP"
+			},
+			{
+				"type": 3,
+				"strVal": "ranger_kit_offer",
+				"name": "NAME"
+			}
+		],
+		"name": "Ranger",
+		"parents": []
+	},
+	{
+		"className": "ASSIGN_KIT",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "sniper_kit_offer",
+				"name": "OFFER_NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 0,
+				"name": "RACE_ID"
+			},
+			{
+				"type": 3,
+				"strVal": "dmr",
+				"name": "WEAPON_TO_EQUIP"
+			},
+			{
+				"type": 3,
+				"strVal": "",
+				"name": "ARMOR_TO_EQUIP"
+			},
+			{
+				"type": 3,
+				"strVal": "color_pri_57",
+				"name": "COLORS_TO_EQUIP"
+			},
+			{
+				"type": 3,
+				"strVal": "sniper_kit_offer",
+				"name": "NAME"
+			}
+		],
+		"name": "Sniper",
+		"parents": []
+	},
+	{
+		"className": "ASSIGN_KIT",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "tactician_kit_offer",
+				"name": "OFFER_NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 0,
+				"name": "RACE_ID"
+			},
+			{
+				"type": 3,
+				"strVal": "smg",
+				"name": "WEAPON_TO_EQUIP"
+			},
+			{
+				"type": 3,
+				"strVal": "",
+				"name": "ARMOR_TO_EQUIP"
+			},
+			{
+				"type": 3,
+				"strVal": "color_pri_38",
+				"name": "COLORS_TO_EQUIP"
+			},
+			{
+				"type": 3,
+				"strVal": "tactician_kit_offer",
+				"name": "NAME"
+			}
+		],
+		"name": "Tactician",
+		"parents": []
+	}
+]

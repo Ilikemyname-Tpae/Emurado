@@ -1,0 +1,26 @@
+[
+  {
+    "className": "CHALLENGE",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "challenge_oracle_1",
+        "name": "NAME"
+      }
+    ],
+    "name": "challenge_oracle_1",
+    "parents": []
+  },
+  {
+    "className": "CHALLENGE",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "challenge_scanner_1",
+        "name": "NAME"
+      }
+    ],
+    "name": "challenge_scanner_1",
+    "parents": []
+  }
+]

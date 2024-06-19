@@ -1,0 +1,1119 @@
+[
+	{
+		"className": "SCORING_EVENT",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "statkill",
+				"name": "INSTANCE_NAME"
+			},
+			{
+				"type": 3,
+				"strVal": "statKill",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 0,
+				"name": "SCORING_EVENT_ID"
+			},
+			{
+				"type": 1,
+				"intVal": 0,
+				"name": "IS_MEDAL"
+			},
+			{
+				"type": 1,
+				"intVal": 20,
+				"name": "SCORING_REWARD_WP"
+			}
+		],
+		"parents": []
+	},
+	{
+		"className": "SCORING_EVENT",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "statAssist",
+				"name": "INSTANCE_NAME"
+			},
+			{
+				"type": 3,
+				"strVal": "statAssist",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 1,
+				"name": "SCORING_EVENT_ID"
+			},
+			{
+				"type": 1,
+				"intVal": 0,
+				"name": "IS_MEDAL"
+			},
+			{
+				"type": 1,
+				"intVal": 10,
+				"name": "SCORING_REWARD_WP"
+			}
+		],
+		"parents": []
+	},
+	{
+		"className": "SCORING_EVENT",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "statPerfection",
+				"name": "INSTANCE_NAME"
+			},
+			{
+				"type": 3,
+				"strVal": "statPerfection",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 2,
+				"name": "SCORING_EVENT_ID"
+			},
+			{
+				"type": 1,
+				"intVal": 1,
+				"name": "IS_MEDAL"
+			},
+			{
+				"type": 1,
+				"intVal": 800,
+				"name": "SCORING_REWARD_WP"
+			}
+		],
+		"parents": []
+	},
+	{
+		"className": "SCORING_EVENT",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "statExtermination",
+				"name": "INSTANCE_NAME"
+			},
+			{
+				"type": 3,
+				"strVal": "statExtermination",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 3,
+				"name": "SCORING_EVENT_ID"
+			},
+			{
+				"type": 1,
+				"intVal": 1,
+				"name": "IS_MEDAL"
+			},
+			{
+				"type": 1,
+				"intVal": 400,
+				"name": "SCORING_REWARD_WP"
+			}
+		],
+		"parents": []
+	},
+	{
+		"className": "SCORING_EVENT",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "statDoubleKill",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 4,
+				"name": "SCORING_EVENT_ID"
+			},
+			{
+				"type": 1,
+				"intVal": 1,
+				"name": "IS_MEDAL"
+			},
+			{
+				"type": 1,
+				"intVal": 35,
+				"name": "SCORING_REWARD_WP"
+			}
+		],
+		"parents": []
+	},
+	{
+		"className": "SCORING_EVENT",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "statTripleKill",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 5,
+				"name": "SCORING_EVENT_ID"
+			},
+			{
+				"type": 1,
+				"intVal": 1,
+				"name": "IS_MEDAL"
+			},
+			{
+				"type": 1,
+				"intVal": 40,
+				"name": "SCORING_REWARD_WP"
+			}
+		],
+		"parents": []
+	},
+	{
+		"className": "SCORING_EVENT",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "statOverkill",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 6,
+				"name": "SCORING_EVENT_ID"
+			},
+			{
+				"type": 1,
+				"intVal": 1,
+				"name": "IS_MEDAL"
+			},
+			{
+				"type": 1,
+				"intVal": 120,
+				"name": "SCORING_REWARD_WP"
+			}
+		],
+		"parents": []
+	},
+	{
+		"className": "SCORING_EVENT",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "statKilltacular",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 7,
+				"name": "SCORING_EVENT_ID"
+			},
+			{
+				"type": 1,
+				"intVal": 1,
+				"name": "IS_MEDAL"
+			},
+			{
+				"type": 1,
+				"intVal": 200,
+				"name": "SCORING_REWARD_WP"
+			}
+		],
+		"parents": []
+	},
+	{
+		"className": "SCORING_EVENT",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "statKilltrocity",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 8,
+				"name": "SCORING_EVENT_ID"
+			},
+			{
+				"type": 1,
+				"intVal": 1,
+				"name": "IS_MEDAL"
+			},
+			{
+				"type": 1,
+				"intVal": 280,
+				"name": "SCORING_REWARD_WP"
+			}
+		],
+		"parents": []
+	},
+	{
+		"className": "SCORING_EVENT",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "statKillimanjaro",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 9,
+				"name": "SCORING_EVENT_ID"
+			},
+			{
+				"type": 1,
+				"intVal": 1,
+				"name": "IS_MEDAL"
+			},
+			{
+				"type": 1,
+				"intVal": 360,
+				"name": "SCORING_REWARD_WP"
+			}
+		],
+		"parents": []
+	},
+	{
+		"className": "SCORING_EVENT",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "statKilltastrophe",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 10,
+				"name": "SCORING_EVENT_ID"
+			},
+			{
+				"type": 1,
+				"intVal": 1,
+				"name": "IS_MEDAL"
+			},
+			{
+				"type": 1,
+				"intVal": 440,
+				"name": "SCORING_REWARD_WP"
+			}
+		],
+		"parents": []
+	},
+	{
+		"className": "SCORING_EVENT",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "statKillapocalypse",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 11,
+				"name": "SCORING_EVENT_ID"
+			},
+			{
+				"type": 1,
+				"intVal": 1,
+				"name": "IS_MEDAL"
+			},
+			{
+				"type": 1,
+				"intVal": 520,
+				"name": "SCORING_REWARD_WP"
+			}
+		],
+		"parents": []
+	},
+	{
+		"className": "SCORING_EVENT",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "statKillionaire",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 12,
+				"name": "SCORING_EVENT_ID"
+			},
+			{
+				"type": 1,
+				"intVal": 1,
+				"name": "IS_MEDAL"
+			},
+			{
+				"type": 1,
+				"intVal": 600,
+				"name": "SCORING_REWARD_WP"
+			}
+		],
+		"parents": []
+	},
+	{
+		"className": "SCORING_EVENT",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "statBeatDown",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 13,
+				"name": "SCORING_EVENT_ID"
+			},
+			{
+				"type": 1,
+				"intVal": 1,
+				"name": "IS_MEDAL"
+			},
+			{
+				"type": 1,
+				"intVal": 20,
+				"name": "SCORING_REWARD_WP"
+			}
+		],
+		"parents": []
+	},
+	{
+		"className": "SCORING_EVENT",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "statAssassin",
+				"name": "INSTANCE_NAME"
+			},
+			{
+				"type": 3,
+				"strVal": "statAssassin",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 14,
+				"name": "SCORING_EVENT_ID"
+			},
+			{
+				"type": 1,
+				"intVal": 1,
+				"name": "IS_MEDAL"
+			},
+			{
+				"type": 1,
+				"intVal": 35,
+				"name": "SCORING_REWARD_WP"
+			}
+		],
+		"parents": []
+	},
+	{
+		"className": "SCORING_EVENT",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "statSniperKill",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 15,
+				"name": "SCORING_EVENT_ID"
+			},
+			{
+				"type": 1,
+				"intVal": 1,
+				"name": "IS_MEDAL"
+			},
+			{
+				"type": 1,
+				"intVal": 25,
+				"name": "SCORING_REWARD_WP"
+			}
+		],
+		"parents": []
+	},
+	{
+		"className": "SCORING_EVENT",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "statGrenadeStick",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 16,
+				"name": "SCORING_EVENT_ID"
+			},
+			{
+				"type": 1,
+				"intVal": 1,
+				"name": "IS_MEDAL"
+			},
+			{
+				"type": 1,
+				"intVal": 25,
+				"name": "SCORING_REWARD_WP"
+			}
+		],
+		"parents": []
+	},
+	{
+		"className": "SCORING_EVENT",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "statLaserKill",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 17,
+				"name": "SCORING_EVENT_ID"
+			},
+			{
+				"type": 1,
+				"intVal": 1,
+				"name": "IS_MEDAL"
+			},
+			{
+				"type": 1,
+				"intVal": 25,
+				"name": "SCORING_REWARD_WP"
+			}
+		],
+		"parents": []
+	},
+	{
+		"className": "SCORING_EVENT",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "statOddballKill",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 18,
+				"name": "SCORING_EVENT_ID"
+			},
+			{
+				"type": 1,
+				"intVal": 1,
+				"name": "IS_MEDAL"
+			},
+			{
+				"type": 1,
+				"intVal": 200,
+				"name": "SCORING_REWARD_WP"
+			}
+		],
+		"parents": []
+	},
+	{
+		"className": "SCORING_EVENT",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "statFlagKill",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 19,
+				"name": "SCORING_EVENT_ID"
+			},
+			{
+				"type": 1,
+				"intVal": 1,
+				"name": "IS_MEDAL"
+			},
+			{
+				"type": 1,
+				"intVal": 200,
+				"name": "SCORING_REWARD_WP"
+			}
+		],
+		"parents": []
+	},
+	{
+		"className": "SCORING_EVENT",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "statIncineration",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 20,
+				"name": "SCORING_EVENT_ID"
+			},
+			{
+				"type": 1,
+				"intVal": 1,
+				"name": "IS_MEDAL"
+			},
+			{
+				"type": 1,
+				"intVal": 25,
+				"name": "SCORING_REWARD_WP"
+			}
+		],
+		"parents": []
+	},
+	{
+		"className": "SCORING_EVENT",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "statKilljoy",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 21,
+				"name": "SCORING_EVENT_ID"
+			},
+			{
+				"type": 1,
+				"intVal": 1,
+				"name": "IS_MEDAL"
+			},
+			{
+				"type": 1,
+				"intVal": 35,
+				"name": "SCORING_REWARD_WP"
+			}
+		],
+		"parents": []
+	},
+	{
+		"className": "SCORING_EVENT",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "statDeathFromTheGrave",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 22,
+				"name": "SCORING_EVENT_ID"
+			},
+			{
+				"type": 1,
+				"intVal": 1,
+				"name": "IS_MEDAL"
+			},
+			{
+				"type": 1,
+				"intVal": 75,
+				"name": "SCORING_REWARD_WP"
+			}
+		],
+		"parents": []
+	},
+	{
+		"className": "SCORING_EVENT",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "statSplatter",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 23,
+				"name": "SCORING_EVENT_ID"
+			},
+			{
+				"type": 1,
+				"intVal": 1,
+				"name": "IS_MEDAL"
+			},
+			{
+				"type": 1,
+				"intVal": 35,
+				"name": "SCORING_REWARD_WP"
+			}
+		],
+		"parents": []
+	},
+	{
+		"className": "SCORING_EVENT",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "statHijacker",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 24,
+				"name": "SCORING_EVENT_ID"
+			},
+			{
+				"type": 1,
+				"intVal": 1,
+				"name": "IS_MEDAL"
+			},
+			{
+				"type": 1,
+				"intVal": 60,
+				"name": "SCORING_REWARD_WP"
+			}
+		],
+		"parents": []
+	},
+	{
+		"className": "SCORING_EVENT",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "statBulltrue",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 25,
+				"name": "SCORING_EVENT_ID"
+			},
+			{
+				"type": 1,
+				"intVal": 1,
+				"name": "IS_MEDAL"
+			},
+			{
+				"type": 1,
+				"intVal": 145,
+				"name": "SCORING_REWARD_WP"
+			}
+		],
+		"parents": []
+	},
+	{
+		"className": "SCORING_EVENT",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "statWheelman",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 26,
+				"name": "SCORING_EVENT_ID"
+			},
+			{
+				"type": 1,
+				"intVal": 1,
+				"name": "IS_MEDAL"
+			},
+			{
+				"type": 1,
+				"intVal": 35,
+				"name": "SCORING_REWARD_WP"
+			}
+		],
+		"parents": []
+	},
+	{
+		"className": "SCORING_EVENT",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "statSkyjacker",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 27,
+				"name": "SCORING_EVENT_ID"
+			},
+			{
+				"type": 1,
+				"intVal": 1,
+				"name": "IS_MEDAL"
+			},
+			{
+				"type": 1,
+				"intVal": 80,
+				"name": "SCORING_REWARD_WP"
+			}
+		],
+		"parents": []
+	},
+	{
+		"className": "SCORING_EVENT",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "statKilledFlagCarrier",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 28,
+				"name": "SCORING_EVENT_ID"
+			},
+			{
+				"type": 1,
+				"intVal": 1,
+				"name": "IS_MEDAL"
+			},
+			{
+				"type": 1,
+				"intVal": 40,
+				"name": "SCORING_REWARD_WP"
+			}
+		],
+		"parents": []
+	},
+	{
+		"className": "SCORING_EVENT",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "statFlagScore",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 29,
+				"name": "SCORING_EVENT_ID"
+			},
+			{
+				"type": 1,
+				"intVal": 1,
+				"name": "IS_MEDAL"
+			},
+			{
+				"type": 1,
+				"intVal": 200,
+				"name": "SCORING_REWARD_WP"
+			}
+		],
+		"parents": []
+	},
+	{
+		"className": "SCORING_EVENT",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "statHailToTheKing",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 30,
+				"name": "SCORING_EVENT_ID"
+			},
+			{
+				"type": 1,
+				"intVal": 1,
+				"name": "IS_MEDAL"
+			},
+			{
+				"type": 1,
+				"intVal": 200,
+				"name": "SCORING_REWARD_WP"
+			}
+		],
+		"parents": []
+	},
+	{
+		"className": "SCORING_EVENT",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "statRevenge",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 31,
+				"name": "SCORING_EVENT_ID"
+			},
+			{
+				"type": 1,
+				"intVal": 1,
+				"name": "IS_MEDAL"
+			},
+			{
+				"type": 1,
+				"intVal": 20,
+				"name": "SCORING_REWARD_WP"
+			}
+		],
+		"parents": []
+	},
+	{
+		"className": "SCORING_EVENT",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "statFlagRunner",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 32,
+				"name": "SCORING_EVENT_ID"
+			},
+			{
+				"type": 1,
+				"intVal": 1,
+				"name": "IS_MEDAL"
+			},
+			{
+				"type": 1,
+				"intVal": 60,
+				"name": "SCORING_REWARD_WP"
+			}
+		],
+		"parents": []
+	},
+	{
+		"className": "SCORING_EVENT",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "statFlagReturn",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 33,
+				"name": "SCORING_EVENT_ID"
+			},
+			{
+				"type": 1,
+				"intVal": 1,
+				"name": "IS_MEDAL"
+			},
+			{
+				"type": 1,
+				"intVal": 60,
+				"name": "SCORING_REWARD_WP"
+			}
+		],
+		"parents": []
+	},
+	{
+		"className": "SCORING_EVENT",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "statKillingSpree",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 34,
+				"name": "SCORING_EVENT_ID"
+			},
+			{
+				"type": 1,
+				"intVal": 1,
+				"name": "IS_MEDAL"
+			},
+			{
+				"type": 1,
+				"intVal": 160,
+				"name": "SCORING_REWARD_WP"
+			}
+		],
+		"parents": []
+	},
+	{
+		"className": "SCORING_EVENT",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "statKillingFrenzy",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 35,
+				"name": "SCORING_EVENT_ID"
+			},
+			{
+				"type": 1,
+				"intVal": 1,
+				"name": "IS_MEDAL"
+			},
+			{
+				"type": 1,
+				"intVal": 200,
+				"name": "SCORING_REWARD_WP"
+			}
+		],
+		"parents": []
+	},
+	{
+		"className": "SCORING_EVENT",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "statRunningRiot",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 36,
+				"name": "SCORING_EVENT_ID"
+			},
+			{
+				"type": 1,
+				"intVal": 1,
+				"name": "IS_MEDAL"
+			},
+			{
+				"type": 1,
+				"intVal": 400,
+				"name": "SCORING_REWARD_WP"
+			}
+		],
+		"parents": []
+	},
+	{
+		"className": "SCORING_EVENT",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "statRampage",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 37,
+				"name": "SCORING_EVENT_ID"
+			},
+			{
+				"type": 1,
+				"intVal": 1,
+				"name": "IS_MEDAL"
+			},
+			{
+				"type": 1,
+				"intVal": 200,
+				"name": "SCORING_REWARD_WP"
+			}
+		],
+		"parents": []
+	},
+	{
+		"className": "SCORING_EVENT",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "statUntouchable",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 38,
+				"name": "SCORING_EVENT_ID"
+			},
+			{
+				"type": 1,
+				"intVal": 1,
+				"name": "IS_MEDAL"
+			},
+			{
+				"type": 1,
+				"intVal": 800,
+				"name": "SCORING_REWARD_WP"
+			}
+		],
+		"parents": []
+	},
+	{
+		"className": "SCORING_EVENT",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "statInvincible",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 39,
+				"name": "SCORING_EVENT_ID"
+			},
+			{
+				"type": 1,
+				"intVal": 1,
+				"name": "IS_MEDAL"
+			},
+			{
+				"type": 1,
+				"intVal": 900,
+				"name": "SCORING_REWARD_WP"
+			}
+		],
+		"parents": []
+	},
+	{
+		"className": "SCORING_EVENT",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "statWheelmanSpree",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 40,
+				"name": "SCORING_EVENT_ID"
+			},
+			{
+				"type": 1,
+				"intVal": 1,
+				"name": "IS_MEDAL"
+			},
+			{
+				"type": 1,
+				"intVal": 265,
+				"name": "SCORING_REWARD_WP"
+			}
+		],
+		"parents": []
+	},
+	{
+		"className": "SCORING_EVENT",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "statHeadshotKill",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 41,
+				"name": "SCORING_EVENT_ID"
+			},
+			{
+				"type": 1,
+				"intVal": 1,
+				"name": "IS_MEDAL"
+			},
+			{
+				"type": 1,
+				"intVal": 20,
+				"name": "SCORING_REWARD_WP"
+			}
+		],
+		"parents": []
+	}
+]

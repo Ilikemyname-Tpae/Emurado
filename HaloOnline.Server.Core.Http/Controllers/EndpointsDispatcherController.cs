@@ -41,7 +41,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                 {
                     Ip = _serverOptions.EndpointHostname,
                     IsDefault = true,
-                    Name = s.ServiceName,
+                    Name = "A-AutoDefault-http",
                     Port = _serverOptions.EndpointPort,
                     Protocol = 4
                 }).ToList();

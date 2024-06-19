@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Data.SQLite;
 using System.Linq;
 using System.Security.Claims;
+using System.Threading.Tasks;
 using System.Web.Http;
 
 namespace HaloOnline.Server.Core.Http.Controllers
@@ -11,20 +12,22 @@ namespace HaloOnline.Server.Core.Http.Controllers
     [RoutePrefix("MessagingService.svc")]
     public class ReceiveController : ApiController
     {
-        private const string ConnectionString = "Data Source=halodb.sqlite;Version=3;";
+        private const string ConnectionString = "Data Source=halodb.sqlite;Version=3;Pooling=True;Max Pool Size=100;";
+        private static readonly object databaseLock = new object();
+
 
         [HttpPost]
         [Route("Receive")]
-        public IHttpActionResult Receive()
+        public async Task<IHttpActionResult> Receive()
         {
             try
             {
                 var userIdClaim = (User?.Identity as ClaimsIdentity)?.FindFirst("Id");
                 int userId = userIdClaim != null ? int.Parse(userIdClaim.Value) : -1;
 
-                UpdateUserColumns(userId);
+                await Task.Run(() => UpdateUserColumns(userId));
 
-                var channelInfoList = GetChannelInfoFromDatabase(userId);
+                var channelInfoList = await Task.Run(() => GetChannelInfoFromDatabase(userId));
 
                 var result = new
                 {
@@ -43,55 +46,47 @@ namespace HaloOnline.Server.Core.Http.Controllers
             }
         }
 
-        private void UpdateUserColumns(int userId)
+        private async Task UpdateUserColumns(int userId)
         {
-            using (var connection = new SQLiteConnection(ConnectionString))
+            using (var connection = await GetOpenConnectionAsync())
+            using (var command = connection.CreateCommand())
             {
-                connection.Open();
-
-                using (var command = new SQLiteCommand(connection))
-                {
-                    command.CommandText = "UPDATE User SET State = 1, IsInvitable = 1 WHERE Id = @UserId";
-                    command.Parameters.AddWithValue("@UserId", userId);
-                    command.ExecuteNonQuery();
-                }
+                command.CommandText = "UPDATE User SET State = 1, IsInvitable = 1 WHERE Id = @UserId";
+                command.Parameters.AddWithValue("@UserId", userId);
+                await command.ExecuteNonQueryAsync();
             }
         }
 
-        private List<object> GetChannelInfoFromDatabase(int userId)
+        private async Task<List<object>> GetChannelInfoFromDatabase(int userId)
         {
             var channelInfoList = new List<object>();
 
-            using (var connection = new SQLiteConnection(ConnectionString))
+            using (var connection = await GetOpenConnectionAsync())
+            using (var command = connection.CreateCommand())
             {
-                connection.Open();
+                command.CommandText = "SELECT Name, Version FROM Channel WHERE UserId = @UserId";
+                command.Parameters.AddWithValue("@UserId", userId);
 
-                using (var command = new SQLiteCommand(connection))
+                using (var reader = await command.ExecuteReaderAsync())
                 {
-                    command.CommandText = "SELECT Name, Version FROM Channel WHERE UserId = @UserId";
-                    command.Parameters.AddWithValue("@UserId", userId);
-
-                    using (var reader = command.ExecuteReader())
+                    while (await reader.ReadAsync())
                     {
-                        while (reader.Read())
+                        var channelName = reader["Name"].ToString();
+                        var channelVersion = Convert.ToInt32(reader["Version"]);
+
+                        var messages = await GetChannelMessagesFromDatabase(channelName, userId);
+
+                        var channelInfo = new
                         {
-                            var channelName = reader["Name"].ToString();
-                            var channelVersion = Convert.ToInt32(reader["Version"]);
-
-                            var messages = GetChannelMessagesFromDatabase(channelName, userId);
-
-                            var channelInfo = new
+                            Name = channelName,
+                            Version = channelVersion,
+                            Messages = messages,
+                            Members = new[]
                             {
-                                Name = channelName,
-                                Version = channelVersion,
-                                Messages = messages,
-                                Members = new[]
-                                {
-                                    new { Id = userId }
-                                }
-                            };
-                            channelInfoList.Add(channelInfo);
+                            new { Id = userId }
                         }
+                        };
+                        channelInfoList.Add(channelInfo);
                     }
                 }
             }
@@ -99,36 +94,39 @@ namespace HaloOnline.Server.Core.Http.Controllers
             return channelInfoList;
         }
 
-        private List<object> GetChannelMessagesFromDatabase(string channelName, int userId)
+        private async Task<List<object>> GetChannelMessagesFromDatabase(string channelName, int userId)
         {
             var messagesList = new List<object>();
 
-            using (var connection = new SQLiteConnection(ConnectionString))
+            using (var connection = await GetOpenConnectionAsync())
+            using (var command = connection.CreateCommand())
             {
-                connection.Open();
+                command.CommandText = "SELECT UserId, Text, Timestamp FROM ChannelMessage WHERE ChannelName = @ChannelName";
+                command.Parameters.AddWithValue("@ChannelName", channelName);
 
-                using (var command = new SQLiteCommand(connection))
+                using (var reader = await command.ExecuteReaderAsync())
                 {
-                    command.CommandText = "SELECT UserId, Text, Timestamp FROM ChannelMessage WHERE ChannelName = @ChannelName";
-                    command.Parameters.AddWithValue("@ChannelName", channelName);
-
-                    using (var reader = command.ExecuteReader())
+                    while (await reader.ReadAsync())
                     {
-                        while (reader.Read())
+                        var message = new
                         {
-                            var message = new
-                            {
-                                From = new { Id = Convert.ToInt32(reader["UserId"]) },
-                                Text = reader["Text"].ToString(),
-                                Timestamp = 1708074088
-                            };
-                            messagesList.Add(message);
-                        }
+                            From = new { Id = Convert.ToInt32(reader["UserId"]) },
+                            Text = reader["Text"].ToString(),
+                            Timestamp = DateTimeOffset.Now.ToUnixTimeSeconds()
+                        };
+                        messagesList.Add(message);
                     }
                 }
             }
 
             return messagesList;
+        }
+
+        private async Task<SQLiteConnection> GetOpenConnectionAsync()
+        {
+            var connection = new SQLiteConnection(ConnectionString);
+            await connection.OpenAsync();
+            return connection;
         }
     }
 }

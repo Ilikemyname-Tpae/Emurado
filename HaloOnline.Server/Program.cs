@@ -2,6 +2,7 @@
 using System.Diagnostics;
 using System.Linq;
 using System.Threading;
+using System.Data.SQLite;
 using HaloOnline.Server.App;
 using HaloOnline.Server.Common;
 using HaloOnline.Server.Core.Http;
@@ -13,6 +14,8 @@ namespace HaloOnline.Server
 {
     public class Program
     {
+        private const string ConnectionString = "Data Source=halodb.sqlite;Version=3;";
+
         private static void Main(string[] args)
         {
             var options = new ServerOptions
@@ -49,6 +52,8 @@ namespace HaloOnline.Server
                         connection.ClientName,
                         connection.ClientComputerName,
                         connectionState);
+
+                    UpdateUserMatchmakeState(connection.ClientId);
                 }
                 if (Console.KeyAvailable && Console.ReadKey(true).Key == ConsoleKey.Escape)
                     listen = false;
@@ -83,6 +88,30 @@ namespace HaloOnline.Server
                 options.AppPort,
                 options.LogPort);
             return infoText;
+        }
+
+        private static void UpdateUserMatchmakeState(int userId)
+        {
+            using (var connection = new SQLiteConnection(ConnectionString))
+            {
+                connection.Open();
+
+                using (var command = new SQLiteCommand("SELECT COUNT(*) FROM UserRequests WHERE UserId = @userId", connection))
+                {
+                    command.Parameters.AddWithValue("@userId", userId);
+
+                    long requestCount = (long)command.ExecuteScalar();
+
+                    if (requestCount == 0)
+                    {
+                        using (var updateCommand = new SQLiteCommand("UPDATE Party SET MatchmakeState = 0 WHERE Id IN (SELECT PartyId FROM PartyMember WHERE UserId = @userId)", connection))
+                        {
+                            updateCommand.Parameters.AddWithValue("@userId", userId);
+                            updateCommand.ExecuteNonQuery();
+                        }
+                    }
+                }
+            }
         }
     }
 }

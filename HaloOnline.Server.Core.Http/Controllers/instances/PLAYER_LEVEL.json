@@ -1,0 +1,322 @@
+[
+	{
+		"className": "PLAYER_LEVEL",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "rank_001",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 1,
+				"name": "LEVEL_INDEX"
+			},
+			{
+				"type": 1,
+				"intVal": 2500,
+				"name": "XP_UNLOCK"
+			},
+			{
+				"type": 7,
+				"strList": [],
+				"name": "ITEMS_RECIEVED"
+			},
+			{
+				"type": 7,
+				"strList": [],
+				"name": "ITEMS_UNLOCKED"
+			}
+		],
+		"name": "rank_001",
+		"parents": []
+	},
+	{
+		"className": "PLAYER_LEVEL",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "rank_002",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 2,
+				"name": "LEVEL_INDEX"
+			},
+			{
+				"type": 1,
+				"intVal": 3000,
+				"name": "XP_UNLOCK"
+			},
+			{
+				"type": 7,
+				"strList": [],
+				"name": "ITEMS_RECIEVED"
+			},
+			{
+				"type": 7,
+				"strList": [],
+				"name": "ITEMS_UNLOCKED"
+			}
+		],
+		"name": "rank_002",
+		"parents": []
+	},
+	{
+		"className": "PLAYER_LEVEL",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "rank_003",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 3,
+				"name": "LEVEL_INDEX"
+			},
+			{
+				"type": 1,
+				"intVal": 3500,
+				"name": "XP_UNLOCK"
+			},
+			{
+				"type": 7,
+				"strList": [],
+				"name": "ITEMS_RECIEVED"
+			},
+			{
+				"type": 7,
+				"strList": [],
+				"name": "ITEMS_UNLOCKED"
+			}
+		],
+		"name": "rank_003",
+		"parents": []
+	},
+	{
+		"className": "PLAYER_LEVEL",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "rank_004",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 4,
+				"name": "LEVEL_INDEX"
+			},
+			{
+				"type": 1,
+				"intVal": 4000,
+				"name": "XP_UNLOCK"
+			},
+			{
+				"type": 7,
+				"strList": [],
+				"name": "ITEMS_RECIEVED"
+			},
+			{
+				"type": 7,
+				"strList": [],
+				"name": "ITEMS_UNLOCKED"
+			}
+		],
+		"name": "rank_004",
+		"parents": []
+	},
+	{
+		"className": "PLAYER_LEVEL",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "rank_005",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 5,
+				"name": "LEVEL_INDEX"
+			},
+			{
+				"type": 1,
+				"intVal": 4500,
+				"name": "XP_UNLOCK"
+			},
+			{
+				"type": 7,
+				"strList": [],
+				"name": "ITEMS_RECIEVED"
+			},
+			{
+				"type": 7,
+				"strList": [],
+				"name": "ITEMS_UNLOCKED"
+			}
+		],
+		"name": "rank_005",
+		"parents": []
+	},
+	{
+		"className": "PLAYER_LEVEL",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "rank_006",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 6,
+				"name": "LEVEL_INDEX"
+			},
+			{
+				"type": 1,
+				"intVal": 5000,
+				"name": "XP_UNLOCK"
+			},
+			{
+				"type": 7,
+				"strList": [],
+				"name": "ITEMS_RECIEVED"
+			},
+			{
+				"type": 7,
+				"strList": [],
+				"name": "ITEMS_UNLOCKED"
+			}
+		],
+		"name": "rank_006",
+		"parents": []
+	},
+	{
+		"className": "PLAYER_LEVEL",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "rank_007",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 7,
+				"name": "LEVEL_INDEX"
+			},
+			{
+				"type": 1,
+				"intVal": 5500,
+				"name": "XP_UNLOCK"
+			},
+			{
+				"type": 7,
+				"strList": [],
+				"name": "ITEMS_RECIEVED"
+			},
+			{
+				"type": 7,
+				"strList": [],
+				"name": "ITEMS_UNLOCKED"
+			}
+		],
+		"name": "rank_007",
+		"parents": []
+	},
+	{
+		"className": "PLAYER_LEVEL",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "rank_008",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 8,
+				"name": "LEVEL_INDEX"
+			},
+			{
+				"type": 1,
+				"intVal": 6000,
+				"name": "XP_UNLOCK"
+			},
+			{
+				"type": 7,
+				"strList": [],
+				"name": "ITEMS_RECIEVED"
+			},
+			{
+				"type": 7,
+				"strList": [],
+				"name": "ITEMS_UNLOCKED"
+			}
+		],
+		"name": "rank_008",
+		"parents": []
+	},
+	{
+		"className": "PLAYER_LEVEL",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "rank_009",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 9,
+				"name": "LEVEL_INDEX"
+			},
+			{
+				"type": 1,
+				"intVal": 6500,
+				"name": "XP_UNLOCK"
+			},
+			{
+				"type": 7,
+				"strList": [],
+				"name": "ITEMS_RECIEVED"
+			},
+			{
+				"type": 7,
+				"strList": [],
+				"name": "ITEMS_UNLOCKED"
+			}
+		],
+		"name": "rank_009",
+		"parents": []
+	},
+	{
+		"className": "PLAYER_LEVEL",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "rank_010",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 10,
+				"name": "LEVEL_INDEX"
+			},
+			{
+				"type": 1,
+				"intVal": 7000,
+				"name": "XP_UNLOCK"
+			},
+			{
+				"type": 7,
+				"strList": [],
+				"name": "ITEMS_RECIEVED"
+			},
+			{
+				"type": 7,
+				"strList": [],
+				"name": "ITEMS_UNLOCKED"
+			}
+		],
+		"name": "rank_010",
+		"parents": []
+	}
+]

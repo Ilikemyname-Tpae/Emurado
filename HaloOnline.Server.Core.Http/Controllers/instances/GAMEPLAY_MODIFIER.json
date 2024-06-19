@@ -1,0 +1,2092 @@
+[
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_safety_booster",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "safety_booster",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_bool",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_safety_booster",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_explosives_damage",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "explosives_damage",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_abs",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_explosives_damage",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_explosives_aoe_size_boost",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "explosives_aoe_size_boost",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_abs",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_explosives_aoe_size_boost",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_grenade_scavenger",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "grenade_scavenger",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_abs",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_grenade_scavenger",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_stamina_restore_near_death",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "stamina_restore_near_death",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_abs",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_stamina_restore_near_death",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_cooldown_reset",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "cooldown_reset",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_bool",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_cooldown_reset",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_reflex_boost",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "reflex_boost",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_percent",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_reflex_boost",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_zoom_radar",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "zoom_radar",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_bool",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_zoom_radar",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_cooldown_boost",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "cooldown_boost",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_percent",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_cooldown_boost",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_enable_nemesis_mechanics",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "enable_nemesis_mechanics",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_bool",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_enable_nemesis_mechanics",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_silent_sprint",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "silent_sprint",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_bool",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_silent_sprint",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_vehicle_shield_regen_speed",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "vehicle_shield_regen_speed",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_abs",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_vehicle_shield_regen_speed",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_vehicle_shield_regen_delay",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "vehicle_shield_regen_delay",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_percent",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_vehicle_shield_regen_delay",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_scavenger_aura",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "scavenger_aura",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_abs",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_scavenger_aura",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_armor_to_vehicle",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_to_vehicle",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_abs",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_armor_to_vehicle",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_armor_to_player_in_vehicle",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_to_player_in_vehicle",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_abs",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_armor_to_player_in_vehicle",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_armor_to_player_in_vehicle_transferred",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "armor_to_player_in_vehicle_transferred",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_abs",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_armor_to_player_in_vehicle_transferred",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_sprint_speed",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "sprint_speed",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_percent",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_sprint_speed",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_sprint_stamina",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "sprint_stamina",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_seconds",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_sprint_stamina",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_reload_speed",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "reload_speed",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_percent",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_reload_speed",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_weapon_switch_speed",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "weapon_switch_speed",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_percent",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_weapon_switch_speed",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_ammo_max",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "ammo_max",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_abs",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_ammo_max",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_melee_damage",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "melee_damage",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_percent",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_melee_damage",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_melee_resist",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "melee_resist",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_percent",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_melee_resist",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_revenge_shield_boost",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "revenge_shield_boost",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_percent",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_revenge_shield_boost",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_respawn_modifier",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "respawn_modifier",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_seconds",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_respawn_modifier",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_grenades_max",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "grenades_max",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_abs",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_grenades_max",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_motion_sensor_range",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "motion_sensor_range",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_meters",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_motion_sensor_range",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_shield_regen_rate",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "shield_regen_rate",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_percent",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_shield_regen_rate",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_shield_regen_delay",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "shield_regen_delay",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_percent",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_shield_regen_delay",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_teflon_armor",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "teflon_armor",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_chance",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_teflon_armor",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_explosion_resist",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "explosion_resist",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_percent",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_explosion_resist",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_vehicle_ram_damage",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "vehicle_ram_damage",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_abs",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_vehicle_ram_damage",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_turret_damage",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "turret_damage",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_abs",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_turret_damage",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_machine_gun_rof_acceleration_time",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "machine_gun_rof_acceleration_time",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_percent",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_machine_gun_rof_acceleration_time",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_grenade_warning",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "grenade_warning",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_bool",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_grenade_warning",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_consumable_duration",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "consumable_duration",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_percent",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_consumable_duration",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_energy_increase_max",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "energy_increase_max",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_abs",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_energy_increase_max",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_energy_increase_count_on_spawn",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "energy_increase_count_on_spawn",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_abs",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_energy_increase_count_on_spawn",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_energy_regeneration_rate",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "energy_regeneration_rate",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_percent",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_energy_regeneration_rate",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_assault_rifle_rounds_per_second",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "assault_rifle_rounds_per_second",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_percent",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_assault_rifle_rounds_per_second",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_assault_rifle_damage",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "assault_rifle_damage",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_abs",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_assault_rifle_damage",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_assault_rifle_ammo_capacity",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "assault_rifle_ammo_capacity",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_abs",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_assault_rifle_ammo_capacity",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_assault_rifle_reload_speed",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "assault_rifle_reload_speed",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_percent",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_assault_rifle_reload_speed",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_battle_rifle_rounds_per_second",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "battle_rifle_rounds_per_second",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_percent",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_battle_rifle_rounds_per_second",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_battle_rifle_fire_recovery_time",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "battle_rifle_fire_recovery_time",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_percent",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_battle_rifle_fire_recovery_time",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_battle_rifle_damage",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "battle_rifle_damage",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_abs",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_battle_rifle_damage",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_battle_rifle_ammo_capacity",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "battle_rifle_ammo_capacity",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_abs",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_battle_rifle_ammo_capacity",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_battle_rifle_reload_speed",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "battle_rifle_reload_speed",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_percent",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_battle_rifle_reload_speed",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_shotgun_spread",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "shotgun_spread",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_abs",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_shotgun_spread",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_shotgun_damage",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "shotgun_damage",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_abs",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_shotgun_damage",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_shotgun_ammo_capacity",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "shotgun_ammo_capacity",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_abs",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_shotgun_ammo_capacity",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_shotgun_reload_speed",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "shotgun_reload_speed",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_percent",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_shotgun_reload_speed",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_sniper_rifle_zoom_protection",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "sniper_rifle_zoom_protection",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_bool",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_sniper_rifle_zoom_protection",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_sniper_rifle_damage",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "sniper_rifle_damage",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_abs",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_sniper_rifle_damage",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_sniper_rifle_ammo_capacity",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "sniper_rifle_ammo_capacity",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_abs",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_sniper_rifle_ammo_capacity",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_sniper_rifle_reload_speed",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "sniper_rifle_reload_speed",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_percent",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_sniper_rifle_reload_speed",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_dmr_zoom_protection",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "dmr_zoom_protection",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_bool",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_dmr_zoom_protection",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_dmr_damage",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "dmr_damage",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_abs",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_dmr_damage",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_dmr_ammo_capacity",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "dmr_ammo_capacity",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_abs",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_dmr_ammo_capacity",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_dmr_reload_speed",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "dmr_reload_speed",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_percent",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_dmr_reload_speed",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_magnum_rounds_per_second",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "magnum_rounds_per_second",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_percent",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_magnum_rounds_per_second",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_magnum_penetration",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "magnum_penetration",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_abs",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_magnum_penetration",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_magnum_accuracy",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "magnum_accuracy",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_percent",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_magnum_accuracy",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_magnum_damage",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "magnum_damage",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_abs",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_magnum_damage",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_magnum_ammo_capacity",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "magnum_ammo_capacity",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_abs",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_magnum_ammo_capacity",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_magnum_reload_speed",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "magnum_reload_speed",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_percent",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_magnum_reload_speed",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_plasma_pistol_charge_up_time",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "plasma_pistol_charge_up_time",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_percent",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_plasma_pistol_charge_up_time",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_plasma_pistol_damage",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "plasma_pistol_damage",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_abs",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_plasma_pistol_damage",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_plasma_pistol_ammo_capacity",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "plasma_pistol_ammo_capacity",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_abs",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_plasma_pistol_ammo_capacity",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_plasma_pistol_heat_per_round",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "plasma_pistol_heat_per_round",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_percent",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_plasma_pistol_heat_per_round",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_frag_grenade_aoe_size",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "frag_grenade_aoe_size",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_abs",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_frag_grenade_aoe_size",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_frag_grenade_damage",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "frag_grenade_damage",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_abs",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_frag_grenade_damage",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_frag_grenade_ammo_capacity",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "frag_grenade_ammo_capacity",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_abs",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_frag_grenade_ammo_capacity",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_plasma_grenade_aoe_size",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "plasma_grenade_aoe_size",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_abs",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_plasma_grenade_aoe_size",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_plasma_grenade_damage",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "plasma_grenade_damage",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_abs",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_plasma_grenade_damage",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_plasma_grenade_ammo_capacity",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "plasma_grenade_ammo_capacity",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_abs",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_plasma_grenade_ammo_capacity",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_mauler_damage",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mauler_damage",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_abs",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_mauler_damage",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_spiker_damage",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "spiker_damage",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_abs",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_spiker_damage",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_brute_shot_damage",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "brute_shot_damage",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_abs",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_brute_shot_damage",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_plasma_rifle_heat_per_round",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "plasma_rifle_heat_per_round",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_percent",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_plasma_rifle_heat_per_round",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_detonate_on_player_cdt",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "detonate_on_player_cdt",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_bool",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_detonate_on_player_cdt",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_detonate_on_vehicle_cdt",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "detonate_on_vehicle_cdt",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_bool",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_detonate_on_vehicle_cdt",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_enemies_always_on_radar",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "enemies_always_on_radar",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_bool",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_enemies_always_on_radar",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_plant_plasma_on_death",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "plant_plasma_on_death",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_bool",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_plant_plasma_on_death",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_shield_regen_rate_near_killed_enemies",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "shield_regen_rate_near_killed_enemies",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_percent",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_shield_regen_rate_near_killed_enemies",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_shield_recharge_on_melee_kill",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "shield_recharge_on_melee_kill",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_bool",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_shield_recharge_on_melee_kill",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_frag_grenades_max",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "frag_grenades_max",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_abs",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_frag_grenades_max",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_plasma_grenades_max",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "plasma_grenades_max",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_abs",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_plasma_grenades_max",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_claymore_grenade_aoe_size",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "claymore_grenade_aoe_size",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_abs",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_claymore_grenade_aoe_size",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_smg_damage",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "smg_damage",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_abs",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_smg_damage",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_smg_reload_speed",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "smg_reload_speed",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_percent",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_smg_reload_speed",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_vehicle_autoflip",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "vehicle_autoflip",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_bool",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_vehicle_autoflip",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_headshot_heal",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "headshot_heal",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_abs",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_headshot_heal",
+    "parents": []
+  },
+  {
+    "className": "GAMEPLAY_MODIFIER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "mod_weapon_accuracy",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "weapon_accuracy",
+        "name": "MODIFIER_NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "mod_unit_abs",
+        "name": "MODIFIER_UNITS"
+      }
+    ],
+    "name": "mod_weapon_accuracy",
+    "parents": []
+  }
+]

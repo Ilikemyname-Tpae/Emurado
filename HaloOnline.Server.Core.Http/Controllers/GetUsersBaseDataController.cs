@@ -2,7 +2,7 @@
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
-using System.IO;
+using System.Data.Entity;
 using System.Linq;
 using System.Security.Claims;
 using System.Threading.Tasks;
@@ -31,7 +31,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                 dynamic requestData = JsonConvert.DeserializeObject(requestBody);
                 int userId = requestData?.users?[0]?.Id ?? -1;
 
-                var userData = _dbContext.Users.FirstOrDefault(u => u.Id == userId);
+                var userData = await _dbContext.Users.SingleOrDefaultAsync(u => u.Id == userId);
 
                 if (userData != null)
                 {
@@ -42,22 +42,22 @@ namespace HaloOnline.Server.Core.Http.Controllers
                             retCode = 0,
                             data = new[]
                             {
-                        new
-                        {
-                            User = new
-                            {
-                                Id = userId
-                            },
-                            Nickname = userData.Nickname,
-                            BattleTag = userData.BattleTag,
-                            Level = userData.Level,
-                            Clan = new
-                            {
-                                Id = 0
-                            },
-                            ClanTag = ""
-                        }
-                    }
+                                new
+                                {
+                                    User = new
+                                    {
+                                        Id = userId
+                                    },
+                                    Nickname = userData.Nickname,
+                                    BattleTag = userData.BattleTag,
+                                    Level = userData.Level,
+                                    Clan = new
+                                    {
+                                        Id = 0
+                                    },
+                                    ClanTag = ""
+                                }
+                            }
                         }
                     };
 

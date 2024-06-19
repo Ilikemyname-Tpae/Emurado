@@ -70,10 +70,19 @@ namespace HaloOnline.Server.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("localhost")]
+        [global::System.Configuration.DefaultSettingValueAttribute("emurado.duckdns.org")]
         public string EndpointHostname {
             get {
                 return ((string)(this["EndpointHostname"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("n9stoFfd/JN6JyVCxwEXYxNSXGDEGSoOcPtd7erDtE4=")]
+        public string Secret {
+            get {
+                return ((string)(this["Secret"]));
             }
         }
         
@@ -84,15 +93,6 @@ namespace HaloOnline.Server.Properties {
         public string HaloDbContext {
             get {
                 return ((string)(this["HaloDbContext"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("n9stoFfd/JN6JyVCxwEXYxNSXGDEGSoOcPtd7erDtE4=")]
-        public string Secret {
-            get {
-                return ((string)(this["Secret"]));
             }
         }
     }

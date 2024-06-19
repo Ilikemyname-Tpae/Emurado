@@ -33,7 +33,7 @@ namespace HaloOnline.Server.Core.Repository.Repositories
                     : null,
                 Nickname = user?.Nickname,
                 BattleTag = user?.BattleTag,
-                Level = user?.Level ?? 0,
+                Level = user?.Level ?? 1,
                 Clan = user != null
                     ? new ClanId { Id = user.ClanMemberships?.FirstOrDefault()?.ClanId ?? 0 }
                     : null,
@@ -74,8 +74,6 @@ namespace HaloOnline.Server.Core.Repository.Repositories
             user.Nickname = userBaseData.Nickname;
             user.BattleTag = userBaseData.BattleTag;
             user.Level = userBaseData.Level;
-            // TODO: Fix setting ClanId
-            //user.ClanId = userBaseData.Clan.Id;
 
             _context.SaveChanges();
             return Task.FromResult(0);

@@ -1,5 +1,9 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Data.SQLite;
+using System.IO;
 using System.Linq;
+using System.Security.Claims;
 using System.Web.Http;
 using HaloOnline.Server.Common.Repositories;
 using HaloOnline.Server.Core.Http.Interface.Services;
@@ -17,10 +21,12 @@ namespace HaloOnline.Server.Core.Http.Controllers
         {
             _sessionRepository = sessionRepository;
         }
-        
+
         [HttpPost]
         public ClientGetStatusResult ClientGetStatus(ClientGetStatusRequest request)
         {
+            SetMatchmakeStateToTwo();
+
             return new ClientGetStatusResult
             {
                 Result = new ServiceResult<ClientStatus>
@@ -29,17 +35,67 @@ namespace HaloOnline.Server.Core.Http.Controllers
                     {
                         Game = new SessionId
                         {
-                            Id = ""
+                            Id = "be8d8f19-c350-44be-93c9-334df5701cbe"
                         },
                         DedicatedServer = new DedicatedServer
                         {
-                            ServerId = "",
-                            ServerAddress = "",
+                            ServerId = "6bf6c648-e33e-4c7c-9eb1-ae3ab3f4f745",
+                            ServerAddress = "000.000.000",
                             Port = 11774
                         }
                     }
                 }
             };
+        }
+
+        private void SetMatchmakeStateToTwo()
+        {
+            string partyId = GetPartyIdForCurrentUser();
+
+            if (!string.IsNullOrEmpty(partyId))
+            {
+                using (var connection = new SQLiteConnection("Data Source=halodb.sqlite;Version=3;"))
+                {
+                    connection.Open();
+                    using (var command = new SQLiteCommand("UPDATE Party SET MatchmakeState = 2 WHERE Id = @partyId AND MatchmakeState != 2", connection))
+                    {
+                        command.Parameters.AddWithValue("@partyId", partyId);
+                        command.ExecuteNonQuery();
+                    }
+                }
+            }
+        }
+
+        private string GetPartyIdForCurrentUser()
+        {
+            int userId = GetCurrentUserId();
+            using (var connection = new SQLiteConnection("Data Source=halodb.sqlite;Version=3;"))
+            {
+                connection.Open();
+                using (var command = new SQLiteCommand("SELECT PartyId FROM PartyMember WHERE UserId = @userId", connection))
+                {
+                    command.Parameters.AddWithValue("@userId", userId);
+                    return command.ExecuteScalar()?.ToString();
+                }
+            }
+        }
+
+        private int GetCurrentUserId()
+        {
+            var userIdClaim = (User?.Identity as ClaimsIdentity)?.FindFirst("Id");
+            return userIdClaim != null ? int.Parse(userIdClaim.Value) : -1;
+        }
+
+        private string GetValueFromLine(string[] lines, string key)
+        {
+            foreach (string line in lines)
+            {
+                if (line.StartsWith(key))
+                {
+                    return line.Substring(key.Length).Trim();
+                }
+            }
+            throw new ArgumentException($"Key '{key}' not found in the file.");
         }
 
         [HttpPost]

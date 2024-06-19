@@ -5,7 +5,7 @@
         int Id { get; }
         bool Connected { get; set; }
         string ClientComputerName { get; set; }
-        string ClientId { get; set; }
+        int ClientId { get; set; }
         string ClientName { get; set; }
     }
 }

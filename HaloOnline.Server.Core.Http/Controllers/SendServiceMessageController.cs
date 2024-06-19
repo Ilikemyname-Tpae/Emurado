@@ -58,7 +58,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                     }
                 };
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return new SendServiceMessageResult
                 {

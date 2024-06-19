@@ -56,7 +56,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                 },
                 Nickname = request.Nickname,
                 BattleTag = "",
-                Level = 0,
+                Level = 1,
                 Clan = new ClanId
                 {
                     Id = 0

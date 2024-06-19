@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Data.SQLite;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Web.Http;
+using Dapper;
 using HaloOnline.Server.Core.Http.Model;
 using HaloOnline.Server.Core.Http.Model.Presence;
 using HaloOnline.Server.Model.Presence;
@@ -13,11 +15,14 @@ namespace HaloOnline.Server.Core.Http.Controllers
     [RoutePrefix("PresenceService.svc")]
     public class PresenceGetUsersPresenceController : ApiController
     {
-        private static List<int> activeUserIds = new List<int>();
+        private static readonly object databaseLock = new object();
+        private static HashSet<int> activeUserIds = new HashSet<int>();
+
+        private readonly string connectionString = "Data Source=halodb.sqlite;Version=3;";
 
         [HttpPost]
         [Route("PresenceGetUsersPresence")]
-        public IHttpActionResult GetUserPresence(PresenceGetUsersPresenceRequest request)
+        public async Task<IHttpActionResult> GetUserPresence(PresenceGetUsersPresenceRequest request)
         {
             try
             {
@@ -25,49 +30,27 @@ namespace HaloOnline.Server.Core.Http.Controllers
                 {
                     int userId = request.Users[0].Id;
 
-                    if (!activeUserIds.Contains(userId))
+                    lock (databaseLock)
                     {
-                        activeUserIds.Add(userId);
+                        if (!activeUserIds.Contains(userId))
+                        {
+                            activeUserIds.Add(userId);
+                        }
                     }
 
-                    string connectionString = "Data Source=halodb.sqlite;Version=3;";
-                    using (var connection = new SQLiteConnection(connectionString))
+                    var userPresence = await GetUserPresenceAsync(userId);
+
+                    if (userPresence != null)
                     {
-                        connection.Open();
-
-                        string query = "SELECT State, IsInvitable FROM User WHERE Id = @Id";
-                        using (var command = new SQLiteCommand(query, connection))
+                        var response = new PresenceGetUsersPresenceResult
                         {
-                            command.Parameters.AddWithValue("@Id", userId);
-                            using (var reader = command.ExecuteReader())
+                            Result = new ServiceResult<List<UserPresence>>
                             {
-                                if (reader.Read())
-                                {
-                                    int state = Convert.ToInt32(reader["State"]);
-                                    bool isInvitable = Convert.ToInt32(reader["IsInvitable"]) == 1;
-
-                                    var userPresence = new UserPresence
-                                    {
-                                        User = new UserId { Id = userId },
-                                        Data = new UserPresenceData
-                                        {
-                                            State = state,
-                                            IsInvitable = isInvitable
-                                        }
-                                    };
-
-                                    var response = new PresenceGetUsersPresenceResult
-                                    {
-                                        Result = new ServiceResult<List<UserPresence>>
-                                        {
-                                            Data = new List<UserPresence> { userPresence }
-                                        }
-                                    };
-
-                                    return Ok(response);
-                                }
+                                Data = new List<UserPresence> { userPresence }
                             }
-                        }
+                        };
+
+                        return Ok(response);
                     }
                 }
 
@@ -77,6 +60,36 @@ namespace HaloOnline.Server.Core.Http.Controllers
             {
                 return InternalServerError(ex);
             }
+        }
+
+        private async Task<UserPresence> GetUserPresenceAsync(int userId)
+        {
+            using (var connection = new SQLiteConnection(connectionString))
+            {
+                await connection.OpenAsync();
+
+                bool isActive = activeUserIds.Contains(userId);
+
+                string updateQuery = "UPDATE User SET State = @State WHERE Id = @Id";
+                await connection.ExecuteAsync(updateQuery, new { State = isActive ? 1 : 0, Id = userId });
+
+                string query = "SELECT State, IsInvitable FROM User WHERE Id = @Id";
+                using (var multi = await connection.QueryMultipleAsync(query, new { Id = userId }))
+                {
+                    var userPresenceData = await multi.ReadSingleOrDefaultAsync<UserPresenceData>();
+
+                    if (userPresenceData != null)
+                    {
+                        return new UserPresence
+                        {
+                            User = new UserId { Id = userId },
+                            Data = userPresenceData
+                        };
+                    }
+                }
+            }
+
+            return null;
         }
     }
 }

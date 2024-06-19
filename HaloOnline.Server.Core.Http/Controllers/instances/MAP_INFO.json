@@ -1,0 +1,193 @@
+[
+	{
+		//Saber
+
+		"className": "MAP_INFO",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "s3d_turf",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 31,
+				"name": "ID"
+			}
+		],
+		"name": "s3d_turf",
+		"parents": []
+	},
+	{
+		"className": "MAP_INFO",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "s3d_reactor",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 700,
+				"name": "ID"
+			}
+		],
+		"name": "s3d_reactor",
+		"parents": []
+	},
+	{
+		"className": "MAP_INFO",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "s3d_edge",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 703,
+				"name": "ID"
+			}
+		],
+		"name": "s3d_edge",
+		"parents": []
+	},
+	{
+		"className": "MAP_INFO",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "s3d_avalanche",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 705,
+				"name": "ID"
+			}
+		],
+		"name": "s3d_avalanche",
+		"parents": []
+	},
+	{
+		"className": "MAP_INFO",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "s3d_sky_bridgenew",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 709,
+				"name": "ID"
+			}
+		],
+		"name": "s3d_sky_bridgenew",
+		"parents": []
+	},
+	{
+		"className": "MAP_INFO",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "s3d_lockout",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 711,
+				"name": "ID"
+			}
+		],
+		"name": "s3d_lockout",
+		"parents": []
+	},
+	{
+		"className": "MAP_INFO",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "s3d_powerhouse",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 715,
+				"name": "ID"
+			}
+		],
+		"name": "s3d_powerhouse",
+		"parents": []
+	},
+	{
+		"className": "MAP_INFO",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "mainmenu",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 0,
+				"name": "ID"
+			}
+		],
+		"name": "mainmenu",
+		"parents": []
+	},
+	{
+		"className": "MAP_INFO",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "s3d_waterfall",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 706,
+				"name": "ID"
+			}
+		],
+		"name": "mainmenu",
+		"parents": []
+	},
+	{
+		//Bungie
+
+		"className": "MAP_INFO",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "riverworld",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 340,
+				"name": "ID"
+			}
+		],
+		"name": "riverworld",
+		"parents": []
+	},
+	{
+		"className": "MAP_INFO",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "guardian",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 320,
+				"name": "ID"
+			}
+		],
+		"name": "guardian",
+		"parents": []
+	}
+]

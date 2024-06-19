@@ -16,7 +16,7 @@
 
         public bool Connected { get; set; }
         public string ClientComputerName { get; set; }
-        public string ClientId { get; set; }
+        public int ClientId { get; set; }
         public string ClientName { get; set; }
     }
 }

@@ -1,9 +1,12 @@
-﻿using Newtonsoft.Json.Linq;
+﻿using HaloOnline.Server.Core.Repository;
+using HaloOnline.Server.Core.Repository.Model;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
-using System.Data.SQLite;
+using System.Data.Entity;
 using System.Linq;
 using System.Security.Claims;
+using System.Threading.Tasks;
 using System.Web.Http;
 
 namespace HaloOnline.Server.Core.Http.Controllers
@@ -11,11 +14,11 @@ namespace HaloOnline.Server.Core.Http.Controllers
     [RoutePrefix("UserService.svc")]
     public class ApplyOfferListAndGetTransactionHistoryController : ApiController
     {
-        private string connectionString = "Data Source=halodb.sqlite";
+        private readonly HaloDbContext _context = new HaloDbContext();
 
         [HttpPost]
         [Route("ApplyOfferListAndGetTransactionHistory")]
-        public IHttpActionResult ApplyOfferListAndGetTransactionHistory([FromBody] JObject requestData)
+        public async Task<IHttpActionResult> ApplyOfferListAndGetTransactionHistory([FromBody] JObject requestData)
         {
             try
             {
@@ -29,55 +32,51 @@ namespace HaloOnline.Server.Core.Http.Controllers
                     return BadRequest("Invalid or missing offer ID in the request.");
                 }
 
-                int offerPrice = GetOfferPrice(offerId);
-                int previousValue = -1;
-
-                if (offerId.Contains("_cr"))
+                var offer = await _context.ItemOffers.FirstOrDefaultAsync(o => o.ItemId == offerId);
+                if (offer == null)
                 {
-                    previousValue = GetLatestRemainingCreditsValue(userId);
-                }
-                else
-                {
-                    previousValue = GetLatestRemainingGoldValue(userId);
+                    return BadRequest("Offer not found.");
                 }
 
-                if (previousValue == -1)
+                var user = await _context.Users.Include(u => u.UserStates).FirstOrDefaultAsync(u => u.Id == userId);
+                if (user == null)
                 {
-                    return InternalServerError(new Exception("Failed to retrieve previous value for the transaction."));
+                    return BadRequest("User not found.");
                 }
 
-                long unixTimestamp = (long)(DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1)).TotalSeconds);
+                int previousValue = offerId.Contains("_cr") ? user.Credits : user.Gold;
+                int offerPrice = offer.Price;
+                long unixTimestamp = (long)(DateTime.UtcNow - new DateTime(1970, 1, 1)).TotalSeconds;
+
+                await UpdateRemainingValueAsync(user, offerId, previousValue, offerPrice);
+                await InsertTransactionDataAsync(user, offerId, previousValue, previousValue - offerPrice, unixTimestamp);
 
                 var transaction = new
                 {
                     transactionItems = new List<object> {
-                        new {
-                            stateName = offerId,
-                            stateType = offerId.Contains("_cr") ? 2 : 3,
-                            ownType = 0,
-                            operationType = 0,
-                            initialValue = previousValue,
-                            resultingValue = previousValue - offerPrice,
-                            deltaValue = previousValue - (previousValue - offerPrice),
-                            descId = 0
-                        }
-                    },
+                    new {
+                        stateName = offerId,
+                        stateType = offerId.Contains("_cr") ? 2 : 3,
+                        ownType = offerId.StartsWith("challenge") ? 1 : 2,
+                        operationType = 0,
+                        initialValue = offerId.StartsWith("challenge") ? 0 : previousValue,
+                        resultingValue = offerId.StartsWith("challenge") ? 0 : previousValue - offerPrice,
+                        deltaValue = offerId.StartsWith("challenge") ? 0 : previousValue - (previousValue - offerPrice),
+                        descId = 0
+                    }
+                },
                     sessionId = Guid.NewGuid().ToString(),
                     referenceId = Guid.NewGuid().ToString(),
                     offerId = Guid.NewGuid().ToString(),
                     timeStamp = unixTimestamp,
                     operationType = 0,
                     extendedInfoItems = new List<object> {
-                        new {
-                            Key = "",
-                            Value = ""
-                        }
+                    new {
+                        Key = "",
+                        Value = ""
                     }
+                }
                 };
-
-                UpdateRemainingValue(userId, offerId, previousValue, offerPrice);
-
-                InsertTransactionData(userId, offerId, previousValue, previousValue - offerPrice);
 
                 var data = new
                 {
@@ -88,8 +87,8 @@ namespace HaloOnline.Server.Core.Http.Controllers
                         {
                             totalResults = 1,
                             transactions = new List<object> {
-                                transaction
-                            }
+                            transaction
+                        }
                         }
                     }
                 };
@@ -102,162 +101,117 @@ namespace HaloOnline.Server.Core.Http.Controllers
             }
         }
 
-        private void UpdateRemainingValue(int userId, string offerId, int previousValue, int offerPrice)
+        private async Task UpdateRemainingValueAsync(User user, string offerId, int previousValue, int offerPrice)
         {
-            if (offerId.Contains("_cr"))
+            if (offerId == "ranger_kit_offer" || offerId == "sniper_kit_offer" || offerId == "tactician_kit_offer")
             {
-                UpdateRemainingCreditsFile(userId, previousValue - offerPrice);
+                UpdateUserStatesForClassSelectToken(user, "class_select_token");
+            }
+            else if (offerId.StartsWith("challenge"))
+            {
+                UpdateUserStatesForChallenge(user, "challenge");
             }
             else
             {
-                UpdateRemainingGoldFile(userId, previousValue - offerPrice);
+                string stateName = offerId.Contains("_cr") ? "Credits" : "Gold";
+
+                UpdateUserCurrency(user, stateName, offerPrice);
+
+                UpdateUserStateValue(user, stateName);
+            }
+
+            await _context.SaveChangesAsync();
+        }
+
+        private void UpdateUserStatesForClassSelectToken(User user, string stateName)
+        {
+            var userState = user.UserStates.FirstOrDefault(us => us.StateName == stateName);
+            if (userState != null)
+            {
+                userState.OwnType = 0;
+                userState.Value = 0;
             }
         }
 
-        private int GetLatestRemainingGoldValue(int userId)
+        private void UpdateUserStatesForChallenge(User user, string stateName)
         {
-            using (var connection = new SQLiteConnection(connectionString))
+            var userState = user.UserStates.FirstOrDefault(us => us.StateName == stateName);
+            if (userState != null)
             {
-                connection.Open();
-                using (var command = new SQLiteCommand("SELECT Gold FROM User WHERE Id = @UserId", connection))
+                userState.OwnType = 1;
+                userState.Value = 1;
+            }
+        }
+
+        private void UpdateUserCurrency(User user, string stateName, int offerPrice)
+        {
+            if (stateName == "Credits")
+            {
+                user.Credits -= offerPrice;
+            }
+            else if (stateName == "Gold")
+            {
+                user.Gold -= offerPrice;
+            }
+        }
+
+        private void UpdateUserStateValue(User user, string stateName)
+        {
+            var userState = user.UserStates.FirstOrDefault(us => us.StateName == stateName);
+            if (userState != null)
+            {
+                if (stateName == "Credits")
                 {
-                    command.Parameters.AddWithValue("@UserId", userId);
-                    var result = command.ExecuteScalar();
-                    return result != null ? Convert.ToInt32(result) : 10150;
+                    userState.Value = user.Credits;
+                }
+                else if (stateName == "Gold")
+                {
+                    userState.Value = user.Gold;
                 }
             }
         }
-        private int GetLatestRemainingCreditsValue(int userId)
-        {
-            using (var connection = new SQLiteConnection(connectionString))
-            {
-                connection.Open();
-                using (var command = new SQLiteCommand("SELECT Credits FROM User WHERE Id = @UserId", connection))
-                {
-                    command.Parameters.AddWithValue("@UserId", userId);
-                    var result = command.ExecuteScalar();
-                    return result != null ? Convert.ToInt32(result) : 1000;
-                }
-            }
-        }
 
-        private int GetOfferPrice(string offerId)
-        {
-            using (var connection = new SQLiteConnection(connectionString))
-            {
-                connection.Open();
-                using (var command = new SQLiteCommand("SELECT Price FROM ItemOffers WHERE ItemId = @ItemId", connection))
-                {
-                    command.Parameters.AddWithValue("@ItemId", offerId);
-                    var result = command.ExecuteScalar();
-                    return result != null ? Convert.ToInt32(result) : 0;
-                }
-            }
-        }
-
-        private void UpdateRemainingGoldFile(int userId, int newValue)
-        {
-            try
-            {
-                using (var connection = new SQLiteConnection(connectionString))
-                {
-                    connection.Open();
-
-                    using (var updateCommandUser = new SQLiteCommand("UPDATE User SET Gold = @Gold WHERE Id = @UserId", connection))
-                    {
-                        updateCommandUser.Parameters.AddWithValue("@UserId", userId);
-                        updateCommandUser.Parameters.AddWithValue("@Gold", newValue);
-                        updateCommandUser.ExecuteNonQuery();
-                    }
-
-                    using (var updateCommandUserStates = new SQLiteCommand("UPDATE UserStates SET Value = @Value WHERE UserId = @UserId AND StateName = 'Gold'", connection))
-                    {
-                        updateCommandUserStates.Parameters.AddWithValue("@UserId", userId);
-                        updateCommandUserStates.Parameters.AddWithValue("@Value", newValue);
-                        updateCommandUserStates.ExecuteNonQuery();
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-            }
-        }
-        private void UpdateRemainingCreditsFile(int userId, int newValue)
-        {
-            try
-            {
-                using (var connection = new SQLiteConnection(connectionString))
-                {
-                    connection.Open();
-
-                    using (var updateCommandUser = new SQLiteCommand("UPDATE User SET Credits = @Credits WHERE Id = @UserId", connection))
-                    {
-                        updateCommandUser.Parameters.AddWithValue("@UserId", userId);
-                        updateCommandUser.Parameters.AddWithValue("@Credits", newValue);
-                        updateCommandUser.ExecuteNonQuery();
-                    }
-
-                    using (var updateCommandUserStates = new SQLiteCommand("UPDATE UserStates SET Value = @Value WHERE UserId = @UserId AND StateName = 'Credits'", connection))
-                    {
-                        updateCommandUserStates.Parameters.AddWithValue("@UserId", userId);
-                        updateCommandUserStates.Parameters.AddWithValue("@Value", newValue);
-                        updateCommandUserStates.ExecuteNonQuery();
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-            }
-        }
-
-
-        private void InsertTransactionData(int userId, string offerId, int initialValue, int resultingValue)
+        private async Task InsertTransactionDataAsync(User user, string offerId, int initialValue, int resultingValue, long unixTimestamp)
         {
             string sanitizedOfferId = offerId.EndsWith("_cr") ? offerId.Substring(0, offerId.Length - 3) : offerId;
+            bool isChallengeOffer = offerId.StartsWith("challenge");
 
-            using (var connection = new SQLiteConnection(connectionString))
+            var transaction = new Transaction
             {
-                connection.Open();
+                UserId = user.Id,
+                OfferId = offerId,
+                InitialValue = isChallengeOffer ? 0 : initialValue,
+                ResultingValue = isChallengeOffer ? 0 : resultingValue,
+                DeltaValue = isChallengeOffer ? 0 : initialValue - resultingValue,
+                OperationType = 2,
+                SessionId = Guid.NewGuid().ToString(),
+                ReferenceId = Guid.NewGuid().ToString(),
+            };
 
-                long unixTimestamp = (long)(DateTime.UtcNow.Subtract(new DateTime(1970, 1, 1)).TotalSeconds);
+            _context.Transactions.Add(transaction);
 
-                using (var command = new SQLiteCommand(
-                    "INSERT INTO Transactions (UserId, OfferId, InitialValue, ResultingValue, DeltaValue, OperationType, SessionId, ReferenceId) " +
-                    "VALUES (@UserId, @OfferId, @InitialValue, @ResultingValue, @DeltaValue, @OperationType, @SessionId, @ReferenceId)", connection))
-                {
-                    command.Parameters.AddWithValue("@UserId", userId);
-                    command.Parameters.AddWithValue("@OfferId", offerId);
-                    command.Parameters.AddWithValue("@InitialValue", 3600);
-                    command.Parameters.AddWithValue("@ResultingValue", 3600);
-                    command.Parameters.AddWithValue("@DeltaValue", initialValue - resultingValue);
-                    command.Parameters.AddWithValue("@OperationType", 2);
-                    command.Parameters.AddWithValue("@SessionId", Guid.NewGuid().ToString());
-                    command.Parameters.AddWithValue("@ReferenceId", Guid.NewGuid().ToString());
-                    command.ExecuteNonQuery();
-                }
+            var transactionHistory = new TransactionHistory
+            {
+                UserId = user.Id,
+                StateName = sanitizedOfferId,
+                StateType = 4,
+                OwnType = isChallengeOffer ? 1 : 2,
+                OperationType = 0,
+                InitialValue = isChallengeOffer ? 0 : 3600,
+                ResultingValue = isChallengeOffer ? 0 : 3600,
+                DeltaValue = isChallengeOffer ? 0 : initialValue - resultingValue,
+                DescId = 0,
+                SessionId = transaction.SessionId,
+                ReferenceId = transaction.ReferenceId,
+                OfferId = offerId,
+                TimeStamp = unixTimestamp,
+                ExtendedInfoKey = "",
+                ExtendedInfoValue = ""
+            };
 
-                using (var commandHistory = new SQLiteCommand(
-                    "INSERT INTO TransactionHistory (UserId, StateName, StateType, OwnType, OperationType, InitialValue, ResultingValue, DeltaValue, DescId, SessionId, ReferenceId, OfferId, TimeStamp, ExtendedInfoKey, ExtendedInfoValue) " +
-                    "VALUES (@UserId, @StateName, @StateType, @OwnType, @OperationType, @InitialValue, @ResultingValue, @DeltaValue, @DescId, @SessionId, @ReferenceId, @OfferId, @TimeStamp, @ExtendedInfoKey, @ExtendedInfoValue)", connection))
-                {
-                    commandHistory.Parameters.AddWithValue("@UserId", userId);
-                    commandHistory.Parameters.AddWithValue("@StateName", sanitizedOfferId);
-                    commandHistory.Parameters.AddWithValue("@StateType", 4);
-                    commandHistory.Parameters.AddWithValue("@OwnType", 2);
-                    commandHistory.Parameters.AddWithValue("@OperationType", 0);
-                    commandHistory.Parameters.AddWithValue("@InitialValue", 3600);
-                    commandHistory.Parameters.AddWithValue("@ResultingValue", 3600);
-                    commandHistory.Parameters.AddWithValue("@DeltaValue", initialValue - resultingValue);
-                    commandHistory.Parameters.AddWithValue("@DescId", 2);
-                    commandHistory.Parameters.AddWithValue("@SessionId", Guid.NewGuid().ToString());
-                    commandHistory.Parameters.AddWithValue("@ReferenceId", Guid.NewGuid().ToString());
-                    commandHistory.Parameters.AddWithValue("@OfferId", sanitizedOfferId);
-                    commandHistory.Parameters.AddWithValue("@TimeStamp", unixTimestamp);
-                    commandHistory.Parameters.AddWithValue("@ExtendedInfoKey", "");
-                    commandHistory.Parameters.AddWithValue("@ExtendedInfoValue", "");
-                    commandHistory.ExecuteNonQuery();
-                }
-            }
+            _context.TransactionHistory.Add(transactionHistory);
+
+            await _context.SaveChangesAsync();
         }
     }
- }
+}

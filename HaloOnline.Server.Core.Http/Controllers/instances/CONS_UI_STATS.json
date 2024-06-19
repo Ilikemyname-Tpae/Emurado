@@ -8,9 +8,9 @@
         "name": "NAME"
       },
       {
-        "type": 1,
-        "intVal": 3,
-        "name": "UI_CONS_STATS_DURATION"
+        "type": 2,
+        "name": "UI_CONS_STATS_DURATION",
+        "floatVal": 3.0
       },
       {
         "type": 1,
@@ -18,9 +18,9 @@
         "name": "UI_CONS_STATS_COST"
       },
       {
-        "type": 1,
-        "intVal": 1,
-        "name": "UI_CONS_STATS_COOLDOWN"
+        "type": 2,
+        "name": "UI_CONS_STATS_COOLDOWN",
+        "floatVal": 1.0
       }
     ],
     "name": "adrenaline",
@@ -35,8 +35,8 @@
         "name": "NAME"
       },
       {
-        "type": 1,
-        "intVal": 10,
+        "type": 2,
+        "floatVal": 10.0,
         "name": "UI_CONS_STATS_DURATION"
       },
       {
@@ -45,8 +45,8 @@
         "name": "UI_CONS_STATS_COST"
       },
       {
-        "type": 1,
-        "intVal": 1,
+        "type": 2,
+        "floatVal": 1.0,
         "name": "UI_CONS_STATS_COOLDOWN"
       }
     ],
@@ -62,9 +62,9 @@
         "name": "NAME"
       },
       {
-        "type": 1,
-        "intVal": 0,
-        "name": "UI_CONS_STATS_DURATION"
+        "type": 2,
+        "name": "UI_CONS_STATS_DURATION",
+        "floatVal": 0.0
       },
       {
         "type": 1,
@@ -72,9 +72,9 @@
         "name": "UI_CONS_STATS_COST"
       },
       {
-        "type": 1,
-        "intVal": 1,
-        "name": "UI_CONS_STATS_COOLDOWN"
+        "type": 2,
+        "name": "UI_CONS_STATS_COOLDOWN",
+        "floatVal": 1.0
       }
     ],
     "name": "bombrun",
@@ -89,9 +89,9 @@
         "name": "NAME"
       },
       {
-        "type": 1,
-        "intVal": 60,
-        "name": "UI_CONS_STATS_DURATION"
+        "type": 2,
+        "name": "UI_CONS_STATS_DURATION",
+        "floatVal": 60.0
       },
       {
         "type": 1,
@@ -99,9 +99,9 @@
         "name": "UI_CONS_STATS_COST"
       },
       {
-        "type": 1,
-        "intVal": 1,
-        "name": "UI_CONS_STATS_COOLDOWN"
+        "type": 2,
+        "name": "UI_CONS_STATS_COOLDOWN",
+        "floatVal": 1.0
       }
     ],
     "name": "tripmine",
@@ -116,9 +116,9 @@
         "name": "NAME"
       },
       {
-        "type": 1,
-        "intVal": 8,
-        "name": "UI_CONS_STATS_DURATION"
+        "type": 2,
+        "name": "UI_CONS_STATS_DURATION",
+        "floatVal": 8.0
       },
       {
         "type": 1,
@@ -126,9 +126,9 @@
         "name": "UI_CONS_STATS_COST"
       },
       {
-        "type": 1,
-        "intVal": 1,
-        "name": "UI_CONS_STATS_COOLDOWN"
+        "type": 2,
+        "name": "UI_CONS_STATS_COOLDOWN",
+        "floatVal": 1.0
       }
     ],
     "name": "active_camo",
@@ -143,9 +143,9 @@
         "name": "NAME"
       },
       {
-        "type": 1,
-        "intVal": 8,
-        "name": "UI_CONS_STATS_DURATION"
+        "type": 2,
+        "name": "UI_CONS_STATS_DURATION",
+        "floatVal": 8.0
       },
       {
         "type": 1,
@@ -153,9 +153,9 @@
         "name": "UI_CONS_STATS_COST"
       },
       {
-        "type": 1,
-        "intVal": 1,
-        "name": "UI_CONS_STATS_COOLDOWN"
+        "type": 2,
+        "name": "UI_CONS_STATS_COOLDOWN",
+        "floatVal": 1.0
       }
     ],
     "name": "power_drain",
@@ -170,9 +170,9 @@
         "name": "NAME"
       },
       {
-        "type": 1,
-        "intVal": 1,
-        "name": "UI_CONS_STATS_DURATION"
+        "type": 2,
+        "name": "UI_CONS_STATS_DURATION",
+        "floatVal": 1.0
       },
       {
         "type": 1,
@@ -180,9 +180,9 @@
         "name": "UI_CONS_STATS_COST"
       },
       {
-        "type": 1,
-        "intVal": 1,
-        "name": "UI_CONS_STATS_COOLDOWN"
+        "type": 2,
+        "name": "UI_CONS_STATS_COOLDOWN",
+        "floatVal": 1.0
       }
     ],
     "name": "hologram",
@@ -197,9 +197,9 @@
         "name": "NAME"
       },
       {
-        "type": 1,
-        "intVal": 30,
-        "name": "UI_CONS_STATS_DURATION"
+        "type": 2,
+        "name": "UI_CONS_STATS_DURATION",
+        "floatVal": 30.0
       },
       {
         "type": 1,
@@ -207,9 +207,9 @@
         "name": "UI_CONS_STATS_COST"
       },
       {
-        "type": 1,
-        "intVal": 1,
-        "name": "UI_CONS_STATS_COOLDOWN"
+        "type": 2,
+        "name": "UI_CONS_STATS_COOLDOWN",
+        "floatVal": 1.0
       }
     ],
     "name": "deployable_cover",
@@ -224,9 +224,9 @@
         "name": "NAME"
       },
       {
-        "type": 1,
-        "intVal": 1,
-        "name": "UI_CONS_STATS_DURATION"
+        "type": 2,
+        "name": "UI_CONS_STATS_DURATION",
+        "floatVal": 1.0
       },
       {
         "type": 1,
@@ -234,9 +234,9 @@
         "name": "UI_CONS_STATS_COST"
       },
       {
-        "type": 1,
-        "intVal": 1,
-        "name": "UI_CONS_STATS_COOLDOWN"
+        "type": 2,
+        "name": "UI_CONS_STATS_COOLDOWN",
+        "floatVal": 1.0
       }
     ],
     "name": "concussive_blast",
@@ -251,9 +251,9 @@
         "name": "NAME"
       },
       {
-        "type": 1,
-        "intVal": 10,
-        "name": "UI_CONS_STATS_DURATION"
+        "type": 2,
+        "name": "UI_CONS_STATS_DURATION",
+        "floatVal": 10.0
       },
       {
         "type": 1,
@@ -261,9 +261,9 @@
         "name": "UI_CONS_STATS_COST"
       },
       {
-        "type": 1,
-        "intVal": 1,
-        "name": "UI_CONS_STATS_COOLDOWN"
+        "type": 2,
+        "name": "UI_CONS_STATS_COOLDOWN",
+        "floatVal": 1.0
       }
     ],
     "name": "regenerator",
@@ -278,9 +278,9 @@
         "name": "NAME"
       },
       {
-        "type": 1,
-        "intVal": 8,
-        "name": "UI_CONS_STATS_DURATION"
+        "type": 2,
+        "name": "UI_CONS_STATS_DURATION",
+        "floatVal": 8.0
       },
       {
         "type": 1,
@@ -288,9 +288,9 @@
         "name": "UI_CONS_STATS_COST"
       },
       {
-        "type": 1,
-        "intVal": 1,
-        "name": "UI_CONS_STATS_COOLDOWN"
+        "type": 2,
+        "name": "UI_CONS_STATS_COOLDOWN",
+        "floatVal": 1.0
       }
     ],
     "name": "bubble_shield",
@@ -305,9 +305,9 @@
         "name": "NAME"
       },
       {
-        "type": 1,
-        "intVal": 15,
-        "name": "UI_CONS_STATS_DURATION"
+        "type": 2,
+        "name": "UI_CONS_STATS_DURATION",
+        "floatVal": 15.0
       },
       {
         "type": 1,
@@ -315,9 +315,9 @@
         "name": "UI_CONS_STATS_COST"
       },
       {
-        "type": 1,
-        "intVal": 1,
-        "name": "UI_CONS_STATS_COOLDOWN"
+        "type": 2,
+        "name": "UI_CONS_STATS_COOLDOWN",
+        "floatVal": 1.0
       }
     ],
     "name": "radar_jammer",

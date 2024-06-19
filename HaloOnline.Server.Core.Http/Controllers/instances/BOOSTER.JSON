@@ -1,0 +1,36 @@
+[
+  {
+    "className": "BOOSTER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "cr_booster",
+        "name": "NAME"
+      },
+      {
+        "type": 7,
+        "intList": [ 1 ],
+        "name": "MODIFIERS"
+      }
+    ],
+    "name": "cr_booster",
+    "parents": []
+  },
+  {
+    "className": "BOOSTER",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "xp_booster",
+        "name": "NAME"
+      },
+      {
+        "type": 7,
+        "intList": [ 1 ],
+        "name": "MODIFIERS"
+      }
+    ],
+    "name": "xp_booster",
+    "parents": []
+  }
+]

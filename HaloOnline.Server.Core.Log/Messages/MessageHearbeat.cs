@@ -6,7 +6,7 @@ namespace HaloOnline.Server.Core.Log.Messages
     public class MessageHearbeat : Message
     {
         public string ClientComputerName { get; set; }
-        public string ClientId { get; set; }
+        public int ClientId { get; set; }
         public string ClientName { get; set; }
 
         public override void Read(Stream inputStream)
@@ -24,7 +24,7 @@ namespace HaloOnline.Server.Core.Log.Messages
             int unknown8 = reader.ReadInt32();
             int unknown9 = reader.ReadInt32();
             ClientName = reader.ReadCommandString();
-            ClientId = reader.ReadCommandString();
+            ClientId = reader.ReadInt32();
             ClientComputerName = reader.ReadCommandString();
         }
 

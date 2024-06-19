@@ -4,7 +4,7 @@
     "props": [
       {
         "type": 1,
-        "intVal": 1,
+        "intVal": 19,
         "name": "CONSUMABLE_INDEX"
       },
       {
@@ -19,7 +19,7 @@
       },
       {
         "type": 1,
-        "intVal": 1,
+        "intVal": 3,
         "name": "COOLDOWN"
       },
       {
@@ -36,7 +36,7 @@
     "props": [
       {
         "type": 1,
-        "intVal": 2,
+        "intVal": 24,
         "name": "CONSUMABLE_INDEX"
       },
       {
@@ -56,7 +56,7 @@
       },
       {
         "type": 1,
-        "intVal": 1,
+        "intVal": 10,
         "name": "COOLDOWN_INIT"
       }
     ],
@@ -68,7 +68,7 @@
     "props": [
       {
         "type": 1,
-        "intVal": 3,
+        "intVal": 17,
         "name": "CONSUMABLE_INDEX"
       },
       {
@@ -83,7 +83,7 @@
       },
       {
         "type": 1,
-        "intVal": 1,
+        "intVal": 0,
         "name": "COOLDOWN"
       },
       {
@@ -100,7 +100,7 @@
     "props": [
       {
         "type": 1,
-        "intVal": 4,
+        "intVal": 8,
         "name": "CONSUMABLE_INDEX"
       },
       {
@@ -115,7 +115,7 @@
       },
       {
         "type": 1,
-        "intVal": 1,
+        "intVal": 90,
         "name": "COOLDOWN"
       },
       {
@@ -132,7 +132,7 @@
     "props": [
       {
         "type": 1,
-        "intVal": 5,
+        "intVal": 3,
         "name": "CONSUMABLE_INDEX"
       },
       {
@@ -142,12 +142,12 @@
       },
       {
         "type": 1,
-        "intVal": 3,
+        "intVal": 2,
         "name": "ENERGY_COST"
       },
       {
         "type": 1,
-        "intVal": 1,
+        "intVal": 8,
         "name": "COOLDOWN"
       },
       {
@@ -164,7 +164,7 @@
     "props": [
       {
         "type": 1,
-        "intVal": 6,
+        "intVal": 2,
         "name": "CONSUMABLE_INDEX"
       },
       {
@@ -179,7 +179,7 @@
       },
       {
         "type": 1,
-        "intVal": 1,
+        "intVal": 8,
         "name": "COOLDOWN"
       },
       {
@@ -196,7 +196,7 @@
     "props": [
       {
         "type": 1,
-        "intVal": 7,
+        "intVal": 15,
         "name": "CONSUMABLE_INDEX"
       },
       {
@@ -206,12 +206,12 @@
       },
       {
         "type": 1,
-        "intVal": 1,
+        "intVal": 2,
         "name": "ENERGY_COST"
       },
       {
         "type": 1,
-        "intVal": 1,
+        "intVal": 10,
         "name": "COOLDOWN"
       },
       {
@@ -228,7 +228,7 @@
     "props": [
       {
         "type": 1,
-        "intVal": 7,
+        "intVal": 10,
         "name": "CONSUMABLE_INDEX"
       },
       {
@@ -238,12 +238,12 @@
       },
       {
         "type": 1,
-        "intVal": 1,
+        "intVal": 2,
         "name": "ENERGY_COST"
       },
       {
         "type": 1,
-        "intVal": 1,
+        "intVal": 30,
         "name": "COOLDOWN"
       },
       {
@@ -260,7 +260,7 @@
     "props": [
       {
         "type": 1,
-        "intVal": 7,
+        "intVal": 17,
         "name": "CONSUMABLE_INDEX"
       },
       {
@@ -270,12 +270,12 @@
       },
       {
         "type": 1,
-        "intVal": 1,
+        "intVal": 2,
         "name": "ENERGY_COST"
       },
       {
         "type": 1,
-        "intVal": 1,
+        "intVal": 0,
         "name": "COOLDOWN"
       },
       {
@@ -292,7 +292,7 @@
     "props": [
       {
         "type": 1,
-        "intVal": 8,
+        "intVal": 10,
         "name": "CONSUMABLE_INDEX"
       },
       {
@@ -307,7 +307,7 @@
       },
       {
         "type": 1,
-        "intVal": 1,
+        "intVal": 30,
         "name": "COOLDOWN"
       },
       {
@@ -324,7 +324,7 @@
     "props": [
       {
         "type": 1,
-        "intVal": 9,
+        "intVal": 12,
         "name": "CONSUMABLE_INDEX"
       },
       {
@@ -334,12 +334,12 @@
       },
       {
         "type": 1,
-        "intVal": 1,
+        "intVal": 2,
         "name": "ENERGY_COST"
       },
       {
         "type": 1,
-        "intVal": 1,
+        "intVal": 0,
         "name": "COOLDOWN"
       },
       {
@@ -356,7 +356,7 @@
     "props": [
       {
         "type": 1,
-        "intVal": 10,
+        "intVal": 7,
         "name": "CONSUMABLE_INDEX"
       },
       {
@@ -371,12 +371,12 @@
       },
       {
         "type": 1,
-        "intVal": 1,
+        "intVal": 10,
         "name": "COOLDOWN"
       },
       {
         "type": 1,
-        "intVal": 5,
+        "intVal": 1,
         "name": "COOLDOWN_INIT"
       }
     ],
@@ -388,7 +388,7 @@
     "props": [
       {
         "type": 1,
-        "intVal": 11,
+        "intVal": 5,
         "name": "CONSUMABLE_INDEX"
       },
       {
@@ -403,7 +403,7 @@
       },
       {
         "type": 1,
-        "intVal": 1,
+        "intVal": 8,
         "name": "COOLDOWN"
       },
       {
@@ -420,7 +420,7 @@
     "props": [
       {
         "type": 1,
-        "intVal": 12,
+        "intVal": 1,
         "name": "CONSUMABLE_INDEX"
       },
       {
@@ -430,12 +430,12 @@
       },
       {
         "type": 1,
-        "intVal": 1,
+        "intVal": 2,
         "name": "ENERGY_COST"
       },
       {
         "type": 1,
-        "intVal": 1,
+        "intVal": 15,
         "name": "COOLDOWN"
       },
       {

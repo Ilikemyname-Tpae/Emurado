@@ -2,7 +2,10 @@
 using System.Collections.Generic;
 using System.Data.SQLite;
 using System.Linq;
+using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Security.Claims;
+using System.Threading.Tasks;
 using System.Web.Http;
 using HaloOnline.Server.Common.Repositories;
 using HaloOnline.Server.Core.Http.Interface.Services;
@@ -16,11 +19,6 @@ namespace HaloOnline.Server.Core.Http.Controllers
     [Authorize]
     public class PresenceController : ApiController
     {
-        private readonly ISessionRepository _sessionRepository;
-        private readonly IPartyRepository _partyRepository;
-        private readonly IPartyMemberRepository _partyMemberRepository;
-        private readonly IUserPresenceRepository _userPresenceRepository;
-
         [HttpPost]
         public PresenceDisconnectResult PresenceDisconnect(PresenceDisconnectRequest request)
         {
@@ -105,7 +103,6 @@ namespace HaloOnline.Server.Core.Http.Controllers
         [HttpPost]
         public MatchmakeStartResult MatchmakeStart(MatchmakeStartRequest request)
         {
-            bool isNewGuidCreated = false;
             string sessionId;
 
             using (var connection = new SQLiteConnection("Data Source=halodb.sqlite"))
@@ -122,8 +119,6 @@ namespace HaloOnline.Server.Core.Http.Controllers
                         command.CommandText = "INSERT INTO Session (Id) VALUES (@Id)";
                         command.Parameters.AddWithValue("@Id", sessionId);
                         command.ExecuteNonQuery();
-
-                        isNewGuidCreated = true;
                     }
                 }
             }
@@ -138,21 +133,22 @@ namespace HaloOnline.Server.Core.Http.Controllers
         }
 
         [HttpPost]
-        public ReportOnlineStatsResult ReportOnlineStats(ReportOnlineStatsRequest request)
+        public async Task<ReportOnlineStatsResult> ReportOnlineStats(ReportOnlineStatsRequest request)
         {
+            var onlineStats = new OnlineStats
+            {
+                UsersMainMenu = 0,
+                UsersQueue = 0,
+                UsersIngame = 0,
+                UsersRematch = 0,
+                MatchmakeSessions = 0
+            };
 
             return new ReportOnlineStatsResult
             {
                 Result = new ServiceResult<OnlineStats>
                 {
-                    Data = new OnlineStats
-                    {
-                        UsersMainMenu = 0,
-                        UsersQueue = 0,
-                        UsersIngame = 0,
-                        UsersRematch = 0,
-                        MatchmakeSessions = 0
-                    }
+                    Data = onlineStats
                 }
             };
         }
@@ -169,17 +165,12 @@ namespace HaloOnline.Server.Core.Http.Controllers
                         new PlaylistStat
                         {
                             Playlist = "playlist1",
-                            PlayersNumber = 1
+                            PlayersNumber = 0
                         },
                         new PlaylistStat
                         {
                             Playlist = "playlist2",
-                            PlayersNumber = 2
-                        },
-                        new PlaylistStat
-                        {
-                            Playlist = "playlist3",
-                            PlayersNumber = 3
+                            PlayersNumber = 0
                         },
                     }
                 }

@@ -10,7 +10,7 @@ namespace HaloOnline.Server.Core.Repository
         IDbSet<Challenge> Challenges { get; set; }
         IDbSet<ChallengeReward> ChallengeRewards { get; set; }
         IDbSet<Channel> Channels { get; set; }
-        IDbSet<ChannelMessage> ChannelMessages { get; set; }
+        DbSet<ChannelMessage> ChannelMessages { get; set; }
         IDbSet<ChannelUser> ChannelsUsers { get; set; }
         IDbSet<Clan> Clans { get; set; }
         IDbSet<ClanMembership> ClanMemberships { get; set; }

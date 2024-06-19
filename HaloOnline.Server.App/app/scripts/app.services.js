@@ -70,7 +70,8 @@
 				var request = {
 					Username: user.username,
 					Password: user.password,
-					Nickname: user.nickname
+					Nickname: user.nickname,
+					BattleTag: user.battletag
 				};
 
 				var deferred = $q.defer();

@@ -17,11 +17,11 @@ namespace HaloOnline.Server.Core.Repository
             Database.SetInitializer<HaloDbContext>(null);
         }
 
-
+        public virtual IDbSet<ItemOffer> ItemOffers { get; set; }
         public virtual IDbSet<Challenge> Challenges { get; set; }
         public virtual IDbSet<ChallengeReward> ChallengeRewards { get; set; }
         public virtual IDbSet<Channel> Channels { get; set; }
-        public virtual IDbSet<ChannelMessage> ChannelMessages { get; set; }
+        public DbSet<ChannelMessage> ChannelMessages { get; set; }
         public virtual IDbSet<ChannelUser> ChannelsUsers { get; set; }
         public virtual IDbSet<Clan> Clans { get; set; }
         public virtual IDbSet<ClanMembership> ClanMemberships { get; set; }
@@ -39,7 +39,10 @@ namespace HaloOnline.Server.Core.Repository
         public virtual IDbSet<UserDataContainerType> UserDataContainerTypes { get; set; }
         public virtual IDbSet<UserPresence> UserPresences { get; set; } 
         public virtual IDbSet<UserPrimaryState> UserPrimaryState { get; set; }
+        public virtual IDbSet<Transaction> Transactions { get; set; }
+        public virtual IDbSet<TransactionHistory> TransactionHistory { get; set; }
         public virtual IDbSet<UserState> UserStates { get; set; }
+        public virtual IDbSet<PublicData> PublicData { get; set; }
         public virtual IDbSet<UserSubscription> UserSubscriptions { get; set; } 
         public virtual IDbSet<UserTransaction> UserTransactions { get; set; }
         public virtual IDbSet<UserTransactionExtendedInfoItem> UserTransactionExtendedInfoItems { get; set; }

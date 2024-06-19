@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using System.Data.SQLite;
 using System.Security.Claims;
-using System.Threading;
+using System.Threading.Tasks;
 using System.Web.Http;
+using Dapper;
 using HaloOnline.Server.Core.Http.Model;
 using HaloOnline.Server.Core.Http.Model.User;
 using HaloOnline.Server.Model.User;
@@ -13,79 +14,20 @@ namespace HaloOnline.Server.Core.Http.Controllers
     [RoutePrefix("UserService.svc")]
     public class GetTransactionHistoryController : ApiController
     {
-        private readonly string connectionString = "Data Source=halodb.sqlite";
-        private bool stopUpdateThread = false;
-
-        public GetTransactionHistoryController()
-        {
-            Thread.Sleep(5000);
-            Thread updateThread = new Thread(AutoUpdateTransactionHistory);
-            updateThread.Start();
-        }
+        private readonly string connectionString = "Data Source=halodb.sqlite;Pooling=True;Max Pool Size=100;";
 
         [HttpPost]
         [Route("GetTransactionHistory")]
-        public IHttpActionResult GetTransactionHistory()
+        public async Task<IHttpActionResult> GetTransactionHistory()
         {
             try
             {
                 var userIdClaim = (User?.Identity as ClaimsIdentity)?.FindFirst("Id");
                 int userId = userIdClaim != null ? int.Parse(userIdClaim.Value) : -1;
 
-                List<UserTransaction> userTransactions = new List<UserTransaction>();
+                await DeductTransactionTimeAsync(userId);
 
-                using (var connection = new SQLiteConnection(connectionString))
-                {
-                    connection.Open();
-
-                    using (var command = new SQLiteCommand("SELECT * FROM TransactionHistory WHERE UserId = @UserId", connection))
-                    {
-                        command.Parameters.AddWithValue("@UserId", userId);
-
-                        using (var reader = command.ExecuteReader())
-                        {
-                            while (reader.Read())
-                            {
-                                long unixTimeStamp = Convert.ToInt64(reader["TimeStamp"]);
-                                DateTime epochDateTime = new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc);
-                                DateTime timestampDateTime = epochDateTime.AddSeconds(unixTimeStamp).ToLocalTime();
-
-                                UserTransaction userTransaction = new UserTransaction
-                                {
-                                    TransactionItems = new List<UserTransactionItem>
-                                    {
-                                        new UserTransactionItem
-                                        {
-                                            StateName = reader["StateName"].ToString(),
-                                            StateType = Convert.ToInt32(reader["StateType"]),
-                                            OwnType = Convert.ToInt32(reader["OwnType"]),
-                                            OperationType = Convert.ToInt32(reader["OperationType"]),
-                                            InitialValue = Convert.ToInt32(reader["InitialValue"]),
-                                            ResultingValue = Convert.ToInt32(reader["ResultingValue"]),
-                                            DeltaValue = Convert.ToInt32(reader["DeltaValue"]),
-                                            DescId = Convert.ToInt32(reader["DescId"])
-                                        }
-                                    },
-                                    SessionId = reader["SessionId"].ToString(),
-                                    ReferenceId = reader["ReferenceId"].ToString(),
-                                    OfferId = reader["OfferId"].ToString(),
-                                    Timestamp = timestampDateTime,
-                                    OperationType = Convert.ToInt32(reader["OperationType"]),
-                                    ExtendedInfoItems = new List<ExtendedInfoItem>
-                                    {
-                                        new ExtendedInfoItem
-                                        {
-                                            Key = reader["ExtendedInfoKey"].ToString(),
-                                            Value = reader["ExtendedInfoValue"].ToString()
-                                        }
-                                    }
-                                };
-
-                                userTransactions.Add(userTransaction);
-                            }
-                        }
-                    }
-                }
+                List<UserTransaction> userTransactions = await GetUserTransactionsAsync(userId);
 
                 return Ok(new GetTransactionHistoryResult
                 {
@@ -105,43 +47,113 @@ namespace HaloOnline.Server.Core.Http.Controllers
             }
         }
 
-        private void AutoUpdateTransactionHistory()
+        private async Task<List<UserTransaction>> GetUserTransactionsAsync(int userId)
         {
-            while (!stopUpdateThread)
+            using (var connection = new SQLiteConnection(connectionString))
             {
-                try
+                await connection.OpenAsync();
+
+                var query = @"
+                    SELECT TimeStamp, StateName, StateType, OwnType, OperationType, InitialValue, ResultingValue, DeltaValue, DescId, SessionId, ReferenceId, OfferId, ExtendedInfoKey, ExtendedInfoValue
+                    FROM TransactionHistory WHERE UserId = @UserId;
+                ";
+
+                var transactions = await connection.QueryAsync(query, new { UserId = userId });
+                var userTransactions = new List<UserTransaction>();
+
+                foreach (var transaction in transactions)
                 {
-                    using (var connection = new SQLiteConnection(connectionString))
+                    long unixTimeStamp = (long)transaction.TimeStamp;
+                    DateTime epochDateTime = new DateTime(1970, 1, 1, 0, 0, 0, DateTimeKind.Utc);
+                    DateTime timestampDateTime = epochDateTime.AddSeconds(unixTimeStamp).ToLocalTime();
+
+                    var userTransaction = new UserTransaction
                     {
-                        connection.Open();
-
-                        using (var updateCommand = new SQLiteCommand("UPDATE TransactionHistory SET ResultingValue = ResultingValue - 5", connection))
+                        TransactionItems = new List<UserTransactionItem>
                         {
-                            updateCommand.ExecuteNonQuery();
-                        }
-
-                        using (var deleteCommand = new SQLiteCommand("DELETE FROM TransactionHistory WHERE ResultingValue <= 0", connection))
-                        {
-                            deleteCommand.ExecuteNonQuery();
-                        }
-
-                        using (var checkCommand = new SQLiteCommand("SELECT COUNT(*) FROM TransactionHistory", connection))
-                        {
-                            int rowCount = Convert.ToInt32(checkCommand.ExecuteScalar());
-
-                            if (rowCount == 0)
+                            new UserTransactionItem
                             {
-                                stopUpdateThread = true;
-                                Console.WriteLine("Auto-update stopped: No rows remaining in TransactionHistory.");
-                                return;
+                                StateName = (string)transaction.StateName,
+                                StateType = (int)transaction.StateType,
+                                OwnType = (int)transaction.OwnType,
+                                OperationType = (int)transaction.OperationType,
+                                InitialValue = (int)transaction.InitialValue,
+                                ResultingValue = (int)transaction.ResultingValue,
+                                DeltaValue = (int)transaction.DeltaValue,
+                                DescId = (int)transaction.DescId
+                            }
+                        },
+                        SessionId = (string)transaction.SessionId,
+                        ReferenceId = (string)transaction.ReferenceId,
+                        OfferId = (string)transaction.OfferId,
+                        Timestamp = timestampDateTime,
+                        OperationType = (int)transaction.OperationType,
+                        ExtendedInfoItems = new List<ExtendedInfoItem>
+                        {
+                            new ExtendedInfoItem
+                            {
+                                Key = (string)transaction.ExtendedInfoKey,
+                                Value = (string)transaction.ExtendedInfoValue
                             }
                         }
+                    };
+
+                    userTransactions.Add(userTransaction);
+                }
+
+                return userTransactions;
+            }
+        }
+
+        private async Task DeductTransactionTimeAsync(int userId)
+        {
+            using (var connection = new SQLiteConnection(connectionString))
+            {
+                await connection.OpenAsync();
+
+                using (var transaction = connection.BeginTransaction())
+                {
+                    var deductQuery = @"
+                UPDATE TransactionHistory
+                SET ResultingValue = ResultingValue - 5
+                WHERE UserId = @UserId AND ResultingValue > 0
+                      AND StateName NOT IN ('ranger_kit_offer', 'sniper_kit_offer', 'tactician_kit_offer')
+                      AND OfferId NOT IN ('ranger_kit_offer', 'sniper_kit_offer', 'tactician_kit_offer')
+                      AND StateName NOT LIKE 'challenge%';
+            ";
+
+                    await connection.ExecuteAsync(deductQuery, new { UserId = userId }, transaction);
+
+                    var deleteQuery = @"
+                DELETE FROM TransactionHistory
+                WHERE UserId = @UserId AND ResultingValue <= 0
+                      AND StateName NOT LIKE 'challenge%';
+            ";
+
+                    await connection.ExecuteAsync(deleteQuery, new { UserId = userId }, transaction);
+
+                    var findOfferIdQuery = @"
+                SELECT OfferId 
+                FROM TransactionHistory 
+                WHERE UserId = @UserId AND ResultingValue <= 0 
+                      AND StateName NOT LIKE 'challenge%'
+                ORDER BY TimeStamp DESC 
+                LIMIT 1;
+            ";
+
+                    var offerId = await connection.ExecuteScalarAsync<string>(findOfferIdQuery, new { UserId = userId }, transaction);
+
+                    if (!string.IsNullOrEmpty(offerId))
+                    {
+                        var deleteOfferQuery = @"
+                    DELETE FROM Transactions
+                    WHERE OfferId = @OfferId;
+                ";
+
+                        await connection.ExecuteAsync(deleteOfferQuery, new { OfferId = offerId }, transaction);
                     }
 
-                    Thread.Sleep(5000);
-                }
-                catch (Exception ex)
-                {
+                    transaction.Commit();
                 }
             }
         }

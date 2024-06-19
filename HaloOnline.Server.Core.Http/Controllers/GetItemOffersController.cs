@@ -17,7 +17,119 @@ namespace HaloOnline.Server.Core.Http.Controllers
                 {
                     retCode = 0,
                     data = new List<object>
+            {
+                new
+                {
+                    ItemId = "ranger_kit_offer",
+                    Requirements = new List<string> { "" },
+                    Unlocks = new List<string> { "" },
+                    BundleItems = new List<object>
                     {
+                        new
+                        {
+                            Duration = 0,
+                                ItemId = "assault_rifle_v2"
+                        }
+                    },
+                    UnlockedLevel = 0,
+                    OfferLine = new List<object>
+                    {
+                        new
+                        {
+                            Duration = 0,
+                            Offers = new List<object>
+                            {
+                                new
+                                {
+                                    OfferId = "ranger_kit_offer",
+                                    Currency = "gold",
+                                    Price = 0,
+                                    ExpireAt = 0,
+                                    Sale = new
+                                    {
+                                        Price = 0,
+                                        ExpireAt = 0
+                                    }
+                                },
+                            }
+                        }
+                    }
+                },
+                new
+                {
+                    ItemId = "sniper_kit_offer",
+                    Requirements = new List<string> { "" },
+                    Unlocks = new List<string> { "" },
+                    BundleItems = new List<object>
+                    {
+                        new
+                        {
+                            Duration = 0,
+                                ItemId = "assault_rifle_v2"
+                        }
+                    },
+                    UnlockedLevel = 0,
+                    OfferLine = new List<object>
+                    {
+                        new
+                        {
+                            Duration = 0,
+                            Offers = new List<object>
+                            {
+                                new
+                                {
+                                    OfferId = "sniper_kit_offer",
+                                    Currency = "gold",
+                                    Price = 0,
+                                    ExpireAt = 0,
+                                    Sale = new
+                                    {
+                                        Price = 0,
+                                        ExpireAt = 0
+                                    }
+                                },
+                            }
+                        }
+                    }
+                },
+                new
+                {
+                    ItemId = "tactician_kit_offer",
+                    Requirements = new List<string> { "" },
+                    Unlocks = new List<string> { "" },
+                    BundleItems = new List<object>
+                    {
+                        new
+                        {
+                            Duration = 0,
+                                ItemId = "assault_rifle_v2"
+                        }
+                    },
+                    UnlockedLevel = 0,
+                    OfferLine = new List<object>
+                    {
+                        new
+                        {
+                            Duration = 0,
+                            Offers = new List<object>
+                            {
+                                new
+                                {
+                                    OfferId = "tactician_kit_offer",
+                                    Currency = "gold",
+                                    Price = 0,
+                                    ExpireAt = 0,
+                                    Sale = new
+                                    {
+                                        Price = 0,
+                                        ExpireAt = 0
+                                    }
+                                },
+                            }
+                        }
+                    }
+                },
+                    
                         // Assault_rifles
                     new
                     {
@@ -119,6 +231,55 @@ namespace HaloOnline.Server.Core.Http.Controllers
                     },
                     new
                     {
+                        ItemId = "assault_rifle_v5",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 3600,
+                                ItemId = "assault_rifle_v5"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 3600,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "assault_rifle_v5",
+                                        Currency = "gold",
+                                        Price = 75,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 75,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "assault_rifle_v5_cr",
+                                        Currency = "cr",
+                                        Price = 2000,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 2000,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+                    new
+                    {
                         ItemId = "assault_rifle_v6",
                         Requirements = new List<string> { "" },
                         Unlocks = new List<string> { "" },
@@ -166,6 +327,56 @@ namespace HaloOnline.Server.Core.Http.Controllers
                             }
                         }
                     },
+                    new
+                    {
+                        ItemId = "battle_rifle",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 3600,
+                                ItemId = "battle_rifle"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 3600,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "battle_rifle",
+                                        Currency = "gold",
+                                        Price = 50,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 50,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "battle_rifle_cr",
+                                        Currency = "cr",
+                                        Price = 1400,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 1400,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+
                     new
                     {
                         ItemId = "battle_rifle_v1",
@@ -756,6 +967,56 @@ namespace HaloOnline.Server.Core.Http.Controllers
                     },
                                         new
                     {
+                        ItemId = "smg_v1",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 3600,
+                                ItemId = "smg_v1"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 3600,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "smg_v1",
+                                        Currency = "gold",
+                                        Price = 50,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 50,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "smg_v1_cr",
+                                        Currency = "cr",
+                                        Price = 1750,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 1750,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+
+                                        new
+                    {
                         ItemId = "smg_v2",
                         Requirements = new List<string> { "" },
                         Unlocks = new List<string> { "" },
@@ -888,6 +1149,55 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     new
                                     {
                                         OfferId = "smg_v4_cr",
+                                        Currency = "cr",
+                                        Price = 1750,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 1750,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+                    new
+                    {
+                        ItemId = "smg_v5",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 3600,
+                                ItemId = "smg_v5"
+                            }
+                        },
+                        UnlockedLevel = 2,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 3600,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "smg_v5",
+                                        Currency = "gold",
+                                        Price = 50,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 50,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "smg_v5_cr",
                                         Currency = "cr",
                                         Price = 1750,
                                         ExpireAt = 0,
@@ -2959,6 +3269,300 @@ namespace HaloOnline.Server.Core.Http.Controllers
                             }
                         }
                     },
+new
+                    {
+                        ItemId = "helmet_mercenary",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "helmet_mercenary"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "helmet_mercenary",
+                                        Currency = "gold",
+                                        Price = 25,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 25,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "helmet_mercenary_cr",
+                                        Currency = "cr",
+                                        Price = 1500,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 1500,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+new
+                    {
+                        ItemId = "helmet_hoplite",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "helmet_hoplite"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "helmet_hoplite",
+                                        Currency = "gold",
+                                        Price = 25,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 25,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "helmet_hoplite_cr",
+                                        Currency = "cr",
+                                        Price = 1500,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 1500,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+new
+                    {
+                        ItemId = "helmet_ballista",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "helmet_ballista"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "helmet_ballista",
+                                        Currency = "gold",
+                                        Price = 25,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 25,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "helmet_ballista_cr",
+                                        Currency = "cr",
+                                        Price = 1500,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 1500,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+new
+                    {
+                        ItemId = "helmet_omni",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "helmet_omni"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "helmet_omni",
+                                        Currency = "gold",
+                                        Price = 25,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 25,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "helmet_omni_cr",
+                                        Currency = "cr",
+                                        Price = 1500,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 1500,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+new
+                    {
+                        ItemId = "helmet_silverback",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "helmet_silverback"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "helmet_silverback",
+                                        Currency = "gold",
+                                        Price = 25,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 25,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "helmet_silverback_cr",
+                                        Currency = "cr",
+                                        Price = 1500,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 1500,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+new
+                    {
+                        ItemId = "helmet_widowmaker",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "helmet_widowmaker"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "helmet_widowmaker",
+                                        Currency = "gold",
+                                        Price = 25,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 25,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "helmet_widowmaker_cr",
+                                        Currency = "cr",
+                                        Price = 1500,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 1500,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
                     new
                     {
                         ItemId = "helmet_spectrum",
@@ -3204,6 +3808,448 @@ namespace HaloOnline.Server.Core.Http.Controllers
                             }
                         }
                     },
+new
+                    {
+                        ItemId = "helmet_stealth",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "helmet_stealth"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "helmet_stealth",
+                                        Currency = "gold",
+                                        Price = 50,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 50,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "helmet_stealth_cr",
+                                        Currency = "cr",
+                                        Price = 3000,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 3000,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+new
+                    {
+                        ItemId = "helmet_renegade",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "helmet_renegade"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "helmet_renegade",
+                                        Currency = "gold",
+                                        Price = 50,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 50,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "helmet_renegade_cr",
+                                        Currency = "cr",
+                                        Price = 3000,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 3000,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+new
+                    {
+                        ItemId = "helmet_nihard",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "helmet_nihard"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "helmet_nihard",
+                                        Currency = "gold",
+                                        Price = 50,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 50,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "helmet_nihard_cr",
+                                        Currency = "cr",
+                                        Price = 3000,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 3000,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+new
+                    {
+                        ItemId = "helmet_gladiator",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "helmet_gladiator"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "helmet_gladiator",
+                                        Currency = "gold",
+                                        Price = 50,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 50,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "helmet_gladiator_cr",
+                                        Currency = "cr",
+                                        Price = 3000,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 3000,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+new
+                    {
+                        ItemId = "helmet_mac",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "helmet_mac"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "helmet_mac",
+                                        Currency = "gold",
+                                        Price = 50,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 50,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "helmet_mac_cr",
+                                        Currency = "cr",
+                                        Price = 3000,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 3000,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+new
+                    {
+                        ItemId = "helmet_shark",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "helmet_shark"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "helmet_shark",
+                                        Currency = "gold",
+                                        Price = 50,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 50,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "helmet_shark_cr",
+                                        Currency = "cr",
+                                        Price = 3000,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 3000,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+new
+                    {
+                        ItemId = "helmet_halberd",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "helmet_halberd"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "helmet_halberd",
+                                        Currency = "gold",
+                                        Price = 50,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 50,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "helmet_halberd_cr",
+                                        Currency = "cr",
+                                        Price = 3000,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 3000,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+new
+                    {
+                        ItemId = "helmet_cyclops",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "helmet_cyclops"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "helmet_cyclops",
+                                        Currency = "gold",
+                                        Price = 50,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 50,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "helmet_cyclops_cr",
+                                        Currency = "cr",
+                                        Price = 3000,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 3000,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+new
+                    {
+                        ItemId = "helmet_demo",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "helmet_demo"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "helmet_demo",
+                                        Currency = "gold",
+                                        Price = 50,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 50,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "helmet_demo_cr",
+                                        Currency = "cr",
+                                        Price = 3000,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 3000,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+
                     new
                     {
                         ItemId = "chest_scanner",
@@ -3485,55 +4531,6 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     new
                                     {
                                         OfferId = "chest_juggernaut_cr",
-                                        Currency = "cr",
-                                        Price = 1500,
-                                        ExpireAt = 0,
-                                        Sale = new
-                                        {
-                                            Price = 1500,
-                                            ExpireAt = 0
-                                        }
-                                    },
-                                }
-                            }
-                        }
-                    },
-                    new
-                    {
-                        ItemId = "chest_spectrum",
-                        Requirements = new List<string> { "" },
-                        Unlocks = new List<string> { "" },
-                        BundleItems = new List<object>
-                        {
-                            new
-                            {
-                                Duration = 0,
-                                ItemId = "chest_spectrum"
-                            }
-                        },
-                        UnlockedLevel = 0,
-                        OfferLine = new List<object>
-                        {
-                            new
-                            {
-                                Duration = 0,
-                                Offers = new List<object>
-                                {
-                                    new
-                                    {
-                                        OfferId = "chest_spectrum",
-                                        Currency = "gold",
-                                        Price = 25,
-                                        ExpireAt = 0,
-                                        Sale = new
-                                        {
-                                            Price = 25,
-                                            ExpireAt = 0
-                                        }
-                                    },
-                                    new
-                                    {
-                                        OfferId = "chest_spectrum_cr",
                                         Currency = "cr",
                                         Price = 1500,
                                         ExpireAt = 0,
@@ -4039,55 +5036,6 @@ namespace HaloOnline.Server.Core.Http.Controllers
                     },
                                         new
                     {
-                        ItemId = "shoulders_spectrum",
-                        Requirements = new List<string> { "" },
-                        Unlocks = new List<string> { "" },
-                        BundleItems = new List<object>
-                        {
-                            new
-                            {
-                                Duration = 0,
-                                ItemId = "shoulders_spectrum"
-                            }
-                        },
-                        UnlockedLevel = 0,
-                        OfferLine = new List<object>
-                        {
-                            new
-                            {
-                                Duration = 0,
-                                Offers = new List<object>
-                                {
-                                    new
-                                    {
-                                        OfferId = "shoulders_spectrum",
-                                        Currency = "gold",
-                                        Price = 25,
-                                        ExpireAt = 0,
-                                        Sale = new
-                                        {
-                                            Price = 25,
-                                            ExpireAt = 0
-                                        }
-                                    },
-                                    new
-                                    {
-                                        OfferId = "shoulders_spectrum_cr",
-                                        Currency = "cr",
-                                        Price = 1500,
-                                        ExpireAt = 0,
-                                        Sale = new
-                                        {
-                                            Price = 1500,
-                                            ExpireAt = 0
-                                        }
-                                    },
-                                }
-                            }
-                        }
-                    },
-                    new
-                    {
                         ItemId = "shoulders_orbital",
                         Requirements = new List<string> { "" },
                         Unlocks = new List<string> { "" },
@@ -4563,55 +5511,6 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     new
                                     {
                                         OfferId = "arms_juggernaut_cr",
-                                        Currency = "cr",
-                                        Price = 1500,
-                                        ExpireAt = 0,
-                                        Sale = new
-                                        {
-                                            Price = 1500,
-                                            ExpireAt = 0
-                                        }
-                                    },
-                                }
-                            }
-                        }
-                    },
-                    new
-                    {
-                        ItemId = "arms_spectrum",
-                        Requirements = new List<string> { "" },
-                        Unlocks = new List<string> { "" },
-                        BundleItems = new List<object>
-                        {
-                            new
-                            {
-                                Duration = 0,
-                                ItemId = "arms_spectrum"
-                            }
-                        },
-                        UnlockedLevel = 0,
-                        OfferLine = new List<object>
-                        {
-                            new
-                            {
-                                Duration = 0,
-                                Offers = new List<object>
-                                {
-                                    new
-                                    {
-                                        OfferId = "arms_spectrum",
-                                        Currency = "gold",
-                                        Price = 25,
-                                        ExpireAt = 0,
-                                        Sale = new
-                                        {
-                                            Price = 25,
-                                            ExpireAt = 0
-                                        }
-                                    },
-                                    new
-                                    {
-                                        OfferId = "arms_spectrum_cr",
                                         Currency = "cr",
                                         Price = 1500,
                                         ExpireAt = 0,
@@ -5118,6 +6017,741 @@ namespace HaloOnline.Server.Core.Http.Controllers
                     },
                     new
                     {
+                        ItemId = "chest_mercenary",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "chest_mercenary"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "chest_mercenary",
+                                        Currency = "gold",
+                                        Price = 25,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 25,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "chest_mercenary_cr",
+                                        Currency = "cr",
+                                        Price = 1500,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 1500,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+                    new
+                    {
+                        ItemId = "arms_mercenary",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "arms_mercenary"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "arms_mercenary",
+                                        Currency = "gold",
+                                        Price = 25,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 25,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "arms_mercenary_cr",
+                                        Currency = "cr",
+                                        Price = 1500,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 1500,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+                    new
+                    {
+                        ItemId = "shoulders_mercenary",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "shoulders_mercenary"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "shoulders_mercenary",
+                                        Currency = "gold",
+                                        Price = 25,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 25,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "shoulders_mercenary_cr",
+                                        Currency = "cr",
+                                        Price = 1500,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 1500,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+                    new
+                    {
+                        ItemId = "legs_mercenary",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "legs_mercenary"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "legs_mercenary",
+                                        Currency = "gold",
+                                        Price = 25,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 25,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "legs_mercenary_cr",
+                                        Currency = "cr",
+                                        Price = 1500,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 1500,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+                    new
+                    {
+                        ItemId = "chest_hoplite",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "chest_hoplite"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "chest_hoplite",
+                                        Currency = "gold",
+                                        Price = 25,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 25,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "chest_hoplite_cr",
+                                        Currency = "cr",
+                                        Price = 1500,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 1500,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+                    new
+                    {
+                        ItemId = "arms_hoplite",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "arms_hoplite"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "arms_hoplite",
+                                        Currency = "gold",
+                                        Price = 25,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 25,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "arms_hoplite_cr",
+                                        Currency = "cr",
+                                        Price = 1500,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 1500,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+                    new
+                    {
+                        ItemId = "shoulders_hoplite",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "shoulders_hoplite"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "shoulders_hoplite",
+                                        Currency = "gold",
+                                        Price = 25,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 25,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "shoulders_hoplite_cr",
+                                        Currency = "cr",
+                                        Price = 1500,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 1500,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+                    new
+                    {
+                        ItemId = "legs_hoplite",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "legs_hoplite"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "legs_hoplite",
+                                        Currency = "gold",
+                                        Price = 25,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 25,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "legs_hoplite_cr",
+                                        Currency = "cr",
+                                        Price = 1500,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 1500,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+                    new
+                    {
+                        ItemId = "chest_ballista",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "chest_ballista"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "chest_ballista",
+                                        Currency = "gold",
+                                        Price = 25,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 25,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "chest_ballista_cr",
+                                        Currency = "cr",
+                                        Price = 1500,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 1500,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+                    new
+                    {
+                        ItemId = "arms_ballista",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "arms_ballista"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "arms_ballista",
+                                        Currency = "gold",
+                                        Price = 25,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 25,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "arms_ballista_cr",
+                                        Currency = "cr",
+                                        Price = 1500,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 1500,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+                    new
+                    {
+                        ItemId = "shoulders_ballista",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "shoulders_ballista"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "shoulders_ballista",
+                                        Currency = "gold",
+                                        Price = 25,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 25,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "shoulders_ballista_cr",
+                                        Currency = "cr",
+                                        Price = 1500,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 1500,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+                    new
+                    {
+                        ItemId = "legs_ballista",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "legs_ballista"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "legs_ballista",
+                                        Currency = "gold",
+                                        Price = 25,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 25,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "legs_ballista_cr",
+                                        Currency = "cr",
+                                        Price = 1500,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 1500,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+                    new
+                    {
+                        ItemId = "chest_spectrum",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "chest_spectrum"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "chest_spectrum",
+                                        Currency = "gold",
+                                        Price = 25,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 25,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "chest_spectrum_cr",
+                                        Currency = "cr",
+                                        Price = 1500,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 1500,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+                    new
+                    {
+                        ItemId = "arms_spectrum",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "arms_spectrum"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "arms_spectrum",
+                                        Currency = "gold",
+                                        Price = 25,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 25,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "arms_spectrum_cr",
+                                        Currency = "cr",
+                                        Price = 1500,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 1500,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+                    new
+                    {
+                        ItemId = "shoulders_spectrum",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "shoulders_spectrum"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "shoulders_spectrum",
+                                        Currency = "gold",
+                                        Price = 25,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 25,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "shoulders_spectrum_cr",
+                                        Currency = "cr",
+                                        Price = 1500,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 1500,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+                    new
+                    {
                         ItemId = "legs_spectrum",
                         Requirements = new List<string> { "" },
                         Unlocks = new List<string> { "" },
@@ -5152,6 +6786,594 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                     new
                                     {
                                         OfferId = "legs_spectrum_cr",
+                                        Currency = "cr",
+                                        Price = 1500,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 1500,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+                    new
+                    {
+                        ItemId = "chest_omni",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "chest_omni"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "chest_omni",
+                                        Currency = "gold",
+                                        Price = 25,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 25,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "chest_omni_cr",
+                                        Currency = "cr",
+                                        Price = 1500,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 1500,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+                    new
+                    {
+                        ItemId = "arms_omni",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "arms_omni"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "arms_omni",
+                                        Currency = "gold",
+                                        Price = 25,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 25,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "arms_omni_cr",
+                                        Currency = "cr",
+                                        Price = 1500,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 1500,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+                    new
+                    {
+                        ItemId = "shoulders_omni",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "shoulders_omni"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "shoulders_omni",
+                                        Currency = "gold",
+                                        Price = 25,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 25,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "shoulders_omni_cr",
+                                        Currency = "cr",
+                                        Price = 1500,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 1500,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+                    new
+                    {
+                        ItemId = "legs_omni",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "legs_omni"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "legs_omni",
+                                        Currency = "gold",
+                                        Price = 25,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 25,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "legs_omni_cr",
+                                        Currency = "cr",
+                                        Price = 1500,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 1500,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+                    new
+                    {
+                        ItemId = "chest_silverback",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "chest_silverback"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "chest_silverback",
+                                        Currency = "gold",
+                                        Price = 25,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 25,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "chest_silverback_cr",
+                                        Currency = "cr",
+                                        Price = 1500,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 1500,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+                    new
+                    {
+                        ItemId = "arms_silverback",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "arms_silverback"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "arms_silverback",
+                                        Currency = "gold",
+                                        Price = 25,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 25,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "arms_silverback_cr",
+                                        Currency = "cr",
+                                        Price = 1500,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 1500,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+                    new
+                    {
+                        ItemId = "shoulders_silverback",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "shoulders_silverback"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "shoulders_silverback",
+                                        Currency = "gold",
+                                        Price = 25,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 25,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "shoulders_silverback_cr",
+                                        Currency = "cr",
+                                        Price = 1500,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 1500,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+                    new
+                    {
+                        ItemId = "legs_silverback",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "legs_silverback"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "legs_silverback",
+                                        Currency = "gold",
+                                        Price = 25,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 25,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "legs_silverback_cr",
+                                        Currency = "cr",
+                                        Price = 1500,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 1500,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+                    new
+                    {
+                        ItemId = "chest_widowmaker",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "chest_widowmaker"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "chest_widowmaker",
+                                        Currency = "gold",
+                                        Price = 25,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 25,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "chest_widowmaker_cr",
+                                        Currency = "cr",
+                                        Price = 1500,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 1500,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+                    new
+                    {
+                        ItemId = "arms_widowmaker",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "arms_widowmaker"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "arms_widowmaker",
+                                        Currency = "gold",
+                                        Price = 25,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 25,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "arms_widowmaker_cr",
+                                        Currency = "cr",
+                                        Price = 1500,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 1500,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+                    new
+                    {
+                        ItemId = "shoulders_widowmaker",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "shoulders_widowmaker"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "shoulders_widowmaker",
+                                        Currency = "gold",
+                                        Price = 25,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 25,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "shoulders_widowmaker_cr",
+                                        Currency = "cr",
+                                        Price = 1500,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 1500,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+                    new
+                    {
+                        ItemId = "legs_widowmaker",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "legs_widowmaker"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "legs_widowmaker",
+                                        Currency = "gold",
+                                        Price = 25,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 25,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "legs_widowmaker_cr",
                                         Currency = "cr",
                                         Price = 1500,
                                         ExpireAt = 0,
@@ -5361,10 +7583,1774 @@ namespace HaloOnline.Server.Core.Http.Controllers
                             }
                         }
                     },
+                    new
+                    {
+                        ItemId = "arms_stealth",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "arms_stealth"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "arms_stealth",
+                                        Currency = "gold",
+                                        Price = 50,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 50,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "arms_stealth_cr",
+                                        Currency = "cr",
+                                        Price = 3000,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 3000,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+                    new
+                    {
+                        ItemId = "chest_stealth",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "chest_stealth"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "chest_stealth",
+                                        Currency = "gold",
+                                        Price = 50,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 50,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "chest_stealth_cr",
+                                        Currency = "cr",
+                                        Price = 3000,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 3000,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+                    new
+                    {
+                        ItemId = "shoulders_stealth",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "shoulders_stealth"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "shoulders_stealth",
+                                        Currency = "gold",
+                                        Price = 50,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 50,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "shoulders_stealth_cr",
+                                        Currency = "cr",
+                                        Price = 3000,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 3000,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+                    new
+                    {
+                        ItemId = "legs_stealth",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "legs_stealth"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "legs_stealth",
+                                        Currency = "gold",
+                                        Price = 50,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 50,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "legs_stealth_cr",
+                                        Currency = "cr",
+                                        Price = 3000,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 3000,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+                    new
+                    {
+                        ItemId = "arms_renegade",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "arms_renegade"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "arms_renegade",
+                                        Currency = "gold",
+                                        Price = 50,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 50,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "arms_renegade_cr",
+                                        Currency = "cr",
+                                        Price = 3000,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 3000,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+                    new
+                    {
+                        ItemId = "chest_renegade",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "chest_renegade"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "chest_renegade",
+                                        Currency = "gold",
+                                        Price = 50,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 50,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "chest_renegade_cr",
+                                        Currency = "cr",
+                                        Price = 3000,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 3000,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+                    new
+                    {
+                        ItemId = "shoulders_renegade",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "shoulders_renegade"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "shoulders_renegade",
+                                        Currency = "gold",
+                                        Price = 50,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 50,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "shoulders_renegade_cr",
+                                        Currency = "cr",
+                                        Price = 3000,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 3000,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+                    new
+                    {
+                        ItemId = "legs_renegade",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "legs_renegade"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "legs_renegade",
+                                        Currency = "gold",
+                                        Price = 50,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 50,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "legs_renegade_cr",
+                                        Currency = "cr",
+                                        Price = 3000,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 3000,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+                    new
+                    {
+                        ItemId = "arms_nihard",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "arms_nihard"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "arms_nihard",
+                                        Currency = "gold",
+                                        Price = 50,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 50,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "arms_nihard_cr",
+                                        Currency = "cr",
+                                        Price = 3000,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 3000,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+                    new
+                    {
+                        ItemId = "chest_nihard",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "chest_nihard"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "chest_nihard",
+                                        Currency = "gold",
+                                        Price = 50,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 50,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "chest_nihard_cr",
+                                        Currency = "cr",
+                                        Price = 3000,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 3000,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+                    new
+                    {
+                        ItemId = "shoulders_nihard",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "shoulders_nihard"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "shoulders_nihard",
+                                        Currency = "gold",
+                                        Price = 50,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 50,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "shoulders_nihard_cr",
+                                        Currency = "cr",
+                                        Price = 3000,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 3000,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+                    new
+                    {
+                        ItemId = "legs_nihard",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "legs_nihard"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "legs_nihard",
+                                        Currency = "gold",
+                                        Price = 50,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 50,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "legs_nihard_cr",
+                                        Currency = "cr",
+                                        Price = 3000,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 3000,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+                    new
+                    {
+                        ItemId = "arms_gladiator",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "arms_gladiator"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "arms_gladiator",
+                                        Currency = "gold",
+                                        Price = 50,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 50,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "arms_gladiator_cr",
+                                        Currency = "cr",
+                                        Price = 3000,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 3000,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+                    new
+                    {
+                        ItemId = "chest_gladiator",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "chest_gladiator"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "chest_gladiator",
+                                        Currency = "gold",
+                                        Price = 50,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 50,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "chest_gladiator_cr",
+                                        Currency = "cr",
+                                        Price = 3000,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 3000,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+                    new
+                    {
+                        ItemId = "shoulders_gladiator",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "shoulders_gladiator"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "shoulders_gladiator",
+                                        Currency = "gold",
+                                        Price = 50,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 50,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "shoulders_gladiator_cr",
+                                        Currency = "cr",
+                                        Price = 3000,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 3000,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+                    new
+                    {
+                        ItemId = "legs_gladiator",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "legs_gladiator"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "legs_gladiator",
+                                        Currency = "gold",
+                                        Price = 50,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 50,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "legs_gladiator_cr",
+                                        Currency = "cr",
+                                        Price = 3000,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 3000,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+                    new
+                    {
+                        ItemId = "arms_mac",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "arms_mac"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "arms_mac",
+                                        Currency = "gold",
+                                        Price = 50,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 50,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "arms_mac_cr",
+                                        Currency = "cr",
+                                        Price = 3000,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 3000,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+                    new
+                    {
+                        ItemId = "chest_mac",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "chest_mac"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "chest_mac",
+                                        Currency = "gold",
+                                        Price = 50,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 50,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "chest_mac_cr",
+                                        Currency = "cr",
+                                        Price = 3000,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 3000,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+                    new
+                    {
+                        ItemId = "shoulders_mac",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "shoulders_mac"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "shoulders_mac",
+                                        Currency = "gold",
+                                        Price = 50,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 50,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "shoulders_mac_cr",
+                                        Currency = "cr",
+                                        Price = 3000,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 3000,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+                    new
+                    {
+                        ItemId = "legs_mac",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "legs_mac"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "legs_mac",
+                                        Currency = "gold",
+                                        Price = 50,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 50,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "legs_mac_cr",
+                                        Currency = "cr",
+                                        Price = 3000,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 3000,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+                    new
+                    {
+                        ItemId = "arms_shark",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "arms_shark"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "arms_shark",
+                                        Currency = "gold",
+                                        Price = 50,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 50,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "arms_shark_cr",
+                                        Currency = "cr",
+                                        Price = 3000,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 3000,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+                    new
+                    {
+                        ItemId = "chest_shark",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "chest_shark"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "chest_shark",
+                                        Currency = "gold",
+                                        Price = 50,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 50,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "chest_shark_cr",
+                                        Currency = "cr",
+                                        Price = 3000,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 3000,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+                    new
+                    {
+                        ItemId = "shoulders_shark",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "shoulders_shark"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "shoulders_shark",
+                                        Currency = "gold",
+                                        Price = 50,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 50,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "shoulders_shark_cr",
+                                        Currency = "cr",
+                                        Price = 3000,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 3000,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+                    new
+                    {
+                        ItemId = "legs_shark",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "legs_shark"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "legs_shark",
+                                        Currency = "gold",
+                                        Price = 50,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 50,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "legs_shark_cr",
+                                        Currency = "cr",
+                                        Price = 3000,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 3000,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+                    new
+                    {
+                        ItemId = "arms_halberd",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "arms_halberd"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "arms_halberd",
+                                        Currency = "gold",
+                                        Price = 50,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 50,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "arms_halberd_cr",
+                                        Currency = "cr",
+                                        Price = 3000,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 3000,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+                    new
+                    {
+                        ItemId = "chest_halberd",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "chest_halberd"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "chest_halberd",
+                                        Currency = "gold",
+                                        Price = 50,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 50,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "chest_halberd_cr",
+                                        Currency = "cr",
+                                        Price = 3000,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 3000,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+                    new
+                    {
+                        ItemId = "shoulders_halberd",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "shoulders_halberd"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "shoulders_halberd",
+                                        Currency = "gold",
+                                        Price = 50,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 50,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "shoulders_halberd_cr",
+                                        Currency = "cr",
+                                        Price = 3000,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 3000,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+                    new
+                    {
+                        ItemId = "legs_halberd",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "legs_halberd"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "legs_halberd",
+                                        Currency = "gold",
+                                        Price = 50,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 50,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "legs_halberd_cr",
+                                        Currency = "cr",
+                                        Price = 3000,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 3000,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+                    new
+                    {
+                        ItemId = "arms_cyclops",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "arms_cyclops"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "arms_cyclops",
+                                        Currency = "gold",
+                                        Price = 50,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 50,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "arms_cyclops_cr",
+                                        Currency = "cr",
+                                        Price = 3000,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 3000,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+                    new
+                    {
+                        ItemId = "chest_cyclops",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "chest_cyclops"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "chest_cyclops",
+                                        Currency = "gold",
+                                        Price = 50,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 50,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "chest_cyclops_cr",
+                                        Currency = "cr",
+                                        Price = 3000,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 3000,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+                    new
+                    {
+                        ItemId = "shoulders_cyclops",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "shoulders_cyclops"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "shoulders_cyclops",
+                                        Currency = "gold",
+                                        Price = 50,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 50,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "shoulders_cyclops_cr",
+                                        Currency = "cr",
+                                        Price = 3000,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 3000,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+                    new
+                    {
+                        ItemId = "legs_cyclops",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "legs_cyclops"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "legs_cyclops",
+                                        Currency = "gold",
+                                        Price = 50,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 50,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "legs_cyclops_cr",
+                                        Currency = "cr",
+                                        Price = 3000,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 3000,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+                    new
+                    {
+                        ItemId = "arms_demo",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "arms_demo"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "arms_demo",
+                                        Currency = "gold",
+                                        Price = 50,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 50,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "arms_demo_cr",
+                                        Currency = "cr",
+                                        Price = 3000,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 3000,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+                    new
+                    {
+                        ItemId = "chest_demo",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "chest_demo"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "chest_demo",
+                                        Currency = "gold",
+                                        Price = 50,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 50,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "chest_demo_cr",
+                                        Currency = "cr",
+                                        Price = 3000,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 3000,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+                    new
+                    {
+                        ItemId = "shoulders_demo",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "shoulders_demo"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "shoulders_demo",
+                                        Currency = "gold",
+                                        Price = 50,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 50,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "shoulders_demo_cr",
+                                        Currency = "cr",
+                                        Price = 3000,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 3000,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
+                    new
+                    {
+                        ItemId = "legs_demo",
+                        Requirements = new List<string> { "" },
+                        Unlocks = new List<string> { "" },
+                        BundleItems = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                ItemId = "legs_demo"
+                            }
+                        },
+                        UnlockedLevel = 0,
+                        OfferLine = new List<object>
+                        {
+                            new
+                            {
+                                Duration = 0,
+                                Offers = new List<object>
+                                {
+                                    new
+                                    {
+                                        OfferId = "legs_demo",
+                                        Currency = "gold",
+                                        Price = 50,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 50,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                    new
+                                    {
+                                        OfferId = "legs_demo_cr",
+                                        Currency = "cr",
+                                        Price = 3000,
+                                        ExpireAt = 0,
+                                        Sale = new
+                                        {
+                                            Price = 3000,
+                                            ExpireAt = 0
+                                        }
+                                    },
+                                }
+                            }
+                        }
+                    },
                 }
-            }
-        };
-       return Ok(result);
+                }
+            };
+            return Ok(result);
         }
     }
 }

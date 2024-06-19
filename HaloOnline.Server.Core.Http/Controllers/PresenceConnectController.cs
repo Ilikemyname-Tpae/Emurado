@@ -3,7 +3,6 @@ using System.Data.SQLite;
 using System.Security.Claims;
 using System.Web.Http;
 
-
 namespace HaloOnline.Server.Core.Http.Controllers
 {
     [RoutePrefix("PresenceService.svc")]
@@ -12,7 +11,6 @@ namespace HaloOnline.Server.Core.Http.Controllers
         [HttpPost]
         [Route("PresenceConnect")]
         [Authorize]
-
         public IHttpActionResult PresenceConnect()
         {
             var userIdClaim = (User?.Identity as ClaimsIdentity)?.FindFirst("Id");
@@ -28,31 +26,31 @@ namespace HaloOnline.Server.Core.Http.Controllers
 
                 using (SQLiteTransaction transaction = connection.BeginTransaction())
                 {
-                    partyId = Guid.NewGuid().ToString();
-                    matchmakeState = 0;
-                    gameDataString = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==";
-
-                    using (SQLiteCommand insertPartyMemberCommand = new SQLiteCommand(connection))
+                    try
                     {
-                        insertPartyMemberCommand.CommandText = "INSERT INTO PartyMember (PartyId, UserId, IsOwner) VALUES (@PartyId, @UserId, @IsOwner)";
-                        insertPartyMemberCommand.Parameters.AddWithValue("@PartyId", partyId);
-                        insertPartyMemberCommand.Parameters.AddWithValue("@UserId", userId);
-                        insertPartyMemberCommand.Parameters.AddWithValue("@IsOwner", true);
+                        partyId = GetPartyIdForUser(connection, userId);
 
-                        insertPartyMemberCommand.ExecuteNonQuery();
+                        if (partyId == null)
+                        {
+                            partyId = Guid.NewGuid().ToString();
+                            matchmakeState = 0;
+                            gameDataString = "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==";
+
+                            InsertParty(connection, partyId, matchmakeState, gameDataString);
+                            InsertPartyMember(connection, partyId, userId);
+                        }
+                        else
+                        {
+                            (matchmakeState, gameDataString) = GetPartyDetails(connection, partyId);
+                        }
+
+                        transaction.Commit();
                     }
-
-                    using (SQLiteCommand insertPartyCommand = new SQLiteCommand(connection))
+                    catch (Exception ex)
                     {
-                        insertPartyCommand.CommandText = "INSERT INTO Party (Id, MatchmakeState, GameData) VALUES (@Id, @MatchmakeState, @GameData)";
-                        insertPartyCommand.Parameters.AddWithValue("@Id", partyId);
-                        insertPartyCommand.Parameters.AddWithValue("@MatchmakeState", matchmakeState);
-                        insertPartyCommand.Parameters.AddWithValue("@GameData", gameDataString);
-
-                        insertPartyCommand.ExecuteNonQuery();
+                        transaction.Rollback();
+                        return InternalServerError(ex);
                     }
-
-                    transaction.Commit();
                 }
             }
 
@@ -61,18 +59,63 @@ namespace HaloOnline.Server.Core.Http.Controllers
             return Ok(CreateResultObject(partyId, userId, matchmakeState, gameDataString, partyMembers));
         }
 
-
-
-        private bool IsUserAlreadyInParty(SQLiteConnection connection, string partyId, int userId)
+        private string GetPartyIdForUser(SQLiteConnection connection, int userId)
         {
-            using (SQLiteCommand checkUserCommand = new SQLiteCommand(connection))
+            using (SQLiteCommand getPartyIdCommand = new SQLiteCommand(connection))
             {
-                checkUserCommand.CommandText = "SELECT COUNT(*) FROM PartyMember WHERE PartyId = @PartyId AND UserId = @UserId";
-                checkUserCommand.Parameters.AddWithValue("@PartyId", partyId);
-                checkUserCommand.Parameters.AddWithValue("@UserId", userId);
+                getPartyIdCommand.CommandText = "SELECT PartyId FROM PartyMember WHERE UserId = @UserId";
+                getPartyIdCommand.Parameters.AddWithValue("@UserId", userId);
 
-                int count = Convert.ToInt32(checkUserCommand.ExecuteScalar());
-                return count > 0;
+                return (string)getPartyIdCommand.ExecuteScalar();
+            }
+        }
+
+        private (int, string) GetPartyDetails(SQLiteConnection connection, string partyId)
+        {
+            using (SQLiteCommand getPartyDetailsCommand = new SQLiteCommand(connection))
+            {
+                getPartyDetailsCommand.CommandText = "SELECT MatchmakeState, GameData FROM Party WHERE Id = @PartyId";
+                getPartyDetailsCommand.Parameters.AddWithValue("@PartyId", partyId);
+
+                using (SQLiteDataReader reader = getPartyDetailsCommand.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        int matchmakeState = Convert.ToInt32(reader["MatchmakeState"]);
+                        string gameDataString = Convert.ToString(reader["GameData"]);
+                        return (matchmakeState, gameDataString);
+                    }
+                    else
+                    {
+                        throw new Exception("Party not found for the given party ID.");
+                    }
+                }
+            }
+        }
+
+        private void InsertPartyMember(SQLiteConnection connection, string partyId, int userId)
+        {
+            using (SQLiteCommand insertPartyMemberCommand = new SQLiteCommand(connection))
+            {
+                insertPartyMemberCommand.CommandText = "INSERT INTO PartyMember (PartyId, UserId, IsOwner) VALUES (@PartyId, @UserId, @IsOwner)";
+                insertPartyMemberCommand.Parameters.AddWithValue("@PartyId", partyId);
+                insertPartyMemberCommand.Parameters.AddWithValue("@UserId", userId);
+                insertPartyMemberCommand.Parameters.AddWithValue("@IsOwner", true);
+
+                insertPartyMemberCommand.ExecuteNonQuery();
+            }
+        }
+
+        private void InsertParty(SQLiteConnection connection, string partyId, int matchmakeState, string gameDataString)
+        {
+            using (SQLiteCommand insertPartyCommand = new SQLiteCommand(connection))
+            {
+                insertPartyCommand.CommandText = "INSERT INTO Party (Id, MatchmakeState, GameData) VALUES (@Id, @MatchmakeState, @GameData)";
+                insertPartyCommand.Parameters.AddWithValue("@Id", partyId);
+                insertPartyCommand.Parameters.AddWithValue("@MatchmakeState", matchmakeState);
+                insertPartyCommand.Parameters.AddWithValue("@GameData", gameDataString);
+
+                insertPartyCommand.ExecuteNonQuery();
             }
         }
 

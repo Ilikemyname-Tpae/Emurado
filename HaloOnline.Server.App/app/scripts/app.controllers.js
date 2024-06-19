@@ -33,7 +33,8 @@
             registeruser: {
                 username: '',
                 password: '',
-                nickname: ''
+                nickname: '',
+                battletag: ''
             },
             registererror: ''
         }
@@ -61,7 +62,8 @@
             data.registeruser = {
                 username: '',
                 password: '',
-                nickname: ''
+                nickname: '',
+                battletag: ''
             };
         };
 

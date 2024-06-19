@@ -1,0 +1,1307 @@
+[
+	// Air Assault
+	{
+		"className": "ARMOR_ITEM",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "helmet_air_assault",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 4,
+				"name": "RACE_ID"
+			},
+			{
+				"type": 3,
+				"strVal": "helmet",
+				"name": "TYPE"
+			},
+			{
+				"type": 1,
+				"intVal": 2,
+				"name": "OBJ_REGION"
+			},
+			{
+				"type": 1,
+				"intVal": 0,
+				"name": "OBJ_PERMUTATION"
+			},
+			{
+				"type": 1,
+				"intVal": 0,
+				"name": "ARMOR_BODY_REGION"
+			},
+			{
+				"type": 1,
+				"intVal": 3,
+				"name": "ARMOR_BODY_ID"
+			},
+			{
+				"type": 6,
+				"floatList": [ 0.2 ],
+				"name": "ARMOR_MODIFIERS_VALUES"
+			},
+			{
+				"type": 7,
+				"strList": [ "reflex_boost" ],
+				"name": "ARMOR_MODIFIERS_LIST"
+			}
+		],
+		"name": "helmet_air_assault",
+		"parents": []
+	},
+	{
+		"className": "ARMOR_ITEM",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "chest_air_assault",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 4,
+				"name": "RACE_ID"
+			},
+			{
+				"type": 3,
+				"strVal": "chest",
+				"name": "TYPE"
+			},
+			{
+				"type": 1,
+				"intVal": 1,
+				"name": "OBJ_REGION"
+			},
+			{
+				"type": 1,
+				"intVal": 0,
+				"name": "OBJ_PERMUTATION"
+			},
+			{
+				"type": 1,
+				"intVal": 1,
+				"name": "ARMOR_BODY_REGION"
+			},
+			{
+				"type": 1,
+				"intVal": 3,
+				"name": "ARMOR_BODY_ID"
+			},
+			{
+				"type": 6,
+				"floatList": [ 0.2 ],
+				"name": "ARMOR_MODIFIERS_VALUES"
+			},
+			{
+				"type": 7,
+				"strList": [ "reflex_boost" ],
+				"name": "ARMOR_MODIFIERS_LIST"
+			}
+		],
+		"name": "chest_air_assault",
+		"parents": []
+	},
+	{
+		"className": "ARMOR_ITEM",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "shoulders_air_assault",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 4,
+				"name": "RACE_ID"
+			},
+			{
+				"type": 3,
+				"strVal": "shoulder",
+				"name": "TYPE"
+			},
+			{
+				"type": 1,
+				"intVal": 2,
+				"name": "OBJ_REGION"
+			},
+			{
+				"type": 1,
+				"intVal": 0,
+				"name": "OBJ_PERMUTATION"
+			},
+			{
+				"type": 1,
+				"intVal": 2,
+				"name": "ARMOR_BODY_REGION"
+			},
+			{
+				"type": 1,
+				"intVal": 3,
+				"name": "ARMOR_BODY_ID"
+			},
+			{
+				"type": 6,
+				"floatList": [ 0.2 ],
+				"name": "ARMOR_MODIFIERS_VALUES"
+			},
+			{
+				"type": 7,
+				"strList": [ "reflex_boost" ],
+				"name": "ARMOR_MODIFIERS_LIST"
+			}
+		],
+		"name": "shoulders_air_assault",
+		"parents": []
+	},
+	{
+		"className": "ARMOR_ITEM",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "arms_air_assault",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 4,
+				"name": "RACE_ID"
+			},
+			{
+				"type": 3,
+				"strVal": "arms",
+				"name": "TYPE"
+			},
+			{
+				"type": 1,
+				"intVal": 3,
+				"name": "OBJ_REGION"
+			},
+			{
+				"type": 1,
+				"intVal": 0,
+				"name": "OBJ_PERMUTATION"
+			},
+			{
+				"type": 1,
+				"intVal": 3,
+				"name": "ARMOR_BODY_REGION"
+			},
+			{
+				"type": 1,
+				"intVal": 45,
+				"name": "ARMOR_BODY_ID"
+			},
+			{
+				"type": 6,
+				"floatList": [ 0.2 ],
+				"name": "ARMOR_MODIFIERS_VALUES"
+			},
+			{
+				"type": 7,
+				"strList": [ "reflex_boost" ],
+				"name": "ARMOR_MODIFIERS_LIST"
+			}
+		],
+		"name": "arms_air_assault",
+		"parents": []
+	},
+	{
+		"className": "ARMOR_ITEM",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "legs_air_assault",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 4,
+				"name": "RACE_ID"
+			},
+			{
+				"type": 3,
+				"strVal": "legs",
+				"name": "TYPE"
+			},
+			{
+				"type": 1,
+				"intVal": 4,
+				"name": "OBJ_REGION"
+			},
+			{
+				"type": 1,
+				"intVal": 0,
+				"name": "OBJ_PERMUTATION"
+			},
+			{
+				"type": 1,
+				"intVal": 4,
+				"name": "ARMOR_BODY_REGION"
+			},
+			{
+				"type": 1,
+				"intVal": 44,
+				"name": "ARMOR_BODY_ID"
+			},
+			{
+				"type": 6,
+				"floatList": [ 0.2 ],
+				"name": "ARMOR_MODIFIERS_VALUES"
+			},
+			{
+				"type": 7,
+				"strList": [ "reflex_boost" ],
+				"name": "ARMOR_MODIFIERS_LIST"
+			}
+		],
+		"name": "legs_air_assault",
+		"parents": []
+	},
+	// Scanner
+	{
+		"className": "ARMOR_ITEM",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "helmet_scanner",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 4,
+				"name": "RACE_ID"
+			},
+			{
+				"type": 3,
+				"strVal": "helmet",
+				"name": "TYPE"
+			},
+			{
+				"type": 1,
+				"intVal": 2,
+				"name": "OBJ_REGION"
+			},
+			{
+				"type": 1,
+				"intVal": 0,
+				"name": "OBJ_PERMUTATION"
+			},
+			{
+				"type": 1,
+				"intVal": 0,
+				"name": "ARMOR_BODY_REGION"
+			},
+			{
+				"type": 1,
+				"intVal": 34,
+				"name": "ARMOR_BODY_ID"
+			},
+			{
+				"type": 6,
+				"floatList": [ 1.5 ],
+				"name": "ARMOR_MODIFIERS_VALUES"
+			},
+			{
+				"type": 7,
+				"strList": [ "mod_sprint_stamina" ],
+				"name": "ARMOR_MODIFIERS_LIST"
+			}
+		],
+		"name": "helmet_scanner",
+		"parents": []
+	},
+	{
+		"className": "ARMOR_ITEM",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "chest_scanner",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 4,
+				"name": "RACE_ID"
+			},
+			{
+				"type": 3,
+				"strVal": "chest",
+				"name": "TYPE"
+			},
+			{
+				"type": 1,
+				"intVal": 1,
+				"name": "OBJ_REGION"
+			},
+			{
+				"type": 1,
+				"intVal": 0,
+				"name": "OBJ_PERMUTATION"
+			},
+			{
+				"type": 1,
+				"intVal": 1,
+				"name": "ARMOR_BODY_REGION"
+			},
+			{
+				"type": 1,
+				"intVal": 34,
+				"name": "ARMOR_BODY_ID"
+			},
+			{
+				"type": 6,
+				"floatList": [ 1.5 ],
+				"name": "ARMOR_MODIFIERS_VALUES"
+			},
+			{
+				"type": 7,
+				"strList": [ "mod_sprint_stamina" ],
+				"name": "ARMOR_MODIFIERS_LIST"
+			}
+		],
+		"name": "chest_scanner",
+		"parents": []
+	},
+	{
+		"className": "ARMOR_ITEM",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "shoulders_scanner",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 4,
+				"name": "RACE_ID"
+			},
+			{
+				"type": 3,
+				"strVal": "shoulder",
+				"name": "TYPE"
+			},
+			{
+				"type": 1,
+				"intVal": 4,
+				"name": "OBJ_REGION"
+			},
+			{
+				"type": 1,
+				"intVal": 0,
+				"name": "OBJ_PERMUTATION"
+			},
+			{
+				"type": 1,
+				"intVal": 2,
+				"name": "ARMOR_BODY_REGION"
+			},
+			{
+				"type": 1,
+				"intVal": 34,
+				"name": "ARMOR_BODY_ID"
+			},
+			{
+				"type": 6,
+				"floatList": [ 1.5 ],
+				"name": "ARMOR_MODIFIERS_VALUES"
+			},
+			{
+				"type": 7,
+				"strList": [ "mod_sprint_stamina" ],
+				"name": "ARMOR_MODIFIERS_LIST"
+			}
+		],
+		"name": "shoulders_scanner",
+		"parents": []
+	},
+	{
+		"className": "ARMOR_ITEM",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "arms_scanner",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 4,
+				"name": "RACE_ID"
+			},
+			{
+				"type": 3,
+				"strVal": "arms",
+				"name": "TYPE"
+			},
+			{
+				"type": 1,
+				"intVal": 3,
+				"name": "OBJ_REGION"
+			},
+			{
+				"type": 1,
+				"intVal": 0,
+				"name": "OBJ_PERMUTATION"
+			},
+			{
+				"type": 1,
+				"intVal": 3,
+				"name": "ARMOR_BODY_REGION"
+			},
+			{
+				"type": 1,
+				"intVal": 25,
+				"name": "ARMOR_BODY_ID"
+			},
+			{
+				"type": 6,
+				"floatList": [ 1.5 ],
+				"name": "ARMOR_MODIFIERS_VALUES"
+			},
+			{
+				"type": 7,
+				"strList": [ "mod_sprint_stamina" ],
+				"name": "ARMOR_MODIFIERS_LIST"
+			}
+		],
+		"name": "arms_scanner",
+		"parents": []
+	},
+	{
+		"className": "ARMOR_ITEM",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "legs_scanner",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 4,
+				"name": "RACE_ID"
+			},
+			{
+				"type": 3,
+				"strVal": "legs",
+				"name": "TYPE"
+			},
+			{
+				"type": 1,
+				"intVal": 4,
+				"name": "OBJ_REGION"
+			},
+			{
+				"type": 1,
+				"intVal": 0,
+				"name": "OBJ_PERMUTATION"
+			},
+			{
+				"type": 1,
+				"intVal": 4,
+				"name": "ARMOR_BODY_REGION"
+			},
+			{
+				"type": 1,
+				"intVal": 24,
+				"name": "ARMOR_BODY_ID"
+			},
+			{
+				"type": 6,
+				"floatList": [ 1.5 ],
+				"name": "ARMOR_MODIFIERS_VALUES"
+			},
+			{
+				"type": 7,
+				"strList": [ "mod_sprint_stamina" ],
+				"name": "ARMOR_MODIFIERS_LIST"
+			}
+		],
+		"name": "legs_scanner",
+		"parents": []
+	},
+	// Dutch
+	{
+		"className": "ARMOR_ITEM",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "helmet_dutch",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 4,
+				"name": "RACE_ID"
+			},
+			{
+				"type": 3,
+				"strVal": "helmet",
+				"name": "TYPE"
+			},
+			{
+				"type": 1,
+				"intVal": 2,
+				"name": "OBJ_REGION"
+			},
+			{
+				"type": 1,
+				"intVal": 0,
+				"name": "OBJ_PERMUTATION"
+			},
+			{
+				"type": 1,
+				"intVal": 0,
+				"name": "ARMOR_BODY_REGION"
+			},
+			{
+				"type": 1,
+				"intVal": 23,
+				"name": "ARMOR_BODY_ID"
+			},
+			{
+				"type": 6,
+				"floatList": [ 0.0 ],
+				"name": "ARMOR_MODIFIERS_VALUES"
+			},
+			{
+				"type": 7,
+				"strList": [ "" ],
+				"name": "ARMOR_MODIFIERS_LIST"
+			}
+		],
+		"name": "helmet_dutch",
+		"parents": []
+	},
+	{
+		"className": "ARMOR_ITEM",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "chest_dutch",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 4,
+				"name": "RACE_ID"
+			},
+			{
+				"type": 3,
+				"strVal": "chest",
+				"name": "TYPE"
+			},
+			{
+				"type": 1,
+				"intVal": 1,
+				"name": "OBJ_REGION"
+			},
+			{
+				"type": 1,
+				"intVal": 0,
+				"name": "OBJ_PERMUTATION"
+			},
+			{
+				"type": 1,
+				"intVal": 1,
+				"name": "ARMOR_BODY_REGION"
+			},
+			{
+				"type": 1,
+				"intVal": 23,
+				"name": "ARMOR_BODY_ID"
+			},
+			{
+				"type": 6,
+				"floatList": [ 0.0 ],
+				"name": "ARMOR_MODIFIERS_VALUES"
+			},
+			{
+				"type": 7,
+				"strList": [ "" ],
+				"name": "ARMOR_MODIFIERS_LIST"
+			}
+		],
+		"name": "chest_dutch",
+		"parents": []
+	},
+	{
+		"className": "ARMOR_ITEM",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "shoulders_dutch",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 4,
+				"name": "RACE_ID"
+			},
+			{
+				"type": 3,
+				"strVal": "shoulder",
+				"name": "TYPE"
+			},
+			{
+				"type": 1,
+				"intVal": 4,
+				"name": "OBJ_REGION"
+			},
+			{
+				"type": 1,
+				"intVal": 0,
+				"name": "OBJ_PERMUTATION"
+			},
+			{
+				"type": 1,
+				"intVal": 2,
+				"name": "ARMOR_BODY_REGION"
+			},
+			{
+				"type": 1,
+				"intVal": 23,
+				"name": "ARMOR_BODY_ID"
+			},
+			{
+				"type": 6,
+				"floatList": [ 0.0 ],
+				"name": "ARMOR_MODIFIERS_VALUES"
+			},
+			{
+				"type": 7,
+				"strList": [ "" ],
+				"name": "ARMOR_MODIFIERS_LIST"
+			}
+		],
+		"name": "shoulders_dutch",
+		"parents": []
+	},
+	{
+		"className": "ARMOR_ITEM",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "arms_dutch",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 4,
+				"name": "RACE_ID"
+			},
+			{
+				"type": 3,
+				"strVal": "arms",
+				"name": "TYPE"
+			},
+			{
+				"type": 1,
+				"intVal": 3,
+				"name": "OBJ_REGION"
+			},
+			{
+				"type": 1,
+				"intVal": 0,
+				"name": "OBJ_PERMUTATION"
+			},
+			{
+				"type": 1,
+				"intVal": 3,
+				"name": "ARMOR_BODY_REGION"
+			},
+			{
+				"type": 1,
+				"intVal": 17,
+				"name": "ARMOR_BODY_ID"
+			},
+			{
+				"type": 6,
+				"floatList": [ 0.0 ],
+				"name": "ARMOR_MODIFIERS_VALUES"
+			},
+			{
+				"type": 7,
+				"strList": [ "" ],
+				"name": "ARMOR_MODIFIERS_LIST"
+			}
+		],
+		"name": "arms_dutch",
+		"parents": []
+	},
+	{
+		"className": "ARMOR_ITEM",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "legs_dutch",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 4,
+				"name": "RACE_ID"
+			},
+			{
+				"type": 3,
+				"strVal": "legs",
+				"name": "TYPE"
+			},
+			{
+				"type": 1,
+				"intVal": 4,
+				"name": "OBJ_REGION"
+			},
+			{
+				"type": 1,
+				"intVal": 0,
+				"name": "OBJ_PERMUTATION"
+			},
+			{
+				"type": 1,
+				"intVal": 4,
+				"name": "ARMOR_BODY_REGION"
+			},
+			{
+				"type": 1,
+				"intVal": 16,
+				"name": "ARMOR_BODY_ID"
+			},
+			{
+				"type": 6,
+				"floatList": [ 0.0 ],
+				"name": "ARMOR_MODIFIERS_VALUES"
+			},
+			{
+				"type": 7,
+				"strList": [ "" ],
+				"name": "ARMOR_MODIFIERS_LIST"
+			}
+		],
+		"name": "legs_dutch",
+		"parents": []
+	},
+	// Chameleon
+	{
+		"className": "ARMOR_ITEM",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "helmet_chameleon",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 4,
+				"name": "RACE_ID"
+			},
+			{
+				"type": 3,
+				"strVal": "helmet",
+				"name": "TYPE"
+			},
+			{
+				"type": 1,
+				"intVal": 2,
+				"name": "OBJ_REGION"
+			},
+			{
+				"type": 1,
+				"intVal": 0,
+				"name": "OBJ_PERMUTATION"
+			},
+			{
+				"type": 1,
+				"intVal": 0,
+				"name": "ARMOR_BODY_REGION"
+			},
+			{
+				"type": 1,
+				"intVal": 27,
+				"name": "ARMOR_BODY_ID"
+			},
+			{
+				"type": 6,
+				"floatList": [ 0.25 ],
+				"name": "ARMOR_MODIFIERS_VALUES"
+			},
+			{
+				"type": 7,
+				"strList": [ "mod_weapon_switch_speed" ],
+				"name": "ARMOR_MODIFIERS_LIST"
+			}
+		],
+		"name": "helmet_chameleon",
+		"parents": []
+	},
+	{
+		"className": "ARMOR_ITEM",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "chest_chameleon",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 4,
+				"name": "RACE_ID"
+			},
+			{
+				"type": 3,
+				"strVal": "chest",
+				"name": "TYPE"
+			},
+			{
+				"type": 1,
+				"intVal": 1,
+				"name": "OBJ_REGION"
+			},
+			{
+				"type": 1,
+				"intVal": 0,
+				"name": "OBJ_PERMUTATION"
+			},
+			{
+				"type": 1,
+				"intVal": 1,
+				"name": "ARMOR_BODY_REGION"
+			},
+			{
+				"type": 1,
+				"intVal": 27,
+				"name": "ARMOR_BODY_ID"
+			},
+			{
+				"type": 6,
+				"floatList": [ 0.25 ],
+				"name": "ARMOR_MODIFIERS_VALUES"
+			},
+			{
+				"type": 7,
+				"strList": [ "mod_weapon_switch_speed" ],
+				"name": "ARMOR_MODIFIERS_LIST"
+			}
+		],
+		"name": "chest_chameleon",
+		"parents": []
+	},
+	{
+		"className": "ARMOR_ITEM",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "shoulders_chameleon",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 4,
+				"name": "RACE_ID"
+			},
+			{
+				"type": 3,
+				"strVal": "shoulder",
+				"name": "TYPE"
+			},
+			{
+				"type": 1,
+				"intVal": 4,
+				"name": "OBJ_REGION"
+			},
+			{
+				"type": 1,
+				"intVal": 0,
+				"name": "OBJ_PERMUTATION"
+			},
+			{
+				"type": 1,
+				"intVal": 2,
+				"name": "ARMOR_BODY_REGION"
+			},
+			{
+				"type": 1,
+				"intVal": 27,
+				"name": "ARMOR_BODY_ID"
+			},
+			{
+				"type": 6,
+				"floatList": [ 0.25 ],
+				"name": "ARMOR_MODIFIERS_VALUES"
+			},
+			{
+				"type": 7,
+				"strList": [ "mod_weapon_switch_speed" ],
+				"name": "ARMOR_MODIFIERS_LIST"
+			}
+		],
+		"name": "shoulders_chameleon",
+		"parents": []
+	},
+	{
+		"className": "ARMOR_ITEM",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "arms_chameleon",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 4,
+				"name": "RACE_ID"
+			},
+			{
+				"type": 3,
+				"strVal": "arms",
+				"name": "TYPE"
+			},
+			{
+				"type": 1,
+				"intVal": 3,
+				"name": "OBJ_REGION"
+			},
+			{
+				"type": 1,
+				"intVal": 0,
+				"name": "OBJ_PERMUTATION"
+			},
+			{
+				"type": 1,
+				"intVal": 3,
+				"name": "ARMOR_BODY_REGION"
+			},
+			{
+				"type": 1,
+				"intVal": 21,
+				"name": "ARMOR_BODY_ID"
+			},
+			{
+				"type": 6,
+				"floatList": [ 0.25 ],
+				"name": "ARMOR_MODIFIERS_VALUES"
+			},
+			{
+				"type": 7,
+				"strList": [ "mod_weapon_switch_speed" ],
+				"name": "ARMOR_MODIFIERS_LIST"
+			}
+		],
+		"name": "arms_chameleon",
+		"parents": []
+	},
+	{
+		"className": "ARMOR_ITEM",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "legs_chameleon",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 4,
+				"name": "RACE_ID"
+			},
+			{
+				"type": 3,
+				"strVal": "legs",
+				"name": "TYPE"
+			},
+			{
+				"type": 1,
+				"intVal": 4,
+				"name": "OBJ_REGION"
+			},
+			{
+				"type": 1,
+				"intVal": 0,
+				"name": "OBJ_PERMUTATION"
+			},
+			{
+				"type": 1,
+				"intVal": 4,
+				"name": "ARMOR_BODY_REGION"
+			},
+			{
+				"type": 1,
+				"intVal": 20,
+				"name": "ARMOR_BODY_ID"
+			},
+			{
+				"type": 6,
+				"floatList": [ 0.25 ],
+				"name": "ARMOR_MODIFIERS_VALUES"
+			},
+			{
+				"type": 7,
+				"strList": [ "mod_weapon_switch_speed" ],
+				"name": "ARMOR_MODIFIERS_LIST"
+			}
+		],
+		"name": "legs_chameleon",
+		"parents": []
+	},
+	// Oracle
+	{
+		"className": "ARMOR_ITEM",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "helmet_oracle",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 4,
+				"name": "RACE_ID"
+			},
+			{
+				"type": 3,
+				"strVal": "helmet",
+				"name": "TYPE"
+			},
+			{
+				"type": 1,
+				"intVal": 2,
+				"name": "OBJ_REGION"
+			},
+			{
+				"type": 1,
+				"intVal": 0,
+				"name": "OBJ_PERMUTATION"
+			},
+			{
+				"type": 1,
+				"intVal": 0,
+				"name": "ARMOR_BODY_REGION"
+			},
+			{
+				"type": 1,
+				"intVal": 69,
+				"name": "ARMOR_BODY_ID"
+			},
+			{
+				"type": 6,
+				"floatList": [ 20 ],
+				"name": "ARMOR_MODIFIERS_VALUES"
+			},
+			{
+				"type": 7,
+				"strList": [ "mod_motion_sensor_range" ],
+				"name": "ARMOR_MODIFIERS_LIST"
+			}
+		],
+		"name": "helmet_oracle",
+		"parents": []
+	},
+	{
+		"className": "ARMOR_ITEM",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "chest_oracle",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 4,
+				"name": "RACE_ID"
+			},
+			{
+				"type": 3,
+				"strVal": "chest",
+				"name": "TYPE"
+			},
+			{
+				"type": 1,
+				"intVal": 1,
+				"name": "OBJ_REGION"
+			},
+			{
+				"type": 1,
+				"intVal": 0,
+				"name": "OBJ_PERMUTATION"
+			},
+			{
+				"type": 1,
+				"intVal": 1,
+				"name": "ARMOR_BODY_REGION"
+			},
+			{
+				"type": 1,
+				"intVal": 69,
+				"name": "ARMOR_BODY_ID"
+			},
+			{
+				"type": 6,
+				"floatList": [ 20 ],
+				"name": "ARMOR_MODIFIERS_VALUES"
+			},
+			{
+				"type": 7,
+				"strList": [ "mod_motion_sensor_range" ],
+				"name": "ARMOR_MODIFIERS_LIST"
+			}
+		],
+		"name": "chest_oracle",
+		"parents": []
+	},
+	{
+		"className": "ARMOR_ITEM",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "shoulders_oracle",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 4,
+				"name": "RACE_ID"
+			},
+			{
+				"type": 3,
+				"strVal": "shoulder",
+				"name": "TYPE"
+			},
+			{
+				"type": 1,
+				"intVal": 4,
+				"name": "OBJ_REGION"
+			},
+			{
+				"type": 1,
+				"intVal": 0,
+				"name": "OBJ_PERMUTATION"
+			},
+			{
+				"type": 1,
+				"intVal": 2,
+				"name": "ARMOR_BODY_REGION"
+			},
+			{
+				"type": 1,
+				"intVal": 69,
+				"name": "ARMOR_BODY_ID"
+			},
+			{
+				"type": 6,
+				"floatList": [ 20 ],
+				"name": "ARMOR_MODIFIERS_VALUES"
+			},
+			{
+				"type": 7,
+				"strList": [ "mod_motion_sensor_range" ],
+				"name": "ARMOR_MODIFIERS_LIST"
+			}
+		],
+		"name": "shoulders_oracle",
+		"parents": []
+	},
+	{
+		"className": "ARMOR_ITEM",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "arms_oracle",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 4,
+				"name": "RACE_ID"
+			},
+			{
+				"type": 3,
+				"strVal": "arms",
+				"name": "TYPE"
+			},
+			{
+				"type": 1,
+				"intVal": 3,
+				"name": "OBJ_REGION"
+			},
+			{
+				"type": 1,
+				"intVal": 0,
+				"name": "OBJ_PERMUTATION"
+			},
+			{
+				"type": 1,
+				"intVal": 3,
+				"name": "ARMOR_BODY_REGION"
+			},
+			{
+				"type": 1,
+				"intVal": 41,
+				"name": "ARMOR_BODY_ID"
+			},
+			{
+				"type": 6,
+				"floatList": [ 20 ],
+				"name": "ARMOR_MODIFIERS_VALUES"
+			},
+			{
+				"type": 7,
+				"strList": [ "mod_motion_sensor_range" ],
+				"name": "ARMOR_MODIFIERS_LIST"
+			}
+		],
+		"name": "arms_oracle",
+		"parents": []
+	},
+	{
+		"className": "ARMOR_ITEM",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "legs_oracle",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 4,
+				"name": "RACE_ID"
+			},
+			{
+				"type": 3,
+				"strVal": "legs",
+				"name": "TYPE"
+			},
+			{
+				"type": 1,
+				"intVal": 4,
+				"name": "OBJ_REGION"
+			},
+			{
+				"type": 1,
+				"intVal": 0,
+				"name": "OBJ_PERMUTATION"
+			},
+			{
+				"type": 1,
+				"intVal": 4,
+				"name": "ARMOR_BODY_REGION"
+			},
+			{
+				"type": 1,
+				"intVal": 37,
+				"name": "ARMOR_BODY_ID"
+			},
+			{
+				"type": 6,
+				"floatList": [ 20 ],
+				"name": "ARMOR_MODIFIERS_VALUES"
+			},
+			{
+				"type": 7,
+				"strList": [ "mod_motion_sensor_range" ],
+				"name": "ARMOR_MODIFIERS_LIST"
+			}
+		],
+		"name": "legs_oracle",
+		"parents": []
+	}
+]

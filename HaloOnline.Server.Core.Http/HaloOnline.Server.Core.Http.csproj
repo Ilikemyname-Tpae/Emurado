@@ -57,6 +57,9 @@
     <Reference Include="Autofac.Integration.WebApi.Owin">
       <HintPath>..\packages\Autofac.WebApi2.Owin.3.2.0\lib\net45\Autofac.Integration.WebApi.Owin.dll</HintPath>
     </Reference>
+    <Reference Include="Dapper, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Dapper.2.1.35\lib\net461\Dapper.dll</HintPath>
+    </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -174,6 +177,19 @@
     <Content Include="Controllers\instances\WPN_UI_STATS.json" />
     <Content Include="Controllers\instances\COLOR.JSON" />
     <Content Include="Controllers\instances\MOTD.json" />
+    <Content Include="Controllers\instances\ARMOR_ITEM.json" />
+    <Content Include="Controllers\instances\ASSIGN_KIT.json" />
+    <Content Include="Controllers\instances\BOOSTER.JSON" />
+    <Content Include="Controllers\instances\GAME_MODE.json" />
+    <Content Include="Controllers\instances\MAP_INFO.json" />
+    <Content Include="Controllers\instances\MP_DEFAULTS.json" />
+    <Content Include="Controllers\instances\PLAYER_LEVEL.json" />
+    <Content Include="Controllers\instances\SCORING_EVENT.json" />
+    <Content Include="Controllers\instances\DS_DEFAULTS.JSON" />
+    <Content Include="Controllers\instances\CHALLENGE.JSON" />
+    <Content Include="Controllers\instances\REWARD.JSON" />
+    <Content Include="Controllers\instances\GAMEPLAY_MODIFIER.json" />
+    <Content Include="Controllers\instances\ARMOR_SUIT.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -419,6 +435,8 @@
           <DevelopmentServerPort>2743</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>http://localhost:11705/</IISUrl>
+          <OverrideIISAppRootUrl>True</OverrideIISAppRootUrl>
+          <IISAppRootUrl>http://emurado.duckdns.org:11705/</IISAppRootUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

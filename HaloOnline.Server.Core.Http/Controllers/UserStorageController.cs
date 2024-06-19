@@ -1,11 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Data.SQLite;
 using System.Linq;
 using System.Security.Claims;
+using System.Threading;
+using System.Threading.Tasks;
 using System.Web.Http;
+using Dapper;
 using HaloOnline.Server.Core.Http.Model;
 using HaloOnline.Server.Core.Http.Model.UserStorage;
+using HaloOnline.Server.Core.Repository;
 using HaloOnline.Server.Model.User;
 using HaloOnline.Server.Model.UserStorage;
 using Newtonsoft.Json;
@@ -25,6 +30,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                 default:
                     throw new ArgumentException("ContainerName");
             }
+
             return new SetPrivateDataResult
             {
                 Result = new ServiceResult<bool>
@@ -51,6 +57,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                 default:
                     throw new ArgumentException("ContainerName");
             }
+
             return new GetPrivateDataResult
             {
                 Result = new ServiceResult<AbstractData>
@@ -61,48 +68,57 @@ namespace HaloOnline.Server.Core.Http.Controllers
         }
 
         [HttpPost]
-        public IHttpActionResult GetPublicData(GetPublicDataRequest request)
+        public async Task<IHttpActionResult> GetPublicData(GetPublicDataRequest request)
         {
             try
             {
                 int userId = request?.Users?.FirstOrDefault()?.Id ?? -1;
 
-                string data;
-
-                using (SQLiteConnection connection = new SQLiteConnection("Data Source=halodb.sqlite;Version=3;"))
+                if (userId == -1)
                 {
-                    connection.Open();
-
-                    using (SQLiteCommand command = connection.CreateCommand())
-                    {
-                        command.CommandText = $"SELECT {request.ContainerName} FROM PublicData WHERE UserId = @userId";
-                        command.Parameters.AddWithValue("@userId", userId);
-
-                        using (SQLiteDataReader reader = command.ExecuteReader())
-                        {
-                            if (reader.Read())
-                            {
-                                if (!reader.IsDBNull(0))
-                                {
-                                    using (var textReader = reader.GetTextReader(0))
-                                    {
-                                        data = textReader.ReadToEnd();
-                                    }
-                                    // will clean up after test
-                                    data = data.Replace("\r\n", "").Replace("\\", "");
-                                }
-                                else
-                                {
-                                    return NotFound();
-                                }
-                            }
-                            else
-                            {
-                                return NotFound();
-                            }
-                        }
-                    }
+                    return BadRequest("Invalid user ID");
                 }
+
+                string containerName = request.ContainerName.ToLower();
+
+                string data = null;
+
+                using (var dbContext = new HaloDbContext())
+                {
+                    var publicData = await dbContext.PublicData.FirstOrDefaultAsync(pd => pd.UserId == userId);
+
+                    if (publicData == null)
+                    {
+                        return NotFound();
+                    }
+
+                    switch (containerName)
+                    {
+                        case "armor_loadouts":
+                            data = publicData.armor_loadouts;
+                            break;
+                        case "customizations":
+                            data = publicData.customizations;
+                            break;
+                        case "weapon_loadouts":
+                            data = publicData.weapon_loadouts;
+                            break;
+                        case "preferences":
+                            data = publicData.preferences;
+                            break;
+                        default:
+                            return BadRequest($"Invalid containerName: {request.ContainerName}");
+                    }
+
+                    if (data == null)
+                    {
+                        return NotFound();
+                    }
+
+                    data = data.Replace("\r\n", "").Replace("\\", "");
+                }
+
+                var parsedData = JsonConvert.DeserializeObject<Dictionary<string, object>>(data);
 
                 var result = new GetPublicDataResult
                 {
@@ -116,7 +132,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                 {
                                     Id = userId
                                 },
-                                PerUserData = JsonConvert.DeserializeObject<Dictionary<string, object>>(data)
+                                PerUserData = parsedData
                             }
                         }
                     }

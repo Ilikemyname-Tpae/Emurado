@@ -36,29 +36,30 @@ namespace HaloOnline.Server.Core.Http.Controllers
                         {
                             new UserChallenge
                             {
-                                ChallengeId = "challenge_0",
+                                ChallengeId = "challenge_oracle_1",
                                 Progress = 1,
                                 Counters = new List<UserChallengeCounter>
                                 {
                                     new UserChallengeCounter
                                     {
-                                        CounterName = "gp_p0_engineer_kill_counter",
-                                        CurrentValue = 1,
-                                        MaxValue = 5
+                                        CounterName = "challenge_oracle_1",
+                                        CurrentValue = 400,
+                                        MaxValue = 500
                                     }
                                 },
-                                FinishedAtUnixMilliseconds = DateTime.Now,
+                                FinishedAtUnixMilliseconds = 1735689600,
                                 StartDateUnixMilliseconds = DateTime.Now,
-                                EndDateUnixMilliseconds = DateTime.Now,
+                                EndDateUnixMilliseconds = 1735689600,
                                 Rewards = new List<ChallengeReward>
                                 {
                                     new ChallengeReward
                                     {
-                                        Name = "tech_reward",
-                                        Count = 10
-                                    }
+                                        Name = "assault_rifle_v2",
+                                        Count = 1
+                                    },
                                 }
-                            }
+
+                            },
                         }
                     }
                 }

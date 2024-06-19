@@ -1,0 +1,29 @@
+[
+	{
+		"className": "GAME_MODE",
+		"props": [
+			{
+				"type": 3,
+				"strVal": "slayer",
+				"name": "NAME"
+			},
+			{
+				"type": 1,
+				"intVal": 1,
+				"name": "ID"
+			},
+			{
+				"type": 1,
+				"intVal": 1,
+				"name": "SECONDARY_ID"
+			},
+			{
+				"type": 1,
+				"intVal": 5,
+				"name": "ROUND_TIME_LIMIT"
+			}
+		],
+		"name": "playlist1",
+		"parents": []
+	}
+]

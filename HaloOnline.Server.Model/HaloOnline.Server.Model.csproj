@@ -105,6 +105,7 @@
     <Compile Include="SessionControl\SessionId.cs" />
     <Compile Include="SessionControl\SessionBasicData.cs" />
     <Compile Include="SessionControl\SessionChain.cs" />
+    <Compile Include="SessionControl\SessionMember.cs" />
     <Compile Include="TitleResource\GetSolutionDirectory.cs" />
     <Compile Include="TitleResource\Tag.cs" />
     <Compile Include="TitleResource\TitleConfiguration.cs" />
@@ -181,6 +182,7 @@
     <Compile Include="User\ShopShelfTypes.cs" />
     <Compile Include="User\ShopSectionShelve.cs" />
     <Compile Include="User\ShopType.cs" />
+    <Compile Include="User\UserDto.cs" />
     <Compile Include="User\UserTransactionItem.cs" />
     <Compile Include="User\UserBaseData.cs" />
     <Compile Include="User\UserId.cs" />

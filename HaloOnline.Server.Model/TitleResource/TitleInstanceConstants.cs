@@ -5,37 +5,44 @@
         // Class names
         public const string TitleInstanceName = "NAME";
 
-        public const string UiDescClassName = "UI_DESC";
-        public const string GameModeClassName = "GAME_MODE";
-        public const string MapInfoClassName = "MAP_INFO";
+        public const string UiDescClassName = "UI_DESC"; //
+        public const string GameModeClassName = "GAME_MODE"; //
+        public const string MapInfoClassName = "MAP_INFO";//
         public const string DiffPlayersClassName = "DIFF_PLAYERS";
         public const string DiffCoefClassName = "DIFF_COEF";
         public const string ItemClassName = "ITEM";
         public const string GameplayModifierClassName = "GAMEPLAY_MODIFIER";
-        public const string WeaponClassName = "WEAPON";
-        public const string WpnUiStatsClassName = "WPN_UI_STATS";
-        public const string GrenadeClassName = "GRENADE";
-        public const string BoosterClassName = "BOOSTER";
-        public const string ConsumableClassName = "CONSUMABLE";
-        public const string ConsUiStatsClassName = "CONS_UI_STATS";
+        public const string WeaponClassName = "WEAPON"; //
+        public const string WpnUiStatsClassName = "WPN_UI_STATS"; //
+        public const string GrenadeClassName = "GRENADE"; //
+        public const string BoosterClassName = "BOOSTER"; //
+        public const string ConsumableClassName = "CONSUMABLE"; //
+        public const string ConsUiStatsClassName = "CONS_UI_STATS"; //
         public const string ArmorItemClassName = "ARMOR_ITEM";
         public const string ArmorSuitClassName = "ARMOR_SUIT";
-        public const string ColorClassName = "COLOR";
+        public const string ColorClassName = "COLOR"; //
+
         public const string RewardClassName = "REWARD";
-        public const string PlayerLevelClassName = "PLAYER_LEVEL";
+
+
+        public const string PlayerLevelClassName = "PLAYER_LEVEL"; //
+        /// <summary>
+        /// //////
+        /// </summary>
         public const string DataMiningClassName = "DATA_MINING";
         public const string BinlogConfigClassName = "BINLOG_CONFIG";
-        public const string MotdClassName = "MOTD";
-        public const string AdvertismentClassName = "ADVERTISMENT";
-        public const string NewsClassName = "NEWS";
-        public const string ScoringEventClassName = "SCORING_EVENT";
+
+        public const string MotdClassName = "MOTD";//
+        public const string AdvertismentClassName = "ADVERTISMENT"; //
+        public const string NewsClassName = "NEWS"; //
+        public const string ScoringEventClassName = "SCORING_EVENT"; //
         public const string PollyClassName = "POLLY";
-        public const string DsDefaultsClassName = "DS_DEFAULTS";
+        public const string DsDefaultsClassName = "DS_DEFAULTS"; //
         public const string ChallengeClassName = "CHALLENGE";
         public const string AccountLabelClassName = "ACCOUNT_LABEL";
-        public const string AssignKitClassName = "ASSIGN_KIT";
-        public const string PlaylistClassName = "PLAYLIST";
-        public const string MpDefaultsClassName = "MP_DEFAULTS";
+        public const string AssignKitClassName = "ASSIGN_KIT"; //
+        public const string PlaylistClassName = "PLAYLIST"; //
+        public const string MpDefaultsClassName = "MP_DEFAULTS"; //
 
 
         // Properties

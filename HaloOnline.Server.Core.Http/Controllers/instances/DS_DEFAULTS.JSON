@@ -1,0 +1,24 @@
+[
+  {
+    "className": "DS_DEFAULTS",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "DS_TIMER",
+        "name": "NAME"
+      },
+      {
+        "type": 1,
+        "intVal": 30,
+        "name": "DS_VOTING_TIMER"
+      },
+      {
+        "type": 1,
+        "intVal": 10,
+        "name": "DS_FINAL_COUNTDOWN_TIMER"
+      }
+    ],
+    "name": "DS_TIMER",
+    "parents": []
+  }
+]

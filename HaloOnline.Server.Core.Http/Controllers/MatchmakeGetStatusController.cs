@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data.SQLite;
+using System.IO;
 using System.Linq;
 using System.Security.Claims;
+using System.Threading.Tasks;
 using System.Web.Http;
 using HaloOnline.Server.Common.Repositories;
 using HaloOnline.Server.Core.Http.Model;
@@ -16,26 +18,43 @@ namespace HaloOnline.Server.Core.Http.Controllers
     public class MatchmakeGetStatusController : ApiController
     {
         private const string ConnectionString = "Data Source=halodb.sqlite;Version=3;";
+        private static readonly object databaseLock = new object();
 
         [HttpPost]
         [Route("MatchmakeGetStatus")]
         [Authorize]
-        public MatchmakeGetStatusResult MatchmakeGetStatus(MatchmakeGetStatusRequest request)
+        public IHttpActionResult MatchmakeGetStatus(MatchmakeGetStatusRequest request)
         {
-            var userIdClaim = (User?.Identity as ClaimsIdentity)?.FindFirst("Id");
-            int userId = userIdClaim != null ? int.Parse(userIdClaim.Value) : -1;
-
-            var matchmakeStatus = GetMatchmakeStatusFromDatabase(userId);
-
-            UpdateMatchmakeStateInDatabase(userId);
-
-            return new MatchmakeGetStatusResult
+            try
             {
-                Result = new ServiceResult<MatchmakeStatus>
+                var userIdClaim = (User?.Identity as ClaimsIdentity)?.FindFirst("Id");
+                int userId = userIdClaim != null ? int.Parse(userIdClaim.Value) : -1;
+
+                if (userId == -1)
                 {
-                    Data = matchmakeStatus
+                    return Unauthorized();
                 }
-            };
+
+                MatchmakeStatus matchmakeStatus;
+
+                lock (databaseLock)
+                {
+                    matchmakeStatus = GetMatchmakeStatusFromDatabase(userId);
+                    UpdateMatchmakeStateInDatabase(userId);
+                }
+
+                return Ok(new MatchmakeGetStatusResult
+                {
+                    Result = new ServiceResult<MatchmakeStatus>
+                    {
+                        Data = matchmakeStatus
+                    }
+                });
+            }
+            catch (Exception ex)
+            {
+                return InternalServerError(ex);
+            }
         }
 
         private MatchmakeStatus GetMatchmakeStatusFromDatabase(int userId)
@@ -44,7 +63,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
             {
                 Id = new MatchmakeId
                 {
-                    Id = "7c6f4cf1-c80c-46ea-b724-51d6b892c5c1"
+                    Id = Guid.NewGuid()
                 },
                 Members = new List<MatchmakeMember>(),
                 MatchmakeTimer = 0,
@@ -84,12 +103,22 @@ namespace HaloOnline.Server.Core.Http.Controllers
                 }
             }
 
-            // just something to make it so it look like each userside looks like theyre first in the lobby
             matchmakeStatus.Members.Sort((x, y) => x.User.Id == userId ? -1 : y.User.Id == userId ? 1 : 0);
 
             return matchmakeStatus;
         }
 
+        private string GetValueFromLine(string[] lines, string key)
+        {
+            foreach (string line in lines)
+            {
+                if (line.StartsWith(key))
+                {
+                    return line.Substring(key.Length).Trim();
+                }
+            }
+            throw new ArgumentException($"Key '{key}' not found in the file.");
+        }
 
         private bool PartyHasMatchmakeState(SQLiteConnection connection, string partyId)
         {
@@ -112,7 +141,6 @@ namespace HaloOnline.Server.Core.Http.Controllers
                 using (var command = new SQLiteCommand("SELECT PartyId FROM PartyMember WHERE UserId = @userId", connection))
                 {
                     command.Parameters.AddWithValue("@userId", userId);
-
                     partyId = command.ExecuteScalar()?.ToString();
                 }
             }
@@ -123,11 +151,20 @@ namespace HaloOnline.Server.Core.Http.Controllers
                 {
                     connection.Open();
 
-                    using (var command = new SQLiteCommand("UPDATE Party SET MatchmakeState = 1 WHERE Id = @partyId", connection))
+                    int currentMatchmakeState;
+                    using (var command = new SQLiteCommand("SELECT MatchmakeState FROM Party WHERE Id = @partyId", connection))
                     {
                         command.Parameters.AddWithValue("@partyId", partyId);
+                        currentMatchmakeState = Convert.ToInt32(command.ExecuteScalar());
+                    }
 
-                        command.ExecuteNonQuery();
+                    if (currentMatchmakeState == 0)
+                    {
+                        using (var command = new SQLiteCommand("UPDATE Party SET MatchmakeState = 1 WHERE Id = @partyId", connection))
+                        {
+                            command.Parameters.AddWithValue("@partyId", partyId);
+                            command.ExecuteNonQuery();
+                        }
                     }
                 }
             }

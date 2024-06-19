@@ -9,7 +9,7 @@
       },
       {
         "type": 3,
-        "strVal": "weapon_p",
+        "strVal": "weapon_primary",
         "name": "TYPE"
       },
       {
@@ -26,65 +26,43 @@
     "props": [
       {
         "type": 3,
-        "strVal": "assault_rifle_v4",
-        "name": "NAME"
-      },
-      {
-        "type": 3,
-        "strVal": "weapon_p",
-        "name": "TYPE"
-      },
-      {
-        "type": 1,
-        "intVal": 1,
-        "name": "ID"
-      }
-    ],
-    "name": "assault_rifle_v4",
-    "parents": []
-  },
-  {
-    "className": "WEAPON",
-    "props": [
-      {
-        "type": 3,
-        "strVal": "assault_rifle_v1",
-        "name": "NAME"
-      },
-      {
-        "type": 3,
-        "strVal": "weapon_p",
-        "name": "TYPE"
-      },
-      {
-        "type": 1,
-        "intVal": 1,
-        "name": "ID"
-      }
-    ],
-    "name": "assault_rifle_v1",
-    "parents": []
-  },
-  {
-    "className": "WEAPON",
-    "props": [
-      {
-        "type": 3,
         "strVal": "assault_rifle_v3",
         "name": "NAME"
       },
       {
         "type": 3,
-        "strVal": "weapon_p",
+        "strVal": "weapon_primary",
         "name": "TYPE"
       },
       {
         "type": 1,
-        "intVal": 1,
+        "intVal": 25,
         "name": "ID"
       }
     ],
     "name": "assault_rifle_v3",
+    "parents": []
+  },
+  {
+    "className": "WEAPON",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "assault_rifle_v5",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "weapon_primary",
+        "name": "TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 27,
+        "name": "ID"
+      }
+    ],
+    "name": "assault_rifle_v5",
     "parents": []
   },
   {
@@ -97,38 +75,16 @@
       },
       {
         "type": 3,
-        "strVal": "weapon_p",
+        "strVal": "weapon_primary",
         "name": "TYPE"
       },
       {
         "type": 1,
-        "intVal": 1,
+        "intVal": 5,
         "name": "ID"
       }
     ],
     "name": "covenant_carbine",
-    "parents": []
-  },
-  {
-    "className": "WEAPON",
-    "props": [
-      {
-        "type": 3,
-        "strVal": "needle_rifle",
-        "name": "NAME"
-      },
-      {
-        "type": 3,
-        "strVal": "weapon_p",
-        "name": "TYPE"
-      },
-      {
-        "type": 1,
-        "intVal": 1,
-        "name": "ID"
-      }
-    ],
-    "name": "needle_rifle",
     "parents": []
   },
   {
@@ -141,126 +97,16 @@
       },
       {
         "type": 3,
-        "strVal": "weapon_p",
+        "strVal": "weapon_primary",
         "name": "TYPE"
       },
       {
         "type": 1,
-        "intVal": 1,
+        "intVal": 9,
         "name": "ID"
       }
     ],
     "name": "plasma_rifle",
-    "parents": []
-  },
-  {
-    "className": "WEAPON",
-    "props": [
-      {
-        "type": 3,
-        "strVal": "plasma_rifle_v1",
-        "name": "NAME"
-      },
-      {
-        "type": 3,
-        "strVal": "weapon_p",
-        "name": "TYPE"
-      },
-      {
-        "type": 1,
-        "intVal": 1,
-        "name": "ID"
-      }
-    ],
-    "name": "plasma_rifle_v1",
-    "parents": []
-  },
-  {
-    "className": "WEAPON",
-    "props": [
-      {
-        "type": 3,
-        "strVal": "plasma_rifle_v2",
-        "name": "NAME"
-      },
-      {
-        "type": 3,
-        "strVal": "weapon_p",
-        "name": "TYPE"
-      },
-      {
-        "type": 1,
-        "intVal": 1,
-        "name": "ID"
-      }
-    ],
-    "name": "plasma_rifle_v2",
-    "parents": []
-  },
-  {
-    "className": "WEAPON",
-    "props": [
-      {
-        "type": 3,
-        "strVal": "plasma_rifle_v3",
-        "name": "NAME"
-      },
-      {
-        "type": 3,
-        "strVal": "weapon_p",
-        "name": "TYPE"
-      },
-      {
-        "type": 1,
-        "intVal": 1,
-        "name": "ID"
-      }
-    ],
-    "name": "plasma_rifle_v3",
-    "parents": []
-  },
-  {
-    "className": "WEAPON",
-    "props": [
-      {
-        "type": 3,
-        "strVal": "plasma_rifle_v4",
-        "name": "NAME"
-      },
-      {
-        "type": 3,
-        "strVal": "weapon_p",
-        "name": "TYPE"
-      },
-      {
-        "type": 1,
-        "intVal": 1,
-        "name": "ID"
-      }
-    ],
-    "name": "plasma_rifle_v4",
-    "parents": []
-  },
-  {
-    "className": "WEAPON",
-    "props": [
-      {
-        "type": 3,
-        "strVal": "plasma_rifle_v5",
-        "name": "NAME"
-      },
-      {
-        "type": 3,
-        "strVal": "weapon_p",
-        "name": "TYPE"
-      },
-      {
-        "type": 1,
-        "intVal": 1,
-        "name": "ID"
-      }
-    ],
-    "name": "plasma_rifle_v5",
     "parents": []
   },
   {
@@ -273,12 +119,12 @@
       },
       {
         "type": 3,
-        "strVal": "weapon_p",
+        "strVal": "weapon_primary",
         "name": "TYPE"
       },
       {
         "type": 1,
-        "intVal": 1,
+        "intVal": 52,
         "name": "ID"
       }
     ],
@@ -295,12 +141,12 @@
       },
       {
         "type": 3,
-        "strVal": "weapon_p",
+        "strVal": "weapon_primary",
         "name": "TYPE"
       },
       {
         "type": 1,
-        "intVal": 1,
+        "intVal": 55,
         "name": "ID"
       }
     ],
@@ -317,12 +163,12 @@
       },
       {
         "type": 3,
-        "strVal": "weapon_p",
+        "strVal": "weapon_primary",
         "name": "TYPE"
       },
       {
         "type": 1,
-        "intVal": 1,
+        "intVal": 54,
         "name": "ID"
       }
     ],
@@ -339,12 +185,12 @@
       },
       {
         "type": 3,
-        "strVal": "weapon_p",
+        "strVal": "weapon_primary",
         "name": "TYPE"
       },
       {
         "type": 1,
-        "intVal": 1,
+        "intVal": 53,
         "name": "ID"
       }
     ],
@@ -361,12 +207,12 @@
       },
       {
         "type": 3,
-        "strVal": "weapon_p",
+        "strVal": "weapon_primary",
         "name": "TYPE"
       },
       {
         "type": 1,
-        "intVal": 1,
+        "intVal": 56,
         "name": "ID"
       }
     ],
@@ -383,12 +229,12 @@
       },
       {
         "type": 3,
-        "strVal": "weapon_p",
+        "strVal": "weapon_primary",
         "name": "TYPE"
       },
       {
         "type": 1,
-        "intVal": 1,
+        "intVal": 57,
         "name": "ID"
       }
     ],
@@ -405,12 +251,12 @@
       },
       {
         "type": 3,
-        "strVal": "weapon_p",
+        "strVal": "weapon_primary",
         "name": "TYPE"
       },
       {
         "type": 1,
-        "intVal": 1,
+        "intVal": 58,
         "name": "ID"
       }
     ],
@@ -432,33 +278,11 @@
       },
       {
         "type": 1,
-        "intVal": 1,
+        "intVal": 7,
         "name": "ID"
       }
     ],
     "name": "magnum",
-    "parents": []
-  },
-  {
-    "className": "WEAPON",
-    "props": [
-      {
-        "type": 3,
-        "strVal": "magnum_v1",
-        "name": "NAME"
-      },
-      {
-        "type": 3,
-        "strVal": "weapon_secondary",
-        "name": "TYPE"
-      },
-      {
-        "type": 1,
-        "intVal": 1,
-        "name": "ID"
-      }
-    ],
-    "name": "magnum_v1",
     "parents": []
   },
   {
@@ -476,7 +300,7 @@
       },
       {
         "type": 1,
-        "intVal": 1,
+        "intVal": 63,
         "name": "ID"
       }
     ],
@@ -498,7 +322,7 @@
       },
       {
         "type": 1,
-        "intVal": 1,
+        "intVal": 64,
         "name": "ID"
       }
     ],
@@ -515,12 +339,12 @@
       },
       {
         "type": 3,
-        "strVal": "weapon_p",
+        "strVal": "weapon_primaryrimary",
         "name": "TYPE"
       },
       {
         "type": 1,
-        "intVal": 1,
+        "intVal": 24,
         "name": "ID"
       }
     ],
@@ -537,12 +361,12 @@
       },
       {
         "type": 3,
-        "strVal": "weapon_p",
+        "strVal": "weapon_primary",
         "name": "TYPE"
       },
       {
         "type": 1,
-        "intVal": 1,
+        "intVal": 28,
         "name": "ID"
       }
     ],
@@ -560,12 +384,12 @@
       },
       {
         "type": 3,
-        "strVal": "weapon_p",
+        "strVal": "weapon_primary",
         "name": "TYPE"
       },
       {
         "type": 1,
-        "intVal": 1,
+        "intVal": 0,
         "name": "ID"
       }
     ],
@@ -582,16 +406,38 @@
       },
       {
         "type": 3,
-        "strVal": "weapon_p",
+        "strVal": "weapon_primary",
         "name": "TYPE"
       },
       {
         "type": 1,
-        "intVal": 1,
+        "intVal": 29,
         "name": "ID"
       }
     ],
     "name": "battle_rifle_v1",
+    "parents": []
+  },
+  {
+    "className": "WEAPON",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "battle_rifle_v2",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "weapon_primary",
+        "name": "TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 30,
+        "name": "ID"
+      }
+    ],
+    "name": "battle_rifle_v2",
     "parents": []
   },
   {
@@ -604,12 +450,12 @@
       },
       {
         "type": 3,
-        "strVal": "weapon_p",
+        "strVal": "weapon_primary",
         "name": "TYPE"
       },
       {
         "type": 1,
-        "intVal": 1,
+        "intVal": 31,
         "name": "ID"
       }
     ],
@@ -626,12 +472,12 @@
       },
       {
         "type": 3,
-        "strVal": "weapon_p",
+        "strVal": "weapon_primary",
         "name": "TYPE"
       },
       {
         "type": 1,
-        "intVal": 1,
+        "intVal": 32,
         "name": "ID"
       }
     ],
@@ -648,12 +494,12 @@
       },
       {
         "type": 3,
-        "strVal": "weapon_p",
+        "strVal": "weapon_primary",
         "name": "TYPE"
       },
       {
         "type": 1,
-        "intVal": 1,
+        "intVal": 33,
         "name": "ID"
       }
     ],
@@ -670,60 +516,16 @@
       },
       {
         "type": 3,
-        "strVal": "weapon_p",
+        "strVal": "weapon_primary",
         "name": "TYPE"
       },
       {
         "type": 1,
-        "intVal": 1,
+        "intVal": 34,
         "name": "ID"
       }
     ],
     "name": "battle_rifle_v6",
-    "parents": []
-  },
-  {
-    "className": "WEAPON",
-    "props": [
-      {
-        "type": 3,
-        "strVal": "battle_rifle_v7",
-        "name": "NAME"
-      },
-      {
-        "type": 3,
-        "strVal": "weapon_p",
-        "name": "TYPE"
-      },
-      {
-        "type": 1,
-        "intVal": 1,
-        "name": "ID"
-      }
-    ],
-    "name": "battle_rifle_v7",
-    "parents": []
-  },
-  {
-    "className": "WEAPON",
-    "props": [
-      {
-        "type": 3,
-        "strVal": "battle_rifle_v2",
-        "name": "NAME"
-      },
-      {
-        "type": 3,
-        "strVal": "weapon_p",
-        "name": "TYPE"
-      },
-      {
-        "type": 1,
-        "intVal": 1,
-        "name": "ID"
-      }
-    ],
-    "name": "battle_rifle_v2",
     "parents": []
   },
   {
@@ -736,12 +538,12 @@
       },
       {
         "type": 3,
-        "strVal": "weapon_p",
+        "strVal": "weapon_primary",
         "name": "TYPE"
       },
       {
         "type": 1,
-        "intVal": 1,
+        "intVal": 4,
         "name": "ID"
       }
     ],
@@ -758,12 +560,12 @@
       },
       {
         "type": 3,
-        "strVal": "weapon_p",
+        "strVal": "weapon_primary",
         "name": "TYPE"
       },
       {
         "type": 1,
-        "intVal": 1,
+        "intVal": 44,
         "name": "ID"
       }
     ],
@@ -775,43 +577,67 @@
     "props": [
       {
         "type": 3,
-        "strVal": "smg_v2",
+        "strVal": "smg_v1",
         "name": "NAME"
       },
       {
         "type": 3,
-        "strVal": "weapon_p",
+        "strVal": "weapon_primary",
         "name": "TYPE"
       },
       {
         "type": 1,
-        "intVal": 1,
+        "intVal": 41,
         "name": "ID"
       }
     ],
-    "name": "smg_v2",
+    "name": "smg_v1",
     "parents": []
   },
+
   {
     "className": "WEAPON",
     "props": [
       {
         "type": 3,
-        "strVal": "smg_v6",
+        "strVal": "smg_v5",
         "name": "NAME"
       },
       {
         "type": 3,
-        "strVal": "weapon_p",
+        "strVal": "weapon_primary",
         "name": "TYPE"
       },
       {
         "type": 1,
-        "intVal": 1,
+        "intVal": 45,
         "name": "ID"
       }
     ],
-    "name": "smg_v6",
+    "name": "smg_v5",
+    "parents": []
+  },
+
+  {
+    "className": "WEAPON",
+    "props": [
+      {
+        "type": 3,
+        "strVal": "smg_v2",
+        "name": "NAME"
+      },
+      {
+        "type": 3,
+        "strVal": "weapon_primary",
+        "name": "TYPE"
+      },
+      {
+        "type": 1,
+        "intVal": 42,
+        "name": "ID"
+      }
+    ],
+    "name": "smg_v2",
     "parents": []
   },
   {
@@ -824,12 +650,12 @@
       },
       {
         "type": 3,
-        "strVal": "weapon_p",
+        "strVal": "weapon_primary",
         "name": "TYPE"
       },
       {
         "type": 1,
-        "intVal": 1,
+        "intVal": 43,
         "name": "ID"
       }
     ],
@@ -841,21 +667,21 @@
     "props": [
       {
         "type": 3,
-        "strVal": "assault_rifle_v2",
+        "strVal": "smg_v6",
         "name": "NAME"
       },
       {
         "type": 3,
-        "strVal": "weapon_p",
+        "strVal": "weapon_primary",
         "name": "TYPE"
       },
       {
         "type": 1,
-        "intVal": 1,
+        "intVal": 46,
         "name": "ID"
       }
     ],
-    "name": "assault_rifle_v2x",
+    "name": "smg_v6",
     "parents": []
   },
   {
@@ -868,12 +694,12 @@
       },
       {
         "type": 3,
-        "strVal": "weapon_p",
+        "strVal": "weapon_primary",
         "name": "TYPE"
       },
       {
         "type": 1,
-        "intVal": 1,
+        "intVal": 22,
         "name": "ID"
       }
     ],
@@ -890,12 +716,12 @@
       },
       {
         "type": 3,
-        "strVal": "weapon_p",
+        "strVal": "weapon_primary",
         "name": "TYPE"
       },
       {
         "type": 1,
-        "intVal": 1,
+        "intVal": 36,
         "name": "ID"
       }
     ],
@@ -912,12 +738,12 @@
       },
       {
         "type": 3,
-        "strVal": "weapon_p",
+        "strVal": "weapon_primary",
         "name": "TYPE"
       },
       {
         "type": 1,
-        "intVal": 1,
+        "intVal": 40,
         "name": "ID"
       }
     ],
@@ -934,12 +760,12 @@
       },
       {
         "type": 3,
-        "strVal": "weapon_p",
+        "strVal": "weapon_primary",
         "name": "TYPE"
       },
       {
         "type": 1,
-        "intVal": 1,
+        "intVal": 39,
         "name": "ID"
       }
     ],
@@ -956,12 +782,12 @@
       },
       {
         "type": 3,
-        "strVal": "weapon_p",
+        "strVal": "weapon_primary",
         "name": "TYPE"
       },
       {
         "type": 1,
-        "intVal": 1,
+        "intVal": 37,
         "name": "ID"
       }
     ],
@@ -978,12 +804,12 @@
       },
       {
         "type": 3,
-        "strVal": "weapon_p",
+        "strVal": "weapon_primary",
         "name": "TYPE"
       },
       {
         "type": 1,
-        "intVal": 1,
+        "intVal": 38,
         "name": "ID"
       }
     ],
@@ -1000,12 +826,12 @@
       },
       {
         "type": 3,
-        "strVal": "weapon_p",
+        "strVal": "weapon_primary",
         "name": "TYPE"
       },
       {
         "type": 1,
-        "intVal": 1,
+        "intVal": 35,
         "name": "ID"
       }
     ],

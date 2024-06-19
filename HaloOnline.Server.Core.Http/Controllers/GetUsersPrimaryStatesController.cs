@@ -33,15 +33,15 @@ namespace HaloOnline.Server.Core.Http.Controllers
                                 {
                                     Id = userId
                                 },
-                                Xp = 0,
-                                Kills = 0,
+                                Xp = 300,
+                                Kills = 4,
                                 Deaths = 0,
-                                Assists = 0,
+                                Assists = 2,
                                 Suicides = 0,
-                                TotalMatches = 0,
-                                Victories = 0,
+                                TotalMatches = 1,
+                                Victories = 1,
                                 Defeats = 0,
-                                TotalWP = 0,
+                                TotalWP = 1,
                                 TotalTimePlayed = 0,
                                 TotalTimeOnline = 0
                             }

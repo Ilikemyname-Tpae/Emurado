@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Data.SQLite;
 using System.Linq;
 using System.Security.Claims;
+using System.Threading.Tasks;
 using System.Web.Http;
+using Dapper;
 using Newtonsoft.Json;
 
 namespace HaloOnline.Server.Core.Http.Controllers
@@ -16,14 +18,14 @@ namespace HaloOnline.Server.Core.Http.Controllers
         [HttpPost]
         [Route("JoinChannels")]
         [Authorize]
-        public IHttpActionResult JoinChannels()
+        public async Task<IHttpActionResult> JoinChannels()
         {
             try
             {
                 var userIdClaim = (User?.Identity as ClaimsIdentity)?.FindFirst("Id");
                 int userId = userIdClaim != null ? int.Parse(userIdClaim.Value) : -1;
 
-                var requestBody = Request.Content.ReadAsStringAsync().Result;
+                var requestBody = await Request.Content.ReadAsStringAsync();
                 dynamic requestData = JsonConvert.DeserializeObject(requestBody);
                 var channelNames = requestData?.channelNames?.ToObject<List<string>>();
 
@@ -33,8 +35,9 @@ namespace HaloOnline.Server.Core.Http.Controllers
                 {
                     foreach (var channelName in channelNames)
                     {
-                        AddChannelToDatabase(channelName, userId);
-                        var channelInfo = GetChannelInfo(channelName, userId);
+                        await ReplaceChannelInDatabaseAsync(channelName, userId);
+                        await AddMemberToChannelAsync(channelName, userId);
+                        var channelInfo = await GetChannelInfoAsync(channelName, userId);
                         if (channelInfo != null)
                             channelInfoList.Add(channelInfo);
                     }
@@ -57,55 +60,85 @@ namespace HaloOnline.Server.Core.Http.Controllers
             }
         }
 
-        private void AddChannelToDatabase(string channelName, int userId)
+        private async Task ReplaceChannelInDatabaseAsync(string channelName, int userId)
         {
-            using (var connection = new SQLiteConnection(ConnectionString))
+            var prefix = GetChannelPrefix(channelName);
+            if (prefix != null)
             {
-                connection.Open();
-
-                using (var command = new SQLiteCommand(connection))
+                using (var connection = await GetOpenConnectionAsync())
                 {
-                    command.CommandText = "INSERT INTO Channel (Name, Version, UserId) VALUES (@Name, @Version, @UserId)";
-                    command.Parameters.AddWithValue("@Name", channelName);
-                    command.Parameters.AddWithValue("@Version", 1); // i reckon it wont change at all tbf
-                    command.Parameters.AddWithValue("@UserId", userId);
-                    command.ExecuteNonQuery();
+                    await connection.ExecuteAsync(
+                        @"DELETE FROM Channel 
+                  WHERE Name LIKE @Prefix AND UserId = @UserId",
+                        new { Prefix = $"{prefix}%", UserId = userId });
+
+                    await connection.ExecuteAsync(
+                        @"DELETE FROM ChannelMembers 
+                  WHERE ChannelName = @ChannelName AND UserId = @UserId",
+                        new { ChannelName = channelName, UserId = userId });
+
+                    await connection.ExecuteAsync(
+                        @"INSERT INTO Channel (Name, Version, UserId)
+                  VALUES (@Name, @Version, @UserId)",
+                        new { Name = channelName, Version = 1, UserId = userId });
                 }
             }
         }
 
-        private object GetChannelInfo(string channelName, int userId)
+        private async Task AddMemberToChannelAsync(string channelName, int userId)
         {
-            using (var connection = new SQLiteConnection(ConnectionString))
+            using (var connection = await GetOpenConnectionAsync())
             {
-                connection.Open();
+                await connection.ExecuteAsync(
+                    @"INSERT INTO ChannelMembers (ChannelName, UserId)
+                      VALUES (@ChannelName, @UserId)",
+                    new { ChannelName = channelName, UserId = userId });
+            }
+        }
 
-                using (var command = new SQLiteCommand(connection))
+        private string GetChannelPrefix(string channelName)
+        {
+            if (channelName.StartsWith("#general"))
+                return "#general";
+            else if (channelName.StartsWith("#private"))
+                return "#private";
+            else if (channelName.StartsWith("#party"))
+                return "#party";
+            else if (channelName.StartsWith("#game"))
+                return "#game";
+            else
+                return null;
+        }
+
+        private async Task<object> GetChannelInfoAsync(string channelName, int userId)
+        {
+            using (var connection = await GetOpenConnectionAsync())
+            {
+                var result = await connection.QueryFirstOrDefaultAsync(
+                    @"SELECT Id, Name, Version FROM Channel
+                      WHERE Name = @Name AND UserId = @UserId",
+                    new { Name = channelName, UserId = userId });
+
+                if (result != null)
                 {
-                    command.CommandText = "SELECT Id, Name, Version FROM Channel WHERE Name = @Name AND UserId = @UserId";
-                    command.Parameters.AddWithValue("@Name", channelName);
-                    command.Parameters.AddWithValue("@UserId", userId);
-
-                    using (var reader = command.ExecuteReader())
+                    return new
                     {
-                        if (reader.Read())
-                        {
-                            return new
-                            {
-                                Name = reader["Name"].ToString(),
-                                Version = Convert.ToInt32(reader["Version"]),
-                                Messages = new List<object>(),
-                                Members = new[]
-                                {
-                                    new { Id = userId }
-                                }
-                            };
-                        }
-                    }
+                        Name = result.Name,
+                        Version = result.Version,
+                        Messages = new List<object>(),
+                        Members = new[] { new { Id = userId } }
+                    };
                 }
             }
 
             return null;
+        }
+
+        private async Task<SQLiteConnection> GetOpenConnectionAsync()
+        {
+            var connection = new SQLiteConnection(ConnectionString);
+            await connection.OpenAsync();
+            return connection;
         }
     }
 }
