@@ -1,25 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.SQLite;
-using System.IO;
+using System.Data.Entity;
 using System.Linq;
 using System.Security.Claims;
 using System.Web.Http;
-using HaloOnline.Server.Common.Repositories;
 using HaloOnline.Server.Core.Http.Interface.Services;
 using HaloOnline.Server.Core.Http.Model;
 using HaloOnline.Server.Core.Http.Model.SessionControl;
+using HaloOnline.Server.Core.Repository;
 using HaloOnline.Server.Model.SessionControl;
 
 namespace HaloOnline.Server.Core.Http.Controllers
 {
     public class SessionControlController : ApiController, ISessionControlService
     {
-        private readonly ISessionRepository _sessionRepository;
+        private readonly HaloDbContext _dbContext = new HaloDbContext();
 
-        public SessionControlController(ISessionRepository sessionRepository)
+        private int GetCurrentUserId()
         {
-            _sessionRepository = sessionRepository;
+            var userIdClaim = (User?.Identity as ClaimsIdentity)?.FindFirst("Id");
+            return userIdClaim != null ? int.Parse(userIdClaim.Value) : -1;
         }
 
         [HttpPost]
@@ -35,12 +35,12 @@ namespace HaloOnline.Server.Core.Http.Controllers
                     {
                         Game = new SessionId
                         {
-                            Id = "be8d8f19-c350-44be-93c9-334df5701cbe"
+                            Id = "0f24620f-7fbe-44e3-a776-6d7097s8as0d87"
                         },
                         DedicatedServer = new DedicatedServer
                         {
-                            ServerId = "6bf6c648-e33e-4c7c-9eb1-ae3ab3f4f745",
-                            ServerAddress = "000.000.000",
+                            ServerId = "d37e4cc7-eef4-4153-96b1-be515sa8af3ce",
+                            ServerAddress = "000.000.0.000",
                             Port = 11774
                         }
                     }
@@ -54,14 +54,11 @@ namespace HaloOnline.Server.Core.Http.Controllers
 
             if (!string.IsNullOrEmpty(partyId))
             {
-                using (var connection = new SQLiteConnection("Data Source=halodb.sqlite;Version=3;"))
+                var party = _dbContext.Parties.FirstOrDefault(p => p.Id == partyId && p.MatchmakeState != 2);
+                if (party != null)
                 {
-                    connection.Open();
-                    using (var command = new SQLiteCommand("UPDATE Party SET MatchmakeState = 2 WHERE Id = @partyId AND MatchmakeState != 2", connection))
-                    {
-                        command.Parameters.AddWithValue("@partyId", partyId);
-                        command.ExecuteNonQuery();
-                    }
+                    party.MatchmakeState = 2;
+                    _dbContext.SaveChanges();
                 }
             }
         }
@@ -69,83 +66,17 @@ namespace HaloOnline.Server.Core.Http.Controllers
         private string GetPartyIdForCurrentUser()
         {
             int userId = GetCurrentUserId();
-            using (var connection = new SQLiteConnection("Data Source=halodb.sqlite;Version=3;"))
+            var partyMember = _dbContext.PartyMembers.FirstOrDefault(pm => pm.UserId == userId);
+            return partyMember?.PartyId;
+        }
+
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing)
             {
-                connection.Open();
-                using (var command = new SQLiteCommand("SELECT PartyId FROM PartyMember WHERE UserId = @userId", connection))
-                {
-                    command.Parameters.AddWithValue("@userId", userId);
-                    return command.ExecuteScalar()?.ToString();
-                }
+                _dbContext.Dispose();
             }
-        }
-
-        private int GetCurrentUserId()
-        {
-            var userIdClaim = (User?.Identity as ClaimsIdentity)?.FindFirst("Id");
-            return userIdClaim != null ? int.Parse(userIdClaim.Value) : -1;
-        }
-
-        private string GetValueFromLine(string[] lines, string key)
-        {
-            foreach (string line in lines)
-            {
-                if (line.StartsWith(key))
-                {
-                    return line.Substring(key.Length).Trim();
-                }
-            }
-            throw new ArgumentException($"Key '{key}' not found in the file.");
-        }
-
-        [HttpPost]
-        public GetSessionBasicDataResult GetSessionBasicData(GetSessionBasicDataRequest request)
-        {
-            IEnumerable<SessionBasicData> sessionBasicData = request.Sessions
-                .Select(session => _sessionRepository.FindBySessionIdAsync(session.Id).Result)
-                .Where(basicData => basicData != null)
-                .Select(session => new SessionBasicData
-                {
-                    SessionId = session.Id,
-                    MapId = session.MapId,
-                    ModeId = session.ModeId,
-                    Started = session.Started,
-                    Finished = session.Finished
-                });
-
-            return new GetSessionBasicDataResult
-            {
-                Result = new ServiceResult<List<SessionBasicData>>
-                {
-                    ReturnCode = 0,
-                    Data = sessionBasicData.ToList()
-                }
-            };
-        }
-
-        [HttpPost]
-        public GetSessionChainResult GetSessionChain(GetSessionChainRequest request)
-        {
-            return new GetSessionChainResult
-            {
-                Result = new ServiceResult<List<SessionChain>>
-                {
-                    Data = new List<SessionChain>
-                    {
-                        new SessionChain
-                        {
-                            User = "",
-                            Sessions = new List<SessionId>
-                            {
-                                new SessionId
-                                {
-                                    Id = ""
-                                }
-                            }
-                        }
-                    }
-                }
-            };
+            base.Dispose(disposing);
         }
     }
 }

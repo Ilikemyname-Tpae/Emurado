@@ -9,6 +9,7 @@ using System.Web.Http;
 using HaloOnline.Server.Common.Repositories;
 using HaloOnline.Server.Core.Http.Model;
 using HaloOnline.Server.Core.Http.Model.Presence;
+using HaloOnline.Server.Core.Repository;
 using HaloOnline.Server.Model.Presence;
 using HaloOnline.Server.Model.User;
 
@@ -17,8 +18,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
     [RoutePrefix("PresenceService.svc")]
     public class MatchmakeGetStatusController : ApiController
     {
-        private const string ConnectionString = "Data Source=halodb.sqlite;Version=3;";
-        private static readonly object databaseLock = new object();
+        private HaloDbContext db = new HaloDbContext();
 
         [HttpPost]
         [Route("MatchmakeGetStatus")]
@@ -35,13 +35,7 @@ namespace HaloOnline.Server.Core.Http.Controllers
                     return Unauthorized();
                 }
 
-                MatchmakeStatus matchmakeStatus;
-
-                lock (databaseLock)
-                {
-                    matchmakeStatus = GetMatchmakeStatusFromDatabase(userId);
-                    UpdateMatchmakeStateInDatabase(userId);
-                }
+                var matchmakeStatus = GetMatchmakeStatusFromDatabase();
 
                 return Ok(new MatchmakeGetStatusResult
                 {
@@ -57,117 +51,50 @@ namespace HaloOnline.Server.Core.Http.Controllers
             }
         }
 
-        private MatchmakeStatus GetMatchmakeStatusFromDatabase(int userId)
+        private MatchmakeStatus GetMatchmakeStatusFromDatabase()
         {
             var matchmakeStatus = new MatchmakeStatus
             {
                 Id = new MatchmakeId
                 {
-                    Id = Guid.NewGuid()
+                    Id = "d37e4cc7-eef4-4153-96b1-be515a8af3ce"
                 },
                 Members = new List<MatchmakeMember>(),
                 MatchmakeTimer = 0,
             };
 
-            using (var connection = new SQLiteConnection(ConnectionString))
+            var partyMembers = db.PartyMembers.ToList();
+
+            foreach (var member in partyMembers)
             {
-                connection.Open();
-
-                using (var command = new SQLiteCommand("SELECT UserId, PartyId, IsOwner FROM PartyMember", connection))
+                if (PartyHasMatchmakeState(member.PartyId))
                 {
-                    using (var reader = command.ExecuteReader())
+                    matchmakeStatus.Members.Add(new MatchmakeMember
                     {
-                        while (reader.Read())
-                        {
-                            var memberId = reader.GetInt32(0);
-                            var partyId = reader.GetString(1);
-                            var isOwner = reader.GetBoolean(2);
-
-                            if (PartyHasMatchmakeState(connection, partyId))
-                            {
-                                matchmakeStatus.Members.Add(new MatchmakeMember
-                                {
-                                    User = new UserId
-                                    {
-                                        Id = memberId
-                                    },
-                                    Party = new PartyId
-                                    {
-                                        Id = partyId
-                                    },
-                                    IsOwner = isOwner
-                                });
-                            }
-                        }
-                    }
+                        User = new UserId { Id = member.UserId },
+                        Party = new PartyId { Id = member.PartyId },
+                        IsOwner = member.IsOwner
+                    });
                 }
             }
 
-            matchmakeStatus.Members.Sort((x, y) => x.User.Id == userId ? -1 : y.User.Id == userId ? 1 : 0);
+            matchmakeStatus.Members.Sort((x, y) => x.User.Id.CompareTo(y.User.Id));
 
             return matchmakeStatus;
         }
-
-        private string GetValueFromLine(string[] lines, string key)
+        private bool PartyHasMatchmakeState(string partyId)
         {
-            foreach (string line in lines)
-            {
-                if (line.StartsWith(key))
-                {
-                    return line.Substring(key.Length).Trim();
-                }
-            }
-            throw new ArgumentException($"Key '{key}' not found in the file.");
+            var party = db.Parties.FirstOrDefault(p => p.Id == partyId);
+            return party != null && party.MatchmakeState > 0;
         }
 
-        private bool PartyHasMatchmakeState(SQLiteConnection connection, string partyId)
+        protected override void Dispose(bool disposing)
         {
-            using (var command = new SQLiteCommand("SELECT MatchmakeState FROM Party WHERE Id = @partyId", connection))
+            if (disposing)
             {
-                command.Parameters.AddWithValue("@partyId", partyId);
-                var matchmakeState = command.ExecuteScalar();
-
-                return matchmakeState != null && Convert.ToInt32(matchmakeState) == 1;
+                db.Dispose();
             }
-        }
-
-        private void UpdateMatchmakeStateInDatabase(int userId)
-        {
-            string partyId;
-            using (var connection = new SQLiteConnection(ConnectionString))
-            {
-                connection.Open();
-
-                using (var command = new SQLiteCommand("SELECT PartyId FROM PartyMember WHERE UserId = @userId", connection))
-                {
-                    command.Parameters.AddWithValue("@userId", userId);
-                    partyId = command.ExecuteScalar()?.ToString();
-                }
-            }
-
-            if (partyId != null)
-            {
-                using (var connection = new SQLiteConnection(ConnectionString))
-                {
-                    connection.Open();
-
-                    int currentMatchmakeState;
-                    using (var command = new SQLiteCommand("SELECT MatchmakeState FROM Party WHERE Id = @partyId", connection))
-                    {
-                        command.Parameters.AddWithValue("@partyId", partyId);
-                        currentMatchmakeState = Convert.ToInt32(command.ExecuteScalar());
-                    }
-
-                    if (currentMatchmakeState == 0)
-                    {
-                        using (var command = new SQLiteCommand("UPDATE Party SET MatchmakeState = 1 WHERE Id = @partyId", connection))
-                        {
-                            command.Parameters.AddWithValue("@partyId", partyId);
-                            command.ExecuteNonQuery();
-                        }
-                    }
-                }
-            }
+            base.Dispose(disposing);
         }
     }
 }

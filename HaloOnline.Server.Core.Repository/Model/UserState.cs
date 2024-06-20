@@ -10,6 +10,7 @@ namespace HaloOnline.Server.Core.Repository.Model
         public int Id { get; set; }
         public int UserId { get; set; }
         public string StateName { get; set; }
+        public int StateType { get; set; }
         public int OwnType { get; set; }
         public int Value { get; set; }
     

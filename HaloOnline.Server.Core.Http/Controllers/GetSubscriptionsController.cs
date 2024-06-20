@@ -1,15 +1,19 @@
-﻿using System.Collections.Generic;
-using System.Data.SQLite;
-using System.Web.Http;
-using System;
+﻿using System;
+using System.Collections.Generic;
+using System.Data.Entity;
+using System.Linq;
 using System.Security.Claims;
+using System.Threading.Tasks;
+using System.Web.Http;
+using HaloOnline.Server.Core.Http.Model;
+using HaloOnline.Server.Core.Repository;
 
 namespace HaloOnline.Server.Core.Http.Controllers
 {
     [RoutePrefix("FriendsService.svc")]
     public class GetSubscriptionsController : ApiController
     {
-        private readonly string _connectionString = "Data Source=halodb.sqlite;Version=3;";
+        private readonly HaloDbContext _dbContext = new HaloDbContext();
 
         [HttpPost]
         [Route("GetSubscriptions")]
@@ -20,27 +24,10 @@ namespace HaloOnline.Server.Core.Http.Controllers
                 var userIdClaim = (User?.Identity as ClaimsIdentity)?.FindFirst("Id");
                 int userId = userIdClaim != null ? int.Parse(userIdClaim.Value) : -1;
 
-                var subscriptions = new List<object>();
-
-                using (var connection = new SQLiteConnection(_connectionString))
-                {
-                    connection.Open();
-
-                    using (var command = new SQLiteCommand(connection))
-                    {
-                        command.CommandText = "SELECT SubscribeeId FROM UserSubscription WHERE SubscriberId = @userId";
-                        command.Parameters.AddWithValue("@userId", userId);
-
-                        using (var reader = command.ExecuteReader())
-                        {
-                            while (reader.Read())
-                            {
-                                int subscribeeId = reader.GetInt32(0);
-                                subscriptions.Add(new { Id = subscribeeId });
-                            }
-                        }
-                    }
-                }
+                var subscriptions = _dbContext.UserSubscriptions
+                                               .Where(us => us.SubscriberId == userId)
+                                               .Select(us => new { Id = us.SubscribeeId })
+                                               .ToList();
 
                 var result = new
                 {
@@ -71,6 +58,15 @@ namespace HaloOnline.Server.Core.Http.Controllers
             {
                 return InternalServerError(ex);
             }
+        }
+
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing)
+            {
+                _dbContext.Dispose();
+            }
+            base.Dispose(disposing);
         }
     }
 }

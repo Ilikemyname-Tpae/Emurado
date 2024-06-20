@@ -15381,12 +15381,12 @@
       },
       {
         "type": 3,
-        "strVal": "frag_grenadeSmall",
+        "strVal": "frag_grenadeMed",
         "name": "UI_ICON_MED"
       },
       {
         "type": 3,
-        "strVal": "frag_grenadeSmall",
+        "strVal": "frag_grenadeBig",
         "name": "UI_ICON_BIG"
       },
       {
@@ -15485,12 +15485,12 @@
       },
       {
         "type": 3,
-        "strVal": "plasma_grenadeSmall",
+        "strVal": "plasma_grenadeMed",
         "name": "UI_ICON_MED"
       },
       {
         "type": 3,
-        "strVal": "plasma_grenadeSmall",
+        "strVal": "plasma_grenadeBig",
         "name": "UI_ICON_BIG"
       },
       {
@@ -15537,12 +15537,12 @@
       },
       {
         "type": 3,
-        "strVal": "spike_grenadeSmall",
+        "strVal": "spike_grenadeMed",
         "name": "UI_ICON_MED"
       },
       {
         "type": 3,
-        "strVal": "spike_grenadeSmall",
+        "strVal": "spike_grenadeBig",
         "name": "UI_ICON_BIG"
       },
       {
@@ -15584,17 +15584,17 @@
       },
       {
         "type": 3,
-        "strVal": "",
+        "strVal": "fire_grenadeSmall",
         "name": "UI_ICON"
       },
       {
         "type": 3,
-        "strVal": "",
+        "strVal": "fire_grenadeMed",
         "name": "UI_ICON_MED"
       },
       {
         "type": 3,
-        "strVal": "",
+        "strVal": "fire_grenadeBig",
         "name": "UI_ICON_BIG"
       },
       {
@@ -15745,12 +15745,12 @@
       },
       {
         "type": 3,
-        "strVal": "magnum_m2Small",
+        "strVal": "magnum_m2Med",
         "name": "UI_ICON_MED"
       },
       {
         "type": 3,
-        "strVal": "magnum_m2Small",
+        "strVal": "magnum_m2Big",
         "name": "UI_ICON_BIG"
       },
       {
@@ -15797,12 +15797,12 @@
       },
       {
         "type": 3,
-        "strVal": "magnum_m3Small",
+        "strVal": "magnum_m3Med",
         "name": "UI_ICON_MED"
       },
       {
         "type": 3,
-        "strVal": "magnum_m3Small",
+        "strVal": "magnum_m3Big",
         "name": "UI_ICON_BIG"
       },
       {
@@ -15849,12 +15849,12 @@
       },
       {
         "type": 3,
-        "strVal": "unscma5b_m2Small",
+        "strVal": "unscma5b_m2Med",
         "name": "UI_ICON_MED"
       },
       {
         "type": 3,
-        "strVal": "unscma5b_m2Small",
+        "strVal": "unscma5b_m2Big",
         "name": "UI_ICON_BIG"
       },
       {
@@ -15901,12 +15901,12 @@
       },
       {
         "type": 3,
-        "strVal": "unscma5b_m6Small",
+        "strVal": "unscma5b_m6Med",
         "name": "UI_ICON_MED"
       },
       {
         "type": 3,
-        "strVal": "unscma5b_m6Small",
+        "strVal": "unscma5b_m6Big",
         "name": "UI_ICON_BIG"
       },
       {
@@ -16422,12 +16422,12 @@
       },
       {
         "type": 3,
-        "strVal": "smgSmall",
+        "strVal": "smgMed",
         "name": "UI_ICON_MED"
       },
       {
         "type": 3,
-        "strVal": "smgSmall",
+        "strVal": "smgBig",
         "name": "UI_ICON_BIG"
       },
       {
@@ -16474,12 +16474,12 @@
       },
       {
         "type": 3,
-        "strVal": "smg_m4Small",
+        "strVal": "smg_m4Med",
         "name": "UI_ICON_MED"
       },
       {
         "type": 3,
-        "strVal": "smg_m4Small",
+        "strVal": "smg_m4Big",
         "name": "UI_ICON_BIG"
       },
       {
@@ -16579,12 +16579,12 @@
       },
       {
         "type": 3,
-        "strVal": "smg_m1Small",
+        "strVal": "smg_m1Med",
         "name": "UI_ICON_MED"
       },
       {
         "type": 3,
-        "strVal": "smg_m1Small",
+        "strVal": "smg_m1Big",
         "name": "UI_ICON_BIG"
       },
       {
@@ -16631,12 +16631,12 @@
       },
       {
         "type": 3,
-        "strVal": "smg_m6Small",
+        "strVal": "smg_m6Med",
         "name": "UI_ICON_MED"
       },
       {
         "type": 3,
-        "strVal": "smg_m6Small",
+        "strVal": "smg_m6Big",
         "name": "UI_ICON_BIG"
       },
       {
@@ -16683,12 +16683,12 @@
       },
       {
         "type": 3,
-        "strVal": "smg_m2Small",
+        "strVal": "smg_m2Med",
         "name": "UI_ICON_MED"
       },
       {
         "type": 3,
-        "strVal": "smg_m2Small",
+        "strVal": "smg_m2Big",
         "name": "UI_ICON_BIG"
       },
       {
@@ -16735,12 +16735,12 @@
       },
       {
         "type": 3,
-        "strVal": "smg_m3Small",
+        "strVal": "smg_m3Med",
         "name": "UI_ICON_MED"
       },
       {
         "type": 3,
-        "strVal": "smg_m3Small",
+        "strVal": "smg_m3Big",
         "name": "UI_ICON_BIG"
       },
       {
@@ -16787,12 +16787,12 @@
       },
       {
         "type": 3,
-        "strVal": "dmr_m3Small",
+        "strVal": "dmr_m3Med",
         "name": "UI_ICON_MED"
       },
       {
         "type": 3,
-        "strVal": "dmr_m3Small",
+        "strVal": "dmr_m3Big",
         "name": "UI_ICON_BIG"
       },
       {
@@ -18763,12 +18763,12 @@
       },
       {
         "type": 3,
-        "strVal": "dmr_m2Small",
+        "strVal": "dmr_m2Med",
         "name": "UI_ICON_MED"
       },
       {
         "type": 3,
-        "strVal": "dmr_m2Small",
+        "strVal": "dmr_m2Big",
         "name": "UI_ICON_BIG"
       },
       {
@@ -18815,12 +18815,12 @@
       },
       {
         "type": 3,
-        "strVal": "dmr_m5Small",
+        "strVal": "dmr_m5Med",
         "name": "UI_ICON_MED"
       },
       {
         "type": 3,
-        "strVal": "dmr_m5Small",
+        "strVal": "dmr_m5Big",
         "name": "UI_ICON_BIG"
       },
       {
@@ -21104,12 +21104,12 @@
       },
       {
         "type": 3,
-        "strVal": "dmr_m6Small",
+        "strVal": "dmr_m6Med",
         "name": "UI_ICON_MED"
       },
       {
         "type": 3,
-        "strVal": "dmr_m6Small",
+        "strVal": "dmr_m6Big",
         "name": "UI_ICON_BIG"
       },
       {
@@ -21156,12 +21156,12 @@
       },
       {
         "type": 3,
-        "strVal": "dmr_m4Small",
+        "strVal": "dmr_m4Med",
         "name": "UI_ICON_MED"
       },
       {
         "type": 3,
-        "strVal": "dmr_m4Small",
+        "strVal": "dmr_m4Big",
         "name": "UI_ICON_BIG"
       },
       {
@@ -21208,12 +21208,12 @@
       },
       {
         "type": 3,
-        "strVal": "dmr_m1Small",
+        "strVal": "dmr_m1Med",
         "name": "UI_ICON_MED"
       },
       {
         "type": 3,
-        "strVal": "dmr_m1Small",
+        "strVal": "dmr_m1Big",
         "name": "UI_ICON_BIG"
       },
       {
@@ -21260,12 +21260,12 @@
       },
       {
         "type": 3,
-        "strVal": "battlerifle_m1Small",
+        "strVal": "battlerifle_m1Med",
         "name": "UI_ICON_MED"
       },
       {
         "type": 3,
-        "strVal": "battlerifle_m1Small",
+        "strVal": "battlerifle_m1Big",
         "name": "UI_ICON_BIG"
       },
       {
@@ -21312,12 +21312,12 @@
       },
       {
         "type": 3,
-        "strVal": "battlerifleSmall",
+        "strVal": "battlerifleMed",
         "name": "UI_ICON_MED"
       },
       {
         "type": 3,
-        "strVal": "battlerifleSmall",
+        "strVal": "battlerifleBig",
         "name": "UI_ICON_BIG"
       },
       {
@@ -21364,12 +21364,12 @@
       },
       {
         "type": 3,
-        "strVal": "battlerifle_m3Small",
+        "strVal": "battlerifle_m3Med",
         "name": "UI_ICON_MED"
       },
       {
         "type": 3,
-        "strVal": "battlerifle_m3Small",
+        "strVal": "battlerifle_m3Big",
         "name": "UI_ICON_BIG"
       },
       {
@@ -21468,12 +21468,12 @@
       },
       {
         "type": 3,
-        "strVal": "battlerifle_m4Small",
+        "strVal": "battlerifle_m4Med",
         "name": "UI_ICON_MED"
       },
       {
         "type": 3,
-        "strVal": "battlerifle_m4Small",
+        "strVal": "battlerifle_m4Big",
         "name": "UI_ICON_BIG"
       },
       {
@@ -21520,12 +21520,12 @@
       },
       {
         "type": 3,
-        "strVal": "battlerifle_m5Small",
+        "strVal": "battlerifle_m5Med",
         "name": "UI_ICON_MED"
       },
       {
         "type": 3,
-        "strVal": "battlerifle_m5Small",
+        "strVal": "battlerifle_m5Big",
         "name": "UI_ICON_BIG"
       },
       {
@@ -21572,12 +21572,12 @@
       },
       {
         "type": 3,
-        "strVal": "battlerifle_m2Small",
+        "strVal": "battlerifle_m2Med",
         "name": "UI_ICON_MED"
       },
       {
         "type": 3,
-        "strVal": "battlerifle_m2Small",
+        "strVal": "battlerifle_m2Big",
         "name": "UI_ICON_BIG"
       },
       {
@@ -21624,12 +21624,12 @@
       },
       {
         "type": 3,
-        "strVal": "battlerifle_m6Small",
+        "strVal": "battlerifle_m6Med",
         "name": "UI_ICON_MED"
       },
       {
         "type": 3,
-        "strVal": "battlerifle_m6Small",
+        "strVal": "battlerifle_m6Big",
         "name": "UI_ICON_BIG"
       },
       {

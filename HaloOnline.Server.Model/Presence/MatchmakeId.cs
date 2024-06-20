@@ -4,6 +4,6 @@ namespace HaloOnline.Server.Model.Presence
 {
     public class MatchmakeId
     {
-        public Guid Id { get; set; }
+        public string Id { get; set; }
     }
 }
